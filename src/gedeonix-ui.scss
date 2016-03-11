@@ -1,5 +1,10 @@
+@import '_variables.scss';
+
 html {
   box-sizing: border-box;
+  color: $text-color;
+  background-color: $footer-background-color;
+  font-family: $font-family;
 }
 
 *, *:before, *:after {
@@ -7,12 +12,11 @@ html {
 }
 
 body {
-  background-color: #f0f0f0;
-  border: 0;
+  margin: 0;
   padding: 0;
+  background-color: $background-color;
 }
 
-header {
-  color: #303030;
-  background-color: #a0a0a0;
-}
+@import "_header.scss";
+@import "_footer.scss";
+
