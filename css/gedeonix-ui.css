@@ -15,12 +15,22 @@ body {
   background-color: #ffffff;
 }
 
+.is-gutter {
+  margin: 10px;
+}
+
+.is-text-center {
+  text-align: center;
+}
+
+.is-space {
+  flex-grow: 1;
+}
 .header {
   display: flex;
   color: #e0e0e0;
   background-color: #808080;
 }
-
 .header h1 {
   padding: 0 10px;
 }
@@ -35,8 +45,15 @@ body {
 }
 .row {
   display: flex;
-  background-color: #ffff80;
-  text-align: center;
+}
+.row.is-gutter {
+  margin: 0;
+}
+.row.is-gutter > * {
+  margin: 0 10px 10px 0;
+}
+.row.is-gutter > *:last-child {
+  margin-right: 0;
 }
 .col {
   border: none;
@@ -90,9 +107,9 @@ body {
   padding: 10px 0;
 }
 
-
 /* only diagnostic */
 .row * {
-  padding: 4px;
   outline: 1px dashed #ff0000;
+  background-color: #ffff80;
+  padding: 4px;
 }

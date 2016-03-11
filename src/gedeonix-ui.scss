@@ -17,13 +17,14 @@ body {
   background-color: $background-color;
 }
 
+@import "_helper.scss";
 @import "_header.scss";
 @import "_grid.scss";
 @import "_footer.scss";
 
-
 /* only diagnostic */
 .row * {
-  padding: 4px;
   outline: 1px dashed #ff0000;
+  background-color: #ffff80;
+  padding: 4px;
 }
