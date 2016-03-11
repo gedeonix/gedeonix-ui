@@ -1,1 +1,7 @@
-# gedeonix-ui
+Gedeonix UI
+-----------
+
+Install
+-------
+
+    npm install
