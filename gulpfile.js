@@ -10,11 +10,13 @@ var precss = require('precss');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('autoprefixer');
 var comments = require('postcss-discard-comments');
+var sorting = require('postcss-sorting');
 
 gulp.task('build-css', function () {
     var processors = [
         comments({removeAll: true}),
         imports,
+        sorting,
         autoprefixer({browsers: ['last 2 versions']}),
         precss
     ];

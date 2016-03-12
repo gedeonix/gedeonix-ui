@@ -1,7 +1,7 @@
 html{
   box-sizing:border-box;
-  color:#606060;
   background-color:#d4d4d4;
+  color:#606060;
   font-family:'Open Sans',sans-serif;
 }
 
@@ -63,8 +63,8 @@ body{
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  color: #e0e0e0;
   background-color: #808080;
+  color: #e0e0e0;
 }
 
 .header h1 {
@@ -100,10 +100,10 @@ body{
 }
 
 .col {
-  border: none;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  border: none;
 }
 
 [class*="col-"] {
@@ -196,12 +196,11 @@ body{
 
 .footer {
   display: block;
-  width: auto;
-  text-align: center;
-  color: #ffffff;
-  background-color: #d4d4d4;
-
   padding: 10px 0;
+  width: auto;
+  background-color: #d4d4d4;
+  color: #ffffff;
+  text-align: center;
 }
 
 .is-gutter {
@@ -251,7 +250,7 @@ body{
 }
 
 .row *{
+  padding:4px;
   outline:1px dashed #ff0000;
   background-color:#ffff80;
-  padding:4px;
 }
