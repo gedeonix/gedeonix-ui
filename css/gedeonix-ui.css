@@ -270,6 +270,10 @@ body {
   text-align: center;
 }
 
+.footer a {
+  color: #ffffff;
+}
+
 .is-gutter {
   margin: 10px;
 }
