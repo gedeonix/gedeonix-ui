@@ -1,0 +1,16 @@
+html {
+  box-sizing: border-box;
+  color: $text-color;
+  background-color: $footer-background-color;
+  font-family: $font-family;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+}

@@ -1,32 +1,16 @@
 @charset "UTF-8";
 
 @import '_variables.scss';
+@import '_reset.scss';
+@import "_container.scss";
 @import "_button.scss";
 @import "_header.scss";
 @import "_grid.scss";
 @import "_footer.scss";
 @import "_helper.scss";
 
-html {
-  box-sizing: border-box;
-  color: $text-color;
-  background-color: $footer-background-color;
-  font-family: $font-family;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: $background-color;
-}
-
 /* only diagnostic */
 .row * {
   outline: 1px dashed #ff0000;
-  background-color: #ffff80;
   padding: 4px;
 }
