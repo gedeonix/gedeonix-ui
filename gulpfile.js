@@ -4,6 +4,7 @@ var extReplace = require('gulp-ext-replace');
 
 /* CSS */
 var postcss = require('gulp-postcss');
+var imports = require("postcss-import");
 var url = require("postcss-url");
 var precss = require('precss');
 var sourcemaps = require('gulp-sourcemaps');
@@ -13,7 +14,8 @@ var comments = require('postcss-discard-comments');
 gulp.task('build-css', function () {
     var processors = [
         comments({removeAll: true}),
-        autoprefixer({browsers: ['last 2 version']}),
+        imports,
+        autoprefixer({browsers: ['last 2 versions']}),
         precss
     ];
 
