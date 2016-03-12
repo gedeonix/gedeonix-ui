@@ -1,0 +1,47 @@
+.btn {
+  border: 1px solid #d4d4d4;
+  background-color: $background-color;
+
+  margin: 0;
+  padding: 0.75em 1em;
+  color: $text-color;
+
+  border-radius: 3px;
+  font-size: 14px;
+
+  /*position: relative;*/
+
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+
+  width: auto;
+
+  &.is-sm {
+    border-radius: 2px;
+    font-size: 12px;
+  }
+  &.is-md {
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  &.is-lg {
+    border-radius: 5px;
+    font-size: 18px;
+  }
+
+  &.is-primary, &.is-success, &.is-info, &.is-warning, &.is-danger, &.is-dark {
+    color: #ffffff;
+    border-color: transparent;
+  }
+
+  &:hover {
+    border-color: #a0a0a0;
+  }
+
+  &:focus {
+    border-color: #808080;
+    outline: none;
+  }
+
+}

@@ -9,3 +9,38 @@
 .is-space {
   flex-grow: 1;
 }
+
+.is-white {
+  background-color: #ffffff;
+}
+
+.is-gray {
+  background-color: $gray_color;
+}
+
+.is-dark {
+  background-color: $dark_color;
+}
+
+.is-primary {
+  background-color: $primary_color;
+}
+
+.is-success {
+  background-color: $success_color;
+}
+
+.is-info {
+  background-color: $info_color;
+}
+
+.is-warning {
+  background-color: $warning_color;
+}
+
+.is-danger {
+  background-color: $danger_color;
+}
+
+
+
