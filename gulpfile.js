@@ -11,12 +11,14 @@ var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('autoprefixer');
 var comments = require('postcss-discard-comments');
 var sorting = require('postcss-sorting');
+var stylelint = require("stylelint");
 
 gulp.task('build-css', function () {
     var processors = [
         comments({removeAll: true}),
         imports,
         sorting,
+        stylelint,
         autoprefixer({browsers: ['last 2 versions']}),
         precss
     ];

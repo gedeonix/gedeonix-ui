@@ -1,62 +1,57 @@
-html{
-  box-sizing:border-box;
-  background-color:#d4d4d4;
-  color:#606060;
-  font-family:'Open Sans',sans-serif;
-}
+@charset "UTF-8";
 
-*, *:before, *:after{
-  box-sizing:inherit;
-}
-
-body{
-  margin:0;
-  padding:0;
-  background-color:#ffffff;
-}
-
-.btn{
-  border:1px solid #d4d4d4;
-  background-color:#ffffff;
-  margin:0;
-  padding:0.75em 1em;
-  color:#606060;
-  border-radius:3px;
-  font-size:14px;
+.btn {
+  margin: 0;
+  padding: 0.75em 1em;
+  width: auto;
+  border: 1px solid #d4d4d4;
+  border-radius: 3px;
+  background-color: #ffffff;
+  color: #606060;
+  white-space: nowrap;
+  font-size: 14px;
   /*position: relative;*/
-  cursor:pointer;
-  user-select:none;
-  white-space:nowrap;
-  width:auto;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none
+
 }
 
 .btn.is-sm{
-  border-radius:2px;
-  font-size:12px;
+  border-radius: 2px;
+  font-size: 12px
+
 }
 
 .btn.is-md{
-  border-radius:4px;
-  font-size:16px;
+  border-radius: 4px;
+  font-size: 16px
+
 }
 
 .btn.is-lg{
-  border-radius:5px;
-  font-size:18px;
+  border-radius: 5px;
+  font-size: 18px
+
 }
 
 .btn.is-primary, .btn.is-success, .btn.is-info, .btn.is-warning, .btn.is-danger, .btn.is-dark{
-  color:#ffffff;
-  border-color:transparent;
+  border-color: transparent;
+  color: #ffffff
+
 }
 
 .btn:hover{
-  border-color:#a0a0a0;
+  border-color: #a0a0a0
+
 }
 
 .btn:focus{
-  border-color:#808080;
-  outline:none;
+  outline: none;
+  border-color: #808080
+
 }
 
 .header {
@@ -69,6 +64,7 @@ body{
 
 .header h1 {
   padding: 0 10px;
+
 }
 
 .container {
@@ -93,10 +89,12 @@ body{
 
 .row.is-gutter > * {
   margin: 0 10px 10px 0;
+
 }
 
 .row.is-gutter > *:last-child {
   margin-right: 0;
+
 }
 
 .col {
@@ -247,6 +245,23 @@ body{
 
 .is-danger {
   background-color: #fc6e51;
+}
+
+html{
+  box-sizing:border-box;
+  background-color:#d4d4d4;
+  color:#606060;
+  font-family:'Open Sans',sans-serif;
+}
+
+*, *:before, *:after{
+  box-sizing:inherit;
+}
+
+body{
+  margin:0;
+  padding:0;
+  background-color:#ffffff;
 }
 
 .row *{
