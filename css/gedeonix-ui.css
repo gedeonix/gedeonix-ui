@@ -18,12 +18,13 @@ body {
 }
 
 .container {
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1440px) {
   .container {
-    max-width: 1140px;
+    max-width: 1440px;
   }
 }
 
@@ -261,6 +262,22 @@ body {
   }
 }
 
+label {
+  color: #606060;
+  font-weight: bold;
+}
+
+input {
+  padding: 0.5em 0.5em;
+  border: 1px solid #d4d4d4;
+  border-radius: 3px;
+  font-size: 17px;
+}
+
+input[type=text], input[type=password], input[type=number], input[type=search] {
+  width: 100%;
+}
+
 .footer {
   display: block;
   padding: 10px 0;
@@ -324,5 +341,11 @@ body {
   width: 38px;
   height: 38px;
   border-radius: 50%;
+}
+
+.is-columns {
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 

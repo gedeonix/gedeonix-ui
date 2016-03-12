@@ -1,9 +1,10 @@
 .container {
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: $lg) {
   .container {
-    max-width: 1140px;
+    max-width: $lg;
   }
 }
