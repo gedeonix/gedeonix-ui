@@ -322,7 +322,3 @@ body {
   border-radius: 50%;
 }
 
-.row *{
-  padding:4px;
-  outline:1px dashed #ff0000;
-}
