@@ -33,6 +33,10 @@
     border-color: transparent;
   }
 
+  &.is-round {
+    padding: 0.75em;
+  }
+
   &:hover {
     border-color: #a0a0a0;
   }

@@ -43,6 +43,11 @@
 
 }
 
+.btn.is-round{
+  padding: 0.75em
+
+}
+
 .btn:hover{
   border-color: #a0a0a0
 
@@ -245,6 +250,12 @@
 
 .is-danger {
   background-color: #fc6e51;
+}
+
+.is-round {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
 }
 
 html{
