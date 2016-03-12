@@ -8,9 +8,11 @@ var url = require("postcss-url");
 var precss = require('precss');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('autoprefixer');
+var comments = require('postcss-discard-comments');
 
 gulp.task('build-css', function () {
     var processors = [
+        comments({removeAll: true}),
         autoprefixer({browsers: ['last 2 version']}),
         precss
     ];
