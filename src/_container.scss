@@ -1,6 +1,14 @@
 .container {
   margin-right: auto;
   margin-left: auto;
+
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.container-fluid {
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 @media screen and (min-width: $lg) {
