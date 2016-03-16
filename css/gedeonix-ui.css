@@ -19,8 +19,8 @@ body {
 }
 
 .alert {
-  margin-bottom: 1rem;
-  padding: 1rem 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem 0.75rem;
   border: none;
   border-radius: 5px;
   background-color: #e0e0e0;
@@ -856,6 +856,71 @@ table td {
 
 .table.is-border tr:last-child td{
   border-bottom-width: 1px;
+}
+
+.tabs {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  overflow-x: auto;
+  padding: 0;
+  color: #606060;
+  white-space: nowrap;
+  line-height: 24px;
+
+}
+
+.tabs li {
+  display: block;
+}
+
+.tabs li a {
+  display: block;
+  margin: 15px 0 0 0;
+  padding: 10px 20px;
+}
+
+.tabs.is-boxed a{
+  border: 1px solid transparent;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #65bcfe;
+  color: #ffffff;
+  text-align: center;
+}
+
+.tabs.is-boxed a:hover{
+  background-color: #459cde;
+  color: #ffffff;
+}
+
+.tabs.is-boxed li.active a{
+  background-color: #ffffff;
+  color: #606060;
+}
+
+.tabs.is-boxed li + li{
+  margin-left: 5px;
+}
+
+.tabs.is-flat a{
+  color: $text_color;
+  text-align: center;
+}
+
+.tabs.is-flat a:hover{
+  border-bottom: 2px solid #459cde;
+  color: #459cde;
+}
+
+.tabs.is-flat li.active a{
+  border-bottom: 2px solid #65bcfe;
+  color: #65bcfe;
+}
+
+.tabs.is-flat li{
+  border-bottom: 1px solid #d4d4d4;
 }
 
 .footer {

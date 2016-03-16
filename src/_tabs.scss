@@ -1,0 +1,59 @@
+.tabs {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  overflow-x: auto;
+  line-height: 24px;
+  padding: 0;
+  color: $text-color;
+
+  li {
+    display: block;
+    a {
+      display: block;
+      padding: 10px 20px;
+      margin: 15px 0 0 0;
+    }
+  }
+
+  &.is-boxed {
+    a {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border: 1px solid transparent;
+      color: #ffffff;
+      text-align: center;
+      background-color: #65bcfe;
+      &:hover {
+        color: #ffffff;
+        background-color: #459cde;
+      }
+    }
+    li.active a {
+      color: $text-color;
+      background-color: #ffffff;
+    }
+    li + li {
+      margin-left: 5px;
+    }
+  }
+
+  &.is-flat {
+    a {
+      color: $text_color;
+      text-align: center;
+      &:hover {
+        color: #459cde;
+        border-bottom: 2px solid #459cde;
+      }
+    }
+    li.active a {
+      color: #65bcfe;
+      border-bottom: 2px solid #65bcfe;
+    }
+    li {
+      border-bottom: 1px solid #d4d4d4;
+    }
+  }
+
+}

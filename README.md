@@ -1,6 +1,9 @@
 Gedeonix UI
 -----------
 
+Gedeonix UI is a simple set of controls based on css using flexbox and responsive.
+This is a very simple project in alpha state :)
+
 Demo
 ----
 
