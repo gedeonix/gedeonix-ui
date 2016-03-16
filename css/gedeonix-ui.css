@@ -18,6 +18,20 @@ body {
   background-color: #ffffff;
 }
 
+.alert {
+  margin-bottom: 1rem;
+  padding: 1rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  color: #606060;
+  font-size: 1rem
+}
+
+.alert.is-dark, .alert.is-danger{
+  color: #ffffff;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
