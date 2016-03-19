@@ -63,14 +63,14 @@ body {
 
 .btn {
   margin: 0;
-  padding: 0.75em 1em;
+  padding: 0.75rem 1rem;
   width: auto;
   border: 1px solid #d4d4d4;
   border-radius: 3px;
   background-color: #ffffff;
   color: #606060;
   white-space: nowrap;
-  font-size: 14px;
+  font-size: 1rem;
   /*position: relative;*/
   cursor: pointer;
   -webkit-user-select: none;
@@ -80,28 +80,18 @@ body {
 
 }
 
-.btn.is-sm{
-  border-radius: 2px;
-  font-size: 12px;
-}
-
-.btn.is-md{
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.btn.is-lg{
-  border-radius: 5px;
-  font-size: 18px;
-}
-
 .btn.is-primary, .btn.is-success, .btn.is-info, .btn.is-warning, .btn.is-danger, .btn.is-dark{
   border-color: transparent;
   color: #ffffff;
 }
 
 .btn.is-round{
-  padding: 0.75em;
+  padding: 0.65rem 0.75rem;
+  border-radius: 50%;
+}
+
+.btn.is-round.is-sm, .btn.is-round.is-md, .btn.is-round.is-lg{
+  border-radius: 50%;
 }
 
 .btn:hover{
@@ -111,6 +101,21 @@ body {
 .btn:focus{
   outline: none;
   border-color: #808080;
+}
+
+.btn.is-sm{
+  border-radius: 2px;
+  font-size: 0.8rem;
+}
+
+.btn.is-md{
+  border-radius: 4px;
+  font-size: 1.2rem;
+}
+
+.btn.is-lg{
+  border-radius: 5px;
+  font-size: 1.4rem;
 }
 
 .nav-brand {
@@ -844,13 +849,30 @@ label {
 }
 
 input {
-  padding: 0.5em 0.5em;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.5rem;
   border: 1px solid #d4d4d4;
   border-radius: 3px;
-  font-size: 17px;
+  font-size: 1rem
+
 }
 
-input[type=text], input[type=password], input[type=number], input[type=search] {
+input.is-sm{
+  border-radius: 2px;
+  font-size: 0.8rem;
+}
+
+input.is-md{
+  border-radius: 4px;
+  font-size: 1.2rem;
+}
+
+input.is-lg{
+  border-radius: 5px;
+  font-size: 1.4rem;
+}
+
+input[type=text], input[type=password], input[type=number], input[type=email], input[type=search] {
   width: 100%;
 }
 
@@ -922,8 +944,8 @@ table td {
   padding: 0;
   color: #606060;
   white-space: nowrap;
-  line-height: 24px;
-
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .tabs li {
@@ -932,8 +954,8 @@ table td {
 
 .tabs li a {
   display: block;
-  margin: 15px 0 0 0;
-  padding: 10px 20px;
+  margin: 1rem 0 0 0;
+  padding: 0.5rem 1rem;
 }
 
 .tabs.is-boxed a{
@@ -943,6 +965,7 @@ table td {
   background-color: #65bcfe;
   color: #ffffff;
   text-align: center;
+  text-decoration: none;
 }
 
 .tabs.is-boxed a:hover{
@@ -962,6 +985,7 @@ table td {
 .tabs.is-flat a{
   color: $text_color;
   text-align: center;
+  text-decoration: none;
 }
 
 .tabs.is-flat a:hover{
@@ -976,6 +1000,18 @@ table td {
 
 .tabs.is-flat li{
   border-bottom: 1px solid #d4d4d4;
+}
+
+.tabs.is-sm{
+  font-size: 0.8rem;
+}
+
+.tabs.is-md{
+  font-size: 1.2rem;
+}
+
+.tabs.is-lg{
+  font-size: 1.4rem;
 }
 
 .footer {
@@ -1038,8 +1074,6 @@ table td {
 }
 
 .is-round {
-  width: 38px;
-  height: 38px;
   border-radius: 50%;
 }
 

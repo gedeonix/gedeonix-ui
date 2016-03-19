@@ -3,11 +3,9 @@
   background-color: $background-color;
 
   margin: 0;
-  padding: 0.75em 1em;
+  padding: 0.75rem 1rem;
   color: $text-color;
 
-  border-radius: 3px;
-  font-size: 14px;
   /*position: relative;*/
   cursor: pointer;
   user-select: none;
@@ -15,18 +13,8 @@
 
   width: auto;
 
-  &.is-sm {
-    border-radius: 2px;
-    font-size: 12px;
-  }
-  &.is-md {
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  &.is-lg {
-    border-radius: 5px;
-    font-size: 18px;
-  }
+  border-radius: 3px;
+  font-size: 1rem;
 
   &.is-primary, &.is-success, &.is-info, &.is-warning, &.is-danger, &.is-dark {
     color: #ffffff;
@@ -34,7 +22,12 @@
   }
 
   &.is-round {
-    padding: 0.75em;
+    padding: 0.65rem 0.75rem;
+    border-radius: 50%;
+
+    &.is-sm, &.is-md, &.is-lg {
+      border-radius: 50%;
+    }
   }
 
   &:hover {
@@ -44,6 +37,19 @@
   &:focus {
     border-color: #808080;
     outline: none;
+  }
+
+  &.is-sm {
+    border-radius: 2px;
+    font-size: 0.8rem;
+  }
+  &.is-md {
+    border-radius: 4px;
+    font-size: 1.2rem;
+  }
+  &.is-lg {
+    border-radius: 5px;
+    font-size: 1.4rem;
   }
 
 }

@@ -5,14 +5,31 @@ label {
 
 input {
   border: 1px solid $input-border-color;
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 0.5rem;
+
   border-radius: 3px;
-  padding: 0.5em 0.5em;
-  font-size: 17px;
+  font-size: 1rem;
+
+  &.is-sm {
+    border-radius: 2px;
+    font-size: 0.8rem;
+  }
+  &.is-md {
+    border-radius: 4px;
+    font-size: 1.2rem;
+  }
+  &.is-lg {
+    border-radius: 5px;
+    font-size: 1.4rem;
+  }
+
 }
 
 input[type=text],
 input[type=password],
 input[type=number],
+input[type=email],
 input[type=search] {
   width: 100%;
 }
