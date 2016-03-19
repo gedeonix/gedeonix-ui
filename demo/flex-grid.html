@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gedeonix UI (experimental)</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="../css/gedeonix-ui.css" rel="stylesheet">
+    <style>
+
+        /* only diagnostic */
+        .demo-grid .row .col,
+        .demo-grid .row [class*="col-"] {
+            outline: 1px dashed #ff0000;
+        }
+        .demo-grid > .row .row {
+            padding: 0.5rem 0.5rem;
+        }
+        .demo-grid .row {
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav">
+            <div class="nav-brand">Gedeonix UI</div>
+        </div>
+    </header>
+
+    <div class="is-primary">
+        <div class="container">
+            <ul class="tabs is-boxed">
+                <li><a href="../index.html">Main</a></li>
+                <li><a href="typography.html">Typography</a></li>
+                <li><a href="container.html">Container</a></li>
+                <li class="active"><a>Flex Grid</a></li>
+                <li><a href="control.html">Control</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="navigation.html">Navigation</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="main container">
+
+        <h2>Grid</h2>
+
+        <h3>Simple</h3>
+        <div class="demo-grid">
+            <div class="row">
+                <div class="col">1</div>
+            </div>
+            <div class="row">
+                <div class="col">1</div>
+                <div class="col">1</div>
+            </div>
+            <div class="row">
+                <div class="col">1</div>
+                <div class="col">1</div>
+                <div class="col">1</div>
+            </div>
+            <div class="row">
+                <div class="col">1</div>
+                <div class="col">1</div>
+                <div class="col">1</div>
+                <div class="col">1</div>
+            </div>
+        </div>
+
+        <h3>Nested</h3>
+        <div class="demo-grid">
+            <div class="row">
+                <div class="col">A</div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">B</div>
+                        <div class="col">
+                            <div class="row">
+                                <div class="col">C</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3>Max limit (4)</h3>
+        <div class="demo-grid">
+            <div class="row max-4">
+                <div class="col">1</div>
+                <div class="col">1</div>
+                <div class="col">1</div>
+                <div class="col">1</div>
+                <div class="col">1</div>
+                <div class="col">1</div>
+                <div class="col">1</div>
+                <div class="col">1</div>
+                <div class="col">1</div>
+                <div class="col">1</div>
+            </div>
+        </div>
+
+        <h3>Offsets</h3>
+        <div class="demo-grid">
+            <div class="row">
+                <div class="col offset-1">1</div>
+                <div class="offset-1"></div>
+            </div>
+            <div class="row">
+                <div class="col offset-2">1</div>
+                <div class="offset-2"></div>
+            </div>
+            <div class="row">
+                <div class="col offset-3">1</div>
+                <div class="offset-3"></div>
+            </div>
+            <div class="row">
+                <div class="col offset-4">1</div>
+                <div class="offset-4"></div>
+            </div>
+            <div class="row">
+                <div class="col offset-5">1</div>
+                <div class="offset-5"></div>
+            </div>
+        </div>
+
+        <br>
+
+        <h3>Columns (1-12)</h3>
+        <div class="demo-grid">
+            <div class="row">
+                <div class="col col-1">1</div>
+                <div class="col col-1">1</div>
+                <div class="col col-1">1</div>
+                <div class="col col-1">1</div>
+                <div class="col col-1">1</div>
+                <div class="col col-1">1</div>
+                <div class="col col-1">1</div>
+                <div class="col col-1">1</div>
+                <div class="col col-1">1</div>
+                <div class="col col-1">1</div>
+                <div class="col col-1">1</div>
+                <div class="col col-1">1</div>
+            </div>
+
+            <div class="row">
+                <div class="col col-2">2</div>
+                <div class="col col-2">2</div>
+                <div class="col col-2">2</div>
+                <div class="col col-2">2</div>
+                <div class="col col-2">2</div>
+                <div class="col col-2">2</div>
+            </div>
+
+            <div class="row">
+                <div class="col col-3">3</div>
+                <div class="col col-3">3</div>
+                <div class="col col-3">3</div>
+                <div class="col col-3">3</div>
+            </div>
+
+            <div class="row">
+                <div class="col col-4">4</div>
+                <div class="col col-4">4</div>
+                <div class="col col-4">4</div>
+            </div>
+
+            <div class="row">
+                <div class="col col-6">6</div>
+                <div class="col col-6">6</div>
+            </div>
+
+            <div class="row">
+                <div class="col col-12">12</div>
+            </div>
+
+            <h3>Auto width</h3>
+
+            <div class="row">
+                <div class="col">auto</div>
+            </div>
+            <div class="row">
+                <div class="col col-1">1</div>
+                <div class="col">auto</div>
+            </div>
+            <div class="row">
+                <div class="col col-2">2</div>
+                <div class="col">auto</div>
+            </div>
+            <div class="row">
+                <div class="col col-3">3</div>
+                <div class="col">auto</div>
+            </div>
+            <div class="row">
+                <div class="col col-4">4</div>
+                <div class="col">auto</div>
+            </div>
+            <div class="row">
+                <div class="col col-5">5</div>
+                <div class="col">auto</div>
+            </div>
+            <div class="row">
+                <div class="col col-6">6</div>
+                <div class="col">auto</div>
+            </div>
+            <div class="row">
+                <div class="col col-7">7</div>
+                <div class="col">auto</div>
+            </div>
+            <div class="row">
+                <div class="col col-8">8</div>
+                <div class="col">auto</div>
+            </div>
+            <div class="row">
+                <div class="col col-9">9</div>
+                <div class="col">auto</div>
+            </div>
+            <div class="row">
+                <div class="col col-10">10</div>
+                <div class="col">auto</div>
+            </div>
+            <div class="row">
+                <div class="col col-11">11</div>
+                <div class="col">auto</div>
+            </div>
+            <div class="row">
+                <div class="col col-12">12</div>
+            </div>
+
+            <h3>Grid with gutter (todo)</h3>
+            <div class="row">
+                <div class="col">1</div>
+            </div>
+
+            <div class="row">
+                <div class="col">1/2</div>
+                <div class="col">1/2</div>
+            </div>
+
+            <div class="row">
+                <div class="col">1/3</div>
+                <div class="col">1/3</div>
+                <div class="col">1/3</div>
+            </div>
+
+            <h3>Responsive
+                <span class="visible-xs">xs</span>
+                <span class="visible-sm">sm</span>
+                <span class="visible-md">md</span>
+                <span class="visible-lg">lg</span>
+            </h3>
+
+            <h4>1 column in xs</h4>
+            <div class="row xs-1">
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+            </div>
+
+            <br>
+
+            <h4>1 column in sm</h4>
+            <div class="row sm-1">
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+            </div>
+
+            <h4>1 column in md</h4>
+            <div class="row md-1">
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+            </div>
+
+            <h4>1 column in lg</h4>
+            <div class="row lg-1">
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+            </div>
+
+            <h4>Mix (xs-1 sm-2 md-3 lg-4)</h4>
+            <div class="row xs-1 sm-2 md-3 lg-4">
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+            </div>
+
+
+            <!--
+            <div class="row">
+                <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">xs</div>
+                <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">xs</div>
+                <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">xs</div>
+            </div>
+            <div class="row">
+                <div class="col col-xs-12 col-sm-4 col-md-2 col-lg-1">xs</div>
+                <div class="col col-xs-12 col-sm-3 col-md-2 col-lg">xs</div>
+                <div class="col col-xs-12 col-sm col-md col-lg">xs</div>
+            </div>
+            <div class="row">
+                <div class="col col-sm-4">xs</div>
+                <div class="col col-sm-3">xs</div>
+                <div class="col col-sm">xs</div>
+            </div>
+            <div class="row">
+                <div class="col col-md">md</div>
+                <div class="col col-md">md</div>
+                <div class="col col-md">md</div>
+            </div>
+            <div class="row">
+                <div class="col col-lg">lg</div>
+                <div class="col col-lg">lg</div>
+                <div class="col col-lg">lg</div>
+            </div>
+            -->
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Copyright (c) 2016 <a href="gedeonix.pl">gedeonix.pl</a></p>
+            <p>
+                <a href="https://github.com/gedeonix/gedeonix-ui"><i class="fa fa-github-square fa-2x"></i></a>
+                <a href="https://twitter.com/gedeonix"><i class="fa fa-twitter-square fa-2x"></i></a>
+            </p>
+        </div>
+    </footer>
+
+</body>

@@ -18,6 +18,15 @@ body {
   background-color: #ffffff;
 }
 
+.header {
+  background-color: #808080;
+  color: #e0e0e0;
+}
+
+.main {
+  padding-bottom: 1rem;
+}
+
 .alert {
   margin-bottom: 0.5rem;
   padding: 0.75rem 0.75rem;
@@ -40,8 +49,10 @@ body {
 }
 
 .container-fluid {
+  /*
   margin-right: 5px;
   margin-left: 5px;
+  */
 }
 
 @media screen and (min-width: 1440px) {
@@ -100,11 +111,6 @@ body {
 .btn:focus{
   outline: none;
   border-color: #808080;
-}
-
-.header {
-  background-color: #808080;
-  color: #e0e0e0;
 }
 
 .nav-brand {

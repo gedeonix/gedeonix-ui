@@ -2,22 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gedeonix UI (experimental)</title>
+    <title>Gedeonix UI</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="css/gedeonix-ui.css" rel="stylesheet">
+
     <style>
 
-        /* only diagnostic */
-        .demo-grid .row .col,
-        .demo-grid .row [class*="col-"] {
-            outline: 1px dashed #ff0000;
-        }
-        .demo-grid > .row .row {
-            padding: 0.5rem 0.5rem;
-        }
-        .demo-grid .row {
+        .demo-dashboard .row .col {
             text-align: center;
+            border: 4px solid #a0a0a0;
+            border-radius: 10px;
+            padding: 1rem 1rem;
+            margin: 1rem;
         }
 
     </style>
@@ -25,515 +22,57 @@
 </head>
 
 <body>
+
     <header class="header">
         <div class="container nav">
             <div class="nav-brand">Gedeonix UI</div>
-            <div class="nav-left">
-                <a class="btn is-info">Option1</a>
-                <a class="btn is-info">Option2</a>
-                <a class="btn is-info">Option3</a>
-            </div>
-            <div class="nav-right">
-                <a class="btn is-success"><i class="fa fa-user"></i> Option4</a>
-                <a class="btn is-primary"><i class="fa fa-lock"></i> Option5</a>
-                <a class="btn is-danger"><i class="fa fa-power-off"></i> Option6</a>
-            </div>
         </div>
     </header>
 
-    <main class="container">
-
-        <h2>Alert</h2>
-        <div class="alert">
-            <strong>Default:</strong> Description...
-        </div>
-
-        <div class="alert is-primary">
-            <strong>Primary:</strong> Description...
-        </div>
-
-        <div class="alert is-success">
-            <strong>Success:</strong> Description...
-        </div>
-
-        <div class="alert is-info">
-            <strong>Alert:</strong> Description...
-        </div>
-
-        <div class="alert is-warning">
-            <strong>Warning:</strong> Description...
-        </div>
-
-        <div class="alert is-danger">
-            <strong>Danger:</strong> Description...
-        </div>
-
-        <div class="alert is-dark">
-            <strong>Dark:</strong> Description...
-        </div>
-
-        <h2>Button</h2>
-
-        <div>
-            <button class="btn">Default</button>
-            <button class="btn is-primary">Primary</button>
-            <button class="btn is-success">Success</button>
-            <button class="btn is-info">Info</button>
-            <button class="btn is-warning">Warning</button>
-            <button class="btn is-danger">Danger</button>
-            <button class="btn is-dark">Dark</button>
-        </div>
-
-        <h3>Size</h3>
-        <div>
-            <button class="btn is-sm">Small</button>
-            <button class="btn">Normal</button>
-            <button class="btn is-md">Middle</button>
-            <button class="btn is-lg">Large</button>
-        </div>
-
-        <h3>Icon & text</h3>
-        <div>
-            <button class="btn"><i class="fa fa-check"></i> Default</button>
-            <button class="btn is-primary"><i class="fa fa-check"></i> Primary</button>
-            <button class="btn is-success"><i class="fa fa-check"></i> Success</button>
-            <button class="btn is-info"><i class="fa fa-check"></i> Info</button>
-            <button class="btn is-warning"><i class="fa fa-check"></i> Warning</button>
-            <button class="btn is-danger"><i class="fa fa-check"></i> Danger</button>
-            <button class="btn is-dark"><i class="fa fa-check"></i> Dark</button>
-        </div>
-
-        <h3>Only icon</h3>
-        <div>
-            <button class="btn"><i class="fa fa-check"></i></button>
-            <button class="btn is-primary"><i class="fa fa-check"></i></button>
-            <button class="btn is-success"><i class="fa fa-check"></i></button>
-            <button class="btn is-info"><i class="fa fa-check"></i></button>
-            <button class="btn is-warning"><i class="fa fa-check"></i></button>
-            <button class="btn is-danger"><i class="fa fa-check"></i></button>
-            <button class="btn is-dark"><i class="fa fa-check"></i></button>
-        </div>
-
-        <h3>Round</h3>
-        <div>
-            <button class="btn is-round"><i class="fa fa-check"></i></button>
-            <button class="btn is-round is-primary"><i class="fa fa-check"></i></button>
-            <button class="btn is-round is-success"><i class="fa fa-check"></i></button>
-            <button class="btn is-round is-info"><i class="fa fa-check"></i></button>
-            <button class="btn is-round is-warning"><i class="fa fa-check"></i></button>
-            <button class="btn is-round is-danger"><i class="fa fa-check"></i></button>
-            <button class="btn is-round is-dark"><i class="fa fa-check"></i></button>
-        </div>
-
-        <h2>Table</h2>
-
-        <table class="table">
-            <thead>
-            <tr>
-                <th>User</th>
-                <th>E-mail</th>
-                <th>Description</th>
-                <th>Status</th>
-                <th>Options</th>
-            </tr>
-            </thead>
-
-            <tbody>
-            <tr>
-                <td>John Doe</td>
-                <td>john@example.com</td>
-                <td>Description...</td>
-                <td><span class="is-info">info</span></td>
-                <td class="is-pack is-text-center">
-                    <button class="btn is-round is-primary"><i class="fa fa-ellipsis-v"></i></button>
-                </td>
-            </tr>
-            <tr>
-                <td>John Doe</td>
-                <td>john@example.com</td>
-                <td>Description...</td>
-                <td><span class="is-warning">warning</span></td>
-                <td class="is-pack is-text-center">
-                    <button class="btn is-round is-primary"><i class="fa fa-ellipsis-v"></i></button>
-                </td>
-            </tr>
-            <tr>
-                <td>John Doe</td>
-                <td>john@example.com</td>
-                <td>Description...</td>
-                <td><span class="is-danger">danger</span></td>
-                <td class="is-pack is-text-center">
-                    <button class="btn is-round is-primary"><i class="fa fa-ellipsis-v"></i></button>
-                </td>
-            </tr>
-            </tbody>
-
-        </table>
-
-        <h3>Border table</h3>
-        <table class="table is-border">
-            <thead>
-            <tr>
-                <th>User</th>
-                <th>E-mail</th>
-                <th>Description</th>
-                <th>Status</th>
-                <th>Options</th>
-            </tr>
-            </thead>
-
-            <tbody>
-            <tr>
-                <td>John Doe</td>
-                <td>john@example.com</td>
-                <td>Description...</td>
-                <td><span class="is-info">info</span></td>
-                <td class="is-pack is-text-center">
-                    <button class="btn is-round is-primary"><i class="fa fa-ellipsis-v"></i></button>
-                </td>
-            </tr>
-            </tbody>
-
-        </table>
-
-
-        <h2>Tab</h2>
-        <div class="is-primary">
-            <ul class="container tabs is-boxed">
-                <li><a href="">Tab1</a></li>
-                <li class="active"><a href="">Tab2</a></li>
-                <li><a href="">Tab3</a></li>
-                <li><a href="">Tab4</a></li>
-                <li><a href="">Tab5</a></li>
+    <nav class="is-primary">
+        <div class="container">
+            <ul class="tabs is-boxed">
+                <li class="active"><a>Main</a></li>
+                <li><a href="demo/typography.html">Typography</a></li>
+                <li><a href="demo/container.html">Container</a></li>
+                <li><a href="demo/flex-grid.html">Flex Grid</a></li>
+                <li><a href="demo/control.html">Control</a></li>
+                <li><a href="demo/table.html">Table</a></li>
+                <li><a href="demo/navigation.html">Navigation</a></li>
+                <li><a href="demo/form.html">Form</a></li>
             </ul>
         </div>
+    </nav>
 
-        <div class="is-white">
-            <ul class="container tabs is-flat">
-                <li><a href="">Tab1</a></li>
-                <li class="active"><a href="">Tab2</a></li>
-                <li><a href="">Tab3</a></li>
-                <li><a href="">Tab4</a></li>
-                <li><a href="">Tab5</a></li>
-            </ul>
-        </div>
+    <main class="main container">
+        <h1>Main</h1>
 
-        <h2>Container</h2>
-        Todo...
-
-        <h2>Grid</h2>
-
-        <h3>Simple</h3>
-        <div class="demo-grid">
-            <div class="row">
-                <div class="col">1</div>
-            </div>
-            <div class="row">
-                <div class="col">1</div>
-                <div class="col">1</div>
-            </div>
-            <div class="row">
-                <div class="col">1</div>
-                <div class="col">1</div>
-                <div class="col">1</div>
-            </div>
-            <div class="row">
-                <div class="col">1</div>
-                <div class="col">1</div>
-                <div class="col">1</div>
-                <div class="col">1</div>
-            </div>
-        </div>
-
-        <h3>Nested</h3>
-        <div class="demo-grid">
-            <div class="row">
-                <div class="col">A</div>
-                <div class="col">
-                    <div class="row">
-                        <div class="col">B</div>
-                        <div class="col">
-                            <div class="row">
-                                <div class="col">C</div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="demo-dashboard">
+            <div class="row sm-2 max-3">
+                <div class="col is-gray">
+                    <h2>Typography</h2>
                 </div>
+                <div class="col is-gray">
+                    <h2>Container</h2>
+                </div>
+                <div class="col is-gray">
+                    <h2>Flex grid</h2>
+                </div>
+                <div class="col is-gray">
+                    <h2>Control</h2>
+                </div>
+                <div class="col is-gray">
+                    <h2>Table</h2>
+                </div>
+                <div class="col is-gray">
+                    <h2>Navigation</h2>
+                </div>
+                <div class="col is-gray">
+                    <h2>Form</h2>
+                </div>
+
             </div>
         </div>
-
-        <h3>Max limit (4)</h3>
-        <div class="demo-grid">
-            <div class="row max-4">
-                <div class="col">1</div>
-                <div class="col">1</div>
-                <div class="col">1</div>
-                <div class="col">1</div>
-                <div class="col">1</div>
-                <div class="col">1</div>
-                <div class="col">1</div>
-                <div class="col">1</div>
-                <div class="col">1</div>
-                <div class="col">1</div>
-            </div>
-        </div>
-
-        <h3>Offsets</h3>
-        <div class="demo-grid">
-            <div class="row">
-                <div class="col offset-1">1</div>
-                <div class="offset-1"></div>
-            </div>
-            <div class="row">
-                <div class="col offset-2">1</div>
-                <div class="offset-2"></div>
-            </div>
-            <div class="row">
-                <div class="col offset-3">1</div>
-                <div class="offset-3"></div>
-            </div>
-            <div class="row">
-                <div class="col offset-4">1</div>
-                <div class="offset-4"></div>
-            </div>
-            <div class="row">
-                <div class="col offset-5">1</div>
-                <div class="offset-5"></div>
-            </div>
-        </div>
-
-        <br>
-
-        <h3>Columns (1-12)</h3>
-        <div class="demo-grid">
-            <div class="row">
-                <div class="col col-1">1</div>
-                <div class="col col-1">1</div>
-                <div class="col col-1">1</div>
-                <div class="col col-1">1</div>
-                <div class="col col-1">1</div>
-                <div class="col col-1">1</div>
-                <div class="col col-1">1</div>
-                <div class="col col-1">1</div>
-                <div class="col col-1">1</div>
-                <div class="col col-1">1</div>
-                <div class="col col-1">1</div>
-                <div class="col col-1">1</div>
-            </div>
-
-            <div class="row">
-                <div class="col col-2">2</div>
-                <div class="col col-2">2</div>
-                <div class="col col-2">2</div>
-                <div class="col col-2">2</div>
-                <div class="col col-2">2</div>
-                <div class="col col-2">2</div>
-            </div>
-
-            <div class="row">
-                <div class="col col-3">3</div>
-                <div class="col col-3">3</div>
-                <div class="col col-3">3</div>
-                <div class="col col-3">3</div>
-            </div>
-
-            <div class="row">
-                <div class="col col-4">4</div>
-                <div class="col col-4">4</div>
-                <div class="col col-4">4</div>
-            </div>
-
-            <div class="row">
-                <div class="col col-6">6</div>
-                <div class="col col-6">6</div>
-            </div>
-
-            <div class="row">
-                <div class="col col-12">12</div>
-            </div>
-
-            <h3>Auto width</h3>
-
-            <div class="row">
-                <div class="col">auto</div>
-            </div>
-            <div class="row">
-                <div class="col col-1">1</div>
-                <div class="col">auto</div>
-            </div>
-            <div class="row">
-                <div class="col col-2">2</div>
-                <div class="col">auto</div>
-            </div>
-            <div class="row">
-                <div class="col col-3">3</div>
-                <div class="col">auto</div>
-            </div>
-            <div class="row">
-                <div class="col col-4">4</div>
-                <div class="col">auto</div>
-            </div>
-            <div class="row">
-                <div class="col col-5">5</div>
-                <div class="col">auto</div>
-            </div>
-            <div class="row">
-                <div class="col col-6">6</div>
-                <div class="col">auto</div>
-            </div>
-            <div class="row">
-                <div class="col col-7">7</div>
-                <div class="col">auto</div>
-            </div>
-            <div class="row">
-                <div class="col col-8">8</div>
-                <div class="col">auto</div>
-            </div>
-            <div class="row">
-                <div class="col col-9">9</div>
-                <div class="col">auto</div>
-            </div>
-            <div class="row">
-                <div class="col col-10">10</div>
-                <div class="col">auto</div>
-            </div>
-            <div class="row">
-                <div class="col col-11">11</div>
-                <div class="col">auto</div>
-            </div>
-            <div class="row">
-                <div class="col col-12">12</div>
-            </div>
-
-            <h3>Grid with gutter (todo)</h3>
-            <div class="row">
-                <div class="col">1</div>
-            </div>
-
-            <div class="row">
-                <div class="col">1/2</div>
-                <div class="col">1/2</div>
-            </div>
-
-            <div class="row">
-                <div class="col">1/3</div>
-                <div class="col">1/3</div>
-                <div class="col">1/3</div>
-            </div>
-
-            <h3>Responsive
-                <span class="visible-xs">xs</span>
-                <span class="visible-sm">sm</span>
-                <span class="visible-md">md</span>
-                <span class="visible-lg">lg</span>
-            </h3>
-
-            <h4>1 column in xs</h4>
-            <div class="row xs-1">
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-            </div>
-
-            <br>
-
-            <h4>1 column in sm</h4>
-            <div class="row sm-1">
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-            </div>
-
-            <h4>1 column in md</h4>
-            <div class="row md-1">
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-            </div>
-
-            <h4>1 column in lg</h4>
-            <div class="row lg-1">
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-            </div>
-
-            <h4>Mix (xs-1 sm-2 md-3 lg-4)</h4>
-            <div class="row xs-1 sm-2 md-3 lg-4">
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-                <div class="col">col</div>
-            </div>
-
-
-            <!--
-            <div class="row">
-                <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">xs</div>
-                <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">xs</div>
-                <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">xs</div>
-            </div>
-            <div class="row">
-                <div class="col col-xs-12 col-sm-4 col-md-2 col-lg-1">xs</div>
-                <div class="col col-xs-12 col-sm-3 col-md-2 col-lg">xs</div>
-                <div class="col col-xs-12 col-sm col-md col-lg">xs</div>
-            </div>
-            <div class="row">
-                <div class="col col-sm-4">xs</div>
-                <div class="col col-sm-3">xs</div>
-                <div class="col col-sm">xs</div>
-            </div>
-            <div class="row">
-                <div class="col col-md">md</div>
-                <div class="col col-md">md</div>
-                <div class="col col-md">md</div>
-            </div>
-            <div class="row">
-                <div class="col col-lg">lg</div>
-                <div class="col col-lg">lg</div>
-                <div class="col col-lg">lg</div>
-            </div>
-            -->
-
-        </div>
-
-        <h2>Toolbar</h2>
-        <div class="row">
-            <div class="is-info">Option1</div>
-            <div class="is-primary">Option2</div>
-            <div class="is-warning">Option3</div>
-            <div class="is-gray is-space"></div>
-            <div class="is-danger">Option4</div>
-        </div>
-
-        <h2>Form (todo)</h2>
-        <form class="row max-2">
-            <label class="col">Text:</label>
-            <input type="text" placeholder="text">
-            <label class="col">Password:</label>
-            <input type="password" placeholder="password">
-            <label class="col">Number:</label>
-            <input type="number" placeholder="number">
-            <label class="col">Search:</label>
-            <input type="search" placeholder="search">
-            <button class="btn is-success">Save</button>
-        </form>
-
-        <br>
 
     </main>
 
