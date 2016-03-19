@@ -1,0 +1,33 @@
+.nav-brand {
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #ffffff;
+  padding: 0 0.5rem;
+}
+
+.nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  .nav-left, .nav-right {
+    display: flex;
+    flex-flow: row nowrap;
+    > * {
+      margin: 4px 2px;
+    }
+  }
+
+  .nav-left {
+    flex-grow: 0;
+    justify-content: flex-start;
+  }
+
+  .nav-right {
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+
+}
