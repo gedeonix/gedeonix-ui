@@ -8,10 +8,11 @@ var imports = require("postcss-import");
 var url = require("postcss-url");
 var precss = require('precss');
 var sourcemaps = require('gulp-sourcemaps');
-var autoprefixer = require('autoprefixer');
+//var autoprefixer = require('autoprefixer');
 var comments = require('postcss-discard-comments');
 var sorting = require('postcss-sorting');
 var stylelint = require("stylelint");
+var cssnext = require("cssnext");
 
 gulp.task('build-css', function () {
     var processors = [
@@ -19,7 +20,8 @@ gulp.task('build-css', function () {
         imports,
         sorting,
         stylelint,
-        autoprefixer({browsers: ['last 2 versions']}),
+        //autoprefixer({browsers: ['last 2 versions']}),
+        cssnext(),
         precss
     ];
 

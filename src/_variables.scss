@@ -1,29 +1,54 @@
+/**
+ * FONTS
+ */
 $font-family: 'Open Sans', sans-serif;
 $font-size: 16px;
 
+/**
+ * COLORS
+ */
+
 $white-color: #ffffff;
-$gray-color: #e0e0e0;
-$dark-color: #4e4f51;
-$primary-color: #55acee;
-$success-color: #94cd5a;
-$info-color: #6ad1dd;
-$warning-color: #ffb812;
-$danger-color: #fc6e51;
+$gray-color: #e0e0e0 !default;
 
-$text-color: #606060;
-$background-color: #ffffff;
+$primary-color: #55acee !default;
+$success-color: #94cd5a !default;
+$info-color: #6ad1dd !default;
+$warning-color: #ffb812 !default;
+$danger-color: #fc6e51 !default;
+$dark-color: #4e4f51 !default;
 
-$header-text-color: #e0e0e0;
-$header-background-color: #808080;
+$text-color: #606060 !default;
+$background-color: #ffffff !default;
 
-$footer-text-color: #ffffff;
-$footer-background-color: #d4d4d4;
+/**
+ * HEADER
+ */
+$header-text-color: #e0e0e0 !default;
+$header-background-color: #808080 !default;
 
+/**
+ * CONTROLS
+ */
+$label-color: #606060;
+$input-border-color: #d4d4d4;
+
+/**
+ * GRID
+ */
 $gutter: 1rem;
 
+/**
+ * RESPONSIVE
+ */
 $sm: 640px;
 $md: 1024px;
 $lg: 1440px;
 
-$label-color: #606060;
-$input-border-color: #d4d4d4;
+/**
+ * FOOTER
+ */
+$footer-text-color: #ffffff !default;
+$footer-background-color: #d4d4d4 !default;
+
+

@@ -2,6 +2,8 @@
   border: 1px solid #d4d4d4;
   background-color: $background-color;
 
+  font-size: 1rem;
+
   margin: 0;
   padding: 0.75rem 1rem;
   color: $text-color;
@@ -14,7 +16,6 @@
   width: auto;
 
   border-radius: 3px;
-  font-size: 1rem;
 
   &.is-primary, &.is-success, &.is-info, &.is-warning, &.is-danger, &.is-dark {
     color: #ffffff;

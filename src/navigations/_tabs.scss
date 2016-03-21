@@ -12,7 +12,7 @@
   li {
     display: block;
     a {
-      display: block;
+      display: inherit;
       padding: 0.5rem 1rem;
       margin: 1rem 0 0 0;
     }
@@ -34,7 +34,7 @@
     }
     li.active a {
       color: $text-color;
-      background-color: #ffffff;
+      background-color: $background-color;
     }
     li + li {
       margin-left: 5px;
@@ -43,7 +43,7 @@
 
   &.is-flat {
     a {
-      color: $text_color;
+      color: $text-color;
       text-align: center;
       text-decoration: none;
       &:hover {
@@ -70,3 +70,4 @@
     font-size: 1.4rem;
   }
 }
+
