@@ -77,10 +77,11 @@ h6 {
 
 pre {
   display: block;
-  padding: 0.3rem;
+  padding: 0.1rem;
   margin: 0 0 0.5rem;
+
   font-size: 1rem;
-  line-height: 1rem;
+  line-height: 0.9rem;
   word-break: break-all;
   word-wrap: break-word;
 
@@ -961,7 +962,7 @@ table td {
 .menu ul li a {
   color: #ffffff;
   display: block;
-  padding: 1rem;
+  padding: 15px;
   text-decoration: none;
 }
 
@@ -977,9 +978,9 @@ table td {
   display: none;
   position: absolute;
   background-color: #333;
-  border: 1px solid #222;
+  border: px solid #222;
   border-top: 0;
-  margin-left: -1px;
+  margin-left: -5px;
 }
 
 .menu ul ul li {

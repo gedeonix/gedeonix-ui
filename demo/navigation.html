@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="../css/gedeonix-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
 </head>
 
 <body>
@@ -55,6 +57,27 @@
             </div>
         </div>
 
+        <br>
+        <pre><code class="html">
+&lt;div class=&quot;container nav is-success&quot;&gt;
+    &lt;div class=&quot;nav-brand&quot;&gt;Gedeonix UI&lt;/div&gt;
+    &lt;div class=&quot;nav-right menu&quot;&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;dropdown&lt;/a&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
         <br>
 
         <div class="container nav is-warning">
@@ -214,5 +237,14 @@
             </p>
         </div>
     </footer>
+
+    <script>
+        window.onload = function() {
+            var aCodes = document.getElementsByTagName('pre');
+            for (var i=0; i < aCodes.length; i++) {
+                hljs.highlightBlock(aCodes[i]);
+            }
+        };
+    </script>
 
 </body>
