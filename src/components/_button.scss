@@ -24,10 +24,12 @@
 
   &.is-round {
     padding: 0.65rem 0.75rem;
-    border-radius: 50%;
+    border-radius: 1000px;
+    /*border-radius: 50%;*/
 
     &.is-sm, &.is-md, &.is-lg {
-      border-radius: 50%;
+      border-radius: 1000px;
+      /*border-radius: 50%;*/
     }
   }
 
