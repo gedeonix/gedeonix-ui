@@ -1,25 +1,50 @@
 /**
  * FONTS
  */
-$font-family: 'Open Sans', sans-serif;
-$font-size: 16px;
+$font-family:                   'Open Sans', sans-serif;
+$font-size:                     16px;
 
 /**
  * COLORS
  */
 
-$white-color: #ffffff;
-$gray-color: #e0e0e0 !default;
+$text-color:                    #606060 !default;
+$background-color:              #ffffff !default;
 
-$primary-color: #55acee !default;
-$success-color: #94cd5a !default;
-$info-color: #6ad1dd !default;
-$warning-color: #ffb812 !default;
-$danger-color: #fc6e51 !default;
-$dark-color: #4e4f51 !default;
+$white-color:                   #ffffff;
+$gray-color:                    #e0e0e0 !default;
 
-$text-color: #606060 !default;
-$background-color: #ffffff !default;
+$primary-color:                 #55acee !default;
+$success-color:                 #94cd5a !default;
+$info-color:                    #6ad1dd !default;
+$warning-color:                 #ffb812 !default;
+$danger-color:                  #fc6e51 !default;
+$dark-color:                    #4e4f51 !default;
+
+$btn-primary-color:             #ffffff !default;
+$btn-primary-background:        #65bcfe !default;
+$btn-primary-border:            #65bcfe !default;
+$btn-primary-hover:             #459cde !default;
+
+$btn-success-color:             #ffffff !default;
+$btn-success-background:        #5acd59 !default;
+$btn-success-border:            #94cd5a !default;
+$btn-success-hover:             #52cd90 !default;
+
+$btn-warning-color:             #ffffff !default;
+$btn-warning-background:        #ffa924 !default;
+$btn-warning-border:            #ffb812 !default;
+$btn-warning-hover:             #ffd11e !default;
+
+$btn-danger-color:              #ffffff !default;
+$btn-danger-background:         #fc573f !default;
+$btn-danger-border:             #fc573f !default;
+$btn-danger-hover:              #fc4016 !default;
+
+$btn-dark-color:                #ffffff !default;
+$btn-dark-background:           #4e4f51 !default;
+$btn-dark-border:               #4e4f51 !default;
+$btn-dark-hover: #8a8b8f !default;
 
 /**
  * HEADER

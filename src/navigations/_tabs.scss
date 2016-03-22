@@ -19,6 +19,12 @@
   }
 
   &.is-boxed {
+    li + li {
+      margin-left: 5px;
+    }
+  }
+
+  &.is-boxed {
     a {
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
@@ -26,20 +32,50 @@
       color: #ffffff;
       text-align: center;
       text-decoration: none;
-      background-color: #65bcfe;
       &:hover {
         color: #ffffff;
-        background-color: #459cde;
+      }
+      background-color: $btn-primary-background;
+      &:hover {
+        background-color: $btn-primary-hover;
+      }
+    }
+    &.is-primary a {
+      background-color: $btn-primary-background;
+      &:hover {
+        background-color: $btn-primary-hover;
+      }
+    }
+    &.is-success a {
+      background-color: $btn-success-background;
+      &:hover {
+        background-color: $btn-success-hover;
+      }
+    }
+    &.is-warning a {
+      background-color: $btn-warning-background;
+      &:hover {
+        background-color: $btn-warning-hover;
+      }
+    }
+    &.is-danger a {
+      background-color: $btn-danger-background;
+      &:hover {
+        background-color: $btn-danger-hover;
+      }
+    }
+    &.is-dark a {
+      background-color: $btn-dark-background;
+      &:hover {
+        background-color: $btn-dark-hover;
       }
     }
     li.active a {
       color: $text-color;
       background-color: $background-color;
     }
-    li + li {
-      margin-left: 5px;
-    }
   }
+
 
   &.is-flat {
     a {
