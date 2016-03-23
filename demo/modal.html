@@ -21,28 +21,47 @@
             <ul class="tabs is-boxed">
                 <li><a href="../index.html">Main</a></li>
                 <li><a href="typography.html">Typography</a></li>
-                <li class="active"><a href="">Container</a></li>
+                <li><a href="container.html">Container</a></li>
                 <li><a href="flex-grid.html">Flex Grid</a></li>
                 <li><a href="control.html">Control</a></li>
-                <li><a href="table.html">Table</a></li>
+                <li><a href="control.html">Table</a></li>
                 <li><a href="navigation.html">Navigation</a></li>
                 <li><a href="form.html">Form</a></li>
-                <li><a href="modal.html">Modal</a></li>
+                <li class="active"><a>Modal</a></li>
             </ul>
         </div>
     </nav>
 
-    <main class="main">
+    <main class="main container">
 
-        <div class="container is-gray">
-            <h1>Container</h1>
-            content container...
+        <h1>Modal</h1>
+
+        <button id="modal-button" class="btn">Open modal</button>
+
+        <div id="modal" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-container">
+                <div class="modal-content">
+                    <div class="modal-header is-info">Info</h3><div id="close1" class="close">x</div></div>
+                    <div class="modal-body">
+                        Simple example
+                    </div>
+                    <div class="modal-footer">
+                        <button id="close2" class="btn is-info">Ok</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="container-fluid is-gray">
-            <h1>Fluid container</h1>
-            content container...
-        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
     </main>
 
@@ -55,5 +74,22 @@
             </p>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.2.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $(".modal").hide();
+
+            $("#modal-button").click(function(){
+                $("#modal").fadeIn();
+            });
+
+            $("#close1, #close2").click(function(){
+                $("#modal").fadeOut();
+            });
+        });
+
+    </script>
 
 </body>

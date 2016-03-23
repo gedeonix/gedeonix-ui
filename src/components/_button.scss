@@ -17,11 +17,6 @@
 
   border-radius: 3px;
 
-  &.is-primary, &.is-success, &.is-info, &.is-warning, &.is-danger, &.is-dark {
-    color: #ffffff;
-    border-color: transparent;
-  }
-
   &.is-round {
     padding: 0.65rem 0.75rem;
     border-radius: 1000px;
@@ -53,6 +48,30 @@
   &.is-lg {
     border-radius: 5px;
     font-size: 1.4rem;
+  }
+
+  &.is-primary, &.is-success, &.is-info, &.is-warning, &.is-danger, &.is-dark {
+    color: #ffffff;
+    border-color: transparent;
+  }
+
+  &.is-primary:hover {
+    background-color: $btn-primary-hover;
+  }
+  &.is-success:hover {
+    background-color: $btn-success-hover;
+  }
+  &.is-info:hover {
+    background-color: $btn-info-hover;
+  }
+  &.is-warning:hover {
+    background-color: $btn-warning-hover;
+  }
+  &.is-danger:hover {
+    background-color: $btn-danger-hover;
+  }
+  &.is-dark:hover {
+    background-color: $btn-dark-hover;
   }
 
 }
