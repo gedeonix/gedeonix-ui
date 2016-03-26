@@ -18,7 +18,7 @@ table {
 }
 
 .table {
-  background: $background-color;
+  background-color: $background-color;
   margin-bottom: 10px;
 
   th, td {
@@ -45,17 +45,20 @@ table {
     border-width: 2px 0 0;
     color: #8b8b8b;
   }
-
-  &.is-border {
-    th, td {
-      border-width: 1px;
-    }
-    tr:last-child td {
-      border-bottom-width: 1px;
-    }
-  }
-
 }
+
+.table.is-border {
+  th {
+    background-color: #fafafa;
+  }
+  th, td {
+    border-width: 1px;
+  }
+  tr:last-child td {
+    border-bottom-width: 1px;
+  }
+}
+
 
 
 

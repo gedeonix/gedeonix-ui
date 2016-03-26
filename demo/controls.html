@@ -23,8 +23,8 @@
                 <li><a href="typography.html">Typography</a></li>
                 <li><a href="container.html">Container</a></li>
                 <li><a href="flex-grid.html">Flex Grid</a></li>
-                <li class="active"><a>Control</a></li>
-                <li><a href="table.html">Table</a></li>
+                <li class="active"><a>Controls</a></li>
+                <li><a href="tables.html">Tables</a></li>
                 <li><a href="navigation.html">Navigation</a></li>
                 <li><a href="form.html">Form</a></li>
                 <li><a href="modal.html">Modal</a></li>
@@ -33,10 +33,17 @@
     </nav>
 
     <main class="main container">
-        <h1>Control</h1>
+        <h1>Controls</h1>
 
         <h2>Button</h2>
 
+        <button class="btn">&lt;button&gt;</button>
+        <a class="btn">&lt;a&gt;</a>
+        <br>
+        <br>
+        <div class="btn">&lt;div&gt;</div>
+
+        <h3>Colors</h3>
         <div>
             <button class="btn">Default</button>
             <button class="btn is-primary">Primary</button>
@@ -47,8 +54,31 @@
             <button class="btn is-dark">Dark</button>
         </div>
 
+        <h3>Disabled</h3>
+        <div>
+            <button class="btn" disabled>Default</button>
+            <button class="btn is-primary" disabled>Primary</button>
+            <button class="btn is-success" disabled>Success</button>
+            <button class="btn is-info" disabled>Info</button>
+            <button class="btn is-warning" disabled>Warning</button>
+            <button class="btn is-danger" disabled>Danger</button>
+            <button class="btn is-dark" disabled>Dark</button>
+        </div>
+
+        <h3>Active (on focus)</h3>
+        <div>
+            <button class="btn active">Default</button>
+            <button class="btn is-primary active">Primary</button>
+            <button class="btn is-success active">Success</button>
+            <button class="btn is-info active">Info</button>
+            <button class="btn is-warning active">Warning</button>
+            <button class="btn is-danger active">Danger</button>
+            <button class="btn is-dark active">Dark</button>
+        </div>
+
         <h3>Size</h3>
         <div>
+            <button class="btn is-xs">Extra small</button>
             <button class="btn is-sm">Small</button>
             <button class="btn">Normal</button>
             <button class="btn is-md">Middle</button>
@@ -76,6 +106,18 @@
             <button class="btn is-danger"><i class="fa fa-check"></i></button>
             <button class="btn is-dark"><i class="fa fa-check"></i></button>
         </div>
+
+        <h3>Icon spin & pulse</h3>
+        <button class="btn"><i class="fa fa-spin fa-circle-o-notch"></i> Circle</button>
+        <button class="btn"><i class="fa fa-spin fa-cog"></i> Cog</button>
+        <button class="btn"><i class="fa fa-spin fa-refresh"></i> Refresh</button>
+        <button class="btn"><i class="fa fa-spin fa-spinner"></i> Spinner</button>
+        <br>
+        <br>
+        <button class="btn"><i class="fa fa-pulse fa-circle-o-notch"></i> Circle</button>
+        <button class="btn"><i class="fa fa-pulse fa-cog"></i> Cog</button>
+        <button class="btn"><i class="fa fa-pulse fa-refresh"></i> Refresh</button>
+        <button class="btn"><i class="fa fa-pulse fa-spinner"></i> Spinner</button>
 
         <h3>Round</h3>
         <div>
@@ -148,6 +190,53 @@
 
         <div class="alert is-dark">
             <strong>Dark:</strong> Description...
+        </div>
+
+        <h2>Group</h2>
+
+        <div class="group">
+            <button class="btn"><i class="fa fa-cog"></i></button>
+            <button class="btn"><i class="fa fa-calendar"></i></button>
+            <button class="btn"><i class="fa fa-archive"></i></button>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="group">
+            <button class="btn is-primary">A</button>
+            <button class="btn is-success">B</button>
+            <button class="btn is-danger">C</button>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="group">
+            <button class="btn">Save</button>
+            <button class="btn"><i class="fa fa-angle-down"></i></button>
+        </div>
+
+        <h3>Simple pagination</h3>
+
+        <div>
+            <button class="btn"><i class="fa fa-angle-left"></i></button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn"><i class="fa fa-angle-right"></i></button>
+        </div>
+
+        <br>
+
+        <div class="group">
+            <button class="btn is-sm"><i class="fa fa-angle-left"></i></button>
+            <button class="btn is-sm">2</button>
+            <button class="btn is-sm">3</button>
+            <button class="btn is-sm">4</button>
+            <button class="btn is-sm">5</button>
+            <button class="btn is-sm"><i class="fa fa-angle-right"></i></button>
         </div>
 
     </main>

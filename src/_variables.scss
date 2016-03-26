@@ -1,12 +1,5 @@
-/**
- * FONTS
- */
 $font-family:                   'Open Sans', sans-serif;
 $font-size:                     16px;
-
-/**
- * COLORS
- */
 
 $text-color:                    #606060 !default;
 $background-color:              #ffffff !default;
@@ -21,6 +14,13 @@ $warning-color:                 #ffb812 !default;
 $danger-color:                  #fc6e51 !default;
 $dark-color:                    #4e4f51 !default;
 
+$btn-font-size:                 1rem !default;
+
+$btn-default-color:             #ffffff !default;
+$btn-default-background:        transparent !default;
+$btn-default-border:            #d4d4d4 !default;
+$btn-default-hover:             #459cde !default;
+
 $btn-primary-color:             #ffffff !default;
 $btn-primary-background:        #65bcfe !default;
 $btn-primary-border:            #65bcfe !default;
@@ -30,6 +30,11 @@ $btn-success-color:             #ffffff !default;
 $btn-success-background:        #5acd59 !default;
 $btn-success-border:            #94cd5a !default;
 $btn-success-hover:             #52cd90 !default;
+
+$btn-info-color:                #ffffff !default;
+$btn-info-background:           #6ad1dd !default;
+$btn-info-border:               #72bbdd !default;
+$btn-info-hover:                #33e9ec !default;
 
 $btn-warning-color:             #ffffff !default;
 $btn-warning-background:        #ffa924 !default;
@@ -46,35 +51,27 @@ $btn-dark-background:           #4e4f51 !default;
 $btn-dark-border:               #4e4f51 !default;
 $btn-dark-hover:                #8a8b8f !default;
 
+$btn-radius:                    4px !default;
+
+$btn-xs-radius:                 2px !default;
+$btn-sm-radius:                 3px !default;
+$btn-md-radius:                 5px !default;
+$btn-lg-radius:                 6px !default;
+
 $input-background:              $background-color !default;
 
-/**
- * HEADER
- */
 $header-text-color: #e0e0e0 !default;
 $header-background-color: #808080 !default;
 
-/**
- * CONTROLS
- */
 $label-color: #606060;
 $input-border-color: #d4d4d4;
 
-/**
- * GRID
- */
 $gutter: 1rem;
 
-/**
- * RESPONSIVE
- */
 $sm: 640px;
 $md: 1024px;
 $lg: 1440px;
 
-/**
- * FOOTER
- */
 $footer-text-color: #ffffff !default;
 $footer-background-color: #d4d4d4 !default;
 
