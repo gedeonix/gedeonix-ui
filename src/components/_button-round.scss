@@ -1,0 +1,10 @@
+.btn.is-round {
+  line-height: 1em;
+  /*font-size: 1rem;*/
+  padding: 0.75em;
+  border-radius: 1000px; /*border-radius: 50%;*/
+
+  &.is-sm, &.is-md, &.is-lg {
+    border-radius: 1000px; /*border-radius: 50%;*/
+  }
+}

@@ -4,8 +4,8 @@
 
   text-decoration: none;
 
-  line-height: normal;
   vertical-align: middle;
+  line-height: normal;  /*line-height: 1em;*/
   text-align: center;
 
   color: $text-color;
@@ -21,6 +21,9 @@
 
   border: 1px solid $btn-default-border;
   border-radius: $btn-radius;
+
+  display: inline-block;
+  vertical-align: baseline;
 
   &:hover {
     border-color: #a0a0a0;
@@ -127,17 +130,9 @@
   }
 }
 
-.btn.is-round {
-  padding: 0.65rem 0.75rem;
-  border-radius: 1000px; /*border-radius: 50%;*/
-
-  &.is-sm, &.is-md, &.is-lg {
-    border-radius: 1000px; /*border-radius: 50%;*/
-  }
-}
-
 .btn[disabled], .btn[disabled]:hover {
   background-color: #e0e0e0;
   border-color: #e0e0e0;
   cursor: not-allowed;
 }
+

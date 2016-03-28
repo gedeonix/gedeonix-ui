@@ -1,4 +1,9 @@
-label {
-  color: $label-color;
-  font-weight: bold;
+.label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  border-radius: 0.2rem;
+  padding: 0.25em 0.5em;
+  background-color: $gray-color;
+  color: $white-color;
+
 }
