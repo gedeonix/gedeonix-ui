@@ -21,7 +21,7 @@
 
     <header class="header is-fixed is-shadow">
         <div class="container nav">
-            <div class="nav-brand">Gedeonix UI</div>
+            <div class="brand">Gedeonix UI</div>
         </div>
     </header>
 
@@ -29,7 +29,7 @@
 
     <nav class="is-primary">
         <div class="container">
-            <ul class="tabs is-boxed">
+            <ul class="menu is-tab">
                 <li><a href="../index.html">Main</a></li>
                 <li><a href="typography.html">Typography</a></li>
                 <li><a href="container.html">Container</a></li>
@@ -46,80 +46,8 @@
     <main class="main container">
         <h1>Navigation</h1>
 
-        <h2>Navbar</h2>
-
-        <div class="container nav is-success">
-            <div class="nav-brand">Gedeonix UI</div>
-            <div class="nav-right menu">
-                <ul>
-                    <li><a href="#">item</a></li>
-                    <li><a href="#">item</a></li>
-                    <li><a href="#">dropdown</a>
-                        <ul>
-                            <li><a href="#">item</a></li>
-                            <li><a href="#">item</a></li>
-                            <li><a href="#">item</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">item</a></li>
-                    <li><a href="#">item</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <br>
-        <pre><code class="language-markup">&lt;div class=&quot;container nav is-success&quot;&gt;
-    &lt;div class=&quot;nav-brand&quot;&gt;Gedeonix UI&lt;/div&gt;
-    &lt;div class=&quot;nav-right menu&quot;&gt;
-        &lt;ul&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;dropdown&lt;/a&gt;
-            &lt;ul&gt;
-                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-        <br>
-
-        <div class="container nav is-warning">
-            <div class="nav-brand">Gedeonix UI</div>
-            <div class="nav-right">
-                <a class="btn is-dark is-round"><i class="fa fa-info"></i> Info</a>
-            </div>
-        </div>
-        <br>
-        <div class="container nav is-dark">
-            <div class="nav-brand">Gedeonix UI</div>
-            <div class="nav-left">
-                <a class="btn is-info is-sm">Option1</a>
-            </div>
-            <div class="nav-right">
-                <a class="btn is-success is-sm"><i class="fa fa-user"></i> Option4</a>
-                <a class="btn is-primary is-sm"><i class="fa fa-lock"></i> Option5</a>
-                <a class="btn is-danger is-sm"><i class="fa fa-power-off"></i> Option6</a>
-            </div>
-        </div>
-        <br>
-        <div class="container nav is-danger">
-            <div class="nav-brand">Gedeonix UI</div>
-            <ul class="nav-right tabs is-boxed is-danger is-sm">
-                <li><a href="">Tab1</a></li>
-                <li class="active"><a href="">Tab2</a></li>
-                <li><a href="">Tab3</a></li>
-            </ul>
-        </div>
-
-        <h2>Toolbar</h2>
-
-        <h3>Simple toolbar</h3>
-        <div class="container row">
+        <h2>Simple row and gutter</h2>
+        <div class="row is-gutter">
             <div class="is-info">Option1</div>
             <div class="is-primary">Option2</div>
             <div class="is-warning">Option3</div>
@@ -129,8 +57,131 @@
 
         <br>
 
+        <h2>Menu</h2>
+
+        <h3>Simple</h3>
+        <div class="row is-gutter is-warning">
+            <ul class="menu">
+                <li class="active"><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li><a href="#">Option 3</a></li>
+            </ul>
+        </div>
+
+        <h3>Box</h3>
+        <div class="row is-gutter">
+            <ul class="menu is-box">
+                <li class="active"><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li><a href="#">Option 3</a></li>
+            </ul>
+        </div>
+        <br>
+
+        <h3>Flat</h3>
+        <div class="row is-gutter">
+            <ul class="menu is-flat">
+                <li class="active"><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li><a href="#">Option 3</a></li>
+            </ul>
+        </div>
+        <br>
+
+        <h3>Tabs</h3>
+        <div class="row is-danger">
+            <div class="brand">Gedeonix UI</div>
+            <ul class="menu is-tab is-danger is-lg is-right">
+                <li><a href="">Tab1</a></li>
+                <li class="active"><a href="">Tab2</a></li>
+                <li><a href="">Tab3</a></li>
+            </ul>
+        </div>
+
+        <h3>With submenu</h3>
+
+        <div class="row is-gutter is-success">
+            <div class="brand">Gedeonix UI</div>
+            <ul class="menu">
+                <li><a>Option 1</a>
+                    <ul>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                    </ul>
+                </li>
+                <li><a>Option 2</a>
+                    <ul>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                        <li><a>sub menu</a>
+                            <ul>
+                                <li><a href="#">item</a></li>
+                                <li><a href="#">item</a></li>
+                                <li><a href="#">item</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Option 3</a></li>
+            </ul>
+            <div class="is-right">
+                <a class="btn is-dark is-round"><i class="fa fa-info"></i> Info</a>
+            </div>
+        </div>
+        <br>
+
+        <h3>Complex</h3>
+
+        <div class="row is-gutter is-dark">
+            <div class="brand">Gedeonix UI</div>
+            <a class="btn is-info is-sm">Option1</a>
+            <div class="group is-right">
+                <a class="btn is-success is-sm"><i class="fa fa-user"></i> Option4</a>
+                <a class="btn is-primary is-sm"><i class="fa fa-lock"></i> Option5</a>
+                <a class="btn is-danger is-sm"><i class="fa fa-power-off"></i> Option6</a>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row  is-gutter is-success">
+            <div class="brand is-gray">Brand</div>
+            <ul class="menu is-tab is-danger">
+                <li><a>1</a></li>
+                <li><a>2</a></li>
+                <li class="active"><a>3</a></li>
+            </ul>
+            <ul class="menu is-box is-info">
+                <li><a>4</a></li>
+                <li><a>5</a></li>
+                <li class="active"><a>6</a></li>
+            </ul>
+            <ul class="menu is-flat is-dark">
+                <li><a>4</a></li>
+                <li><a>5</a></li>
+                <li class="active"><a>6</a></li>
+            </ul>
+            <ul class="menu is-dropdown is-warning">
+                <li><a>7</a></li>
+                <li><a>8</a></li>
+                <li><a>9</a>
+                    <ul>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="is-right">
+                <a class="btn">Simple</a>
+                <a class="btn is-dark is-round"><i class="fa fa-info"></i> Info</a>
+            </div>
+
+        </div>
+
         <h3>Size and colors</h3>
-        <ul class="container toolbar is-xs">
+        <ul class="container menu is-box is-xs">
             <li><a href="">Option 1</a></li>
             <li class="active"><a href="">Option2</a></li>
             <li><a href="">Option 3</a></li>
@@ -141,7 +192,7 @@
 
         <br>
 
-        <ul class="container toolbar is-warning is-sm">
+        <ul class="container menu is-box is-warning is-sm">
             <li><a href="">Option 1</a></li>
             <li class="active"><a href="">Option2</a></li>
             <li><a href="">Option 3</a></li>
@@ -152,7 +203,7 @@
 
         <br>
 
-        <ul class="container toolbar is-danger">
+        <ul class="container menu is-box is-danger">
             <li><a href="">Option 1</a></li>
             <li class="active"><a href="">Option2</a></li>
             <li><a href="">Option 3</a></li>
@@ -163,7 +214,7 @@
 
         <br>
 
-        <ul class="container toolbar is-dark is-md">
+        <ul class="container menu is-box is-dark is-md">
             <li><a href="">Option 1</a></li>
             <li class="active"><a href="">Option2</a></li>
             <li><a href="">Option 3</a></li>
@@ -174,7 +225,7 @@
 
         <br>
 
-        <ul class="container toolbar is-info is-lg">
+        <ul class="container menu is-box is-info is-lg">
             <li><a href="">Option 1</a></li>
             <li class="active"><a href="">Option2</a></li>
             <li><a href="">Option 3</a></li>
@@ -185,7 +236,7 @@
 
         <h3>Disabled</h3>
 
-        <ul class="container toolbar is-info is-lg">
+        <ul class="container menu is-box is-info is-lg">
             <li class="active"><a href="">Option1</a></li>
             <li><a href="">Option 2</a></li>
             <li class="disabled"><a href="" class="disabled">Option3</a></li>
@@ -195,7 +246,7 @@
         <h2>Tabs</h2>
         <h3>Tab is boxed</h3>
         <div class="is-primary">
-            <ul class="container tabs is-boxed">
+            <ul class="container menu is-tab is-gutter">
                 <li><a href="">Tab1</a></li>
                 <li class="active"><a href="">Tab2</a></li>
                 <li><a href="">Tab3</a></li>
@@ -207,7 +258,7 @@
 
         <h3>Tab is flat</h3>
         <div class="">
-            <ul class="container tabs is-flat">
+            <ul class="container menu is-flat">
                 <li><a href="">Tab1</a></li>
                 <li class="active"><a href="">Tab2</a></li>
                 <li><a href="">Tab3</a></li>
@@ -218,62 +269,62 @@
         </div>
 
         <h3>Size</h3>
-        <ul class="container tabs is-boxed is-sm is-primary">
+        <ul class="container menu is-tab is-sm is-primary">
             <li><a href="">Tab1</a></li>
             <li class="active"><a href="">Tab2</a></li>
             <li><a href="">Tab3</a></li>
         </ul>
         <br>
-        <ul class="container tabs is-boxed is-primary">
+        <ul class="container menu is-tab is-primary">
             <li><a href="">Tab1</a></li>
             <li class="active"><a href="">Tab2</a></li>
             <li><a href="">Tab3</a></li>
         </ul>
         <br>
-        <ul class="container tabs is-boxed is-md is-primary">
+        <ul class="container menu is-tab is-md is-primary">
             <li><a href="">Tab1</a></li>
             <li class="active"><a href="">Tab2</a></li>
             <li><a href="">Tab3</a></li>
         </ul>
         <br>
-        <ul class="container tabs is-boxed is-lg is-primary">
+        <ul class="container menu is-tab is-lg is-primary">
             <li><a href="">Tab1</a></li>
             <li class="active"><a href="">Tab2</a></li>
             <li><a href="">Tab3</a></li>
         </ul>
 
         <h3>Color (todo)</h3>
-        <ul class="container tabs is-boxed is-info">
+        <ul class="container menu is-tab is-info">
             <li><a href="">Tab1</a></li>
             <li class="active"><a href="">Tab2</a></li>
             <li><a href="">Tab3</a></li>
         </ul>
         <br>
-        <ul class="container tabs is-boxed is-primary">
+        <ul class="container menu is-tab is-primary">
             <li><a href="">Tab1</a></li>
             <li class="active"><a href="">Tab2</a></li>
             <li><a href="">Tab3</a></li>
         </ul>
         <br>
-        <ul class="container tabs is-boxed is-success">
+        <ul class="container menu is-tab is-success">
             <li><a href="">Tab1</a></li>
             <li class="active"><a href="">Tab2</a></li>
             <li><a href="">Tab3</a></li>
         </ul>
         <br>
-        <ul class="container tabs is-boxed is-danger">
+        <ul class="container menu is-tab is-danger">
             <li><a href="">Tab1</a></li>
             <li class="active"><a href="">Tab2</a></li>
             <li><a href="">Tab3</a></li>
         </ul>
         <br>
-        <ul class="container tabs is-boxed is-warning">
+        <ul class="container menu is-tab is-warning">
             <li><a href="">Tab1</a></li>
             <li class="active"><a href="">Tab2</a></li>
             <li><a href="">Tab3</a></li>
         </ul>
         <br>
-        <ul class="container tabs is-boxed is-dark">
+        <ul class="container menu is-tab is-dark">
             <li><a href="">Tab1</a></li>
             <li class="active"><a href="">Tab2</a></li>
             <li><a href="">Tab3</a></li>

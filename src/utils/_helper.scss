@@ -81,3 +81,17 @@
 .is-shadow {
   box-shadow: 1px 1px 1px #2c2c2c;
 }
+
+.is-left {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 0;
+  justify-content: flex-start;
+}
+
+.is-right {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
