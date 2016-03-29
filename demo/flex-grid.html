@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="../css/gedeonix-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/prism.css">
+    <script src="js/prism.js"></script>
+
     <style>
 
         /* only diagnostic */
@@ -21,6 +24,14 @@
         }
         .demo-grid .row {
             background-color: #a4a4a4;
+        }
+
+        .main {
+            background-color: #f0f0f0;
+        }
+        .demo-row {
+            background-color: #ffff80;
+            outline: 1px dashed #ff0000;
         }
 
     </style>
@@ -54,7 +65,20 @@
 
         <h2>Flex grid</h2>
 
-         <div class="row is-text-center">
+        <h3>With gutter</h3>
+        <div class="row is-text-center is-gutter demo-row">
+            <div class="col is-warning">1</div>
+            <div class="col is-danger">2</div>
+            <div class="col is-primary">3</div>
+        </div>
+        <pre><code class="language-markup">&lt;div class=&quot;row is-gutter&quot;&gt;
+    &lt;div class=&quot;col is-warning&quot;&gt;1&lt;/div&gt;
+    &lt;div class=&quot;col is-danger&quot;&gt;2&lt;/div&gt;
+    &lt;div class=&quot;col is-primary&quot;&gt;3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+        <h3>Without gutter</h3>
+        <div class="row is-text-center no-gutter demo-row">
             <div class="col is-warning">1</div>
             <div class="col is-danger">2</div>
             <div class="col is-primary">3</div>

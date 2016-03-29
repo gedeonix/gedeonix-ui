@@ -6,6 +6,27 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="../css/gedeonix-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/prism.css">
+    <script src="js/prism.js"></script>
+
+    <style>
+
+        /* only diagnostic */
+        .main {
+            background-color: #f0f0f0;
+        }
+        .container1 {
+            background-color: #ffff80;
+            outline: 1px dashed #ff0000;
+        }
+        .content1 {
+            background-color: #ffbf4e;
+            outline: 1px dashed #0000ff;
+        }
+
+
+    </style>
+
 </head>
 
 <body>
@@ -34,14 +55,35 @@
 
     <main class="main">
 
-        <div class="container is-gray">
-            <h1>Container</h1>
-            content container...
+        <h1 class="container">Container</h1>
+
+        <div class="container container1 is-gutter">
+            <div class="content1">
+                <h1>Default with gutter</h1>
+                content container...
+            </div>
         </div>
 
-        <div class="container-fluid is-gray">
-            <h1>Fluid container</h1>
-            content container...
+        <div class="container container1 no-gutter">
+            <div class="content1">
+                <h1>Container without gutter</h1>
+                content container...
+            </div>
+        </div>
+
+        <h1 class="container">Fluid container</h1>
+        <div class="container-fluid container1 is-gutter">
+            <div class="content1">
+                <h1>Default with gutter</h1>
+                content container...
+            </div>
+        </div>
+
+        <div class="container-fluid container1 no-gutter">
+            <div class="content1">
+                <h1>Container without gutter</h1>
+                content container...
+            </div>
         </div>
 
     </main>

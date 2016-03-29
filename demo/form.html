@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="../css/gedeonix-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/prism.css">
+    <script src="js/prism.js"></script>
 </head>
 
 <body>
@@ -33,8 +35,29 @@
     </nav>
 
     <main class="main container">
-        <h1>Form (TODO)</h1>
+        <h1>Form</h1>
 
+        <h2>Simple</h2>
+        <form class="section">
+            <div class="control">
+                <label>Email:</label>
+                <input type="email">
+            </div>
+            <div class="control">
+                <label>Password:</label>
+                <input type="password">
+            </div>
+            <div class="control checkbox">
+                <input type="checkbox">
+                <label>Terms...</label>
+            </div>
+            <div class="control">
+                <button class="btn is-primary" type="submit">Login</button>
+            </div>
+        </form>
+
+
+        <!--
         <h2>Example 1</h2>
         <form class="row max-2">
             <label class="col">Text:</label>
@@ -88,7 +111,7 @@
                 <input type="submit" value="Submit" />
             </div>
         </form>
-
+        -->
     </main>
 
     <footer class="footer">

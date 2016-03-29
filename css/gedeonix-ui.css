@@ -114,7 +114,7 @@ pre {
   background-color: #ffffff;
 
   margin: 0;
-  padding: 0.5em 1em;
+  padding: 0.5em 0.5em;
   width: auto;
 
   cursor: pointer;
@@ -287,6 +287,28 @@ pre {
   border-color: #dc4a38;
 }
 
+/*
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  font-size: 24px;
+  display: inline-block;
+}
+
+input[type=checkbox] + label:before {
+  content: "\f096";
+  letter-spacing: 10px;
+}
+
+input[type=checkbox]:checked + label:before {
+  content: "\f046";
+  letter-spacing: 5px;
+}
+*/
+
 .label {
   font-size: 0.75rem;
   font-weight: 800;
@@ -362,6 +384,10 @@ input[type=text], input[type=password], input[type=number], input[type=email], i
 
 .group.vertical .btn:last-child{
   border-radius: 0 0 4px 4px;
+}
+
+.control {
+  margin-bottom: 0.5em;
 }
 
 label {
@@ -1454,6 +1480,13 @@ table td {
   font-size: 1.4rem;
 }
 
+.section {
+  border-radius: 5px;
+  border: 1px solid #c0c0c0;
+  padding: 1em;
+  margin: 1rem 0;
+}
+
 .header {
   color: #e0e0e0;
   background-color: #808080;
@@ -1475,10 +1508,6 @@ table td {
 
 .footer a {
   color: #ffffff;
-}
-
-.is-gutter {
-  margin: 1rem;
 }
 
 .is-text-center {
@@ -1543,6 +1572,26 @@ table td {
 
 .is-show {
   display: block;
+}
+
+.is-gutter {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.no-gutter {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.is-fixed {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.is-shadow {
+  box-shadow: 1px 1px 1px #2c2c2c;
 }
 
 

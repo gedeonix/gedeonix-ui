@@ -1,0 +1,21 @@
+/*
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  font-size: 24px;
+  display: inline-block;
+}
+
+input[type=checkbox] + label:before {
+  content: "\f096";
+  letter-spacing: 10px;
+}
+
+input[type=checkbox]:checked + label:before {
+  content: "\f046";
+  letter-spacing: 5px;
+}
+*/

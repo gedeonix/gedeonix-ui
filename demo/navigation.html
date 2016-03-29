@@ -6,17 +6,26 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="../css/gedeonix-ui.css" rel="stylesheet">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/default.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="css/prism.css">
+    <script src="js/prism.js"></script>
+
+    <style>
+        .fixed-space {
+            margin-bottom: 39px;
+        }
+
+    </style>
 </head>
 
 <body>
 
-    <header class="header">
+    <header class="header is-fixed is-shadow">
         <div class="container nav">
             <div class="nav-brand">Gedeonix UI</div>
         </div>
     </header>
+
+    <div class="fixed-space"></div>
 
     <nav class="is-primary">
         <div class="container">
@@ -59,8 +68,7 @@
         </div>
 
         <br>
-        <pre><code class="html">
-&lt;div class=&quot;container nav is-success&quot;&gt;
+        <pre><code class="language-markup">&lt;div class=&quot;container nav is-success&quot;&gt;
     &lt;div class=&quot;nav-brand&quot;&gt;Gedeonix UI&lt;/div&gt;
     &lt;div class=&quot;nav-right menu&quot;&gt;
         &lt;ul&gt;
@@ -77,8 +85,7 @@
             &lt;li&gt;&lt;a href=&quot;#&quot;&gt;item&lt;/a&gt;&lt;/li&gt;
         &lt;/ul&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-        </code></pre>
+&lt;/div&gt;</code></pre>
         <br>
 
         <div class="container nav is-warning">
