@@ -16,6 +16,7 @@
     "gulp-postcss": "6.1.0",
     "gulp-sourcemaps": "1.6.0",
     "postcss": "5.0.19",
+    "postcss-calc": "*",
     "postcss-color-function": "^2.0.1",
     "postcss-discard-comments": "2.0.4",
     "postcss-import": "8.0.2",

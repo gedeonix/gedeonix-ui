@@ -28,72 +28,20 @@
     max-width: 100%;
   }
 
+  /*
   .col-xs {
     flex-grow: 1;
     flex-basis: 0;
     max-width: 100%;
   }
+  */
 
-  .col-1 {
-    flex-basis: 8.3333333%;
-    max-width: 8.3333333%;
+  @for $i from 1 to $columns {
+    .col-$i {
+      flex-basis: calc($i*100/$columns)%;
+      max-width: calc($i*100/$columns)%;
+    }
   }
-
-  .col-2 {
-    flex-basis: 16.6666667%;
-    max-width: 16.6666667%;
-  }
-
-  .col-3 {
-    flex-basis: 25%;
-    max-width: 25%;
-  }
-
-  .col-4 {
-    flex-basis: 33.3333333%;
-    max-width: 33.3333333%;
-  }
-
-  .col-5 {
-    flex-basis: 41.6666667%;
-    max-width: 41.6666667%;
-  }
-
-  .col-6 {
-    flex-basis: 50%;
-    max-width: 50%;
-  }
-
-  .col-7 {
-    flex-basis: 58.3333333%;
-    max-width: 58.3333333%;
-  }
-
-  .col-8 {
-    flex-basis: 66.6666667%;
-    max-width: 66.6666667%;
-  }
-
-  .col-9 {
-    flex-basis: 75%;
-    max-width: 75%;
-  }
-
-  .col-10 {
-    flex-basis: 83.3333333%;
-    max-width: 83.3333333%;
-  }
-
-  .col-11 {
-    flex-basis: 91.6666667%;
-    max-width: 91.6666667%;
-  }
-
-  .col-12 {
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-
 }
 
 /*
@@ -106,166 +54,58 @@
     margin-right: 0;
   }
 }
+
+[class*="col-xs"] {
+  flex: 0 0 auto;
 */
 
 @media all {
-
-  .row.lg-1 > .col {
-    min-width: 100%;
-  }
-  .row.lg-2 > .col {
-    min-width: 50%;
-  }
-  .row.lg-3 > .col {
-    min-width: 33.3333333%;
-  }
-  .row.lg-4 > .col {
-    min-width: 25%;
-  }
-  .row.lg-5 >  .col {
-    min-width: 20%;
-  }
-  .row.lg-6 > .col {
-    min-width: 16.6666667%;
+  @for $i from 1 to $columns {
+    .row.lg-$i > .col {
+      min-width: calc(100/$i)%;
+    }
   }
 }
 
 @media all and (max-width: $lg) {
-
-  .row.md-1 > .col {
-    min-width: 100%;
-  }
-  .row.md-2 > .col {
-    min-width: 50%;
-  }
-  .row.md-3 > .col {
-    min-width: 33.3333333%;
-  }
-  .row.md-4 > .col {
-    min-width: 25%;
-  }
-  .row.md-5 >  .col {
-    min-width: 20%;
-  }
-  .row.md-6 > .col {
-    min-width: 16.6666667%;
+  @for $i from 1 to $columns {
+    .row.md-$i > .col {
+      min-width: calc(100/$i)%;
+    }
   }
 }
 
 @media all and (max-width: $md) {
-
-  .row.sm-1 > .col {
-    min-width: 100%;
-  }
-  .row.sm-2 > .col {
-    min-width: 50%;
-  }
-  .row.sm-3 > .col {
-    min-width: 33.3333333%;
-  }
-  .row.sm-4 > .col {
-    min-width: 25%;
-  }
-  .row.sm-5 >  .col {
-    min-width: 20%;
-  }
-  .row.sm-6 > .col {
-    min-width: 16.6666667%;
+  @for $i from 1 to $columns {
+    .row.sm-$i > .col {
+      min-width: calc(100/$i)%;
+    }
   }
 }
 
 @media all and (max-width: $sm) {
 
-  .row.xs-1 > .col {
-    min-width: 100%;
-  }
-  .row.xs-2 > .col {
-    min-width: 50%;
-  }
-  .row.xs-3 > .col {
-    min-width: 33.3333333%;
-  }
-  .row.xs-4 > .col {
-    min-width: 25%;
-  }
-  .row.xs-5 >  .col {
-    min-width: 20%;
-  }
-  .row.xs-6 > .col {
-    min-width: 16.6666667%;
+  @for $i from 1 to $columns {
+    .row.xs-$i > .col {
+      min-width: calc(100/$i)%;
+    }
   }
 }
 
-/*
-  [class*="col-xs"] {
-  flex: 0 0 auto;
-}
-*/
+@media all {
 
-.col-xs {
-  flex-grow: 1;
-  flex-basis: 0;
-  max-width: 100%;
-}
+  .col-xs {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+  }
 
-.col-xs-1 {
-  flex-basis: 8.3333333%;
-  max-width: 8.3333333%;
-}
-
-.col-xs-2 {
-  flex-basis: 16.6666667%;
-  max-width: 16.6666667%;
-}
-
-.col-xs-3 {
-  flex-basis: 25%;
-  max-width: 25%;
-}
-
-.col-xs-4 {
-  flex-basis: 33.3333333%;
-  max-width: 33.3333333%;
-}
-
-.col-xs-5 {
-  flex-basis: 41.6666667%;
-  max-width: 41.6666667%;
-}
-
-.col-xs-6 {
-  flex-basis: 50%;
-  max-width: 50%;
-}
-
-.col-xs-7 {
-  flex-basis: 58.3333333%;
-  max-width: 58.3333333%;
-}
-
-.col-xs-8 {
-  flex-basis: 66.6666667%;
-  max-width: 66.6666667%;
-}
-
-.col-xs-9 {
-  flex-basis: 75%;
-  max-width: 75%;
-}
-
-.col-xs-10 {
-  flex-basis: 83.3333333%;
-  max-width: 83.3333333%;
-}
-
-.col-xs-11 {
-  flex-basis: 91.6666667%;
-  max-width: 91.6666667%;
-}
-
-.col-xs-12 {
-  flex-basis: 100%;
-  max-width: 100%;
+  @for $i from 1 to $columns {
+    .col-xs-$i {
+      flex-basis: calc($i*100/$columns)%;
+      max-width: calc($i*100/$columns)%;
+    }
+  }
 }
 
 @media all and (min-width: $sm) {
@@ -275,69 +115,15 @@
 
   .col-sm {
     flex-grow: 1;
-    flex-grow: 1;
     flex-basis: 0;
     max-width: 100%;
   }
 
-  .col-sm-1 {
-    flex-basis: 8.3333333%;
-    max-width: 8.3333333%;
-  }
-
-  .col-sm-2 {
-    flex-basis: 16.6666667%;
-    max-width: 16.6666667%;
-  }
-
-  .col-sm-3 {
-    flex-basis: 25%;
-    max-width: 25%;
-  }
-
-  .col-sm-4 {
-    flex-basis: 33.3333333%;
-    max-width: 33.3333333%;
-  }
-
-  .col-sm-5 {
-    flex-basis: 41.6666667%;
-    max-width: 41.6666667%;
-  }
-
-  .col-sm-6 {
-    flex-basis: 50%;
-    max-width: 50%;
-  }
-
-  .col-sm-7 {
-    flex-basis: 58.3333333%;
-    max-width: 58.3333333%;
-  }
-
-  .col-sm-8 {
-    flex-basis: 66.6666667%;
-    max-width: 66.6666667%;
-  }
-
-  .col-sm-9 {
-    flex-basis: 75%;
-    max-width: 75%;
-  }
-
-  .col-sm-10 {
-    flex-basis: 83.3333333%;
-    max-width: 83.3333333%;
-  }
-
-  .col-sm-11 {
-    flex-basis: 91.6666667%;
-    max-width: 91.6666667%;
-  }
-
-  .col-sm-12 {
-    flex-basis: 100%;
-    max-width: 100%;
+  @for $i from 1 to $columns {
+    .col-sm-$i {
+      flex-basis: calc($i*100/$columns)%;
+      max-width: calc($i*100/$columns)%;
+    }
   }
 }
 
@@ -352,64 +138,11 @@
     max-width: 100%;
   }
 
-  .col-md-1 {
-    flex-basis: 8.3333333%;
-    max-width: 8.3333333%;
-  }
-
-  .col-md-2 {
-    flex-basis: 16.6666667%;
-    max-width: 16.6666667%;
-  }
-
-  .col-md-3 {
-    flex-basis: 25%;
-    max-width: 25%;
-  }
-
-  .col-md-4 {
-    flex-basis: 33.3333333%;
-    max-width: 33.3333333%;
-  }
-
-  .col-md-5 {
-    flex-basis: 41.6666667%;
-    max-width: 41.6666667%;
-  }
-
-  .col-md-6 {
-    flex-basis: 50%;
-    max-width: 50%;
-  }
-
-  .col-md-7 {
-    flex-basis: 58.3333333%;
-    max-width: 58.3333333%;
-  }
-
-  .col-md-8 {
-    flex-basis: 66.6666667%;
-    max-width: 66.6666667%;
-  }
-
-  .col-md-9 {
-    flex-basis: 75%;
-    max-width: 75%;
-  }
-
-  .col-md-10 {
-    flex-basis: 83.3333333%;
-    max-width: 83.3333333%;
-  }
-
-  .col-md-11 {
-    flex-basis: 91.6666667%;
-    max-width: 91.6666667%;
-  }
-
-  .col-md-12 {
-    flex-basis: 100%;
-    max-width: 100%;
+  @for $i from 1 to $columns {
+    .col-md-$i {
+      flex-basis: calc($i*100/$columns)%;
+      max-width: calc($i*100/$columns)%;
+    }
   }
 }
 
@@ -424,118 +157,25 @@
     max-width: 100%;
   }
 
-  .col-lg-1 {
-    flex-basis: 8.3333333%;
-    max-width: 8.3333333%;
+  @for $i from 1 to $columns {
+    .col-lg-$i {
+      flex-basis: calc($i*100/$columns)%;
+      max-width: calc($i*100/$columns)%;
+    }
   }
+}
 
-  .col-lg-2 {
-    flex-basis: 16.6666667%;
-    max-width: 16.6666667%;
+@for $i from 1 to $columns {
+  .max-$i .col {
+    min-width: calc(100/$i)%;
   }
+}
 
-  .col-lg-3 {
-    flex-basis: 25%;
-    max-width: 25%;
+@for $i from 1 to $columns {
+  .offset-$i {
+    margin-left: calc($i*100/$columns)%;
   }
-
-  .col-lg-4 {
-    flex-basis: 33.3333333%;
-    max-width: 33.3333333%;
-  }
-
-  .col-lg-5 {
-    flex-basis: 41.6666667%;
-    max-width: 41.6666667%;
-  }
-
-  .col-lg-6 {
-    flex-basis: 50%;
-    max-width: 50%;
-  }
-
-  .col-lg-7 {
-    flex-basis: 58.3333333%;
-    max-width: 58.3333333%;
-  }
-
-  .col-lg-8 {
-    flex-basis: 66.6666667%;
-    max-width: 66.6666667%;
-  }
-
-  .col-lg-9 {
-    flex-basis: 75%;
-    max-width: 75%;
-  }
-
-  .col-lg-10 {
-    flex-basis: 83.3333333%;
-    max-width: 83.3333333%;
-  }
-
-  .col-lg-11 {
-    flex-basis: 91.6666667%;
-    max-width: 91.6666667%;
-  }
-
-  .col-lg-12 {
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-
 }
-
-
-.max-1 .col {
-  min-width: 100%;
-}
-
-.max-2 .col {
-  min-width: 50%;
-}
-
-.max-3 .col {
-  min-width: 33.3333333%;
-}
-
-.max-4 .col {
-  min-width: 25%;
-}
-
-.max-5 .col {
-  min-width: 20%;
-}
-
-.max-6 .col {
-  min-width: 16.6666667%;
-}
-
-
-.offset-1 {
-  margin-left: 8.3333333%;
-}
-
-.offset-2 {
-  margin-left: 16.6666667%;
-}
-
-.offset-3 {
-  margin-left: 25%;
-}
-
-.offset-4 {
-  margin-left: 33.3333333%;
-}
-
-.offset-5 {
-  margin-left: 41.6666667%;
-}
-
-.offset-6 {
-  margin-left: 50%;
-}
-
 
 @media all and (max-width: $sm) {
   .visible-sm, .visible-md, .visible-lg {

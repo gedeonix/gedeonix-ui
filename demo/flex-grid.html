@@ -25,14 +25,32 @@
         .demo-grid .row {
             background-color: #a4a4a4;
         }
-
-        .main {
-            background-color: #f0f0f0;
-        }
         .demo-row {
             background-color: #ffff80;
             outline: 1px dashed #ff0000;
         }
+
+        @media all {
+            .main {
+                background-color: #ffbf4e; /*xs*/
+            }
+        }
+        @media all and (min-width: 640px) {
+            .main {
+                background-color: #fff593; /*sm*/
+            }
+        }
+        @media all and (min-width: 1024px) {
+            .main {
+                background-color: #cbff89; /*md*/
+            }
+        }
+        @media all and (min-width: 1440px) {
+            .main {
+                background-color: #9addff; /*lg*/
+            }
+        }
+
 
     </style>
 

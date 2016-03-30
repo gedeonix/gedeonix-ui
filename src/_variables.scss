@@ -60,19 +60,18 @@ $btn-lg-radius:                 6px !default;
 
 $input-background:              $background-color !default;
 
-$header-text-color: #e0e0e0 !default;
-$header-background-color: #808080 !default;
+$header-text-color:             #e0e0e0 !default;
+$header-background-color:       #808080 !default;
 
-$label-color: #606060;
-$input-border-color: #d4d4d4;
+$label-color:                   #606060 !default;
+$input-border-color:            #d4d4d4 !default;
 
-$gutter: 1rem;
+$columns:                       12 !default;
+$gutter:                        1rem !default;
 
-$sm: 640px;
-$md: 1024px;
-$lg: 1440px;
+$sm:                            640px !default;
+$md:                            1024px !default;
+$lg:                            1440px !default;
 
-$footer-text-color: #ffffff !default;
-$footer-background-color: #d4d4d4 !default;
-
-
+$footer-text-color:             #ffffff !default;
+$footer-background-color:       #d4d4d4 !default;
