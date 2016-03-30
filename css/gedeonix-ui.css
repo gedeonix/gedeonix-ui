@@ -480,7 +480,7 @@ table td {
   width: 100%;
   /* min-width; 30px*/
   margin-left: 0;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   max-width: 100%;
 }
 

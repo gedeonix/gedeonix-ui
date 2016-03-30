@@ -23,7 +23,7 @@
     /* min-width; 30px*/
 
     margin-left: 0;
-    padding: 0 1rem;
+    padding: 0.5rem 1rem;
 
     max-width: 100%;
   }
@@ -176,6 +176,7 @@
     margin-left: calc($i*100/$columns)%;
   }
 }
+
 
 @media all and (max-width: $sm) {
   .visible-sm, .visible-md, .visible-lg {
