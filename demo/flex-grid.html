@@ -14,24 +14,18 @@
             margin-bottom: 39px;
         }
 
-        /* only diagnostic */
-        .demo-grid .row .col,
-        .demo-grid .row [class*="col-"] {
+        .col, [class*=col-]  {
+            text-align: center;
+            /*background-color: #1fffb0;*/
             outline: 1px dashed #ff0000;
         }
-        .demo-grid > .row .row {
-            padding: 0.5rem 0.5rem;
-        }
-        .demo-grid .row {
+        /*
+        .row {
             text-align: center;
-        }
-        .demo-grid .row {
-            background-color: #a4a4a4;
-        }
-        .demo-row {
             background-color: #ffff80;
             outline: 1px dashed #ff0000;
         }
+        */
 
         @media all {
             .main {
@@ -54,6 +48,17 @@
             }
         }
 
+        .col > div {
+            width: 100%;
+            background-color: #ffed53;
+            text-align: center;
+        }
+
+        [class*=col-] > div {
+            width: 100%;
+            background-color: #ff8902;
+            text-align: center;
+        }
 
     </style>
 
@@ -88,224 +93,252 @@
 
         <h2>Flex grid</h2>
 
-        <h3>With gutter</h3>
-        <div class="row is-text-center is-gutter demo-row">
-            <div class="col is-warning">1</div>
-            <div class="col is-danger">2</div>
-            <div class="col is-primary">3</div>
+        <h3>Without gutter (no-gutter)</h3>
+
+        <div class="row no-gutter">
+            <div class="col"><div>1</div></div>
         </div>
-        <pre><code class="language-markup">&lt;div class=&quot;row is-gutter&quot;&gt;
-    &lt;div class=&quot;col is-warning&quot;&gt;1&lt;/div&gt;
-    &lt;div class=&quot;col is-danger&quot;&gt;2&lt;/div&gt;
-    &lt;div class=&quot;col is-primary&quot;&gt;3&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-
-        <h3>Without gutter</h3>
-        <div class="row is-text-center no-gutter demo-row">
-            <div class="col is-warning">1</div>
-            <div class="col is-danger">2</div>
-            <div class="col is-primary">3</div>
+        <div class="row no-gutter">
+            <div class="col"><div>2</div></div>
+            <div class="col"><div>2</div></div>
         </div>
-
-        <h3>Simple</h3>
-
-        <div class="demo-grid">
-            <div class="row">
-                <div class="col">1</div>
-            </div>
-            <div class="row">
-                <div class="col">1</div>
-                <div class="col">1</div>
-            </div>
-            <div class="row">
-                <div class="col">1</div>
-                <div class="col">1</div>
-                <div class="col">1</div>
-            </div>
-            <div class="row">
-                <div class="col">1</div>
-                <div class="col">1</div>
-                <div class="col">1</div>
-                <div class="col">1</div>
-            </div>
+        <div class="row no-gutter">
+            <div class="col"><div>3</div></div>
+            <div class="col"><div>3</div></div>
+            <div class="col"><div>3</div></div>
+        </div>
+        <div class="row no-gutter">
+            <div class="col"><div>4</div></div>
+            <div class="col"><div>4</div></div>
+            <div class="col"><div>4</div></div>
+            <div class="col"><div>4</div></div>
         </div>
 
-        <h3>Nested</h3>
-        <div class="demo-grid">
-            <div class="row">
-                <div class="col">A</div>
-                <div class="col">
-                    <div class="row">
-                        <div class="col">B</div>
-                        <div class="col">
-                            <div class="row">
-                                <div class="col">C</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <h3>Simple with gutter (default)</h3>
+
+        <div class="row">
+            <div class="col"><div>1</div></div>
+        </div>
+        <div class="row">
+            <div class="col"><div>2</div></div>
+            <div class="col"><div>2</div></div>
+        </div>
+        <div class="row">
+            <div class="col"><div>3</div></div>
+            <div class="col"><div>3</div></div>
+            <div class="col"><div>3</div></div>
+        </div>
+        <div class="row">
+            <div class="col"><div>4</div></div>
+            <div class="col"><div>4</div></div>
+            <div class="col"><div>4</div></div>
+            <div class="col"><div>4</div></div>
         </div>
 
-        <h3>Max limit (4)</h3>
-        <div class="demo-grid">
-            <div class="row max-4">
-                <div class="col">1</div>
-                <div class="col">1</div>
-                <div class="col">1</div>
-                <div class="col">1</div>
-                <div class="col">1</div>
-                <div class="col">1</div>
-                <div class="col">1</div>
-                <div class="col">1</div>
-                <div class="col">1</div>
-                <div class="col">1</div>
-            </div>
-        </div>
+        <h3>Max limit (row-x)</h3>
 
-        <h3>Offsets</h3>
-        <div class="demo-grid">
-            <div class="row">
-                <div class="col offset-1">1</div>
-                <div class="offset-1"></div>
-            </div>
-            <div class="row">
-                <div class="col offset-2">1</div>
-                <div class="offset-2"></div>
-            </div>
-            <div class="row">
-                <div class="col offset-3">1</div>
-                <div class="offset-3"></div>
-            </div>
-            <div class="row">
-                <div class="col offset-4">1</div>
-                <div class="offset-4"></div>
-            </div>
-            <div class="row">
-                <div class="col offset-5">1</div>
-                <div class="offset-5"></div>
-            </div>
+        <div class="row-3 no-gutter">
+            <div class="col"><div>1</div></div>
+            <div class="col"><div>1</div></div>
+            <div class="col"><div>1</div></div>
+            <div class="col"><div>1</div></div>
+            <div class="col"><div>1</div></div>
+        </div>
+        <div class="row-4 no-gutter">
+            <div class="col"><div>1</div></div>
+            <div class="col"><div>1</div></div>
+            <div class="col"><div>1</div></div>
+            <div class="col"><div>1</div></div>
+            <div class="col"><div>1</div></div>
         </div>
 
         <br>
 
+        <div class="row-3">
+            <div class="col"><div>1</div></div>
+            <div class="col"><div>1</div></div>
+            <div class="col"><div>1</div></div>
+            <div class="col"><div>1</div></div>
+            <div class="col"><div>1</div></div>
+        </div>
+        <div class="row-4">
+            <div class="col"><div>1</div></div>
+            <div class="col"><div>1</div></div>
+            <div class="col"><div>1</div></div>
+            <div class="col"><div>1</div></div>
+            <div class="col"><div>1</div></div>
+        </div>
+
+        <h3>Mix column</h3>
+        <div class="row-6 no-gutter">
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+
+            <div class="col"><div>auto</div></div>
+            <div class="col-8"><div>8</div></div>
+            <div class="col"><div>auto</div></div>
+
+            <div class="col"><div>auto</div></div>
+            <div class="col-1"><div>1</div></div>
+            <div class="col-2"><div>2</div></div>
+            <div class="col-5"><div>5</div></div>
+            <div class="col"><div>auto</div></div>
+
+        </div>
+
+
+        <h3>Offsets</h3>
+        <div class="row">
+            <div class="col offset-1"><div>1</div></div>
+            <div class="offset-1"></div>
+        </div>
+        <div class="row">
+            <div class="col offset-2"><div>1</div></div>
+            <div class="offset-2"></div>
+        </div>
+        <div class="row">
+            <div class="col offset-3"><div>1</div></div>
+            <div class="offset-3"></div>
+        </div>
+        <div class="row">
+            <div class="col offset-4"><div>1</div></div>
+            <div class="offset-4"></div>
+        </div>
+        <div class="row">
+            <div class="col offset-5"><div>1</div></div>
+            <div class="offset-5"></div>
+        </div>
+        <br>
+
+        <div class="row no-gutter">
+            <div class="col offset-1"><div>1</div></div>
+            <div class="offset-1"></div>
+        </div>
+        <div class="row no-gutter">
+            <div class="col offset-2"><div>1</div></div>
+            <div class="offset-2"></div>
+        </div>
+        <div class="row no-gutter">
+            <div class="col offset-3"><div>1</div></div>
+            <div class="offset-3"></div>
+        </div>
+        <div class="row no-gutter">
+            <div class="col offset-4"><div>1</div></div>
+            <div class="offset-4"></div>
+        </div>
+        <div class="row no-gutter">
+            <div class="col offset-5"><div>1</div></div>
+            <div class="offset-5"></div>
+        </div>
+        <br>
+
         <h3>Columns (1-12)</h3>
         <div class="demo-grid">
-            <div class="row">
-                <div class="col col-1">1</div>
-                <div class="col col-1">1</div>
-                <div class="col col-1">1</div>
-                <div class="col col-1">1</div>
-                <div class="col col-1">1</div>
-                <div class="col col-1">1</div>
-                <div class="col col-1">1</div>
-                <div class="col col-1">1</div>
-                <div class="col col-1">1</div>
-                <div class="col col-1">1</div>
-                <div class="col col-1">1</div>
-                <div class="col col-1">1</div>
+            <div class="row no-gutter">
+                <div class="col-1"><div>1</div></div>
+                <div class="col-1"><div>1</div></div>
+                <div class="col-1"><div>1</div></div>
+                <div class="col-1"><div>1</div></div>
+                <div class="col-1"><div>1</div></div>
+                <div class="col-1"><div>1</div></div>
+                <div class="col-1"><div>1</div></div>
+                <div class="col-1"><div>1</div></div>
+                <div class="col-1"><div>1</div></div>
+                <div class="col-1"><div>1</div></div>
+                <div class="col-1"><div>1</div></div>
+                <div class="col-1"><div>1</div></div>
             </div>
 
-            <div class="row">
-                <div class="col col-2">2</div>
-                <div class="col col-2">2</div>
-                <div class="col col-2">2</div>
-                <div class="col col-2">2</div>
-                <div class="col col-2">2</div>
-                <div class="col col-2">2</div>
+            <div class="row no-gutter">
+                <div class="col-2"><div>2</div></div>
+                <div class="col-2"><div>2</div></div>
+                <div class="col-2"><div>2</div></div>
+                <div class="col-2"><div>2</div></div>
+                <div class="col-2"><div>2</div></div>
+                <div class="col-2"><div>2</div></div>
             </div>
 
-            <div class="row">
-                <div class="col col-3">3</div>
-                <div class="col col-3">3</div>
-                <div class="col col-3">3</div>
-                <div class="col col-3">3</div>
+            <div class="row no-gutter">
+                <div class="col-3"><div>3</div></div>
+                <div class="col-3"><div>3</div></div>
+                <div class="col-3"><div>3</div></div>
+                <div class="col-3"><div>3</div></div>
             </div>
 
-            <div class="row">
-                <div class="col col-4">4</div>
-                <div class="col col-4">4</div>
-                <div class="col col-4">4</div>
+            <div class="row no-gutter">
+                <div class="col-4"><div>4</div></div>
+                <div class="col-4"><div>4</div></div>
+                <div class="col-4"><div>4</div></div>
             </div>
 
-            <div class="row">
-                <div class="col col-6">6</div>
-                <div class="col col-6">6</div>
+            <div class="row no-gutter">
+                <div class="col-6"><div>6</div></div>
+                <div class="col-6"><div>6</div></div>
             </div>
 
-            <div class="row">
-                <div class="col col-12">12</div>
+            <div class="row no-gutter">
+                <div class="col-12"><div>12</div></div>
             </div>
 
             <h3>Auto width</h3>
 
-            <div class="row">
+            <div class="row no-gutter">
                 <div class="col">auto</div>
             </div>
-            <div class="row">
-                <div class="col col-1">1</div>
+            <div class="row no-gutter">
+                <div class="col-1">1</div>
                 <div class="col">auto</div>
             </div>
-            <div class="row">
-                <div class="col col-2">2</div>
+            <div class="row no-gutter">
+                <div class="col-2">2</div>
                 <div class="col">auto</div>
             </div>
-            <div class="row">
-                <div class="col col-3">3</div>
+            <div class="row no-gutter">
+                <div class="col-3">3</div>
                 <div class="col">auto</div>
             </div>
-            <div class="row">
-                <div class="col col-4">4</div>
+            <div class="row no-gutter">
+                <div class="col-4">4</div>
                 <div class="col">auto</div>
             </div>
-            <div class="row">
-                <div class="col col-5">5</div>
+            <div class="row no-gutter">
+                <div class="col-5">5</div>
                 <div class="col">auto</div>
             </div>
-            <div class="row">
-                <div class="col col-6">6</div>
+            <div class="row no-gutter">
+                <div class="col-6">6</div>
                 <div class="col">auto</div>
             </div>
-            <div class="row">
-                <div class="col col-7">7</div>
+            <div class="row no-gutter">
+                <div class="col-7">7</div>
                 <div class="col">auto</div>
             </div>
-            <div class="row">
-                <div class="col col-8">8</div>
+            <div class="row no-gutter">
+                <div class="col-8">8</div>
                 <div class="col">auto</div>
             </div>
-            <div class="row">
-                <div class="col col-9">9</div>
+            <div class="row no-gutter">
+                <div class="col-9">9</div>
                 <div class="col">auto</div>
             </div>
-            <div class="row">
-                <div class="col col-10">10</div>
+            <div class="row no-gutter">
+                <div class="col-10">10</div>
                 <div class="col">auto</div>
             </div>
-            <div class="row">
-                <div class="col col-11">11</div>
+            <div class="row no-gutter">
+                <div class="col-11">11</div>
                 <div class="col">auto</div>
             </div>
-            <div class="row">
-                <div class="col col-12">12</div>
+            <div class="row no-gutter">
+                <div class="col-12">12</div>
             </div>
 
-            <h3>Grid with gutter (todo)</h3>
-            <div class="row">
-                <div class="col">1</div>
-            </div>
-
-            <div class="row">
-                <div class="col">1/2</div>
-                <div class="col">1/2</div>
-            </div>
-
-            <div class="row">
-                <div class="col">1/3</div>
-                <div class="col">1/3</div>
-                <div class="col">1/3</div>
-            </div>
-
+            <br>
+            <!--
             <h3>Responsive
                 <span class="visible-xs">xs</span>
                 <span class="visible-sm">sm</span>
@@ -365,35 +398,48 @@
                 <div class="col">col</div>
             </div>
 
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">xs</div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">xs</div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">xs</div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-2 col-lg-1">xs</div>
+                <div class="col-xs-12 col-sm-3 col-md-2 col-lg">xs</div>
+                <div class="col-xs-12 col-sm col-md col-lg">xs</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">xs</div>
+                <div class="col-sm-3">xs</div>
+                <div class="col-sm">xs</div>
+            </div>
+            <div class="row">
+                <div class="col-md">md</div>
+                <div class="col-md">md</div>
+                <div class="col-md">md</div>
+            </div>
+            <div class="row">
+                <div class="col-lg">lg</div>
+                <div class="col-lg">lg</div>
+                <div class="col-lg">lg</div>
+            </div>
 
-            <!--
+
+            <h3>Nested</h3>
             <div class="row">
-                <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">xs</div>
-                <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">xs</div>
-                <div class="col col-xs-12 col-sm-12 col-md-12 col-lg-12">xs</div>
-            </div>
-            <div class="row">
-                <div class="col col-xs-12 col-sm-4 col-md-2 col-lg-1">xs</div>
-                <div class="col col-xs-12 col-sm-3 col-md-2 col-lg">xs</div>
-                <div class="col col-xs-12 col-sm col-md col-lg">xs</div>
-            </div>
-            <div class="row">
-                <div class="col col-sm-4">xs</div>
-                <div class="col col-sm-3">xs</div>
-                <div class="col col-sm">xs</div>
-            </div>
-            <div class="row">
-                <div class="col col-md">md</div>
-                <div class="col col-md">md</div>
-                <div class="col col-md">md</div>
-            </div>
-            <div class="row">
-                <div class="col col-lg">lg</div>
-                <div class="col col-lg">lg</div>
-                <div class="col col-lg">lg</div>
+                <div class="col">A</div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">B</div>
+                        <div class="col">
+                            <div class="row">
+                                <div class="col">C</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             -->
-
         </div>
 
     </main>

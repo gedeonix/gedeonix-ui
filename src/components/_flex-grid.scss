@@ -1,63 +1,57 @@
-.row {
+.row, [class*=row-] {
   display: flex;
   flex-wrap: wrap;
-
   flex-direction: row;
-
   justify-content: flex-start;
   align-items: center;
 
-  padding-right: 0;
-  padding-left: 0;
+  /* width: calc(100% + 1.0rem + 1.0rem); */
 
-  margin-right: 0;
-  margin-left: -1rem;
+  /* MARGIN */
+  margin-right: -0.5rem;
+  margin-left:  -0.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
 
-  width: calc(100% + 1.0rem + 1.0rem);
-
-  .col {
-    display: block;
-    flex: 1;
-
-    width: 100%;
-    /* min-width; 30px*/
-
-    margin-left: 0;
-    padding: 0.5rem 1rem;
-
-    max-width: 100%;
-  }
-
-  /*
-  .col-xs {
-    flex-grow: 1;
-    flex-basis: 0;
-    max-width: 100%;
-  }
-  */
-
-  @for $i from 1 to $columns {
-    .col-$i {
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
+  &.no-gutter {
+    margin: 0;
+    > .col, [class*=col-]  {
+      padding: 0;
     }
   }
 }
 
-/*
-.row.is-gutter {
-  margin: 0;
-  > * {
-    margin: 0 $gutter $gutter 0;
-  }
-  > *:last-child {
-    margin-right: 0;
+.col, [class*=col-] {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: 0%;
+
+  /* PADDING */
+  padding-top: 0;
+  padding-bottom: 1rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+
+@for $i from 1 to $columns {
+  .col-$i {
+    flex-basis: calc($i*100/$columns)%;
+    max-width: calc($i*100/$columns)%;
   }
 }
 
-[class*="col-xs"] {
-  flex: 0 0 auto;
-*/
+@for $i from 1 to $columns {
+  .row-$i > .col {
+    min-width: calc(100/$i)%;
+  }
+}
 
 @media all {
   @for $i from 1 to $columns {
@@ -166,18 +160,12 @@
 }
 
 @for $i from 1 to $columns {
-  .max-$i .col {
-    min-width: calc(100/$i)%;
-  }
-}
-
-@for $i from 1 to $columns {
   .offset-$i {
     margin-left: calc($i*100/$columns)%;
   }
 }
 
-
+/*
 @media all and (max-width: $sm) {
   .visible-sm, .visible-md, .visible-lg {
     display: none;
@@ -201,3 +189,5 @@
     display: none;
   }
 }
+
+*/
