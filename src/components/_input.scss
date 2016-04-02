@@ -1,11 +1,39 @@
 input {
   border: 1px solid $input-border-color;
   padding: 0.5rem 0.5rem;
-  margin-bottom: 0.5rem;
+
+  /*margin-bottom: 0.5rem;*/
+
   background-color: $input-background;
   border-radius: 3px;
   font-size: 1rem;
 
+  &.is-xs {
+    border-radius: $btn-xs-radius;
+    font-size: 0.6rem;
+    padding: 0.5em 1em;
+  }
+  &.is-xs {
+    border-radius: $btn-xs-radius;
+    font-size: 0.6rem;
+    padding: 0.5em 1em;
+  }
+  &.is-sm {
+    border-radius:  $btn-sm-radius;
+    font-size: 0.8rem;
+    padding: 0.5em 1em;
+  }
+  &.is-md {
+    border-radius:  $btn-md-radius;
+    font-size: 1.2rem;
+    padding: 0.45em 1em;
+  }
+  &.is-lg {
+    border-radius:  $btn-lg-radius;
+    font-size: 1.6rem;
+    padding: 0.4em 1em;
+  }
+  /*
   &.is-sm {
     border-radius: 2px;
     font-size: 0.8rem;
@@ -18,6 +46,7 @@ input {
     border-radius: 5px;
     font-size: 1.4rem;
   }
+  */
 
 }
 

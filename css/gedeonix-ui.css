@@ -394,26 +394,57 @@ input[type=checkbox]:checked + label:before {
 input {
   border: 1px solid #d4d4d4;
   padding: 0.5rem 0.5rem;
-  margin-bottom: 0.5rem;
+
+  /*margin-bottom: 0.5rem;*/
+
   background-color: #ffffff;
   border-radius: 3px;
   font-size: 1rem
+  /*
+  &.is-sm {
+    border-radius: 2px;
+    font-size: 0.8rem;
+  }
+  &.is-md {
+    border-radius: 4px;
+    font-size: 1.2rem;
+  }
+  &.is-lg {
+    border-radius: 5px;
+    font-size: 1.4rem;
+  }
+  */
 
+}
+
+input.is-xs{
+  border-radius: 2px;
+  font-size: 0.6rem;
+  padding: 0.5em 1em;
+}
+
+input.is-xs{
+  border-radius: 2px;
+  font-size: 0.6rem;
+  padding: 0.5em 1em;
 }
 
 input.is-sm{
-  border-radius: 2px;
+  border-radius: 3px;
   font-size: 0.8rem;
+  padding: 0.5em 1em;
 }
 
 input.is-md{
-  border-radius: 4px;
+  border-radius: 5px;
   font-size: 1.2rem;
+  padding: 0.45em 1em;
 }
 
 input.is-lg{
-  border-radius: 5px;
-  font-size: 1.4rem;
+  border-radius: 6px;
+  font-size: 1.6rem;
+  padding: 0.4em 1em;
 }
 
 input[type=text], input[type=password], input[type=number], input[type=email], input[type=search] {
@@ -593,7 +624,19 @@ table td {
 
   padding-top: 0;
   /*padding-bottom: 1rem;*/
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.5rem
+}
+
+.col.is-left, [class*=col-].is-left{
+  justify-content: flex-start;
+}
+
+.col.is-right, [class*=col-].is-right{
+  justify-content: flex-end;
+}
+
+.col.is-center, [class*=col-].is-center{
+  justify-content: center;
 }
 
 .col-1{
@@ -1666,6 +1709,14 @@ table td {
 
 .is-text-center {
   text-align: center;
+}
+
+.is-text-left {
+  text-align: left;
+}
+
+.is-text-right {
+  text-align: right;
 }
 
 .is-space {
