@@ -1676,6 +1676,30 @@ table td {
   margin: 1rem 0;
 }
 
+.panel {
+
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+
+  padding: 0;
+  margin: 20px 0;
+
+  background-color: transparent;
+
+
+}
+
+.panel .panel-header {
+  font-weight: bold;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.panel .panel-content {
+  padding: 10px;
+}
+
 .header {
   color: #e0e0e0;
   background-color: #808080;
