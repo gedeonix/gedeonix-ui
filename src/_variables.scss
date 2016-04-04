@@ -51,6 +51,10 @@ $btn-dark-background:           #4e4f51 !default;
 $btn-dark-border:               #4e4f51 !default;
 $btn-dark-hover:                #8a8b8f !default;
 
+$palette-name: (default,primary,success,info,warning,danger,dark);
+$palette-color: (transparent,#65bcfe,#5acd59,#6ad1dd, #ffa924,#fc573f,#4e4f51);
+
+
 $btn-radius:                    4px !default;
 
 $btn-xs-radius:                 2px !default;
@@ -75,3 +79,4 @@ $lg:                            1440px !default;
 
 $footer-text-color:             #ffffff !default;
 $footer-background-color:       #d4d4d4 !default;
+

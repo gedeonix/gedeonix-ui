@@ -1723,38 +1723,6 @@ table td {
   flex-grow: 1;
 }
 
-.is-white {
-  background-color: #ffffff;
-}
-
-.is-gray {
-  background-color: #e0e0e0;
-}
-
-.is-dark {
-  background-color: #4e4f51;
-}
-
-.is-primary {
-  background-color: #55acee;
-}
-
-.is-success {
-  background-color: #94cd5a;
-}
-
-.is-info {
-  background-color: #6ad1dd;
-}
-
-.is-warning {
-  background-color: #ffb812;
-}
-
-.is-danger {
-  background-color: #fc6e51;
-}
-
 .is-round {
   border-radius: 50%;
 }
@@ -1799,6 +1767,38 @@ table td {
 
 .is-shadow {
   box-shadow: 1px 1px 1px #2c2c2c;
+}
+
+.is-white{
+  background-color: #ffffff;
+}
+
+.is-gray{
+  background-color: #e0e0e0;
+}
+
+.is-dark{
+  background-color: #4e4f51;
+}
+
+.is-primary{
+  background-color: #55acee;
+}
+
+.is-success{
+  background-color: #94cd5a;
+}
+
+.is-info{
+  background-color: #6ad1dd;
+}
+
+.is-warning{
+  background-color: #ffb812;
+}
+
+.is-danger{
+  background-color: #fc6e51;
 }
 
 

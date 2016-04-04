@@ -13,7 +13,8 @@ var comments = require('postcss-discard-comments');
 var stylelint = require("stylelint");
 var cssnext = require("cssnext");
 var color = require("postcss-color-function");
-var calc = require("postcss-calc")
+var calc = require("postcss-calc");
+var each = require("postcss-each");
 
 gulp.task('build-css', function () {
     var processors = [
@@ -23,6 +24,7 @@ gulp.task('build-css', function () {
         stylelint,
         //autoprefixer({browsers: ['last 2 versions']}),
         //cssnext(),
+        each(),
         precss,
         calc()
     ];

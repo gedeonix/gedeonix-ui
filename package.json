@@ -8,20 +8,21 @@
     "start": "npm run lite"
   },
   "devDependencies": {
-    "autoprefixer": "6.3.3",
+    "autoprefixer": "6.3.5",
     "cssnext": "^1.8.4",
     "lite-server": "2.1.0",
     "gulp": "3.9.1",
-    "gulp-ext-replace": "0.2.0",
+    "gulp-ext-replace": "0.3.0",
     "gulp-postcss": "6.1.0",
     "gulp-sourcemaps": "1.6.0",
     "postcss": "5.0.19",
     "postcss-calc": "*",
     "postcss-color-function": "^2.0.1",
     "postcss-discard-comments": "2.0.4",
+    "postcss-each": "0.9.1",
     "postcss-import": "8.0.2",
     "postcss-url": "5.1.1",
     "precss": "1.4.0",
-    "stylelint": "5.0.1"
+    "stylelint": "5.2.1"
   }
 }
