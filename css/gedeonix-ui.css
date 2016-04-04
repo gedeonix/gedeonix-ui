@@ -393,6 +393,57 @@ input[type=checkbox]:checked + label:before {
   letter-spacing: 5px;
 }
 
+input[type=checkbox]:disabled + label, input[type=checkbox]:disabled + label:disabled {
+  color: #b8b8b8;
+}
+
+input[type=radio] {
+  position: relative;
+  margin: 0 0.25rem 0 0;
+  cursor: pointer;
+}
+
+input[type=radio]:before {
+  position: absolute;
+  content: "";
+
+  top: 0.2rem;
+  left: 0.25rem;
+  z-index: 1;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #606060;
+  border-radius: 50%;
+  transition: transform 0.2s cubic-bezier(0.3, 1, 0.5, 0.75);
+  transform: scale(0, 0);
+}
+
+input[type=radio]:checked:before {
+  transform: scale(1, 1);
+}
+
+input[type=radio]:after {
+  position: absolute;
+  content: "";
+  top: -0.05rem;
+  left: 0rem;
+
+  width: 1rem;
+  height: 1rem;
+
+  background: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: 50%;
+}
+
+input[type=radio]:disabled + label, input[type=radio]:disabled + label:disabled {
+  color: #b8b8b8;
+}
+
+input[type=radio]:disabled:before{
+  background: #d1d1d1;
+}
+
 .label {
   font-size: 0.75rem;
   font-weight: 800;
@@ -400,14 +451,11 @@ input[type=checkbox]:checked + label:before {
   padding: 0.25em 0.5em;
   background-color: #e0e0e0;
   color: #ffffff;
-
 }
 
 input {
   border: 1px solid #d4d4d4;
   padding: 0.5rem 0.5rem;
-
-  /*margin-bottom: 0.5rem;*/
 
   background-color: #ffffff;
   border-radius: 3px;
@@ -507,7 +555,7 @@ input[type=text], input[type=password], input[type=number], input[type=email], i
 
 label {
   color: #606060;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 table {
@@ -1710,6 +1758,16 @@ table td {
 
 .panel .panel-content {
   padding: 10px;
+}
+
+.control {
+  display: block;
+  position: relative;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+
+  background-color: #ffffd0;
+  /*padding-left: 10px;*/
 }
 
 .header {

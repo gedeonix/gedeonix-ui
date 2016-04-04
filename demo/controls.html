@@ -278,15 +278,60 @@
 
         <h2>Checkbox</h2>
 
-        <div>
+        <div class="control">
             <input id="box1" type="checkbox" />
-            <label for="box1">Checkbox 1</label>
-            <input id="box2" type="checkbox" />
-            <label for="box2">Checkbox 2</label>
-            <input id="box3" type="checkbox" />
-            <label for="box3">Checkbox 3</label>
+            <label for="box1"> Checkbox 1 (normal)</label>
+        </div>
+        <div class="control">
+            <input id="box2" type="checkbox" checked="checked" />
+            <label for="box2"> Checkbox 2 (checked)</label>
+        </div>
+        <div class="control">
+            <input id="box3" type="checkbox" disabled/>
+            <label for="box3"> Checkbox 3 (disabled)</label>
+        </div>
+        <div class="control">
+            <input id="box4" type="checkbox" checked="checked" disabled/>
+            <label for="box4"> Checkbox 4 (checked & disabled)</label>
         </div>
 
+
+        <h2>Radio</h2>
+
+        <div class="control">
+            <input id="box5" class="radio" type="radio" name="radios" />
+            <label for="box5"> Radio</label>
+        </div>
+        <div class="control">
+            <input id="box6" class="radio" type="radio" name="radios" />
+            <label for="box6"> Radio</label>
+        </div>
+
+        <br>
+
+        <div class="control">
+            <input id="box7" class="radio" type="radio" name="radios2" disabled/>
+            <label for="box7"> Radio (disabled)</label>
+        </div>
+        <div class="control">
+            <input id="box8" class="radio" type="radio" name="radios2" checked="checked" disabled/>
+            <label for="box8"> Radio (checked & disabled)</label>
+        </div>
+
+        <br>
+
+        <div class="control">
+            <label><input type="radio" class="radio" checked  name="box9"> Item 1</label>
+        </div>
+        <div class="control">
+            <label><input type="radio" class="radio" name="box9"> Item 2</label>
+        </div>
+        <div class="control">
+            <label><input type="radio" class="radio" name="box9"> Item 3</label>
+        </div>
+        <div class="control">
+            <label><input type="radio" class="radio" name="box9"> Item 4</label>
+        </div>
 
         <h2>Alert</h2>
         <div class="alert">
