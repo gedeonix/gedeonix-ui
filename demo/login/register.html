@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="../../css/gedeonix-ui.css" rel="stylesheet">
+
+    <style>
+        .main {
+            background: #ECE9E6; /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        .brand {
+            color: #aeaeae;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <main class="main">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-3 is-center">
+
+                    <h1 class="brand">Gedeonix UI</h1>
+
+                    <form class="section form-horizontal" role="form" action="/login" method="POST">
+
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <a class="btn is-md is-block facebook" href="/facebook"><i class="fa fa-facebook-square"></i> Facebook</a>
+                            </div>
+                            <div class="col-sm-12">
+                                <a class="btn is-md is-block twitter" href="/twitter"><i class="fa fa-twitter-square"></i> Twitter</a>
+                            </div>
+                            <div class="col-sm-12">
+                                <a class="btn is-md is-block google-plus" href="/google"><i class="fa fa-google-plus-square"></i> Google Plus</a>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <hr class="is-space">
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="email" name="email" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="password" class="form-control" name="password" placeholder="Password">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="password" class="form-control" name="confirm" placeholder="Confirm password">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn is-primary is-block is-md">Register</button>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                I already have an account: <a href="/demo/login/login.html">Login</a>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
