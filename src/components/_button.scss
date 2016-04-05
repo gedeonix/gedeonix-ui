@@ -1,108 +1,233 @@
 .btn {
-  font-size: $btn-font-size;
-  font-family: inherit;
-
-  text-decoration: none;
-
-  vertical-align: middle;
-  line-height: normal;  /*line-height: 1em;*/
-  text-align: center;
-
-  color: $text-color;
   background-color: $background-color;
-
+  border: 1px solid $btn-default-border;
+  border-radius: $btn-radius; /*2em;*/
+  color: $text-color;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: $btn-font-size;
+  font-weight: normal;
+  line-height: 1.4em;
+  letter-spacing: .1em;
   margin: 0;
   padding: 0.5em 0.5em;
-  width: auto;
-
-  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  /*text-transform: uppercase;*/
   user-select: none;
+  vertical-align: middle;
   white-space: nowrap;
-
-  border: 1px solid $btn-default-border;
-  border-radius: $btn-radius;
-
-  display: inline-block;
-  vertical-align: baseline;
-
+  /*width: auto;*/
+  -webkit-appearance: none;
   &:hover {
     border-color: #a0a0a0;
   }
+  &:focus, &.active {
+    /*border-color: #808080;*/
+    outline: none;
+  }
+  &.is-outline {
+    color: $text-color;
+    background-color: transparent;
+    &:hover {
+      color: #ffffff;
+      background-color: $btn-default-hover;
+    }
+  }
+  &.is-flat {
+    color: $text-color;
+    border-color: transparent;
+    text-decoration: underline;
+    &:hover {
+      color: #ffffff;
+      background-color: $btn-default-hover;
+    }
+  }
+}
 
+.btn.is-primary {
+  color: #ffffff;
+  border-color: $btn-primary-border;
+  background-color: $btn-primary-background;
+  &:hover {
+    border-color: $btn-primary-hover;
+    background-color: $btn-primary-hover;
+  }
   &:focus, &.active {
     border-color: #808080;
     outline: none;
   }
-
-  &.is-primary {
-    color: #ffffff;
-    border-color: transparent;
+  &.is-outline {
+    color: $btn-primary-background;
+    background-color: transparent;
     &:hover {
+      color: #ffffff;
       background-color: $btn-primary-hover;
     }
-    &:focus, &.active {
-      border-color: #808080;
-      outline: none;
+  }
+  &.is-flat {
+    color: $btn-primary-background;
+    background-color: transparent;
+    border: transparent;
+    &:hover {
+      color: #ffffff;
+      background-color: $btn-primary-hover;
     }
   }
+}
 
-  &.is-success {
-    color: #ffffff;
-    border-color: transparent;
+.btn.is-success {
+  color: #ffffff;
+  border-color: $btn-success-border;
+  background-color: $btn-success-background;
+  &:hover {
+    border-color: $btn-success-hover;
+    background-color: $btn-success-hover;
+  }
+  &:focus, &.active {
+    border-color: #808080;
+    outline: none;
+  }
+  &.is-outline {
+    color: $btn-success-background;
+    background-color: transparent;
     &:hover {
+      color: #ffffff;
       background-color: $btn-success-hover;
     }
-    &:focus, &.active {
-      border-color: #808080;
-      outline: none;
+  }
+  &.is-flat {
+    color: $btn-success-background;
+    background-color: transparent;
+    border: transparent;
+    &:hover {
+      color: #ffffff;
+      background-color: $btn-success-hover;
     }
   }
+}
 
-  &.is-info {
-    color: #ffffff;
-    border-color: transparent;
+.btn.is-info {
+  color: #ffffff;
+  border-color: $btn-info-border;
+  background-color: $btn-info-background;
+  &:hover {
+    border-color: $btn-info-hover;
+    background-color: $btn-info-hover;
+  }
+  &:focus, &.active {
+    border-color: #808080;
+    outline: none;
+  }
+  &.is-outline {
+    color: $btn-info-background;
+    background-color: transparent;
     &:hover {
+      color: #ffffff;
       background-color: $btn-info-hover;
     }
-    &:focus, &.active {
-      border-color: #808080;
-      outline: none;
+  }
+  &.is-flat {
+    color: $btn-info-background;
+    background-color: transparent;
+    border: transparent;
+    &:hover {
+      color: #ffffff;
+      background-color: $btn-info-hover;
     }
   }
+}
 
-  &.is-warning {
-    color: #ffffff;
-    border-color: transparent;
+.btn.is-warning {
+  color: #ffffff;
+  border-color: $btn-warning-border;
+  background-color: $btn-warning-background;
+  &:hover {
+    border-color: $btn-warning-hover;
+    background-color: $btn-warning-hover;
+  }
+  &:focus, &.active {
+    border-color: #808080;
+    outline: none;
+  }
+  &.is-outline {
+    color: $btn-warning-background;
+    background-color: transparent;
     &:hover {
+      color: #ffffff;
       background-color: $btn-warning-hover;
     }
-    &:focus, &.active {
-      border-color: #808080;
-      outline: none;
+  }
+  &.is-flat {
+    color: $btn-warning-background;
+    background-color: transparent;
+    border: transparent;
+    &:hover {
+      color: #ffffff;
+      background-color: $btn-warning-hover;
     }
   }
+}
 
-  &.is-danger {
-    color: #ffffff;
-    border-color: transparent;
+.btn.is-danger {
+  color: #ffffff;
+  border-color: $btn-danger-border;
+  background-color: $btn-danget-background;
+  &:hover {
+    border-color: $btn-danger-hover;
+    background-color: $btn-danger-hover;
+  }
+  &:focus, &.active {
+    border-color: #808080;
+    outline: none;
+  }
+  &.is-outline {
+    color: $btn-danger-background;
+    background-color: transparent;
     &:hover {
+      color: #ffffff;
       background-color: $btn-danger-hover;
     }
-    &:focus, &.active {
-      border-color: #808080;
-      outline: none;
+  }
+  &.is-flat {
+    color: $btn-danger-background;
+    background-color: transparent;
+    border: transparent;
+    &:hover {
+      color: #ffffff;
+      background-color: $btn-danger-hover;
     }
   }
+}
 
-  &.is-dark {
-    color: #ffffff;
-    border-color: transparent;
+.btn.is-dark {
+  color: #ffffff;
+  border-color: $btn-dark-border;
+  background-color: $btn-dark-background;
+  &:hover {
+    border-color: $btn-dark-hover;
+    background-color: $btn-dark-hover;
+  }
+  &:focus, &.active {
+    border-color: #808080;
+    outline: none;
+  }
+  &.is-outline {
+    color: $btn-dark-background;
+    background-color: transparent;
     &:hover {
+      color: #ffffff;
       background-color: $btn-dark-hover;
     }
-    &:focus, &.active {
-      border-color: #808080;
-      outline: none;
+  }
+  &.is-flat {
+    color: $btn-dark-background;
+    background-color: transparent;
+    border: transparent;
+    &:hover {
+      color: #ffffff;
+      background-color: $btn-dark-hover;
     }
   }
 }

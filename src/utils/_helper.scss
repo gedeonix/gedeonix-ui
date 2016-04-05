@@ -10,6 +10,10 @@
   text-align: right;
 }
 
+.is-underline {
+  text-decoration: underline;
+}
+
 .is-space {
   flex-grow: 1;
 }
@@ -28,6 +32,7 @@
 
 .is-block {
   width: 100%;
+  /*display: block;*/
 }
 
 .is-center {
@@ -54,6 +59,7 @@
   position: fixed;
   top: 0px;
   width: 100%;
+  z-index: 1000;
 }
 
 .is-shadow {
