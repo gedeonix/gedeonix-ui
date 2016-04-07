@@ -13,6 +13,9 @@
         .fixed-space {
             margin-bottom: 39px;
         }
+        .main {
+            background-color: #ffffd0;
+        }
 
     </style>
 </head>
@@ -29,7 +32,7 @@
 
     <nav class="is-primary">
         <div class="container">
-            <ul class="menu is-tab">
+            <ul class="menu is-tab is-primary">
                 <li><a href="../index.html">Main</a></li>
                 <li><a href="typography.html">Typography</a></li>
                 <li><a href="container.html">Container</a></li>
@@ -57,81 +60,602 @@
 
         <br>
 
-        <h2>Menu</h2>
-
-        <h3>Simple</h3>
-        <div class="row is-gutter is-warning">
-            <ul class="menu">
-                <li class="active"><a href="#">Option 1</a></li>
-                <li><a href="#">Option 2</a></li>
-                <li><a href="#">Option 3</a></li>
-            </ul>
-        </div>
-
-        <h3>Box</h3>
-        <div class="row is-gutter">
-            <ul class="menu is-box">
-                <li class="active"><a href="#">Option 1</a></li>
-                <li><a href="#">Option 2</a></li>
-                <li><a href="#">Option 3</a></li>
-            </ul>
-        </div>
+        <h2>Menu (default)</h2>
+        <ul class="menu">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
         <br>
 
-        <h3>Flat</h3>
-        <div class="row is-gutter">
-            <ul class="menu is-flat">
-                <li class="active"><a href="#">Option 1</a></li>
-                <li><a href="#">Option 2</a></li>
-                <li><a href="#">Option 3</a></li>
-            </ul>
-        </div>
+        <h3>Color</h3>
+        <ul class="menu is-primary">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+        <ul class="menu is-success">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+        <ul class="menu is-info">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+        <ul class="menu is-warning">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
         <br>
 
-        <h3>Tabs</h3>
-        <div class="row is-danger">
-            <div class="brand">Gedeonix UI</div>
-            <ul class="menu is-tab is-danger is-lg is-right">
-                <li><a href="">Tab1</a></li>
-                <li class="active"><a href="">Tab2</a></li>
-                <li><a href="">Tab3</a></li>
-            </ul>
-        </div>
-
-        <h3>With submenu</h3>
-
-        <div class="row is-gutter is-success">
-            <div class="brand">Gedeonix UI</div>
-            <ul class="menu">
-                <li><a>Option 1</a>
-                    <ul>
-                        <li><a href="#">item</a></li>
-                        <li><a href="#">item</a></li>
-                        <li><a href="#">item</a></li>
-                    </ul>
-                </li>
-                <li><a>Option 2</a>
-                    <ul>
-                        <li><a href="#">item</a></li>
-                        <li><a href="#">item</a></li>
-                        <li><a>sub menu</a>
-                            <ul>
-                                <li><a href="#">item</a></li>
-                                <li><a href="#">item</a></li>
-                                <li><a href="#">item</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="#">Option 3</a></li>
-            </ul>
-            <div class="is-right">
-                <a class="btn is-dark is-round"><i class="fa fa-info"></i> Info</a>
-            </div>
-        </div>
+        <ul class="menu is-danger">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
         <br>
 
-        <h3>Complex</h3>
+        <ul class="menu is-dark">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <h3>Size</h3>
+        <ul class="menu is-warning is-xs">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-warning is-sm">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-warning">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-warning is-md">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-warning  is-lg">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+
+        <h2>Box (menu, is-box)</h2>
+        <ul class="menu is-box">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <h3>Color</h3>
+        <ul class="menu is-box is-primary">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+        <ul class="menu is-box is-success">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+        <ul class="menu is-box is-info">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+        <ul class="menu is-box is-warning">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-box is-danger">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-box is-dark">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <h3>Size</h3>
+        <ul class="menu is-box is-warning is-xs">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-box is-warning is-sm">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-box is-warning">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-box is-warning is-md">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-box is-warning  is-lg">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+
+        <h2>Flat (menu, is-flat)</h2>
+        <ul class="menu is-flat">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <h3>Color</h3>
+        <ul class="menu is-flat is-primary">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+        <ul class="menu is-flat is-success">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+        <ul class="menu is-flat is-info">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+        <ul class="menu is-flat is-warning">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-flat is-danger">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-flat is-dark">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <h3>Size</h3>
+        <ul class="menu is-flat is-warning is-xs">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-flat is-warning is-sm">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-flat is-warning">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-flat is-warning is-md">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-flat is-warning  is-lg">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+
+        <h2>Tabs (menu, is-tab)</h2>
+        <ul class="menu is-tab">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <h3>Color</h3>
+        <ul class="menu is-tab is-primary">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+        <ul class="menu is-tab is-success">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+        <ul class="menu is-tab is-info">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+        <ul class="menu is-tab is-warning">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-tab is-danger">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-tab is-dark">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <h3>Size</h3>
+        <ul class="menu is-tab is-warning is-xs">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-tab is-warning is-sm">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-tab is-warning">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-tab is-warning is-md">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-tab is-warning  is-lg">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+
+        <h2>Flat (menu, is-flat)</h2>
+        <ul class="menu is-flat">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <h3>Color</h3>
+        <ul class="menu is-flat is-primary">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+        <ul class="menu is-flat is-success">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+        <ul class="menu is-flat is-info">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+        <ul class="menu is-flat is-warning">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-flat is-danger">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-flat is-dark">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <h3>Size</h3>
+        <ul class="menu is-flat is-warning is-xs">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-flat is-warning is-sm">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-flat is-warning">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-flat is-warning is-md">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+        <br>
+
+        <ul class="menu is-flat is-warning  is-lg">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li class="active"><a href="#">Active</a></li>
+            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Right</a></li>
+        </ul>
+
+        <h2>Complex</h2>
 
         <div class="row is-gutter is-dark">
             <div class="brand">Gedeonix UI</div>
@@ -180,156 +704,60 @@
 
         </div>
 
-        <h3>Size and colors</h3>
-        <ul class="container menu is-box is-xs">
-            <li><a href="">Option 1</a></li>
-            <li class="active"><a href="">Option2</a></li>
-            <li><a href="">Option 3</a></li>
-            <li><a href="">Option 4</a></li>
-            <li class="is-space"></li>
-            <li><a href="">Option 5</a></li>
-        </ul>
+        <h3>With submenu</h3>
 
-        <br>
-
-        <ul class="container menu is-box is-warning is-sm">
-            <li><a href="">Option 1</a></li>
-            <li class="active"><a href="">Option2</a></li>
-            <li><a href="">Option 3</a></li>
-            <li><a href="">Option 4</a></li>
-            <li class="is-space"></li>
-            <li><a href="">Option 5</a></li>
-        </ul>
-
-        <br>
-
-        <ul class="container menu is-box is-danger">
-            <li><a href="">Option 1</a></li>
-            <li class="active"><a href="">Option2</a></li>
-            <li><a href="">Option 3</a></li>
-            <li><a href="">Option 4</a></li>
-            <li class="is-space"></li>
-            <li><a href="">Option 5</a></li>
-        </ul>
-
-        <br>
-
-        <ul class="container menu is-box is-dark is-md">
-            <li><a href="">Option 1</a></li>
-            <li class="active"><a href="">Option2</a></li>
-            <li><a href="">Option 3</a></li>
-            <li><a href="">Option 4</a></li>
-            <li class="is-space"></li>
-            <li><a href="">Option 5</a></li>
-        </ul>
-
-        <br>
-
-        <ul class="container menu is-box is-info is-lg">
-            <li><a href="">Option 1</a></li>
-            <li class="active"><a href="">Option2</a></li>
-            <li><a href="">Option 3</a></li>
-            <li><a href="">Option 4</a></li>
-            <li class="is-space"></li>
-            <li><a href="">Option 5</a></li>
-        </ul>
-
-        <h3>Disabled</h3>
-
-        <ul class="container menu is-box is-info is-lg">
-            <li class="active"><a href="">Option1</a></li>
-            <li><a href="">Option 2</a></li>
-            <li class="disabled"><a href="" class="disabled">Option3</a></li>
-        </ul>
-
-
-        <h2>Tabs</h2>
-        <h3>Tab is boxed</h3>
-        <div class="is-primary">
-            <ul class="container menu is-tab is-gutter">
-                <li><a href="">Tab1</a></li>
-                <li class="active"><a href="">Tab2</a></li>
-                <li><a href="">Tab3</a></li>
-                <li><a href="">Tab4</a></li>
-                <li class="is-space"></li>
-                <li><a href="">Tab5</a></li>
+        <div class="row is-gutter is-success">
+            <div class="brand">Gedeonix UI</div>
+            <ul class="menu">
+                <li><a>Option 1</a>
+                    <ul>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                    </ul>
+                </li>
+                <li><a>Option 2</a>
+                    <ul>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                        <li><a>sub menu</a>
+                            <ul>
+                                <li><a href="#">item</a></li>
+                                <li><a href="#">item</a></li>
+                                <li><a href="#">item</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Option 3</a></li>
             </ul>
+            <div class="is-right">
+                <a class="btn is-dark is-round"><i class="fa fa-info"></i> Info</a>
+            </div>
         </div>
+        <br>
 
-        <h3>Tab is flat</h3>
-        <div class="">
-            <ul class="container menu is-flat">
-                <li><a href="">Tab1</a></li>
-                <li class="active"><a href="">Tab2</a></li>
-                <li><a href="">Tab3</a></li>
-                <li><a href="">Tab4</a></li>
-                <li class="is-space"></li>
-                <li><a href="">Tab5</a></li>
-            </ul>
-        </div>
+        <h3>Is gutter</h3>
 
-        <h3>Size</h3>
-        <ul class="container menu is-tab is-sm is-primary">
+        <ul class="menu is-tab is-success is-gutter">
             <li><a href="">Tab1</a></li>
             <li class="active"><a href="">Tab2</a></li>
             <li><a href="">Tab3</a></li>
-        </ul>
-        <br>
-        <ul class="container menu is-tab is-primary">
-            <li><a href="">Tab1</a></li>
-            <li class="active"><a href="">Tab2</a></li>
-            <li><a href="">Tab3</a></li>
-        </ul>
-        <br>
-        <ul class="container menu is-tab is-md is-primary">
-            <li><a href="">Tab1</a></li>
-            <li class="active"><a href="">Tab2</a></li>
-            <li><a href="">Tab3</a></li>
-        </ul>
-        <br>
-        <ul class="container menu is-tab is-lg is-primary">
-            <li><a href="">Tab1</a></li>
-            <li class="active"><a href="">Tab2</a></li>
-            <li><a href="">Tab3</a></li>
+            <li><a href="">Tab4</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Tab5</a></li>
         </ul>
 
-        <h3>Color (todo)</h3>
-        <ul class="container menu is-tab is-info">
+        <h3>No gutter</h3>
+
+        <ul class="menu is-tab is-success no-gutter">
             <li><a href="">Tab1</a></li>
             <li class="active"><a href="">Tab2</a></li>
             <li><a href="">Tab3</a></li>
+            <li><a href="">Tab4</a></li>
+            <li class="is-space"></li>
+            <li><a href="">Tab5</a></li>
         </ul>
-        <br>
-        <ul class="container menu is-tab is-primary">
-            <li><a href="">Tab1</a></li>
-            <li class="active"><a href="">Tab2</a></li>
-            <li><a href="">Tab3</a></li>
-        </ul>
-        <br>
-        <ul class="container menu is-tab is-success">
-            <li><a href="">Tab1</a></li>
-            <li class="active"><a href="">Tab2</a></li>
-            <li><a href="">Tab3</a></li>
-        </ul>
-        <br>
-        <ul class="container menu is-tab is-danger">
-            <li><a href="">Tab1</a></li>
-            <li class="active"><a href="">Tab2</a></li>
-            <li><a href="">Tab3</a></li>
-        </ul>
-        <br>
-        <ul class="container menu is-tab is-warning">
-            <li><a href="">Tab1</a></li>
-            <li class="active"><a href="">Tab2</a></li>
-            <li><a href="">Tab3</a></li>
-        </ul>
-        <br>
-        <ul class="container menu is-tab is-dark">
-            <li><a href="">Tab1</a></li>
-            <li class="active"><a href="">Tab2</a></li>
-            <li><a href="">Tab3</a></li>
-        </ul>
-        <br>
 
     </main>
 

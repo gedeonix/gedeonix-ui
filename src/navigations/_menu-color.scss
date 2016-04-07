@@ -1,0 +1,44 @@
+.menu {
+  &.is-primary a {
+    background-color: $btn-primary-background;
+    &:hover {
+      background-color: $btn-primary-hover;
+    }
+  }
+  &.is-success a {
+    background-color: $btn-success-background;
+    &:hover {
+      background-color: $btn-success-hover;
+    }
+  }
+  &.is-info a {
+    background-color: $btn-info-background;
+    &:hover {
+      background-color: $btn-info-hover;
+    }
+  }
+  &.is-warning a {
+    background-color: $btn-warning-background;
+    &:hover {
+      background-color: $btn-warning-hover;
+    }
+  }
+  &.is-danger a {
+    background-color: $btn-danger-background;
+    &:hover {
+      background-color: $btn-danger-hover;
+    }
+  }
+  &.is-dark a {
+    background-color: $btn-dark-background;
+    &:hover {
+      background-color: $btn-dark-hover;
+    }
+  }
+  &.is-gray a {
+    background-color: $btn-gray-background;
+    &:hover {
+      background-color: $btn-gray-hover;
+    }
+  }
+}

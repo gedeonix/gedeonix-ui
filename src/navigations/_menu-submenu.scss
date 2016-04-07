@@ -1,0 +1,24 @@
+.menu {
+  /* submenu */
+  > li > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+
+    display: none;
+    position: absolute;
+    color: $text-color;
+    background-color: #c0c0c0;
+    border: 1px solid #222;
+    border-top: 0;
+    /*margin-left: -5px;*/
+    > li {
+      display: block;
+      a:hover {
+        background-color: $dark-color;
+        color: $gray-color;
+      }
+    }
+  }
+}

@@ -19,37 +19,50 @@ $btn-font-size:                 1rem !default;
 $btn-default-color:             #ffffff !default;
 $btn-default-background:        transparent !default;
 $btn-default-border:            #d4d4d4 !default;
-$btn-default-hover:             #a0a0a0 !default;
+$btn-default-hover:             #f0f0f0 !default;
+$btn-default-active:            #ffffff !default;
 
 $btn-primary-color:             #ffffff !default;
 $btn-primary-background:        #65bcfe !default;
 $btn-primary-border:            #65bcfe !default;
 $btn-primary-hover:             #459cde !default;
+$btn-primary-active:            #4f9fdf !default;
 
 $btn-success-color:             #ffffff !default;
 $btn-success-background:        #5acd59 !default;
 $btn-success-border:            #94cd5a !default;
 $btn-success-hover:             #32c07f !default;
+$btn-success-active:            #32c07f !default;
 
 $btn-info-color:                #ffffff !default;
 $btn-info-background:           #6ad1dd !default;
 $btn-info-border:               #4cdadd !default;
 $btn-info-hover:                #33e9ec !default;
+$btn-info-active:               #33e9ec !default;
 
 $btn-warning-color:             #ffffff !default;
 $btn-warning-background:        #ffa924 !default;
 $btn-warning-border:            #ffa924 !default;
 $btn-warning-hover:             #ffd11e !default;
+$btn-warning-active:            #ffd11e !default;
 
 $btn-danger-color:              #ffffff !default;
 $btn-danger-background:         #fc573f !default;
 $btn-danger-border:             #fc573f !default;
 $btn-danger-hover:              #fc4016 !default;
+$btn-danger-active:             #fc4016 !default;
 
 $btn-dark-color:                #ffffff !default;
 $btn-dark-background:           #4e4f51 !default;
 $btn-dark-border:               #4e4f51 !default;
 $btn-dark-hover:                #8a8b8f !default;
+$btn-dark-active:               #8a8b8f !default;
+
+$btn-gray-color:                #a0a0a0 !default;
+$btn-gray-background:           #e0e0e0 !default;
+$btn-gray-border:               #a0a0a0 !default;
+$btn-gray-hover:                #c0c0c0 !default;
+$btn-gray-active:               #808080 !default;
 
 $palette-name: (default,primary,success,info,warning,danger,dark);
 $palette-color: (transparent,#65bcfe,#5acd59,#6ad1dd, #ffa924,#fc573f,#4e4f51);
@@ -84,4 +97,3 @@ $lg:                            1440px !default;
 
 $footer-text-color:             #ffffff !default;
 $footer-background-color:       #d4d4d4 !default;
-
