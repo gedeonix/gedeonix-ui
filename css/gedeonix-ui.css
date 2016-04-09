@@ -377,7 +377,7 @@ pre {
 .btn.is-danger {
   color: #ffffff;
   border-color: #fc573f;
-  background-color: $btn-danget-background
+  background-color: #fc573f
 }
 
 .btn.is-danger:hover{
@@ -1631,25 +1631,24 @@ table td {
   font-family: inherit;
   font-size: 1rem;
   font-weight: normal;
-  line-height: 1.4em;
   justify-content: flex-start;
   margin: 0;
-  overflow: hidden;
+  /*overflow: hidden;*/
   padding: 0;
-}
 
-/*line-height: 1.5rem;*/
+  list-style: none;
+  line-height: 1.5rem;
+}
 
 .menu a {
   color: #606060;
+  cursor: pointer;
   display: block;
-  padding: 1rem;
+  padding: 1em;
   text-decoration: none;
   text-align: left;
   white-space: nowrap;
 }
-
-/*list-style-type: none;*/
 
 .menu > li {
   display: inline-block
@@ -1682,14 +1681,127 @@ table td {
   display: block;
 }
 
-.menu.is-box li + li {
-  margin-left: 0.25em;
-  /*margin-right: 0.25em;*/
+.menu {
 }
 
-.menu.is-box > li {
+.menu.is-gray a{
+  background-color: #e0e0e0;
+}
+
+.menu.is-gray a:hover{
+  background-color: #c0c0c0;
+}
+
+.menu.is-gray .active a{
+  color: #a0a0a0;
+  background-color: #808080;
+}
+
+.menu.is-primary a{
+  background-color: #65bcfe;
+}
+
+.menu.is-primary a:hover{
+  background-color: #459cde;
+}
+
+.menu.is-primary .active a{
+  color: #ffffff;
+  background-color: #4f9fdf;
+}
+
+.menu.is-success a{
+  background-color: #5acd59;
+}
+
+.menu.is-success a:hover{
+  background-color: #32c07f;
+}
+
+.menu.is-success .active a{
+  color: #ffffff;
+  background-color: #32c07f;
+}
+
+.menu.is-info a{
+  background-color: #6ad1dd;
+}
+
+.menu.is-info a:hover{
+  background-color: #33e9ec;
+}
+
+.menu.is-info .active a{
+  color: #ffffff;
+  background-color: #33e9ec;
+}
+
+.menu.is-warning a{
+  background-color: #ffa924;
+}
+
+.menu.is-warning a:hover{
+  background-color: #ffd11e;
+}
+
+.menu.is-warning .active a{
+  color: #ffffff;
+  background-color: #ffd11e;
+}
+
+.menu.is-danger a{
+  background-color: #fc573f;
+}
+
+.menu.is-danger a:hover{
+  background-color: #fc4016;
+}
+
+.menu.is-danger .active a{
+  color: #ffffff;
+  background-color: #fc4016;
+}
+
+.menu.is-dark a{
+  background-color: #4e4f51;
+}
+
+.menu.is-dark a:hover{
+  background-color: #8a8b8f;
+}
+
+.menu.is-dark .active a{
+  color: #ffffff;
+  background-color: #8a8b8f;
+}
+
+.menu.is-box {
+  /*
+  li.active a {
+    color: $btn-default-color;
+    background-color: $btn-default-hover;
+  }
+
+  li.disabled a {
+    color: $text-color;
+    background-color: #e0e0e0;
+  }
+
+  &.is-outline li.active a {
+    color: $text-color;
+    border-color: $btn-default-border;
+    background-color: transparent;
+  }
+  */
+}
+
+.menu.is-box li {
   background-color: inherit;
   padding: 0.25em 0;
+}
+
+.menu.is-box li + li {
+  margin-left: 0.25em;
 }
 
 .menu.is-box a {
@@ -1698,94 +1810,27 @@ table td {
   color: #606060;
   display: inherit;
   padding: 0.75rem 1rem;
-  margin: 0
+  margin: 0;
 }
 
-.menu.is-box a:hover{
-  color: #ffffff;
-  background-color: #f0f0f0;
+.menu.is-flat {
+  border-bottom: 2px solid #65bcfe;
 }
 
-.menu.is-box li.active a {
-  color: #ffffff;
-  background-color: #f0f0f0;
+.menu.is-flat a {
+  border-bottom: 2px solid #65bcfe;
+  margin-bottom: -2px
 }
 
-.menu.is-box li.disabled a {
-  color: #606060;
-  background-color: #e0e0e0;
-}
-
-.menu.is-box.is-primary a{
-  background-color: #65bcfe;
-}
-
-.menu.is-box.is-primary a:hover{
-  background-color: #459cde;
-}
-
-.menu.is-box.is-success a{
-  background-color: #5acd59;
-}
-
-.menu.is-box.is-success a:hover{
-  background-color: #32c07f;
-}
-
-.menu.is-box.is-info a{
-  background-color: #6ad1dd;
-}
-
-.menu.is-box.is-info a:hover{
-  background-color: #33e9ec;
-}
-
-.menu.is-box.is-warning a{
-  background-color: #ffa924;
-}
-
-.menu.is-box.is-warning a:hover{
-  background-color: #ffd11e;
-}
-
-.menu.is-box.is-danger a{
-  background-color: #fc573f;
-}
-
-.menu.is-box.is-danger a:hover{
-  background-color: #fc4016;
-}
-
-.menu.is-box.is-dark a{
-  background-color: #4e4f51;
-}
-
-.menu.is-box.is-dark a:hover{
-  background-color: #8a8b8f;
-}
-
-.menu.is-box.is-outline li.active a{
-  color: #606060;
-  border-color: #d4d4d4;
-  background-color: transparent;
-}
-
-.menu.is-flat > li {
-  border-bottom: 2px solid #d4d4d4;
-}
-
-.menu.is-flat > li a:hover {
+.menu.is-flat a:hover{
+  border-bottom-color: #459cde;
   color: #459cde;
 }
 
-.menu.is-flat > li:hover{
+.menu.is-flat .active a {
+  border-bottom-color: #4f9fdf;
   background-color: transparent;
-  border-bottom: 2px solid #459cde;
-}
-
-.menu.is-flat li.active a {
-  color: #65bcfe;
-  border-bottom: 2px solid #65bcfe;
+  color: #4f9fdf;
 }
 
 /*$btn-default-border;*/
@@ -1826,67 +1871,8 @@ table td {
 .menu {
 }
 
-.menu.is-primary a{
-  background-color: #65bcfe;
-}
-
-.menu.is-primary a:hover{
-  background-color: #459cde;
-}
-
-.menu.is-success a{
-  background-color: #5acd59;
-}
-
-.menu.is-success a:hover{
-  background-color: #32c07f;
-}
-
-.menu.is-info a{
-  background-color: #6ad1dd;
-}
-
-.menu.is-info a:hover{
-  background-color: #33e9ec;
-}
-
-.menu.is-warning a{
-  background-color: #ffa924;
-}
-
-.menu.is-warning a:hover{
-  background-color: #ffd11e;
-}
-
-.menu.is-danger a{
-  background-color: #fc573f;
-}
-
-.menu.is-danger a:hover{
-  background-color: #fc4016;
-}
-
-.menu.is-dark a{
-  background-color: #4e4f51;
-}
-
-.menu.is-dark a:hover{
-  background-color: #8a8b8f;
-}
-
-.menu.is-gray a{
-  background-color: #e0e0e0;
-}
-
-.menu.is-gray a:hover{
-  background-color: #c0c0c0;
-}
-
-.menu {
-}
-
 .menu.is-xs{
-  font-size: 0.75rem;
+  font-size: 0.65rem;
 }
 
 .menu.is-sm{

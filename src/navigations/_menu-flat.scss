@@ -1,16 +1,18 @@
 .menu.is-flat {
-  > li {
-    border-bottom: 2px solid #d4d4d4;
+  border-bottom: 2px solid $btn-primary-background;
+  a {
+    border-bottom: 2px solid $btn-primary-background;
+    margin-bottom: -2px;
     &:hover {
-      background-color: transparent;
-      border-bottom: 2px solid #459cde;
-    }
-    a:hover {
-      color: #459cde;
+      border-bottom-color: $btn-primary-hover;
+      color: $btn-primary-hover;
     }
   }
-  li.active a {
-    color: #65bcfe;
-    border-bottom: 2px solid #65bcfe;
+  .active a {
+    border-bottom-color: $btn-primary-active;
+    background-color: transparent;
+    color: $btn-primary-active;
   }
 }
+
+

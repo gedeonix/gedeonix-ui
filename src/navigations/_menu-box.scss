@@ -1,13 +1,11 @@
 .menu.is-box {
-  li + li {
-    margin-left: 0.25em;
-    /*margin-right: 0.25em;*/
-  }
-  > li {
+  li {
     background-color: inherit;
     padding: 0.25em 0;
   }
-
+  li + li {
+    margin-left: 0.25em;
+  }
   a {
     border: 1px solid transparent;
     border-radius: 5px;
@@ -15,49 +13,8 @@
     display: inherit;
     padding: 0.75rem 1rem;
     margin: 0;
-    &:hover {
-      color: $btn-default-color;
-      background-color: $btn-default-hover;
-    }
   }
-
-  &.is-primary a {
-    background-color: $btn-primary-background;
-    &:hover {
-      background-color: $btn-primary-hover;
-    }
-  }
-  &.is-success a {
-    background-color: $btn-success-background;
-    &:hover {
-      background-color: $btn-success-hover;
-    }
-  }
-  &.is-info a {
-    background-color: $btn-info-background;
-    &:hover {
-      background-color: $btn-info-hover;
-    }
-  }
-  &.is-warning a {
-    background-color: $btn-warning-background;
-    &:hover {
-      background-color: $btn-warning-hover;
-    }
-  }
-  &.is-danger a {
-    background-color: $btn-danger-background;
-    &:hover {
-      background-color: $btn-danger-hover;
-    }
-  }
-  &.is-dark a {
-    background-color: $btn-dark-background;
-    &:hover {
-      background-color: $btn-dark-hover;
-    }
-  }
-
+  /*
   li.active a {
     color: $btn-default-color;
     background-color: $btn-default-hover;
@@ -73,4 +30,5 @@
     border-color: $btn-default-border;
     background-color: transparent;
   }
+  */
 }
