@@ -1635,7 +1635,6 @@ table td {
   margin: 0;
   /*overflow: hidden;*/
   padding: 0;
-
   list-style: none;
   line-height: 1.5rem;
 }
@@ -1651,7 +1650,16 @@ table td {
 }
 
 .menu > li {
+  background-color: inherit;
   display: inline-block
+  /*
+    a:hover {
+      background-color: $btn-default-hover;
+      > ul {
+        display: block;
+      }
+    }
+    */
 }
 
 .menu > li:hover{
@@ -1665,27 +1673,15 @@ table td {
 .menu li.active a {
   color: #606060;
   background-color: #ffffff;
-  /*border-bottom: 1px solid $btn-default-background;*/
-}
-
-.menu > li {
-  background-color: inherit;
-  display: inline-block;
-}
-
-.menu > li a:hover {
-  background-color: #f0f0f0;
-}
-
-.menu > li a:hover > ul {
-  display: block;
 }
 
 .menu {
 }
 
 .menu.is-gray a{
+  color: #a0a0a0;
   background-color: #e0e0e0;
+  border-color: #e0e0e0;
 }
 
 .menu.is-gray a:hover{
@@ -1698,6 +1694,8 @@ table td {
 }
 
 .menu.is-primary a{
+  color: #ffffff;
+  border-color: #65bcfe;
   background-color: #65bcfe;
 }
 
@@ -1711,6 +1709,8 @@ table td {
 }
 
 .menu.is-success a{
+  color: #ffffff;
+  border-color: #5acd59;
   background-color: #5acd59;
 }
 
@@ -1724,6 +1724,8 @@ table td {
 }
 
 .menu.is-info a{
+  color: #ffffff;
+  border-color: #6ad1dd;
   background-color: #6ad1dd;
 }
 
@@ -1737,6 +1739,8 @@ table td {
 }
 
 .menu.is-warning a{
+  color: #ffffff;
+  border-color: #ffa924;
   background-color: #ffa924;
 }
 
@@ -1750,6 +1754,8 @@ table td {
 }
 
 .menu.is-danger a{
+  color: #ffffff;
+  border-color: #fc573f;
   background-color: #fc573f;
 }
 
@@ -1763,6 +1769,8 @@ table td {
 }
 
 .menu.is-dark a{
+  color: #ffffff;
+  border-color: #4e4f51;
   background-color: #4e4f51;
 }
 
@@ -1808,64 +1816,63 @@ table td {
   border: 1px solid transparent;
   border-radius: 5px;
   color: #606060;
-  display: inherit;
   padding: 0.75rem 1rem;
   margin: 0;
 }
 
 .menu.is-flat {
-  border-bottom: 2px solid #65bcfe;
+  border-bottom: 1px solid #606060;
 }
 
 .menu.is-flat a {
-  border-bottom: 2px solid #65bcfe;
-  margin-bottom: -2px
+  border-bottom: 1px solid #606060;
+  margin-bottom: -1px
 }
 
 .menu.is-flat a:hover{
-  border-bottom-color: #459cde;
-  color: #459cde;
+  /*background-color: transparent;*/
+  /*border-bottom-color: $btn-default-hover;*/
+  color: #606060;
 }
 
 .menu.is-flat .active a {
-  border-bottom-color: #4f9fdf;
   background-color: transparent;
-  color: #4f9fdf;
+  border-bottom: 2px solid #606060;
+  color: #606060;
+  margin-bottom: -1px;
 }
 
-/*$btn-default-border;*/
+.menu.is-tab {
+  border-bottom: 1px solid #606060;
+}
 
 .menu.is-tab li + li {
-  margin-left: 0.3em;
+  margin-left: 0.25em;
 }
-
-/*border-bottom: 1px solid red;*/
 
 .menu.is-tab > li {
   background-color: transparent;
 }
 
 .menu.is-tab a {
-  /*border: 1px solid $btn-default-border;*/
+  border: 1px solid #606060;
+  margin-bottom: -1px;
+  /*border-color: transparent;*/
+  /*
+    border-width: 1px;
+    border-style: solid;
+    border-bottom: none;
+    */
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  color: #606060;
-  margin: 0.75em 0 0px 0;
+  margin: 0.75em 0 -1px 0;
   padding: 0.75em 1em;
 }
 
 .menu.is-tab li.active a {
   color: #606060;
   background-color: #ffffff;
-  /*
-    border-bottom: 1px solid $btn-default-background;
-    */
-}
-
-.menu.is-tab a:hover {
-  color: #ffffff;
-  background-color: #f0f0f0;
-  /*border-bottom: 1px solid $btn-default-background;*/
+  border-bottom-color: transparent;
 }
 
 .menu {

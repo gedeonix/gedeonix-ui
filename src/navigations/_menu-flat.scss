@@ -1,18 +1,18 @@
 .menu.is-flat {
-  border-bottom: 2px solid $btn-primary-background;
+  border-bottom: 1px solid $btn-default-color;
   a {
-    border-bottom: 2px solid $btn-primary-background;
-    margin-bottom: -2px;
+    border-bottom: 1px solid $btn-default-color;
+    margin-bottom: -1px;
     &:hover {
-      border-bottom-color: $btn-primary-hover;
-      color: $btn-primary-hover;
+      /*background-color: transparent;*/
+      /*border-bottom-color: $btn-default-hover;*/
+      color: $btn-default-color;
     }
   }
   .active a {
-    border-bottom-color: $btn-primary-active;
     background-color: transparent;
-    color: $btn-primary-active;
+    border-bottom: 2px solid $btn-default-color;
+    color: $btn-default-color;
+    margin-bottom: -1px;
   }
 }
-
-

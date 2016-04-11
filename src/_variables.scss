@@ -16,11 +16,23 @@ $dark-color:                    #4e4f51 !default;
 
 $btn-font-size:                 1rem !default;
 
-$btn-default-color:             #ffffff !default;
+$btn-default-color:             #606060 !default;
 $btn-default-background:        transparent !default;
 $btn-default-border:            #d4d4d4 !default;
 $btn-default-hover:             #f0f0f0 !default;
 $btn-default-active:            #ffffff !default;
+
+$btn-gray-color:                #a0a0a0 !default;
+$btn-gray-background:           #e0e0e0 !default;
+$btn-gray-border:               #a0a0a0 !default;
+$btn-gray-hover:                #c0c0c0 !default;
+$btn-gray-active:               #808080 !default;
+
+$btn-dark-color:                #ffffff !default;
+$btn-dark-background:           #4e4f51 !default;
+$btn-dark-border:               #4e4f51 !default;
+$btn-dark-hover:                #8a8b8f !default;
+$btn-dark-active:               #8a8b8f !default;
 
 $btn-primary-color:             #ffffff !default;
 $btn-primary-background:        #65bcfe !default;
@@ -52,20 +64,8 @@ $btn-danger-border:             #fc573f !default;
 $btn-danger-hover:              #fc4016 !default;
 $btn-danger-active:             #fc4016 !default;
 
-$btn-dark-color:                #ffffff !default;
-$btn-dark-background:           #4e4f51 !default;
-$btn-dark-border:               #4e4f51 !default;
-$btn-dark-hover:                #8a8b8f !default;
-$btn-dark-active:               #8a8b8f !default;
-
-$btn-gray-color:                #a0a0a0 !default;
-$btn-gray-background:           #e0e0e0 !default;
-$btn-gray-border:               #a0a0a0 !default;
-$btn-gray-hover:                #c0c0c0 !default;
-$btn-gray-active:               #808080 !default;
-
-$palette-name: (default,primary,success,info,warning,danger,dark);
-$palette-color: (transparent,#65bcfe,#5acd59,#6ad1dd, #ffa924,#fc573f,#4e4f51);
+$palette-name: (default,gray,primary,success,info,warning,danger,dark);
+$palette-color: (transparent,#a0a0a0,#65bcfe,#5acd59,#6ad1dd, #ffa924,#fc573f,#4e4f51);
 
 
 $btn-radius:                    4px !default;

@@ -2,7 +2,9 @@
 
   &.is-gray {
     a {
+      color: $btn-gray-color;
       background-color: $btn-gray-background;
+      border-color: $btn-gray-background;
       &:hover {
         background-color: $btn-gray-hover;
       }
@@ -15,6 +17,8 @@
 
   &.is-primary {
     a {
+      color: $btn-primary-color;
+      border-color: $btn-primary-background;
       background-color: $btn-primary-background;
       &:hover {
         background-color: $btn-primary-hover;
@@ -28,6 +32,8 @@
 
   &.is-success {
     a {
+      color: $btn-success-color;
+      border-color: $btn-success-background;
       background-color: $btn-success-background;
       &:hover {
         background-color: $btn-success-hover;
@@ -41,6 +47,8 @@
 
   &.is-info {
     a {
+      color: $btn-info-color;
+      border-color: $btn-info-background;
       background-color: $btn-info-background;
       &:hover {
         background-color: $btn-info-hover;
@@ -54,6 +62,8 @@
 
   &.is-warning {
     a {
+      color: $btn-warning-color;
+      border-color: $btn-warning-background;
       background-color: $btn-warning-background;
       &:hover {
         background-color: $btn-warning-hover;
@@ -67,6 +77,8 @@
 
   &.is-danger {
     a {
+      color: $btn-danger-color;
+      border-color: $btn-danger-background;
       background-color: $btn-danger-background;
       &:hover {
         background-color: $btn-danger-hover;
@@ -80,6 +92,8 @@
 
   &.is-dark {
     a {
+      color: $btn-dark-color;
+      border-color: $btn-dark-background;
       background-color: $btn-dark-background;
       &:hover {
         background-color: $btn-dark-hover;

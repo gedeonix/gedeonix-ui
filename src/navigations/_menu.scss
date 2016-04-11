@@ -10,12 +10,11 @@
   margin: 0;
   /*overflow: hidden;*/
   padding: 0;
-
   list-style: none;
   line-height: 1.5rem;
 
   a {
-    color: $text-color;
+    color: $btn-default-color;
     cursor: pointer;
     display: block;
     padding: 1em;
@@ -25,6 +24,7 @@
   }
 
   > li {
+    background-color: inherit;
     display: inline-block;
     &:hover {
       background-color: $btn-default-hover;
@@ -32,24 +32,18 @@
         display: block;
       }
     }
-  }
-}
-
-.menu {
-  li.active a {
-    color: $text-color;
-    background-color: $btn-default-active;
-    /*border-bottom: 1px solid $btn-default-background;*/
-  }
-
-  > li {
-    background-color: inherit;
-    display: inline-block;
+    /*
     a:hover {
       background-color: $btn-default-hover;
       > ul {
         display: block;
       }
     }
+    */
+  }
+
+  li.active a {
+    color: $text-color;
+    background-color: $btn-default-active;
   }
 }
