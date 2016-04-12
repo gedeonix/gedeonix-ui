@@ -16,39 +16,39 @@
 
         .col > div, [class*=col-] > div:not([class*=row])  {
             text-align: center;
-            outline: 1px dashed #ff0000;
+            outline: 1px dashed #ff795a;
         }
 
         @media all {
             .main {
-                background-color: #ffbf4e; /*xs*/
+                background-color: #ffffff; /*xs*/
             }
         }
         @media all and (min-width: 640px) {
             .main {
-                background-color: #fff593; /*sm*/
+                background-color: #ffffe0; /*sm*/
             }
         }
         @media all and (min-width: 1024px) {
             .main {
-                background-color: #cbff89; /*md*/
+                background-color: #e0ffff; /*md*/
             }
         }
         @media all and (min-width: 1440px) {
             .main {
-                background-color: #9addff; /*lg*/
+                background-color: #fafafa; /*lg*/
             }
         }
 
         .col > div:not([class*=row]) {
             width: 100%;
-            background-color: #d3ff37;
+            background-color: #e0e0e0;
             text-align: center;
         }
 
         [class*=col-] > div:not([class*=row]) {
             width: 100%;
-            background-color: #fff42b;
+            background-color: #d0d0d0;
             text-align: center;
         }
 
@@ -505,88 +505,147 @@
 
 
 
-        <h3>Responsive (xs sm md lg)</h3>
+        <h3>Responsive (xs sm md lg) - TODO</h3>
 
-        <!--
+        <table class="table is-border">
+            <thead>
+            <tr>
+                <th></th>
+                <th>xs &lt;=320px</th>
+                <th>320px &lt;= sm &lt; 720px</th>
+                <th>720px &lt;= md &lt; 1024px</th>
+                <th>1024px &lt;= lg</th>
+            </tr>
+            </thead>
 
-        <h4>1 column in xs</h4>
+            <tbody>
+            <tr>
+                <th>prefix</th>
+                <td>col-xs-</td>
+                <td>col-sm-</td>
+                <td>col-md-</td>
+                <td>col-lg-</td>
+            </tr>
+            <tr>
+                <th>gutter with</th>
+                <td>0.25rem</td>
+                <td>0.50rem</td>
+                <td>0.75rem</td>
+                <td>1rem</td>
+            </tr>
+            </tbody>
+
+        </table>
+
+        <h4>1 column in xs (row xs-1)</h4>
         <div class="row xs-1">
-            <div class="col">col</div>
-            <div class="col">col</div>
-            <div class="col">col</div>
-            <div class="col">col</div>
-            <div class="col">col</div>
-            <div class="col">col</div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
         </div>
 
         <br>
 
-        <h4>1 column in sm</h4>
+        <h4>1 column in sm (row sm-1)</h4>
         <div class="row sm-1">
-            <div class="col">col</div>
-            <div class="col">col</div>
-            <div class="col">col</div>
-            <div class="col">col</div>
-            <div class="col">col</div>
-            <div class="col">col</div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
         </div>
 
-        <h4>1 column in md</h4>
+        <h4>1 column in md (row md-1)</h4>
         <div class="row md-1">
-            <div class="col">col</div>
-            <div class="col">col</div>
-            <div class="col">col</div>
-            <div class="col">col</div>
-            <div class="col">col</div>
-            <div class="col">col</div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
         </div>
 
-        <h4>1 column in lg</h4>
+        <h4>1 column in lg (row lg-1)</h4>
         <div class="row lg-1">
-            <div class="col">col</div>
-            <div class="col">col</div>
-            <div class="col">col</div>
-            <div class="col">col</div>
-            <div class="col">col</div>
-            <div class="col">col</div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
         </div>
 
-        <h4>Mix (xs-1 sm-2 md-3 lg-4)</h4>
+        <h4>Mix (row & xs-1 sm-2 md-3 lg-4)</h4>
         <div class="row xs-1 sm-2 md-3 lg-4">
-            <div class="col">col</div>
-            <div class="col">col</div>
-            <div class="col">col</div>
-            <div class="col">col</div>
-            <div class="col">col</div>
-            <div class="col">col</div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
         </div>
 
+        <h4>12 columns in md (col-md1)</h4>
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">xs</div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">xs</div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">xs</div>
+            <div class="col-md-1"><div>md-1</div></div>
+            <div class="col-md-1"><div>md-1</div></div>
+            <div class="col-md-1"><div>md-1</div></div>
+            <div class="col-md-1"><div>md-1</div></div>
+            <div class="col-md-1"><div>md-1</div></div>
+            <div class="col-md-1"><div>md-1</div></div>
+            <div class="col-md-1"><div>md-1</div></div>
+            <div class="col-md-1"><div>md-1</div></div>
+            <div class="col-md-1"><div>md-1</div></div>
+            <div class="col-md-1"><div>md-1</div></div>
+            <div class="col-md-1"><div>md-1</div></div>
+            <div class="col-md-1"><div>md-1</div></div>
         </div>
+
+        <h4>Mix columns (col-md-4)</h4>
         <div class="row">
-            <div class="col-xs-12 col-sm-4 col-md-2 col-lg-1">xs</div>
-            <div class="col-xs-12 col-sm-3 col-md-2 col-lg">xs</div>
-            <div class="col-xs-12 col-sm col-md col-lg">xs</div>
+            <div class="col-md-4"><div>md-4</div></div>
+            <div class="col-md-4"><div>md-4</div></div>
+            <div class="col-md-4"><div>md-4</div></div>
         </div>
+
+        <h4>Mix columns (col-xs-12)</h4>
         <div class="row">
-            <div class="col-sm-4">xs</div>
-            <div class="col-sm-3">xs</div>
-            <div class="col-sm">xs</div>
+            <div class="col-xs-12"><div>col</div></div>
+            <div class="col-xs-12"><div>col</div></div>
+            <div class="col-xs-12"><div>col</div></div>
         </div>
+
+        <h4>Mix columns (col-xs-12, col-sm-4 col-md2 col-lg-1)</h4>
         <div class="row">
-            <div class="col-md">md</div>
-            <div class="col-md">md</div>
-            <div class="col-md">md</div>
+            <div class="col-xs-12 col-sm-4 col-md-2 col-lg-1"><div>col</div></div>
+            <div class="col-xs-12 col-sm-3 col-md-2 col-lg"><div>col</div></div>
+            <div class="col-xs-12 col-sm col-md col-lg"><div>col</div></div>
         </div>
+
+        <h4>Mix columns (col-sm-4, col-sm-3,col-sm)</h4>
         <div class="row">
-            <div class="col-lg">lg</div>
-            <div class="col-lg">lg</div>
-            <div class="col-lg">lg</div>
+            <div class="col-sm-4"><div>col</div></div>
+            <div class="col-sm-3"><div>col</div></div>
+            <div class="col-sm"><div>col</div></div>
         </div>
-        -->
+
+        <h4>Mix columns (col-md)</h4>
+        <div class="row">
+            <div class="col-md"><div>col</div></div>
+            <div class="col-md"><div>col</div></div>
+            <div class="col-md"><div>col</div></div>
+        </div>
+
+        <h4>Mix columns (col-lg)</h4>
+        <div class="row">
+            <div class="col-lg"><div>col</div></div>
+            <div class="col-lg"><div>col</div></div>
+            <div class="col-lg"><div>col</div></div>
+        </div>
 
     </main>
 

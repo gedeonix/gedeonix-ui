@@ -59,7 +59,6 @@
   /* PADDING */
   padding-right: 0.5rem;
   padding-left: 0.5rem;
-
   padding-top: 0;
   /*padding-bottom: 1rem;*/
   padding-bottom: 0.5rem;
@@ -77,7 +76,7 @@
   }
 }
 
-
+/* col-1 */
 @for $i from 1 to $columns {
   .col-$i {
     flex-basis: calc($i*100/$columns)%;
@@ -85,21 +84,22 @@
   }
 }
 
+/* row-1 */
 @for $i from 1 to $columns {
   .row-$i > .col {
     min-width: calc(100/$i)%;
   }
 }
 
-@media all {
-  @for $i from 1 to $columns {
-    .row.lg-$i > .col {
-      min-width: calc(100/$i)%;
-    }
+/* row.lg-1 */
+@for $i from 1 to $columns {
+  .row.lg-$i > .col {
+    min-width: calc(100/$i)%;
   }
 }
 
-@media all and (max-width: $lg) {
+/* row.md-1 */
+@media (max-width: $lg) {
   @for $i from 1 to $columns {
     .row.md-$i > .col {
       min-width: calc(100/$i)%;
@@ -107,7 +107,8 @@
   }
 }
 
-@media all and (max-width: $md) {
+/* row.sm-1 */
+@media (max-width: $md) {
   @for $i from 1 to $columns {
     .row.sm-$i > .col {
       min-width: calc(100/$i)%;
@@ -115,7 +116,8 @@
   }
 }
 
-@media all and (max-width: $sm) {
+/* row.xs-1 */
+@media (max-width: $sm) {
 
   @for $i from 1 to $columns {
     .row.xs-$i > .col {
@@ -124,23 +126,27 @@
   }
 }
 
-@media all {
+[class*=col-xs], [class*=col-sm], [class*=col-md], [class*=col-lg] {
+  min-width: 100%;
+}
 
-  .col-xs {
-    flex-grow: 1;
-    flex-basis: 0;
-    max-width: 100%;
-  }
+.col-xs {
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 100%;
+}
 
-  @for $i from 1 to $columns {
-    .col-xs-$i {
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-    }
+@for $i from 1 to $columns {
+  .col-xs-$i {
+    /*
+    flex-basis: calc($i*100/$columns)%;
+    max-width: calc($i*100/$columns)%;
+    */
+    min-width: calc($i*100/$columns)%;
   }
 }
 
-@media all and (min-width: $sm) {
+@media (min-width: $sm) {
   [class*="col-sm"] {
     flex: 0 0 auto;
   }
@@ -153,13 +159,16 @@
 
   @for $i from 1 to $columns {
     .col-sm-$i {
+      /*
       flex-basis: calc($i*100/$columns)%;
       max-width: calc($i*100/$columns)%;
+      */
+      min-width: calc($i*100/$columns)%;
     }
   }
 }
 
-@media screen and (min-width: $md) {
+@media (min-width: $md) {
   [class*="col-md"] {
     flex: 0 0 auto;
   }
@@ -172,13 +181,16 @@
 
   @for $i from 1 to $columns {
     .col-md-$i {
+      /*
       flex-basis: calc($i*100/$columns)%;
       max-width: calc($i*100/$columns)%;
+      */
+      min-width: calc($i*100/$columns)%;
     }
   }
 }
 
-@media screen and (min-width: $lg) {
+@media (min-width: $lg) {
   [class*="col-lg"] {
     flex: 0 0 auto;
   }
@@ -191,12 +203,16 @@
 
   @for $i from 1 to $columns {
     .col-lg-$i {
+      /*
       flex-basis: calc($i*100/$columns)%;
       max-width: calc($i*100/$columns)%;
+      */
+      min-width: calc($i*100/$columns)%;
     }
   }
 }
 
+/* offset-1 */
 @for $i from 1 to $columns {
   .offset-$i {
     margin-left: calc($i*100/$columns)%;
@@ -204,25 +220,25 @@
 }
 
 /*
-@media all and (max-width: $sm) {
+@media (max-width: $sm) {
   .visible-sm, .visible-md, .visible-lg {
     display: none;
   }
 }
 
-@media all and (min-width: $sm) and (max-width: $md){
+@media (min-width: $sm) and (max-width: $md){
   .visible-xs, .visible-md, .visible-lg {
     display: none;
   }
 }
 
-@media all and (min-width: $md) and (max-width: $lg){
+@media (min-width: $md) and (max-width: $lg){
   .visible-xs, .visible-sm, .visible-lg {
     display: none;
   }
 }
 
-@media all and (min-width: $lg) {
+@media (min-width: $lg) {
   .visible-xs, .visible-sm, .visible-md {
     display: none;
   }

@@ -67,7 +67,6 @@ $btn-danger-active:             #fc4016 !default;
 $palette-name: (default,gray,primary,success,info,warning,danger,dark);
 $palette-color: (transparent,#a0a0a0,#65bcfe,#5acd59,#6ad1dd, #ffa924,#fc573f,#4e4f51);
 
-
 $btn-radius:                    4px !default;
 
 $btn-xs-radius:                 2px !default;
@@ -75,10 +74,8 @@ $btn-sm-radius:                 3px !default;
 $btn-md-radius:                 5px !default;
 $btn-lg-radius:                 6px !default;
 
-
 $panel-radius:                  4px !default;
 $panel-border:                  #d4d4d4 !default;
-
 
 $input-background:              $background-color !default;
 
@@ -89,11 +86,15 @@ $label-color:                   #606060 !default;
 $input-border-color:            #d4d4d4 !default;
 
 $columns:                       12 !default;
-$gutter:                        1rem !default;
 
-$sm:                            640px !default;
-$md:                            1024px !default;
-$lg:                            1440px !default;
+$gutter-xs:                     0.25rem !default;
+$gutter-sm:                     0.5rem !default;
+$gutter-md:                     0.75rem !default;
+$gutter-lg:                     1rem !default;
+
+$sm:                            320px !default;
+$md:                            720px !default;
+$lg:                            1024px !default;
 
 $footer-text-color:             #ffffff !default;
 $footer-background-color:       #d4d4d4 !default;
