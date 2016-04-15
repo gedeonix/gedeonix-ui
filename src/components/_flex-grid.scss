@@ -88,28 +88,42 @@
   .row-$i > .col { min-width: calc(100/$i)% }
 }
 
-/* RESPONSIVE ROWS */
+/* offset-1 */
 @for $i from 1 to $columns {
-  .row.lg-$i > .col { min-width: calc(100/$i)% }
+  .offset-$i {
+  margin-left: calc($i*100/$columns)%;
+}
 }
 
-@media all and (max-width: $lg) {
-  @for $i from 1 to $columns {
-    .row.md-$i > .col { min-width: calc(100/$i)% }
-  }
+/* RESPONSIVE ROWS */
+
+/* XS - FIRST MOBILE */
+@for $i from 1 to $columns {
+  .row.xs-$i > .col { min-width: calc(100/$i)% }
 }
 
-@media all and (max-width: $md) {
+/* SM */
+@media all and (min-width: $sm) {
   @for $i from 1 to $columns {
     .row.sm-$i > .col { min-width: calc(100/$i)% }
   }
 }
 
-@media all and (max-width: $sm) {
+/* MD */
+@media all and (min-width: $md) {
   @for $i from 1 to $columns {
-    .row.xs-$i > .col { min-width: calc(100/$i)% }
+    .row.md-$i > .col { min-width: calc(100/$i)% }
   }
 }
+
+/* LG */
+@media all and (min-width: $lg) {
+  @for $i from 1 to $columns {
+    .row.lg-$i > .col { min-width: calc(100/$i)% }
+  }
+}
+
+
 
 /* RESPONSIVE COLS */
 /*
@@ -191,12 +205,7 @@ flex-basis: calc($i*100/$columns)%;
 max-width: calc($i*100/$columns)%;
 */
 
-/* offset-1 */
-@for $i from 1 to $columns {
-  .offset-$i {
-    margin-left: calc($i*100/$columns)%;
-  }
-}
+
 
 /*
 @media (max-width: $sm) {
