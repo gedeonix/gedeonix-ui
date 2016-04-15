@@ -83,7 +83,8 @@
 
     <main class="main container">
 
-        <h2>Flex grid</h2>
+        <h1>Flex grid</h1>
+        <h2>Simple</h2>
 
         <h3>Simple (row, no-gutter, col)</h3>
 
@@ -422,7 +423,7 @@
             <div class="col"><div>auto</div></div>
         </div>
 
-        <h3>Justify content (row, os-left, is-center, is-right)</h3>
+        <h3>Justify content (row, is-left, is-center, is-right)</h3>
 
         <div class="row">
             <div class="col"><div>auto</div></div>
@@ -503,9 +504,8 @@
             </div>
         </div>
 
-
-
-        <h3>Responsive (xs sm md lg) - TODO</h3>
+        <h2>Responsive </h2>
+        <h3>Responsive in rows (xs sm md lg)</h3>
 
         <table class="table is-border">
             <thead>
@@ -537,7 +537,7 @@
 
         </table>
 
-        <h4>1 column in xs (row xs-1)</h4>
+        <h4>Columns in row xs (row xs-x)</h4>
         <div class="row xs-1">
             <div class="col"><div>auto</div></div>
             <div class="col"><div>auto</div></div>
@@ -546,10 +546,24 @@
             <div class="col"><div>auto</div></div>
             <div class="col"><div>auto</div></div>
         </div>
+        <div class="row xs-2">
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+        </div>
+        <div class="row xs-3">
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+        </div>
 
-        <br>
-
-        <h4>1 column in sm (row sm-1)</h4>
+        <h4>Columns in row sm (row sm-x)</h4>
         <div class="row sm-1">
             <div class="col"><div>auto</div></div>
             <div class="col"><div>auto</div></div>
@@ -558,9 +572,15 @@
             <div class="col"><div>auto</div></div>
             <div class="col"><div>auto</div></div>
         </div>
-
-        <h4>1 column in md (row md-1)</h4>
-        <div class="row md-1">
+        <div class="row sm-2">
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+        </div>
+        <div class="row sm-3">
             <div class="col"><div>auto</div></div>
             <div class="col"><div>auto</div></div>
             <div class="col"><div>auto</div></div>
@@ -569,8 +589,50 @@
             <div class="col"><div>auto</div></div>
         </div>
 
-        <h4>1 column in lg (row lg-1)</h4>
+        <h4>Columns in row md (row md-x)</h4>
+        <div class="row md-1">
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+        </div>
+        <div class="row md-2">
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+        </div>
+        <div class="row md-3">
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+        </div>
+
+        <h4>Columns in row lg (row lg-x)</h4>
         <div class="row lg-1">
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+        </div>
+        <div class="row lg-2">
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+        </div>
+        <div class="row lg-3">
             <div class="col"><div>auto</div></div>
             <div class="col"><div>auto</div></div>
             <div class="col"><div>auto</div></div>
@@ -587,22 +649,64 @@
             <div class="col"><div>auto</div></div>
             <div class="col"><div>auto</div></div>
             <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
+            <div class="col"><div>auto</div></div>
         </div>
 
-        <h4>12 columns in md (col-md1)</h4>
+        <h3>Responsive in cols (xs sm md lg)</h3>
+
+        TODO
+        <!--
+        <h4>Columns in xs (col xs-x)</h4>
         <div class="row">
-            <div class="col-md-1"><div>md-1</div></div>
-            <div class="col-md-1"><div>md-1</div></div>
-            <div class="col-md-1"><div>md-1</div></div>
-            <div class="col-md-1"><div>md-1</div></div>
-            <div class="col-md-1"><div>md-1</div></div>
-            <div class="col-md-1"><div>md-1</div></div>
-            <div class="col-md-1"><div>md-1</div></div>
-            <div class="col-md-1"><div>md-1</div></div>
-            <div class="col-md-1"><div>md-1</div></div>
-            <div class="col-md-1"><div>md-1</div></div>
-            <div class="col-md-1"><div>md-1</div></div>
-            <div class="col-md-1"><div>md-1</div></div>
+            <div class="col xs-1"><div>auto</div></div>
+            <div class="col xs-1"><div>auto</div></div>
+            <div class="col xs-1"><div>auto</div></div>
+            <div class="col xs-1"><div>auto</div></div>
+            <div class="col xs-1"><div>auto</div></div>
+            <div class="col xs-1"><div>auto</div></div>
+            <div class="col xs-1"><div>auto</div></div>
+            <div class="col xs-1"><div>auto</div></div>
+            <div class="col xs-1"><div>auto</div></div>
+            <div class="col xs-1"><div>auto</div></div>
+            <div class="col xs-1"><div>auto</div></div>
+            <div class="col xs-1"><div>auto</div></div>
+        </div>
+
+        <h4>Columns in md (col md-x)</h4>
+        <div class="row">
+            <div class="col md-1"><div>auto</div></div>
+            <div class="col md-1"><div>auto</div></div>
+            <div class="col md-1"><div>auto</div></div>
+            <div class="col md-1"><div>auto</div></div>
+            <div class="col md-1"><div>auto</div></div>
+            <div class="col md-1"><div>auto</div></div>
+            <div class="col md-1"><div>auto</div></div>
+            <div class="col md-1"><div>auto</div></div>
+            <div class="col md-1"><div>auto</div></div>
+            <div class="col md-1"><div>auto</div></div>
+            <div class="col md-1"><div>auto</div></div>
+            <div class="col md-1"><div>auto</div></div>
+        </div>
+
+        <h4>Columns in md (col md-x)</h4>
+        <div class="row">
+            <div class="col md-1"><div>auto</div></div>
+            <div class="col md-1"><div>auto</div></div>
+            <div class="col md-1"><div>auto</div></div>
+            <div class="col md-1"><div>auto</div></div>
+            <div class="col md-1"><div>auto</div></div>
+            <div class="col md-1"><div>auto</div></div>
+            <div class="col md-1"><div>auto</div></div>
+            <div class="col md-1"><div>auto</div></div>
+            <div class="col md-1"><div>auto</div></div>
+            <div class="col md-1"><div>auto</div></div>
+            <div class="col md-1"><div>auto</div></div>
+            <div class="col md-1"><div>auto</div></div>
         </div>
 
         <h4>Mix columns (col-md-4)</h4>
@@ -646,6 +750,7 @@
             <div class="col-lg"><div>col</div></div>
             <div class="col-lg"><div>col</div></div>
         </div>
+        -->
 
     </main>
 

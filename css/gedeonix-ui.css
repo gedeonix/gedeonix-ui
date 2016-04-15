@@ -148,9 +148,9 @@ pre {
   */
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
   .container {
-    max-width: 1024px;
+    max-width: 1440px;
   }
 }
 
@@ -913,8 +913,6 @@ table td {
   max-width: 100%;
 }
 
-/* row-1 */
-
 .row-1 > .col{
   min-width: 100%;
 }
@@ -963,7 +961,7 @@ table td {
   min-width: 8.33333%;
 }
 
-/* row.lg-1 */
+/* RESPONSIVE ROWS */
 
 .row.lg-1 > .col{
   min-width: 100%;
@@ -1013,9 +1011,7 @@ table td {
   min-width: 8.33333%;
 }
 
-/* row.md-1 */
-
-@media (max-width: 1024px) {
+@media all and (max-width: 1440px) {
   .row.md-1 > .col{
     min-width: 100%;
   }
@@ -1054,9 +1050,7 @@ table td {
   }
 }
 
-/* row.sm-1 */
-
-@media (max-width: 720px) {
+@media all and (max-width: 1024px) {
   .row.sm-1 > .col{
     min-width: 100%;
   }
@@ -1095,166 +1089,67 @@ table td {
   }
 }
 
-/* row.xs-1 */
-
-@media (max-width: 320px) {
-
+@media all and (max-width: 640px) {
   .row.xs-1 > .col{
     min-width: 100%;
   }
-
   .row.xs-2 > .col{
     min-width: 50%;
   }
-
   .row.xs-3 > .col{
     min-width: 33.33333%;
   }
-
   .row.xs-4 > .col{
     min-width: 25%;
   }
-
   .row.xs-5 > .col{
     min-width: 20%;
   }
-
   .row.xs-6 > .col{
     min-width: 16.66667%;
   }
-
   .row.xs-7 > .col{
     min-width: 14.28571%;
   }
-
   .row.xs-8 > .col{
     min-width: 12.5%;
   }
-
   .row.xs-9 > .col{
     min-width: 11.11111%;
   }
-
   .row.xs-10 > .col{
     min-width: 10%;
   }
-
   .row.xs-11 > .col{
     min-width: 9.09091%;
   }
-
   .row.xs-12 > .col{
     min-width: 8.33333%;
   }
 }
 
+/* RESPONSIVE COLS */
+
+/*
 [class*=col-xs], [class*=col-sm], [class*=col-md], [class*=col-lg] {
   min-width: 100%;
 }
+*/
 
+/*
 .col-xs {
   flex-grow: 1;
   flex-basis: 0;
   max-width: 100%;
 }
 
-.col-xs-1{
-  /*
-    flex-basis: calc($i*100/$columns)%;
-    max-width: calc($i*100/$columns)%;
-    */
-  min-width: 8.33333%;
+@for $i from 1 to $columns {
+  .col-xs-$i {
+    min-width: calc($i*100/$columns)%;
+  }
 }
 
-.col-xs-2{
-  /*
-    flex-basis: calc($i*100/$columns)%;
-    max-width: calc($i*100/$columns)%;
-    */
-  min-width: 16.66667%;
-}
-
-.col-xs-3{
-  /*
-    flex-basis: calc($i*100/$columns)%;
-    max-width: calc($i*100/$columns)%;
-    */
-  min-width: 25%;
-}
-
-.col-xs-4{
-  /*
-    flex-basis: calc($i*100/$columns)%;
-    max-width: calc($i*100/$columns)%;
-    */
-  min-width: 33.33333%;
-}
-
-.col-xs-5{
-  /*
-    flex-basis: calc($i*100/$columns)%;
-    max-width: calc($i*100/$columns)%;
-    */
-  min-width: 41.66667%;
-}
-
-.col-xs-6{
-  /*
-    flex-basis: calc($i*100/$columns)%;
-    max-width: calc($i*100/$columns)%;
-    */
-  min-width: 50%;
-}
-
-.col-xs-7{
-  /*
-    flex-basis: calc($i*100/$columns)%;
-    max-width: calc($i*100/$columns)%;
-    */
-  min-width: 58.33333%;
-}
-
-.col-xs-8{
-  /*
-    flex-basis: calc($i*100/$columns)%;
-    max-width: calc($i*100/$columns)%;
-    */
-  min-width: 66.66667%;
-}
-
-.col-xs-9{
-  /*
-    flex-basis: calc($i*100/$columns)%;
-    max-width: calc($i*100/$columns)%;
-    */
-  min-width: 75%;
-}
-
-.col-xs-10{
-  /*
-    flex-basis: calc($i*100/$columns)%;
-    max-width: calc($i*100/$columns)%;
-    */
-  min-width: 83.33333%;
-}
-
-.col-xs-11{
-  /*
-    flex-basis: calc($i*100/$columns)%;
-    max-width: calc($i*100/$columns)%;
-    */
-  min-width: 91.66667%;
-}
-
-.col-xs-12{
-  /*
-    flex-basis: calc($i*100/$columns)%;
-    max-width: calc($i*100/$columns)%;
-    */
-  min-width: 100%;
-}
-
-@media (min-width: 320px) {
+@media (min-width: $sm) {
   [class*="col-sm"] {
     flex: 0 0 auto;
   }
@@ -1265,104 +1160,14 @@ table td {
     max-width: 100%;
   }
 
-  .col-sm-1{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 8.33333%;
-  }
-
-  .col-sm-2{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 16.66667%;
-  }
-
-  .col-sm-3{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 25%;
-  }
-
-  .col-sm-4{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 33.33333%;
-  }
-
-  .col-sm-5{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 41.66667%;
-  }
-
-  .col-sm-6{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 50%;
-  }
-
-  .col-sm-7{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 58.33333%;
-  }
-
-  .col-sm-8{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 66.66667%;
-  }
-
-  .col-sm-9{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 75%;
-  }
-
-  .col-sm-10{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 83.33333%;
-  }
-
-  .col-sm-11{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 91.66667%;
-  }
-
-  .col-sm-12{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 100%;
+  @for $i from 1 to $columns {
+    .col-sm-$i {
+      min-width: calc($i*100/$columns)%;
+    }
   }
 }
 
-@media (min-width: 720px) {
+@media (min-width: $md) {
   [class*="col-md"] {
     flex: 0 0 auto;
   }
@@ -1373,104 +1178,14 @@ table td {
     max-width: 100%;
   }
 
-  .col-md-1{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 8.33333%;
-  }
-
-  .col-md-2{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 16.66667%;
-  }
-
-  .col-md-3{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 25%;
-  }
-
-  .col-md-4{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 33.33333%;
-  }
-
-  .col-md-5{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 41.66667%;
-  }
-
-  .col-md-6{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 50%;
-  }
-
-  .col-md-7{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 58.33333%;
-  }
-
-  .col-md-8{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 66.66667%;
-  }
-
-  .col-md-9{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 75%;
-  }
-
-  .col-md-10{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 83.33333%;
-  }
-
-  .col-md-11{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 91.66667%;
-  }
-
-  .col-md-12{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 100%;
+  @for $i from 1 to $columns {
+    .col-md-$i {
+      min-width: calc($i*100/$columns)%;
+    }
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: $lg) {
   [class*="col-lg"] {
     flex: 0 0 auto;
   }
@@ -1481,102 +1196,18 @@ table td {
     max-width: 100%;
   }
 
-  .col-lg-1{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 8.33333%;
-  }
-
-  .col-lg-2{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 16.66667%;
-  }
-
-  .col-lg-3{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 25%;
-  }
-
-  .col-lg-4{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 33.33333%;
-  }
-
-  .col-lg-5{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 41.66667%;
-  }
-
-  .col-lg-6{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 50%;
-  }
-
-  .col-lg-7{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 58.33333%;
-  }
-
-  .col-lg-8{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 66.66667%;
-  }
-
-  .col-lg-9{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 75%;
-  }
-
-  .col-lg-10{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 83.33333%;
-  }
-
-  .col-lg-11{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 91.66667%;
-  }
-
-  .col-lg-12{
-    /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
-    min-width: 100%;
+  @for $i from 1 to $columns {
+    .col-lg-$i {
+      min-width: calc($i*100/$columns)%;
+    }
   }
 }
+*/
+
+/*
+flex-basis: calc($i*100/$columns)%;
+max-width: calc($i*100/$columns)%;
+*/
 
 /* offset-1 */
 

@@ -84,52 +84,41 @@
   }
 }
 
-/* row-1 */
 @for $i from 1 to $columns {
-  .row-$i > .col {
-    min-width: calc(100/$i)%;
-  }
+  .row-$i > .col { min-width: calc(100/$i)% }
 }
 
-/* row.lg-1 */
+/* RESPONSIVE ROWS */
 @for $i from 1 to $columns {
-  .row.lg-$i > .col {
-    min-width: calc(100/$i)%;
-  }
+  .row.lg-$i > .col { min-width: calc(100/$i)% }
 }
 
-/* row.md-1 */
-@media (max-width: $lg) {
+@media all and (max-width: $lg) {
   @for $i from 1 to $columns {
-    .row.md-$i > .col {
-      min-width: calc(100/$i)%;
-    }
+    .row.md-$i > .col { min-width: calc(100/$i)% }
   }
 }
 
-/* row.sm-1 */
-@media (max-width: $md) {
+@media all and (max-width: $md) {
   @for $i from 1 to $columns {
-    .row.sm-$i > .col {
-      min-width: calc(100/$i)%;
-    }
+    .row.sm-$i > .col { min-width: calc(100/$i)% }
   }
 }
 
-/* row.xs-1 */
-@media (max-width: $sm) {
-
+@media all and (max-width: $sm) {
   @for $i from 1 to $columns {
-    .row.xs-$i > .col {
-      min-width: calc(100/$i)%;
-    }
+    .row.xs-$i > .col { min-width: calc(100/$i)% }
   }
 }
 
+/* RESPONSIVE COLS */
+/*
 [class*=col-xs], [class*=col-sm], [class*=col-md], [class*=col-lg] {
   min-width: 100%;
 }
+*/
 
+/*
 .col-xs {
   flex-grow: 1;
   flex-basis: 0;
@@ -138,10 +127,6 @@
 
 @for $i from 1 to $columns {
   .col-xs-$i {
-    /*
-    flex-basis: calc($i*100/$columns)%;
-    max-width: calc($i*100/$columns)%;
-    */
     min-width: calc($i*100/$columns)%;
   }
 }
@@ -159,10 +144,6 @@
 
   @for $i from 1 to $columns {
     .col-sm-$i {
-      /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
       min-width: calc($i*100/$columns)%;
     }
   }
@@ -181,10 +162,6 @@
 
   @for $i from 1 to $columns {
     .col-md-$i {
-      /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
       min-width: calc($i*100/$columns)%;
     }
   }
@@ -203,14 +180,16 @@
 
   @for $i from 1 to $columns {
     .col-lg-$i {
-      /*
-      flex-basis: calc($i*100/$columns)%;
-      max-width: calc($i*100/$columns)%;
-      */
       min-width: calc($i*100/$columns)%;
     }
   }
 }
+*/
+
+/*
+flex-basis: calc($i*100/$columns)%;
+max-width: calc($i*100/$columns)%;
+*/
 
 /* offset-1 */
 @for $i from 1 to $columns {
