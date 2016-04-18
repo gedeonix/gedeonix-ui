@@ -58,6 +58,15 @@ pre {
   background-color: #f5f5f5;
 }
 
+a {
+  color: #459cde;
+  padding: 2px;
+}
+
+a:hover{
+  color: #65bcfe;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -119,6 +128,7 @@ pre {
 }
 
 .btn:hover{
+  color: #606060;
   border-color: #a0a0a0;
 }
 
@@ -1712,16 +1722,16 @@ table td {
 }
 
 .header {
-  color: #e0e0e0;
-  background-color: #808080;
+  background-color: #d4d4d4;
+  color: #808080;
 }
 
 .brand {
-  white-space: nowrap;
+  color: #808080;
   font-weight: bold;
   font-size: 2em;
-  color: #ffffff;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
+  white-space: nowrap;
 }
 
 .main {
@@ -1729,17 +1739,20 @@ table td {
 }
 
 .footer {
-  display: block;
-  width: auto;
-  text-align: center;
-  color: #ffffff;
   background-color: #d4d4d4;
-
+  color: #ffffff;
+  display: block;
   padding: 10px 0;
+  text-align: center;
+  width: auto;
 }
 
 .footer a {
-  color: #ffffff;
+  color: #ffffff
+}
+
+.footer a:hover{
+  color: #808080;
 }
 
 .is-red {
@@ -1881,7 +1894,7 @@ table td {
 }
 
 .is-shadow {
-  box-shadow: 1px 1px 1px #2c2c2c;
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
 }
 
 .is-white {

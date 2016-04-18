@@ -21,6 +21,7 @@
   /*width: auto;*/
   -webkit-appearance: none;
   &:hover {
+    color: $btn-default-color;
     border-color: #a0a0a0;
   }
   &:focus, &.active {

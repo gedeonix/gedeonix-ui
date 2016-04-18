@@ -74,13 +74,13 @@ $btn-sm-radius:                 3px !default;
 $btn-md-radius:                 5px !default;
 $btn-lg-radius:                 6px !default;
 
+$link-color:                    #459cde !default;
+$link-color-hover:              #65bcfe !default;
+
 $panel-radius:                  4px !default;
 $panel-border:                  #d4d4d4 !default;
 
 $input-background:              $background-color !default;
-
-$header-text-color:             #e0e0e0 !default;
-$header-background-color:       #808080 !default;
 
 $label-color:                   #606060 !default;
 $input-border-color:            #d4d4d4 !default;
@@ -96,6 +96,11 @@ $breakpoint-sm:                 40em !default;
 $breakpoint-md:                 64em !default;
 $breakpoint-lg:                 90em !default;
 
+$header-text-color:             #808080 !default;
+$header-background-color:       #d4d4d4 !default;
+
 $footer-text-color:             #ffffff !default;
+$footer-link-color:             #ffffff !default;
+$footer-link-color-hover:       #808080 !default;
 $footer-background-color:       #d4d4d4 !default;
 

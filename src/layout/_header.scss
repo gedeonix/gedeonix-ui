@@ -1,4 +1,12 @@
 .header {
-  color: $header-text-color;
   background-color: $header-background-color;
+  color: $header-text-color;
+}
+
+.brand {
+  color: $header-text-color;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 0 1rem;
+  white-space: nowrap;
 }

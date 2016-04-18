@@ -37,3 +37,11 @@ pre {
   color: #212121;
   background-color: #f5f5f5;
 }
+
+a {
+  color: $link-color;
+  &:hover {
+    color: $link-color-hover;
+  }
+  padding: 2px;
+}
