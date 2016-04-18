@@ -64,13 +64,47 @@
   box-shadow: 1px 1px 1px #2c2c2c;
 }
 
-@each $item, $color in
-                (white,gray,dark,primary,success,info,warning,danger),
-                (#ffffff,$gray-color,$dark-color,$primary-color,$success-color,$info-color,$warning-color,$danger-color),
-{
-  .is-$(item) {
-    background-color: $color;
-  }
+.is-white {
+  background-color: #ffffff;
 }
 
+.is-gray {
+  background-color: $gray-color;
+}
+
+.is-dark {
+  background-color: $dark-color;
+}
+
+.is-primary {
+  background-color: $primary-color;
+}
+
+.is-success {
+  background-color: $success-color;
+}
+
+.is-info {
+  background-color: $info-color;
+}
+
+.is-warning {
+  background-color: $warning-color;
+}
+
+.is-danger {
+  background-color: $danger-color;
+}
+
+.is-pull-right {
+  float: left
+}
+
+.is-pull-right {
+  float: left;
+}
+
+.is-full-max-width {
+  max-width: 100%;
+}
 

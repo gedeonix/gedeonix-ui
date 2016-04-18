@@ -1,28 +1,23 @@
-.row, [class*=row-] {
+.row, [class*=row-], .col, [class*=col-] {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-start;
+  &.is-left {
+    justify-content: flex-start;
+  }
+  &.is-right {
+    justify-content: flex-end;
+  }
+  &.is-center {
+    justify-content: center;
+  }
+};
+
+.row, [class*=row-] {
   align-items: baseline;
-
-  /* MARGIN */
-  /*
-  margin-right: -0.5rem;
-  margin-left:  -0.5rem;
-  */
-  margin-top: 0;
-  margin-bottom: 0;
-
-  margin-right: 0;
-  margin-left:  -0.5rem;
-
+  margin: 0 0 0 -0.5rem;
   width: calc(0.5rem + 100% + 0.5rem);
-
-  /*
-  margin-left:  -1rem;
-  width: calc(1.0rem + 100% + 1.0rem);
-  */
-
   &.no-gutter {
     margin: 0;
     width: 100%;
@@ -30,53 +25,16 @@
       padding: 0;
     }
   }
-
-  &.is-left {
-    justify-content: flex-start;
-  }
-
-  &.is-right {
-    justify-content: flex-end;
-  }
-
-  &.is-center {
-    justify-content: center;
-  }
-
 }
 
 .col, [class*=col-] {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
-
   flex-shrink: 1;
   flex-grow: 1;
   flex-basis: 0%;
-
-  /* PADDING */
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-  padding-top: 0;
-  /*padding-bottom: 1rem;*/
-  padding-bottom: 0.5rem;
-
-  &.is-left {
-    justify-content: flex-start;
-  }
-
-  &.is-right {
-    justify-content: flex-end;
-  }
-
-  &.is-center {
-    justify-content: center;
-  }
+  padding: 0 0.5rem 0.5rem;
 }
 
-/* col-1 */
 @for $i from 1 to $columns {
   .col-$i {
     flex-basis: calc($i*100/$columns)%;
@@ -88,149 +46,60 @@
   .row-$i > .col { min-width: calc(100/$i)% }
 }
 
-/* offset-1 */
 @for $i from 1 to $columns {
-  .offset-$i {
-  margin-left: calc($i*100/$columns)%;
-}
+  .offset-$i { margin-left: calc($i*100/$columns)% }
 }
 
 /* RESPONSIVE ROWS */
+.row[class*=sm-] > .col, .row[class*=md-] > .col, .row[class*=lg-] > .col {
+  min-width: 100%;
+}
 
-/* XS - FIRST MOBILE */
 @for $i from 1 to $columns {
   .row.xs-$i > .col { min-width: calc(100/$i)% }
 }
 
-/* SM */
 @media all and (min-width: $sm) {
   @for $i from 1 to $columns {
     .row.sm-$i > .col { min-width: calc(100/$i)% }
   }
 }
 
-/* MD */
 @media all and (min-width: $md) {
   @for $i from 1 to $columns {
     .row.md-$i > .col { min-width: calc(100/$i)% }
   }
 }
 
-/* LG */
 @media all and (min-width: $lg) {
   @for $i from 1 to $columns {
     .row.lg-$i > .col { min-width: calc(100/$i)% }
   }
 }
 
-
-
 /* RESPONSIVE COLS */
-/*
-[class*=col-xs], [class*=col-sm], [class*=col-md], [class*=col-lg] {
+.col[class*=sm-], .col[class*=md-], .col[class*=lg-]{
   min-width: 100%;
-}
-*/
-
-/*
-.col-xs {
-  flex-grow: 1;
-  flex-basis: 0;
-  max-width: 100%;
 }
 
 @for $i from 1 to $columns {
-  .col-xs-$i {
-    min-width: calc($i*100/$columns)%;
-  }
+  .col.xs-$i { min-width: calc($i*100/$columns)% }
 }
 
-@media (min-width: $sm) {
-  [class*="col-sm"] {
-    flex: 0 0 auto;
-  }
-
-  .col-sm {
-    flex-grow: 1;
-    flex-basis: 0;
-    max-width: 100%;
-  }
-
+@media all and (min-width: $sm) {
   @for $i from 1 to $columns {
-    .col-sm-$i {
-      min-width: calc($i*100/$columns)%;
-    }
+    .col.sm-$i { min-width: calc($i*100/$columns)% }
   }
 }
 
-@media (min-width: $md) {
-  [class*="col-md"] {
-    flex: 0 0 auto;
-  }
-
-  .col-md {
-    flex-grow: 1;
-    flex-basis: 0;
-    max-width: 100%;
-  }
-
+@media all and (min-width: $md) {
   @for $i from 1 to $columns {
-    .col-md-$i {
-      min-width: calc($i*100/$columns)%;
-    }
+    .col.md-$i { min-width: calc($i*100/$columns)% }
   }
 }
 
-@media (min-width: $lg) {
-  [class*="col-lg"] {
-    flex: 0 0 auto;
-  }
-
-  .col-lg {
-    flex-grow: 1;
-    flex-basis: 0;
-    max-width: 100%;
-  }
-
+@media all and (min-width: $lg) {
   @for $i from 1 to $columns {
-    .col-lg-$i {
-      min-width: calc($i*100/$columns)%;
-    }
+    .col.lg-$i { min-width: calc($i*100/$columns)% }
   }
 }
-*/
-
-/*
-flex-basis: calc($i*100/$columns)%;
-max-width: calc($i*100/$columns)%;
-*/
-
-
-
-/*
-@media (max-width: $sm) {
-  .visible-sm, .visible-md, .visible-lg {
-    display: none;
-  }
-}
-
-@media (min-width: $sm) and (max-width: $md){
-  .visible-xs, .visible-md, .visible-lg {
-    display: none;
-  }
-}
-
-@media (min-width: $md) and (max-width: $lg){
-  .visible-xs, .visible-sm, .visible-lg {
-    display: none;
-  }
-}
-
-@media (min-width: $lg) {
-  .visible-xs, .visible-sm, .visible-md {
-    display: none;
-  }
-}
-
-*/
-

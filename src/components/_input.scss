@@ -1,10 +1,9 @@
-input {
-  border: 1px solid $input-border-color;
-  padding: 0.5rem 0.5rem;
-
+input, select, textarea {
   background-color: $input-background;
+  border: 1px solid $input-border-color;
   border-radius: 3px;
   font-size: 1rem;
+  padding: 0.5rem 0.5rem;
 
   &.is-xs {
     border-radius: $btn-xs-radius;
@@ -45,13 +44,19 @@ input {
     font-size: 1.4rem;
   }
   */
+}
 
+input, textarea, select, fieldset {
+  /*margin-bottom: 0.5rem;*/
 }
 
 input[type=text],
+input[type=tel],
 input[type=password],
 input[type=number],
 input[type=email],
-input[type=search] {
+input[type=search],
+select, textarea {
+  -webkit-appearance: none;
   width: 100%;
 }
