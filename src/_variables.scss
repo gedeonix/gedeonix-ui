@@ -92,9 +92,9 @@ $gutter-sm:                     0.5rem !default;
 $gutter-md:                     0.75rem !default;
 $gutter-lg:                     1rem !default;
 
-$sm:                            640px !default;
-$md:                            1024px !default;
-$lg:                            1440px !default;
+$breakpoint-sm:                 40em !default;
+$breakpoint-md:                 64em !default;
+$breakpoint-lg:                 90em !default;
 
 $footer-text-color:             #ffffff !default;
 $footer-background-color:       #d4d4d4 !default;

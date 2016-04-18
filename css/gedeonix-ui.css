@@ -72,9 +72,9 @@ pre {
   */
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: $lg) {
   .container {
-    max-width: 1440px;
+    max-width: $lg;
   }
 }
 
@@ -952,7 +952,7 @@ table td {
   min-width: 8.33333%;
 }
 
-@media all and (min-width: 640px) {
+@media all and (min-width: 40em) {
   .row.sm-1 > .col{
     min-width: 100%;
   }
@@ -991,7 +991,7 @@ table td {
   }
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 64em) {
   .row.md-1 > .col{
     min-width: 100%;
   }
@@ -1030,7 +1030,7 @@ table td {
   }
 }
 
-@media all and (min-width: 1440px) {
+@media all and (min-width: 90em) {
   .row.lg-1 > .col{
     min-width: 100%;
   }
@@ -1123,7 +1123,7 @@ table td {
   min-width: 100%;
 }
 
-@media all and (min-width: 640px) {
+@media all and (min-width: 40em) {
   .col.sm-1{
     min-width: 8.33333%;
   }
@@ -1162,7 +1162,7 @@ table td {
   }
 }
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 64em) {
   .col.md-1{
     min-width: 8.33333%;
   }
@@ -1201,7 +1201,7 @@ table td {
   }
 }
 
-@media all and (min-width: 1440px) {
+@media all and (min-width: 90em) {
   .col.lg-1{
     min-width: 8.33333%;
   }

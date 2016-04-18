@@ -59,19 +59,19 @@
   .row.xs-$i > .col { min-width: calc(100/$i)% }
 }
 
-@media all and (min-width: $sm) {
+@media all and (min-width: $breakpoint-sm) {
   @for $i from 1 to $columns {
     .row.sm-$i > .col { min-width: calc(100/$i)% }
   }
 }
 
-@media all and (min-width: $md) {
+@media all and (min-width: $breakpoint-md) {
   @for $i from 1 to $columns {
     .row.md-$i > .col { min-width: calc(100/$i)% }
   }
 }
 
-@media all and (min-width: $lg) {
+@media all and (min-width: $breakpoint-lg) {
   @for $i from 1 to $columns {
     .row.lg-$i > .col { min-width: calc(100/$i)% }
   }
@@ -86,19 +86,19 @@
   .col.xs-$i { min-width: calc($i*100/$columns)% }
 }
 
-@media all and (min-width: $sm) {
+@media all and (min-width: $breakpoint-sm) {
   @for $i from 1 to $columns {
     .col.sm-$i { min-width: calc($i*100/$columns)% }
   }
 }
 
-@media all and (min-width: $md) {
+@media all and (min-width: $breakpoint-md) {
   @for $i from 1 to $columns {
     .col.md-$i { min-width: calc($i*100/$columns)% }
   }
 }
 
-@media all and (min-width: $lg) {
+@media all and (min-width: $breakpoint-lg) {
   @for $i from 1 to $columns {
     .col.lg-$i { min-width: calc($i*100/$columns)% }
   }
