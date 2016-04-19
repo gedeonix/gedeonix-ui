@@ -656,7 +656,6 @@ label {
 
 .alert {
   color: #606060;
-
   font-size: 1rem;
   margin-bottom: 0.5rem;
   padding: 0.75rem 0.75rem;
@@ -666,7 +665,7 @@ label {
   background-color: #e0e0e0
 }
 
-.alert.is-dark, .alert.is-danger{
+.alert.is-primary, .alert.is-success, .alert.is-info, .alert.is-warning, .alert.is-dark, .alert.is-danger{
   color: #ffffff;
 }
 
