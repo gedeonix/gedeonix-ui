@@ -14,7 +14,22 @@
             margin-bottom: 48px;
         }
 
+        /* only diagnostic */
+        .main {
+            background-color: #f0f0f0;
+        }
+        .container1 {
+            background-color: #ffff80;
+            outline: 1px dashed #ff0000;
+        }
+        .content1 {
+            background-color: #ffbf4e;
+            outline: 1px dashed #0000ff;
+        }
+
+
     </style>
+
 </head>
 
 <body>
@@ -27,23 +42,54 @@
 
     <div class="fixed-space"></div>
 
-    <nav class="is-info">
+    <nav class="is-success">
         <div class="container">
             <ul class="nav is-tab">
                 <li><a href="../index.html">Main</a></li>
-                <li><a href="typography.html">Typography</a></li>
-                <li><a href="container.html">Container</a></li>
-                <li><a href="flex-grid.html">Flex Grid</a></li>
                 <li><a href="controls.html">Controls</a></li>
-                <li class="active"><a>Tables</a></li>
+                <li class="active"><a href="">Containers</a></li>
+                <li><a href="grids.html">Grids</a></li>
                 <li><a href="navigation.html">Navigation</a></li>
-                <li><a href="form.html">Form</a></li>
+                <li><a href="forms.html">Forms</a></li>
                 <li><a href="modal.html">Modal</a></li>
+                <li><a href="typography.html">Typography</a></li>
             </ul>
         </div>
     </nav>
 
-    <main class="main container">
+    <main class="main">
+
+        <h1 class="container">Container</h1>
+
+        <div class="container container1 is-gutter">
+            <div class="content1">
+                <h1>Default with gutter</h1>
+                content container...
+            </div>
+        </div>
+
+        <div class="container container1 no-gutter">
+            <div class="content1">
+                <h1>Container without gutter</h1>
+                content container...
+            </div>
+        </div>
+
+        <h1 class="container">Fluid container</h1>
+        <div class="container-fluid container1 is-gutter">
+            <div class="content1">
+                <h1>Default with gutter</h1>
+                content container...
+            </div>
+        </div>
+
+        <div class="container-fluid container1 no-gutter">
+            <div class="content1">
+                <h1>Container without gutter</h1>
+                content container...
+            </div>
+        </div>
+
         <h1>Tables</h1>
 
         <table class="table">
@@ -117,6 +163,25 @@
             </tbody>
 
         </table>
+
+
+        <h1>Panel</h1>
+
+        <div class="panel">
+            <div class="panel-header">Header</div>
+            <div class="panel-content">
+                content...
+
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-header is-danger">Header</div>
+            <div class="panel-content">
+                content...
+
+            </div>
+        </div>
 
     </main>
 

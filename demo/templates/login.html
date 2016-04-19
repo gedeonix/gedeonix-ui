@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Register</title>
+    <title>Login</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <link href="../../css/gedeonix-ui.css" rel="stylesheet">
@@ -67,19 +67,20 @@
 
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <input type="password" class="form-control" name="confirm" placeholder="Confirm password">
+                                <div class="checkbox">
+                                    <input id="check1" type="checkbox" name="rem" value="1" checked><label for="check1" class="checkbox-inline"> Remember me</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn is-success is-block is-md">Login</button>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <button type="submit" class="btn is-primary is-block is-md">Register</button>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-sm-12">
-                                I already have an account: <a href="/demo/login/login.html">Login</a>
+                                <a href="register.html">Create new account</a> <a class="pull-right" href="forgot-password.html">Forgot password?</a>
                             </div>
                         </div>
 

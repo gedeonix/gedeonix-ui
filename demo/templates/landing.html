@@ -5,16 +5,31 @@
     <title>Brand Landing Page</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-    <link href="../css/gedeonix-ui.css" rel="stylesheet">
+    <link href="../../css/gedeonix-ui.css" rel="stylesheet">
 
     <style>
+        .header {
+            background-color: rgba(250,250,250,0.9);
+        }
         .fixed-space {
-            margin-bottom: 48px;
+            margin-bottom: 58px;
         }
 
         .main {
         }
 
+        .is-my-color1 {
+            color: #ffffff;
+            background-color: rgb(252, 19, 100);
+        }
+
+        .is-my-color2 {
+            background-color: rgb(208, 17, 82);
+        }
+        .is-my-color2 a {
+            color: #ffffff;
+            background-color: rgba(208, 17, 82, 0.47);
+        }
 
     </style>
 
@@ -28,8 +43,8 @@
             <div class="brand">Brand</div>
             <div class="col is-right">
                 <div class="group">
-                    <button class="btn is-success is-sm">Register</button>
-                    <button class="btn is-primary is-sm">Login</button>
+                    <button class="btn is-dark is-outline is-md">Register</button>
+                    <button class="btn is-dark is-outline is-md">Login</button>
                 </div>
              </div>
         </div>
@@ -38,7 +53,7 @@
 
 <div class="fixed-space"></div>
 
-<nav class="is-gray">
+<nav class="is-my-color1">
     <div class="container">
         <div class="row">
             <div class="col is-center">
@@ -47,7 +62,11 @@
             </div>
 
         </div>
+    </div>
+</nav>
 
+<div class="is-my-color2">
+    <div class="container">
         <ul class="nav">
             <li><a href="#">Option 1</a></li>
             <li><a href="#">Option 2</a></li>
@@ -55,13 +74,13 @@
             <li><a href="#">Option 4</a></li>
         </ul>
     </div>
-</nav>
+</div>
 
 <main class="main">
 
     <div class="container">
 
-        <div class="row-3">
+        <div class="row xs-1 md-3">
             <section class="col">
                 <h1>Header</h1>
                 <p>
@@ -97,7 +116,11 @@
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, autem beatae, cum delectus dignissimos eius error et eum impedit laboriosam maxime necessitatibus nihil non quaerat quidem quo repellat temporibus tenetur?
                 </p>
+
+                <img src="http://placehold.it/400x100">
+
             </section>
+
         </div>
 
 
@@ -107,7 +130,7 @@
 
 <div class="container-fluid is-gray">
     <div class="container">
-        <div class="row">
+        <div class="row xs-1 sm-2 md-3">
             <div class="col is-center">
                 <h2>Header</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto doloremque eius eligendi enim explicabo illo, inventore ipsum libero minima molestiae neque officia omnis porro possimus praesentium, qui reprehenderit sequi voluptatibus.</p>
@@ -116,7 +139,7 @@
                 <h2>Header</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto doloremque eius eligendi enim explicabo illo, inventore ipsum libero minima molestiae neque officia omnis porro possimus praesentium, qui reprehenderit sequi voluptatibus.</p>
             </div>
-            <div class="col">
+            <div class="col is-center">
                 <h2>Header</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto doloremque eius eligendi enim explicabo illo, inventore ipsum libero minima molestiae neque officia omnis porro possimus praesentium, qui reprehenderit sequi voluptatibus.</p>
             </div>
@@ -127,8 +150,8 @@
 <footer class="footer">
 
     <div class="container">
-        <div class="row">
-            <div class="col">
+        <div class="row xs-1 sm-2 md-3">
+            <div class="col is-center">
                 <p>Copyright (c) 2016 <a href="#">Brand</a></p>
             </div>
             <div class="col is-center">
@@ -139,11 +162,11 @@
                     <a href="#"><i class="fa fa-twitter-square fa-3x"></i></a>
                 </p>
             </div>
-            <div class="col is-right">
+            <div class="col is-center">
                 <form>
                     <div class="group">
                         <input type="text" placeholder="Newsletter">
-                        <button type="submit" class="btn is-primary">Subsctibe</button>
+                        <button type="submit" class="btn is-my-color1">Subsctibe</button>
                     </div>
                 </form>
             </div>
