@@ -16,13 +16,13 @@
     "gulp-postcss": "6.1.0",
     "gulp-sourcemaps": "1.6.0",
     "postcss": "5.0.19",
-    "postcss-calc": "*",
+    "postcss-calc": "5.3.0",
     "postcss-color-function": "2.0.1",
     "postcss-discard-comments": "2.0.4",
     "postcss-each": "0.9.1",
     "postcss-import": "8.1.0",
     "postcss-url": "5.1.1",
     "precss": "1.4.0",
-    "stylelint": "5.4.0"
+    "stylelint": "6.0.0"
   }
 }
