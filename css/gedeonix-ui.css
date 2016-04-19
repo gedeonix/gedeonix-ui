@@ -813,9 +813,9 @@ table td {
   */
 }
 
-@media screen and (min-width: $lg) {
+@media screen and (min-width: 90em) {
   .container {
-    max-width: $lg;
+    max-width: 90em;
   }
 }
 
