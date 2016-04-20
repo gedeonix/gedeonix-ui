@@ -398,16 +398,28 @@ a:hover{
   border-color: #0084b4;
 }
 
+.btn.twitter:hover{
+  background-color: #008fc2;
+}
+
 .btn.facebook{
   color: #ffffff;
   background-color: #3b5998;
   border-color: #3b5998;
 }
 
+.btn.facebook:hover{
+  background-color: #446db5;
+}
+
 .btn.google-plus{
   color: #ffffff;
   background-color: #dc4a38;
   border-color: #dc4a38;
+}
+
+.btn.google-plus:hover{
+  background-color: #f04f3d;
 }
 
 input[type=checkbox] {
