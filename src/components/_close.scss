@@ -1,0 +1,60 @@
+.close {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  height: 1.75rem;
+  overflow: hidden;
+  position: relative;
+  width: 1.75rem;
+  user-select: none;
+  vertical-align: middle;
+
+  &:before, &:after {
+    background-color: $text-color;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    margin-left: -25%;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    width: 50%;
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+
+  &.is-square, &.is-circle {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  &.is-circle {
+    border-radius: 50%;
+  }
+
+  &.is-xs {
+    height: 1rem;
+    width: 1rem;
+  }
+  &.is-sm {
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+  &.is-md {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+  &.is-lg {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+.is-square.close:before, .is-square.close:after,
+.is-circle.close:before, .is-circle.close:after {
+  background-color: $white-color;
+}
