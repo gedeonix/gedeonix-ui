@@ -4,32 +4,31 @@
   vertical-align: middle;
 
   .btn {
-    position: relative;
-    float: left;
-    margin-left: -1px;
+    margin-right: -1px;
     border-radius: 0;
   }
-
   .btn:first-child {
     border-radius: 4px 0 0 4px;
   }
   .btn:last-child {
     border-radius: 0 4px 4px 0;
   }
-
-  &.vertical {
-    flex-direction: column;
-    .btn {
-      margin-left: 0;
-      margin-bottom: -1px;
-    }
-
-    .btn:first-child {
-      border-radius: 4px 4px 0 0;
-    }
-    .btn:last-child {
-      border-radius: 0 0 4px 4px;
-    }
+  .btn:hover {
+    z-index: 100;
   }
 }
 
+.group.vertical {
+  flex-direction: column;
+  .btn {
+    margin-left: 0;
+    margin-bottom: -1px;
+  }
+
+  .btn:first-child {
+    border-radius: 4px 4px 0 0;
+  }
+  .btn:last-child {
+    border-radius: 0 0 4px 4px;
+  }
+}

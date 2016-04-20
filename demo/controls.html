@@ -303,31 +303,36 @@
         <h3>Vertical & block</h3>
 
         <div class="group vertical is-block">
-            <button class="btn is-primary">A</button>
-            <button class="btn is-primary active">B</button>
-            <button class="btn is-primary">C</button>
-        </div>
-
-        <h3>Simple pagination</h3>
-
-        <div>
-            <button class="btn"><i class="fa fa-angle-left"></i></button>
-            <button class="btn">2</button>
-            <button class="btn">3</button>
-            <button class="btn">4</button>
-            <button class="btn">5</button>
-            <button class="btn"><i class="fa fa-angle-right"></i></button>
+            <button class="btn">A</button>
+            <button class="btn">B</button>
+            <button class="btn">C</button>
         </div>
 
         <br>
+        <br>
 
-        <div class="group">
-            <button class="btn is-sm"><i class="fa fa-angle-left"></i></button>
-            <button class="btn is-sm">2</button>
-            <button class="btn is-sm">3</button>
-            <button class="btn is-sm">4</button>
-            <button class="btn is-sm">5</button>
-            <button class="btn is-sm"><i class="fa fa-angle-right"></i></button>
+        <div class="group vertical is-block">
+            <button class="btn is-primary">A</button>
+            <button class="btn is-success">B</button>
+            <button class="btn is-danger is-block">C</button>
+        </div>
+
+        <h3>Group in grid</h3>
+        <div class="row">
+            <div class="col-3">
+                <div class="group vertical is-block">
+                    <button class="btn active">1</button>
+                    <button class="btn">2</button>
+                    <button class="btn">3</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="group vertical is-block">
+                    <button class="btn active">1</button>
+                    <button class="btn">2</button>
+                    <button class="btn">3</button>
+                </div>
+            </div>
         </div>
 
         <h2>Checkbox</h2>
@@ -433,15 +438,6 @@
             <span class="close is-warning"></span>
             <span class="close is-danger"></span>
             <span class="close is-dark"></span>
-        </div>
-
-        <br>
-        <div>
-            <button class="btn is-xs">Close <div class="close is-xs"></div></button>
-            <button class="btn is-sm">Close <div class="close is-sm"></div></button>
-            <button class="btn">Close <div class="close"></div></button>
-            <button class="btn is-md">Close <div class="close is-md"></div></button>
-            <button class="btn is-lg">Close <div class="close is-lg"></div></button>
         </div>
 
         <br>
