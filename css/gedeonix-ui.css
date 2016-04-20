@@ -691,6 +691,10 @@ label {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.close.is-square:hover, .close.is-circle:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .close.is-circle{
   border-radius: 50%;
 }
@@ -721,13 +725,19 @@ label {
 
 .alert {
   color: #606060;
+  display: block;
+  position: relative;
   font-size: 1rem;
   margin-bottom: 0.5rem;
   padding: 0.75rem 0.75rem;
 
   border: none;
   border-radius: 5px;
-  background-color: #e0e0e0
+  background-color: #e0e0e0;
+}
+
+.alert .close {
+  float: right;
 }
 
 .alert.is-primary, .alert.is-success, .alert.is-info, .alert.is-warning, .alert.is-dark, .alert.is-danger{
@@ -786,11 +796,7 @@ label {
 }
 
 .modal-header .close {
-  top:5px;
-  right: 12px;
-  position: absolute;
-  cursor: pointer;
-  color: #ffffff;
+  float: right;
 }
 
 .modal-body {

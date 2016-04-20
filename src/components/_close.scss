@@ -32,6 +32,10 @@
     background-color: rgba(0, 0, 0, 0.1);
   }
 
+  &.is-square:hover, &.is-circle:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
   &.is-circle {
     border-radius: 50%;
   }

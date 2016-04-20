@@ -47,13 +47,8 @@
   font-size: 1.3rem;
   font-weight: bold;
   color: #ffffff;
-
   .close {
-    top:5px;
-    right: 12px;
-    position: absolute;
-    cursor: pointer;
-    color: #ffffff;
+    float: right;
   }
 }
 .modal-body {

@@ -1,5 +1,7 @@
 .alert {
   color: $text-color;
+  display: block;
+  position: relative;
   font-size: 1rem;
   margin-bottom: 0.5rem;
   padding: 0.75rem 0.75rem;
@@ -10,5 +12,8 @@
 
   &.is-primary, &.is-success, &.is-info, &.is-warning, &.is-dark, &.is-danger {
     color: $white-color;
+  }
+  .close {
+    float: right;
   }
 }
