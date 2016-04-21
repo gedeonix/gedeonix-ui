@@ -2,33 +2,46 @@
   display: inline-flex;
   flex-direction: row;
   vertical-align: middle;
-
-  .btn {
-    margin-right: -1px;
-    border-radius: 0;
-  }
-  .btn:first-child {
-    border-radius: 4px 0 0 4px;
-  }
-  .btn:last-child {
-    border-radius: 0 4px 4px 0;
-  }
   .btn:hover {
     z-index: 100;
   }
 }
 
+.group > * {
+  margin-right: -1px;
+  border-radius: 0;
+}
+.group > *:first-child {
+  border-radius: 4px 0 0 4px;
+}
+.group > *:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+
+
 .group.vertical {
   flex-direction: column;
-  .btn {
-    margin-left: 0;
-    margin-bottom: -1px;
-  }
+}
 
-  .btn:first-child {
-    border-radius: 4px 4px 0 0;
-  }
-  .btn:last-child {
-    border-radius: 0 0 4px 4px;
-  }
+.group.vertical > * {
+  margin-left: 0;
+  margin-bottom: -1px;
+}
+
+.group.vertical > *:first-child {
+  border-radius: 4px 4px 0 0;
+}
+
+.group.vertical > *:last-child {
+  border-radius: 0 0 4px 4px;
+}
+
+.group-label {
+  background-color: $group-label-background;
+  border: 1px solid $input-border-color;
+  border-radius: 3px;
+  font-size: 1rem;
+  padding: 0.55rem 0.5rem;
+  line-height: normal;
 }
