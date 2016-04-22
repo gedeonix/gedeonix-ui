@@ -4,21 +4,53 @@
   border-radius: $panel-radius;
 
   padding: 0;
-  margin: 20px 0;
-
+  margin: 5px 0;
   background-color: transparent;
+  width: 100%;
+  overflow: hidden;
 
   .panel-header {
     font-weight: bold;
-    padding: 10px;
-    background-color: #f0f0f0;
     border-bottom: 1px solid $panel-border;
   }
 
-  .panel-content {
+  > * {
     padding: 10px;
   }
 
+  .panel-footer {
+    font-weight: bold;
+    border-top: 1px solid $panel-border;
+  }
+
+  &.is-xs {
+    border-radius: $btn-xs-radius;
+  }
+  &.is-sm {
+    border-radius:  $btn-sm-radius;
+  }
+  &.is-md {
+    border-radius:  $btn-md-radius;
+  }
+  &.is-lg {
+    border-radius:  $btn-lg-radius;
+  }
+
+
 
 }
+
+.panel.is-xs, .panel-header.is-xs, .panel-footer.is-xs {
+  font-size: 0.6rem;
+}
+.panel.is-sm, .panel-header.is-sm, .panel-footer.is-sm {
+  font-size: 0.8rem;
+}
+.panel.is-md, .panel-header.is-md, .panel-footer.is-md {
+  font-size: 1.2rem;
+}
+.panel.is-lg, .panel-header.is-lg, .panel-footer.is-lg {
+  font-size: 1.6rem;
+}
+
 

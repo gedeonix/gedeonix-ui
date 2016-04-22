@@ -14,9 +14,6 @@
         }
 
         /* only diagnostic */
-        .main {
-            background-color: #f0f0f0;
-        }
         .container1 {
             background-color: #ffff80;
             outline: 1px dashed #ff0000;
@@ -58,18 +55,20 @@
 
     <main class="main">
 
-        <h1 class="container">Container</h1>
+        <div class="container">
+            <h1>Containers</h1>
+        </div>
 
         <div class="container container1 is-gutter">
             <div class="content1">
-                <h1>Default with gutter</h1>
+                <h2>Default with gutter</h2>
                 content container...
             </div>
         </div>
 
         <div class="container container1 no-gutter">
             <div class="content1">
-                <h1>Container without gutter</h1>
+                <h2>Container without gutter</h2>
                 content container...
             </div>
         </div>
@@ -77,109 +76,299 @@
         <h1 class="container">Fluid container</h1>
         <div class="container-fluid container1 is-gutter">
             <div class="content1">
-                <h1>Default with gutter</h1>
+                <h2>Default with gutter</h2>
                 content container...
             </div>
         </div>
 
         <div class="container-fluid container1 no-gutter">
             <div class="content1">
-                <h1>Container without gutter</h1>
+                <h2>Container without gutter</h2>
                 content container...
             </div>
         </div>
 
-        <h1>Tables</h1>
+        <div class="container">
 
-        <table class="table">
-            <thead>
-            <tr>
-                <th>User</th>
-                <th>E-mail</th>
-                <th>Description</th>
-                <th>Status</th>
-                <th>Options</th>
-            </tr>
-            </thead>
+            <h2>Panel</h2>
 
-            <tbody>
-            <tr>
-                <td>John Doe</td>
-                <td>john@example.com</td>
-                <td>Description...</td>
-                <td><span class="label is-info">info</span></td>
-                <td class="is-pack is-text-center">
-                    <button class="btn is-round"><i class="fa fa-ellipsis-v"></i></button>
-                </td>
-            </tr>
-            <tr>
-                <td>John Doe</td>
-                <td>john@example.com</td>
-                <td>Description...</td>
-                <td><span class="label is-warning">warning</span></td>
-                <td class="is-pack is-text-center">
-                    <button class="btn is-round"><i class="fa fa-ellipsis-v"></i></button>
-                </td>
-            </tr>
-            <tr>
-                <td>John Doe</td>
-                <td>john@example.com</td>
-                <td>Description...</td>
-                <td><span class="label is-danger">danger</span></td>
-                <td class="is-pack is-text-center">
-                    <button class="btn is-round"><i class="fa fa-ellipsis-v"></i></button>
-                </td>
-            </tr>
-            </tbody>
-
-        </table>
-
-        <h3>Border table</h3>
-        <table class="table is-border">
-            <thead>
-            <tr>
-                <th>User</th>
-                <th>E-mail</th>
-                <th>Description</th>
-                <th>Status</th>
-                <th>Options</th>
-            </tr>
-            </thead>
-
-            <tbody>
-            <tr>
-                <td>John Doe</td>
-                <td>john@example.com</td>
-                <td>Description...</td>
-                <td>
-                    <span class="label is-primary">primary</span>
-                    <span class="label is-success">success</span>
-                </td>
-                <td class="is-pack is-text-center">
-                    <button class="btn is-primary">Options <i class="fa fa-chevron-down"></i></button>
-                </td>
-            </tr>
-            </tbody>
-
-        </table>
-
-
-        <h1>Panel</h1>
-
-        <div class="panel">
-            <div class="panel-header">Header</div>
-            <div class="panel-content">
-                content...
-
+            <div class="panel">
+                <div>only content</div>
             </div>
-        </div>
 
-        <div class="panel">
-            <div class="panel-header is-danger">Header</div>
-            <div class="panel-content">
-                content...
-
+            <h3>Header</h3>
+            <div class="panel">
+                <div class="panel-header">Header</div>
+                <div class="panel-content">
+                    content...
+                </div>
             </div>
+
+            <h3>Color</h3>
+            <div class="panel">
+                <div class="panel-header is-primary">Header</div>
+                <div class="panel-content">
+                    content...
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-header is-gray">Header</div>
+                <div class="panel-content">
+                    content...
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-header is-success">Header</div>
+                <div class="panel-content">
+                    content...
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-header is-info">Header</div>
+                <div class="panel-content">
+                    content...
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-header is-warning">Header</div>
+                <div class="panel-content">
+                    content...
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-header is-danger">Header</div>
+                <div class="panel-content">
+                    content...
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-header is-dark">Header</div>
+                <div class="panel-content">
+                    content...
+                </div>
+            </div>
+
+            <h3>Size</h3>
+            <div class="panel is-xs">
+                <div class="panel-header">Header</div>
+                <div class="panel-content">
+                    content...
+                </div>
+            </div>
+
+            <div class="panel is-sm">
+                <div class="panel-header">Header</div>
+                <div class="panel-content">
+                    content...
+                </div>
+            </div>
+
+            <div class="panel is-xs">
+                <div class="panel-header">Header</div>
+                <div class="panel-content">
+                    content...
+                </div>
+            </div>
+
+            <div class="panel is-md">
+                <div class="panel-header">Header</div>
+                <div class="panel-content">
+                    content...
+                </div>
+            </div>
+
+            <div class="panel is-lg">
+                <div class="panel-header">Header</div>
+                <div class="panel-content">
+                    content...
+                </div>
+            </div>
+
+            <h3>With icons</h3>
+
+            <div class="panel">
+                <div class="panel-header is-info"><i class="fa fa-info"></i> Info</div>
+                <div class="panel-content">
+                    content...
+                </div>
+            </div>
+
+            <h3>Header & footer</h3>
+            <div class="panel">
+                <div class="panel-header is-lg is-gray">Header</div>
+                <div class="panel-content">
+                    content...
+                </div>
+                <div class="panel-footer is-xs is-gray">Footer</div>
+            </div>
+
+            <h3>Grid & responsive</h3>
+            <div class="row xs-1 sm-2 lg-3">
+                <div class="col">
+                    <div class="panel">
+                        <div class="panel-header is-primary">Header</div>
+                        <div class="panel-content">
+                            content...
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="panel">
+                        <div class="panel-header is-success">Header</div>
+                        <div class="panel-content">
+                            content...
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="panel">
+                        <div class="panel-header is-warning">Header</div>
+                        <div class="panel-content">
+                            content...
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="panel">
+                        <div class="panel-header is-danger">Header</div>
+                        <div class="panel-content">
+                            content...
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <h2>Tables</h2>
+
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>User</th>
+                    <th>E-mail</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    <th>Options</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>john@example.com</td>
+                    <td>Description...</td>
+                    <td><span class="label is-info">info</span></td>
+                    <td class="is-pack is-text-center">
+                        <button class="btn is-round"><i class="fa fa-ellipsis-v"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>john@example.com</td>
+                    <td>Description...</td>
+                    <td><span class="label is-warning">warning</span></td>
+                    <td class="is-pack is-text-center">
+                        <button class="btn is-round"><i class="fa fa-ellipsis-v"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>john@example.com</td>
+                    <td>Description...</td>
+                    <td><span class="label is-danger">danger</span></td>
+                    <td class="is-pack is-text-center">
+                        <button class="btn is-round"><i class="fa fa-ellipsis-v"></i></button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <h3>Border table</h3>
+            <table class="table is-border">
+                <thead>
+                <tr>
+                    <th>User</th>
+                    <th>E-mail</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    <th>Options</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>john@example.com</td>
+                    <td>Description...</td>
+                    <td>
+                        <span class="label is-primary">primary</span>
+                        <span class="label is-success">success</span>
+                    </td>
+                    <td class="is-pack is-text-center">
+                        <button class="btn is-primary">Options <i class="fa fa-chevron-down"></i></button>
+                    </td>
+                </tr>
+                </tbody>
+
+            </table>
+
+            <table class="table is-border">
+                <thead>
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <h3>Table with panel</h3>
+            <div class="panel">
+                <div class="panel-header is-gray">Header</div>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="panel-footer is-gray">Footer</div>
+            </div>
+
         </div>
 
     </main>

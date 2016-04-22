@@ -506,7 +506,7 @@ input[type=text], input[type=tel], input[type=password], input[type=number], inp
   border-radius: 0 0 4px 4px;
 }
 .group-label {
-  background-color: #f0f0f0;
+  background-color: #fafafa;
   border: 1px solid #d4d4d4;
   border-radius: 3px;
   font-size: 1rem;
@@ -522,20 +522,48 @@ input[type=text], input[type=tel], input[type=password], input[type=number], inp
   border-radius: 4px;
 
   padding: 0;
-  margin: 20px 0;
-
+  margin: 5px 0;
   background-color: transparent;
+  width: 100%;
+  overflow: hidden;
+
 
 
 }
 .panel .panel-header {
   font-weight: bold;
-  padding: 10px;
-  background-color: #f0f0f0;
   border-bottom: 1px solid #d4d4d4;
 }
-.panel .panel-content {
+.panel > * {
   padding: 10px;
+}
+.panel .panel-footer {
+  font-weight: bold;
+  border-top: 1px solid #d4d4d4;
+}
+.panel.is-xs{
+  border-radius: 2px;
+}
+.panel.is-sm{
+  border-radius: 3px;
+}
+.panel.is-md{
+  border-radius: 5px;
+}
+.panel.is-lg{
+  border-radius: 6px;
+}
+.panel.is-xs, .panel-header.is-xs, .panel-footer.is-xs {
+  font-size: 0.6rem;
+}
+.panel.is-sm, .panel-header.is-sm, .panel-footer.is-sm {
+  font-size: 0.8rem;
+}
+.panel.is-md, .panel-header.is-md, .panel-footer.is-md {
+  font-size: 1.2rem;
+}
+.panel.is-lg, .panel-header.is-lg, .panel-footer.is-lg {
+  font-size: 1.6rem;
 }
 .control {
   display: block;
@@ -561,7 +589,7 @@ label {
   margin-bottom: 0.25em;
 }
 .label {
-  background-color: #e0e0e0;
+  background-color: #fafafa;
   border-radius: 0.2rem;
   color: #ffffff;
   font-size: 0.75rem;
@@ -643,7 +671,7 @@ label {
 
   border: none;
   border-radius: 5px;
-  background-color: #e0e0e0;
+  background-color: #fafafa;
 }
 .alert .close {
   float: right;
@@ -1441,14 +1469,14 @@ table td {
 }
 .nav > li > ul > li a:hover {
   background-color: #4e4f51;
-  color: #e0e0e0;
+  color: #fafafa;
 }
 .nav {
 }
 .nav.is-gray a{
   color: #a0a0a0;
-  background-color: #e0e0e0;
-  border-color: #e0e0e0;
+  background-color: #fafafa;
+  border-color: #fafafa;
 }
 .nav.is-gray a:hover{
   background-color: #c0c0c0;
@@ -1669,7 +1697,7 @@ table td {
   background-color: #ffffff;
 }
 .is-gray {
-  background-color: #e0e0e0;
+  background-color: #fafafa;
 }
 .is-dark {
   background-color: #4e4f51;
