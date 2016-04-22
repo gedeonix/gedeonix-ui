@@ -1474,6 +1474,30 @@ table td {
   background-color: #4e4f51;
   color: #fafafa;
 }
+.breadcrumbs {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.breadcrumbs li {
+  display: inline;
+  list-style: none;
+}
+.breadcrumbs li:after {
+  color: #459cde;
+  content: "\f054";
+  font-family: 'FontAwesome';
+  font-size: 0.75em;
+  padding-left: .4em;
+}
+.breadcrumbs li:last-child:after {
+  content: "";
+  padding-left: 0;
+}
+.breadcrumbs li.active > a {
+  text-decoration: none;
+}
 .nav {
 }
 .nav.is-gray a{
