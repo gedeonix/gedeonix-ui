@@ -1,8 +1,8 @@
-.nav {
-  align-items: center;
+.sidebar {
+  align-items: stretch;
   background: transparent;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   font-family: inherit;
   font-size: $btn-font-size;
   font-weight: normal;
@@ -11,6 +11,16 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%;
+
+  li.title {
+    color: $btn-default-color;
+    font-weight: bold;
+    font-size: 2em;
+    display: block;
+    padding: 0.5em;
+    white-space: nowrap;
+  }
 
   a {
     color: $btn-default-color;
@@ -22,9 +32,14 @@
     white-space: nowrap;
   }
 
-  > li {
+  li {
     background-color: inherit;
     display: inline-block;
+    list-style: none;
+    list-style-type: none;
+  }
+
+  > li {
     &:hover {
       background-color: $btn-default-hover;
       > ul {
@@ -37,22 +52,16 @@
     color: $text-color;
     background-color: $btn-default-active;
   }
+
 }
 
-/* submenu */
-.nav > li > ul {
-  list-style-type: none;
+.sidebar ul.submenu {
+  list-style: none;
+  display: none;
   padding: 0;
   margin: 0;
-  min-width: 200px;
-
-  display: none;
-  position: absolute;
   color: $text-color;
   background-color: #c0c0c0;
-  border: 1px solid #222;
-  border-top: 0;
-  /*margin-left: -5px;*/
   > li {
     display: block;
     a:hover {
@@ -61,3 +70,13 @@
     }
   }
 }
+
+/*
+.sidebar .submenu-link > a:after {
+  display: block;
+  position: absolute;
+  content: "\f054";
+  font-family: 'FontAwesome';
+  vertical-align: middle;
+}
+*/
