@@ -1459,21 +1459,23 @@ table td {
   display: flex;
   flex-flow: column nowrap;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: normal;
   justify-content: flex-start;
-  line-height: 1.5rem;
-  list-style: none;
   margin: 0;
   padding: 0;
   width: 100%;
 
 }
+.sidebar li {
+  background-color: inherit;
+  display: inline-block;
+  list-style: none;
+}
 .sidebar li.title {
   color: #606060;
   font-weight: bold;
   font-size: 2em;
-  display: block;
   padding: 0.5em;
   white-space: nowrap;
 }
@@ -1486,19 +1488,11 @@ table td {
   text-align: left;
   white-space: nowrap;
 }
-.sidebar li {
-  background-color: inherit;
-  display: inline-block;
-  list-style: none;
-  list-style-type: none;
-}
-.sidebar > li {
-}
-.sidebar > li:hover{
-  background-color: #f0f0f0;
-}
-.sidebar > li:hover > ul{
+.sidebar > li:hover > ul {
   display: block;
+}
+.sidebar a:hover {
+  background-color: #f0f0f0;
 }
 .sidebar li.active a {
   color: #606060;
@@ -1518,6 +1512,9 @@ table td {
 .sidebar ul.submenu > li a:hover {
   background-color: #4e4f51;
   color: #fafafa;
+}
+.sidebar ul.submenu.open{
+  display: block;
 }
 /*
 .sidebar .submenu-link > a:after {
@@ -1545,15 +1542,16 @@ table td {
 .breadcrumbs {
   background-color: transparent;
   margin: 0;
-  padding: 0;
+  padding: 0.5em;
   font-weight: bold;
+  font-size: 16px;
 }
 .breadcrumbs li {
   display: inline;
   list-style: none;
 }
 .breadcrumbs li:after {
-  color: #459cde;
+  color: currentColor;
   content: "\f054";
   font-family: 'FontAwesome';
   font-size: 0.75em;
@@ -1566,89 +1564,89 @@ table td {
 .breadcrumbs li.active > a {
   text-decoration: none;
 }
-.nav {
+.nav, .sidebar, .breadcrumbs {
 }
-.nav.is-gray a{
+.nav.is-gray a, .sidebar.is-gray a, .breadcrumbs.is-gray a{
   color: #a0a0a0;
   background-color: #fafafa;
   border-color: #fafafa;
 }
-.nav.is-gray a:hover{
+.nav.is-gray a:hover, .sidebar.is-gray a:hover, .breadcrumbs.is-gray a:hover{
   background-color: #c0c0c0;
 }
-.nav.is-gray .active a{
+.nav.is-gray .active a, .sidebar.is-gray .active a, .breadcrumbs.is-gray .active a{
   color: #a0a0a0;
   background-color: #808080;
 }
-.nav.is-primary a{
+.nav.is-primary a, .sidebar.is-primary a, .breadcrumbs.is-primary a{
   color: #ffffff;
   border-color: #65bcfe;
   background-color: #65bcfe;
 }
-.nav.is-primary a:hover{
+.nav.is-primary a:hover, .sidebar.is-primary a:hover, .breadcrumbs.is-primary a:hover{
   background-color: #459cde;
 }
-.nav.is-primary .active a{
+.nav.is-primary .active a, .sidebar.is-primary .active a, .breadcrumbs.is-primary .active a{
   color: #ffffff;
   background-color: #4f9fdf;
 }
-.nav.is-success a{
+.nav.is-success a, .sidebar.is-success a, .breadcrumbs.is-success a{
   color: #ffffff;
   border-color: #5acd59;
   background-color: #5acd59;
 }
-.nav.is-success a:hover{
+.nav.is-success a:hover, .sidebar.is-success a:hover, .breadcrumbs.is-success a:hover{
   background-color: #32c07f;
 }
-.nav.is-success .active a{
+.nav.is-success .active a, .sidebar.is-success .active a, .breadcrumbs.is-success .active a{
   color: #ffffff;
   background-color: #32c07f;
 }
-.nav.is-info a{
+.nav.is-info a, .sidebar.is-info a, .breadcrumbs.is-info a{
   color: #ffffff;
   border-color: #6ad1dd;
   background-color: #6ad1dd;
 }
-.nav.is-info a:hover{
+.nav.is-info a:hover, .sidebar.is-info a:hover, .breadcrumbs.is-info a:hover{
   background-color: #33e9ec;
 }
-.nav.is-info .active a{
+.nav.is-info .active a, .sidebar.is-info .active a, .breadcrumbs.is-info .active a{
   color: #ffffff;
   background-color: #33e9ec;
 }
-.nav.is-warning a{
+.nav.is-warning a, .sidebar.is-warning a, .breadcrumbs.is-warning a{
   color: #ffffff;
   border-color: #ffa924;
   background-color: #ffa924;
 }
-.nav.is-warning a:hover{
+.nav.is-warning a:hover, .sidebar.is-warning a:hover, .breadcrumbs.is-warning a:hover{
   background-color: #ffd11e;
 }
-.nav.is-warning .active a{
+.nav.is-warning .active a, .sidebar.is-warning .active a, .breadcrumbs.is-warning .active a{
   color: #ffffff;
   background-color: #ffd11e;
 }
-.nav.is-danger a{
+.nav.is-danger a, .sidebar.is-danger a, .breadcrumbs.is-danger a{
   color: #ffffff;
   border-color: #fc573f;
   background-color: #fc573f;
 }
-.nav.is-danger a:hover{
+.nav.is-danger a:hover, .sidebar.is-danger a:hover, .breadcrumbs.is-danger a:hover{
   background-color: #fc4016;
 }
-.nav.is-danger .active a{
+.nav.is-danger .active a, .sidebar.is-danger .active a, .breadcrumbs.is-danger .active a{
   color: #ffffff;
   background-color: #fc4016;
 }
-.nav.is-dark a{
+.nav.is-dark a, .sidebar.is-dark a, .breadcrumbs.is-dark a{
   color: #ffffff;
   border-color: #4e4f51;
   background-color: #4e4f51;
 }
-.nav.is-dark a:hover{
+.nav.is-dark a:hover, .sidebar.is-dark a:hover, .breadcrumbs.is-dark a:hover{
   background-color: #8a8b8f;
 }
-.nav.is-dark .active a{
+.nav.is-dark .active a, .sidebar.is-dark .active a, .breadcrumbs.is-dark .active a{
   color: #ffffff;
   background-color: #8a8b8f;
 }

@@ -1,14 +1,15 @@
 .breadcrumbs {
   background-color: transparent;
   margin: 0;
-  padding: 0;
+  padding: 0.5em;
   font-weight: bold;
+  font-size: $font-size;
   li {
     display: inline;
     list-style: none;
   }
   li:after {
-    color: $link-color;
+    color: currentColor;
     content: "\f054";
     font-family: 'FontAwesome';
     font-size: 0.75em;
