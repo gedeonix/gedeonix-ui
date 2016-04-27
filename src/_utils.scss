@@ -108,3 +108,26 @@
   max-width: 100%;
 }
 
+.is-flex-start {
+  justify-content: flex-start;
+}
+
+.is-flex-end {
+  justify-content: flex-end;
+}
+
+.is-flex-center {
+  justify-content: center;
+}
+
+.is-space-around {
+  justify-content: space-around;
+}
+
+.is-space-between {
+  justify-content: space-between;
+}
+
+.is-flex-auto {
+  flex: 1 1 auto;
+}
