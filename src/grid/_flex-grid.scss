@@ -103,3 +103,9 @@
     .col.lg-$i { min-width: calc($i*100/$columns)% }
   }
 }
+
+@for $i from 1 to $columns {
+  .width-$i {
+    width: calc($i*100/$columns)%;
+  }
+}
