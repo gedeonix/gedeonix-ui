@@ -1915,5 +1915,14 @@ table td {
 .is-padding {
   padding: 1em;
 }
+.hide {
+  display: none;
+}
+.upper {
+  text-transform: uppercase;
+}
+.nowrap {
+  white-space: nowrap;
+}
 
 
