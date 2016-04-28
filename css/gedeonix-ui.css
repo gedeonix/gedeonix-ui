@@ -830,6 +830,23 @@ table td {
     max-width: 90em;
   }
 }
+.tile {
+  border: 0;
+  border-radius: 0;
+  color: #c0c0c0;
+  cursor: pointer;
+  outline: 0;
+  overflow: hidden;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  display: block;
+  background-color: #ffff80;
+  min-height: 150px;
+}
+.tile:hover {
+  background-color: #e0e0e0;
+}
 .row, [class*=row-], .col, [class*=col-] {
   display: flex;
   flex-wrap: wrap;
@@ -1896,8 +1913,15 @@ table td {
 .is-space-between {
   justify-content: space-between;
 }
+.is-stretch {
+  align-items: stretch;
+}
 .is-flex-auto {
   flex: 1 1 auto;
+}
+.is-vertical {
+  flex-flow: column;
+  align-items: stretch;
 }
 .is-gap {
   padding-left: 0.25em;

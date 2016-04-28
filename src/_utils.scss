@@ -128,8 +128,17 @@
   justify-content: space-between;
 }
 
+.is-stretch {
+  align-items: stretch;
+}
+
 .is-flex-auto {
   flex: 1 1 auto;
+}
+
+.is-vertical {
+  flex-flow: column;
+  align-items: stretch;
 }
 
 .is-gap {
