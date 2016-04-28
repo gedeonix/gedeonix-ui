@@ -472,6 +472,14 @@ input[type=text], input[type=tel], input[type=password], input[type=number], inp
   -webkit-appearance: none;
   width: 100%;
 }
+input.error {
+  background-color: #ffd2cc;
+  border-color: #ff5f3a;
+}
+input.success {
+  background-color: #d2ffcc;
+  border-color: #5bd042;
+}
 .group {
   display: inline-flex;
   flex-direction: row;
@@ -585,6 +593,26 @@ label {
   color: #606060;
   font-weight: 600;
   margin-bottom: 0.25em;
+
+}
+label span.required {
+  color: #ff0000;
+  font-size: 0.9rem;
+}
+label span.description {
+  color: #808080;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+label span.success {
+  color: #5bd042;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+label span.error {
+  color: #ff5f3a;
+  font-size: 0.9rem;
+  font-weight: normal;
 }
 .label {
   background-color: #fafafa;
@@ -1759,7 +1787,7 @@ table td {
 }
 .is-block {
   width: 100%;
-  display: block;
+  /*display: block;*/
 }
 .is-center {
   margin: 0 auto;

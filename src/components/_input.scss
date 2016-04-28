@@ -60,3 +60,14 @@ select, textarea {
   -webkit-appearance: none;
   width: 100%;
 }
+
+input.error {
+  background-color: #ffd2cc;
+  border-color: #ff5f3a;
+}
+
+input.success {
+  background-color: #d2ffcc;
+  border-color: #5bd042;
+}
+
