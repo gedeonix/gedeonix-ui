@@ -830,7 +830,7 @@ table td {
     max-width: 90em;
   }
 }
-.tile {
+.tile-old {
   border: 0;
   border-radius: 0;
   color: #c0c0c0;
@@ -843,6 +843,26 @@ table td {
   display: block;
   background-color: #ffff80;
   min-height: 150px;
+}
+.tile-container {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  /*padding:1vmin;*/
+  align-items: stretch;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.tile {
+  display: inline-block;
+  border:solid 1px #000;
+  overflow:hidden;
+  position:relative;
+  background-color: #ffff80;
+  flex-grow: 1;
+  padding: 15px;
+  /*margin:1vmin;*/
 }
 .tile:hover {
   background-color: #e0e0e0;
