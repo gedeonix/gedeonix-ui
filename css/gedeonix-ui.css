@@ -467,10 +467,10 @@ input.is-lg, select.is-lg, textarea.is-lg{
 }
 input, textarea, select, fieldset {
   /*margin-bottom: 0.5rem;*/
+  width: 100%;
 }
 input[type=text], input[type=tel], input[type=password], input[type=number], input[type=email], input[type=search], select, textarea {
   -webkit-appearance: none;
-  width: 100%;
 }
 input.error {
   background-color: #ffd2cc;
