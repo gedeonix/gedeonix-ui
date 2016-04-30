@@ -136,9 +136,15 @@
   flex: 1 1 auto;
 }
 
+/*
 .is-vertical {
   flex-flow: column;
   align-items: stretch;
+}
+*/
+
+.is-vertical {
+  flex-direction: column;
 }
 
 .is-gap {

@@ -830,42 +830,24 @@ table td {
     max-width: 90em;
   }
 }
-.tile-old {
-  border: 0;
-  border-radius: 0;
-  color: #c0c0c0;
-  cursor: pointer;
-  outline: 0;
-  overflow: hidden;
-  width: 100%;
-  padding: 15px;
-  text-align: center;
-  display: block;
-  background-color: #ffff80;
-  min-height: 150px;
+.tile-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.5rem;
 }
 .tile-container {
   display: flex;
-  flex-flow: row;
+  flex: 1 1 auto;
   flex-wrap: wrap;
-  /*padding:1vmin;*/
-  align-items: stretch;
-  width: 100%;
-  margin: 0;
-  padding: 0;
 }
 .tile {
-  display: inline-block;
-  border:solid 1px #000;
-  overflow:hidden;
-  position:relative;
-  background-color: #ffff80;
-  flex-grow: 1;
-  padding: 15px;
-  /*margin:1vmin;*/
+  flex: 1 1 auto;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
 }
 .tile:hover {
-  background-color: #e0e0e0;
+  opacity: 0.5;
 }
 .row, [class*=row-], .col, [class*=col-] {
   display: flex;
@@ -1939,9 +1921,14 @@ table td {
 .is-flex-auto {
   flex: 1 1 auto;
 }
+/*
 .is-vertical {
   flex-flow: column;
   align-items: stretch;
+}
+*/
+.is-vertical {
+  flex-direction: column;
 }
 .is-gap {
   padding-left: 0.25em;
