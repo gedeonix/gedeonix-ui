@@ -7,28 +7,15 @@ input, select, textarea {
 
   &.is-xs {
     border-radius: $btn-xs-radius;
-    font-size: 0.6rem;
-    padding: 0.5em 1em;
-  }
-  &.is-xs {
-    border-radius: $btn-xs-radius;
-    font-size: 0.6rem;
-    padding: 0.5em 1em;
   }
   &.is-sm {
     border-radius:  $btn-sm-radius;
-    font-size: 0.8rem;
-    padding: 0.5em 1em;
   }
   &.is-md {
     border-radius:  $btn-md-radius;
-    font-size: 1.2rem;
-    padding: 0.45em 1em;
   }
   &.is-lg {
     border-radius:  $btn-lg-radius;
-    font-size: 1.6rem;
-    padding: 0.4em 1em;
   }
   /*
   &.is-sm {
@@ -46,9 +33,33 @@ input, select, textarea {
   */
 }
 
-input, textarea, select, fieldset {
+input, select, textarea, .fa {
+  &.is-xs {
+    font-size: 0.7rem;
+    padding: 0.6em 0.5em;
+  }
+  &.is-sm {
+    font-size: 0.8rem;
+    padding: 0.5em 0.5em;
+  }
+  &.is-md {
+    font-size: 1.2rem;
+    padding: 0.4em 0.5em;
+  }
+  &.is-lg {
+    font-size: 1.6rem;
+    padding: 0.25em 0.5em;
+  }
+}
+
+input, select, textarea {
+  &.is-round {
+    border-radius: 100px;
+  }
+}
+
+select, textarea, select, fieldset {
   /*margin-bottom: 0.5rem;*/
-  width: 100%;
 }
 
 input[type=text],
@@ -59,6 +70,7 @@ input[type=email],
 input[type=search],
 select, textarea {
   -webkit-appearance: none;
+  width: 100%;
 }
 
 input.error {
@@ -71,3 +83,31 @@ input.success {
   border-color: #5bd042;
 }
 
+.icon-addon {
+  position: relative;
+  input {
+    /*border-radius: 100px;*/
+    padding-left: 1.75em;
+  }
+  .fa {
+    pointer-events: none;
+    padding: 10px 10px;
+    position: absolute;
+    /*right: 0px;*/
+  }
+}
+
+.icon-addon input {
+  &.is-xs {
+    padding-left: 2em;
+  }
+  &.is-sm {
+    padding-left: 2em;
+  }
+  &.is-md {
+    padding-left: 1.5em;
+  }
+  &.is-lg {
+    padding-left: 1.5em;
+  }
+}

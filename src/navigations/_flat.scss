@@ -1,18 +1,14 @@
 .nav.is-flat {
   border-bottom: 1px solid $btn-default-color;
   a {
-    border-bottom: 1px solid $btn-default-color;
-    margin-bottom: -1px;
     &:hover {
-      /*background-color: transparent;*/
-      /*border-bottom-color: $btn-default-hover;*/
+      border-bottom: 4px solid $btn-default-color;
       color: $btn-default-color;
     }
   }
   .active a {
     background-color: transparent;
-    border-bottom: 2px solid $btn-default-color;
+    border-bottom: 4px solid $btn-default-color;
     color: $btn-default-color;
-    margin-bottom: -1px;
   }
 }

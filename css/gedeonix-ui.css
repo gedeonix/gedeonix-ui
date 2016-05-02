@@ -442,35 +442,45 @@ input, select, textarea {
 }
 input.is-xs, select.is-xs, textarea.is-xs{
   border-radius: 2px;
-  font-size: 0.6rem;
-  padding: 0.5em 1em;
-}
-input.is-xs, select.is-xs, textarea.is-xs{
-  border-radius: 2px;
-  font-size: 0.6rem;
-  padding: 0.5em 1em;
 }
 input.is-sm, select.is-sm, textarea.is-sm{
   border-radius: 3px;
-  font-size: 0.8rem;
-  padding: 0.5em 1em;
 }
 input.is-md, select.is-md, textarea.is-md{
   border-radius: 5px;
-  font-size: 1.2rem;
-  padding: 0.45em 1em;
 }
 input.is-lg, select.is-lg, textarea.is-lg{
   border-radius: 6px;
-  font-size: 1.6rem;
-  padding: 0.4em 1em;
 }
-input, textarea, select, fieldset {
+input, select, textarea, .fa {
+}
+input.is-xs, select.is-xs, textarea.is-xs, .fa.is-xs{
+  font-size: 0.7rem;
+  padding: 0.6em 0.5em;
+}
+input.is-sm, select.is-sm, textarea.is-sm, .fa.is-sm{
+  font-size: 0.8rem;
+  padding: 0.5em 0.5em;
+}
+input.is-md, select.is-md, textarea.is-md, .fa.is-md{
+  font-size: 1.2rem;
+  padding: 0.4em 0.5em;
+}
+input.is-lg, select.is-lg, textarea.is-lg, .fa.is-lg{
+  font-size: 1.6rem;
+  padding: 0.25em 0.5em;
+}
+input, select, textarea {
+}
+input.is-round, select.is-round, textarea.is-round{
+  border-radius: 100px;
+}
+select, textarea, select, fieldset {
   /*margin-bottom: 0.5rem;*/
-  width: 100%;
 }
 input[type=text], input[type=tel], input[type=password], input[type=number], input[type=email], input[type=search], select, textarea {
   -webkit-appearance: none;
+  width: 100%;
 }
 input.error {
   background-color: #ffd2cc;
@@ -479,6 +489,31 @@ input.error {
 input.success {
   background-color: #d2ffcc;
   border-color: #5bd042;
+}
+.icon-addon {
+  position: relative;
+}
+.icon-addon input { /*border-radius: 100px;*/
+  padding-left: 1.75em;
+}
+.icon-addon .fa {
+  pointer-events: none;
+  padding: 10px 10px;
+  position: absolute; /*right: 0px;*/
+}
+.icon-addon input {
+}
+.icon-addon input.is-xs{
+  padding-left: 2em;
+}
+.icon-addon input.is-sm{
+  padding-left: 2em;
+}
+.icon-addon input.is-md{
+  padding-left: 1.5em;
+}
+.icon-addon input.is-lg{
+  padding-left: 1.5em;
 }
 .group {
   display: inline-flex;
@@ -1496,17 +1531,15 @@ table td {
   border-bottom: 1px solid #606060;
 }
 .nav.is-flat a {
-  border-bottom: 1px solid #606060;
-  margin-bottom: -1px
 }
-.nav.is-flat a:hover{ /*background-color: transparent;*/ /*border-bottom-color: $btn-default-hover;*/
+.nav.is-flat a:hover{
+  border-bottom: 4px solid #606060;
   color: #606060;
 }
 .nav.is-flat .active a {
   background-color: transparent;
-  border-bottom: 2px solid #606060;
+  border-bottom: 4px solid #606060;
   color: #606060;
-  margin-bottom: -1px;
 }
 .nav.is-tab {
   border-bottom: 1px solid #606060;
@@ -1519,15 +1552,11 @@ table td {
 }
 .nav.is-tab a {
   border: 1px solid #606060;
-  margin-bottom: -1px; /*border-color: transparent;*/ /*
-    border-width: 1px;
-    border-style: solid;
-    border-bottom: none;
-    */
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   margin: 0.75em 0 -1px 0;
   padding: 0.75em 1em;
+  border-bottom-color: transparent;
 }
 .nav.is-tab li.active a {
   color: #606060;
@@ -1549,7 +1578,6 @@ table td {
 
 }
 .sidebar li {
-  background-color: inherit;
   display: inline-block;
   list-style: none;
 }
