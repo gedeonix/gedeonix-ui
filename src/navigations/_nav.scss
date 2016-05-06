@@ -40,8 +40,11 @@
 }
 
 .nav.is-gap > li {
-  padding-left: 0.25em;
-  padding-right: 0.25em;
+  padding-right: 0.5em;
+}
+
+.nav.is-gap > li:last-child {
+  padding-right: 0;
 }
 
 /* submenu */

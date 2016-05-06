@@ -31,6 +31,10 @@ input, select, textarea {
     font-size: 1.4rem;
   }
   */
+
+  &:focus {
+    z-index: 2;
+  }
 }
 
 input, select, textarea, .fa {

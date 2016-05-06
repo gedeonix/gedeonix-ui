@@ -461,6 +461,9 @@ input.is-md, select.is-md, textarea.is-md{
 input.is-lg, select.is-lg, textarea.is-lg{
   border-radius: 6px;
 }
+input:focus, select:focus, textarea:focus{
+  z-index: 2;
+}
 input, select, textarea, .fa {
 }
 input.is-xs, select.is-xs, textarea.is-xs, .fa.is-xs{
@@ -1479,8 +1482,10 @@ table td {
   background-color: #ffffff;
 }
 .nav.is-gap > li {
-  padding-left: 0.25em;
-  padding-right: 0.25em;
+  padding-right: 0.5em;
+}
+.nav.is-gap > li:last-child {
+  padding-right: 0;
 }
 /* submenu */
 .nav > li > ul {
@@ -1785,7 +1790,7 @@ table td {
   color: #808080;
   font-weight: bold;
   font-size: 2.5em;
-  padding: 0 1rem 0 0;
+  padding: 0;
   white-space: nowrap;
 }
 .fixed-space {
@@ -1979,10 +1984,12 @@ table td {
 .is-vertical {
   flex-direction: column;
 }
+/*
 .is-gap {
   padding-left: 0.25em;
   padding-right: 0.25em;
 }
+*/
 .is-margin-none {
   margin: 0;
 }
