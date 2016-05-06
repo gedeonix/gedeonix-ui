@@ -15,3 +15,15 @@ body {
   padding: 0;
   background-color: $background-color;
 }
+
+a {
+  cursor: pointer;
+}
+.fixed-space {
+  margin-bottom: 48px;
+}
+
+
+.table th {
+  padding: 10px 8px;
+}

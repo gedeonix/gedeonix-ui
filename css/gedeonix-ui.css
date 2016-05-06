@@ -15,6 +15,15 @@ body {
   padding: 0;
   background-color: #ffffff;
 }
+a {
+  cursor: pointer;
+}
+.fixed-space {
+  margin-bottom: 48px;
+}
+.table th {
+  padding: 10px 8px;
+}
 h1 {
   font-size: 3rem;
 }
@@ -817,9 +826,9 @@ table td {
   margin-bottom: 10px;
 }
 .table th, .table td {
-  padding: 4px 8px;
   border: 1px solid #d0d0d0;
   border-width: 0 0 1px;
+  padding: 4px 8px;
 }
 .table tr:last-child td {
   border-bottom-width: 0;
@@ -831,6 +840,7 @@ table td {
 .table tfoot th, .table tfoot td {
   border-width: 2px 0 0;
   color: #8b8b8b;
+  padding: 8px 8px;
 }
 .table.is-border th {
   background-color: #fafafa;
@@ -1530,9 +1540,7 @@ table td {
 .nav.is-flat {
   border-bottom: 1px solid #606060;
 }
-.nav.is-flat a {
-}
-.nav.is-flat a:hover{
+.nav.is-flat a:hover {
   border-bottom: 4px solid #606060;
   color: #606060;
 }
@@ -1542,8 +1550,9 @@ table td {
   color: #606060;
 }
 .nav.is-tab {
-  border-bottom: 1px solid #606060;
+  border-bottom: 1px solid transparent;
 }
+/*$btn-default-color;*/
 .nav.is-tab li + li {
   margin-left: 0.25em;
 }
@@ -1551,17 +1560,26 @@ table td {
   background-color: transparent;
 }
 .nav.is-tab a {
-  border: 1px solid #606060;
+  border: 1px solid transparent; /*$btn-default-color;*/
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   margin: 0.75em 0 -1px 0;
   padding: 0.75em 1em;
-  border-bottom-color: transparent;
+  border-bottom-color: transparent
 }
-.nav.is-tab li.active a {
-  color: #606060;
+.nav.is-tab a:hover{
+  background-color: #f0f0f0;
+}
+.nav.is-tab .active a {
   background-color: #ffffff;
   border-bottom-color: transparent;
+  color: #606060;
+}
+.nav.is-tab.is-border{
+  border-bottom: 1px solid #606060;
+}
+.nav.is-tab.is-border a{
+  border: 1px solid #606060;
 }
 .sidebar {
   align-items: stretch;
@@ -1767,8 +1785,11 @@ table td {
   color: #808080;
   font-weight: bold;
   font-size: 2.5em;
-  padding: 0 1rem;
+  padding: 0 1rem 0 0;
   white-space: nowrap;
+}
+.fixed-space {
+  margin-bottom: 48px;
 }
 .main {
   padding-bottom: 1rem;

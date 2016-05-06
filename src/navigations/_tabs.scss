@@ -1,5 +1,5 @@
 .nav.is-tab {
-  border-bottom: 1px solid $btn-default-color;
+  border-bottom: 1px solid transparent; /*$btn-default-color;*/
   li + li {
     margin-left: 0.25em;
   }
@@ -7,17 +7,28 @@
     background-color: transparent;
   }
   a {
-    border: 1px solid $btn-default-color;
+    border: 1px solid transparent; /*$btn-default-color;*/
 
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     margin: 0.75em 0 -1px 0;
     padding: 0.75em 1em;
     border-bottom-color: transparent;
+    &:hover {
+      background-color: $btn-default-hover;
+    }
   }
-  li.active a {
-    color: $btn-default-color;
+  .active a {
     background-color: $btn-default-active;
     border-bottom-color: transparent;
+    color: $btn-default-color;
+  }
+
+  &.is-border {
+    border-bottom: 1px solid $btn-default-color;
+    a {
+      border: 1px solid $btn-default-color;
+    }
   }
 }
+

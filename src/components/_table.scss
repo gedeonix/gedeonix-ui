@@ -22,9 +22,9 @@ table {
   margin-bottom: 10px;
 
   th, td {
-    padding: 4px 8px;
     border: 1px solid #d0d0d0;
     border-width: 0 0 1px;
+    padding: 4px 8px;
   }
 
   tr:last-child td {
@@ -39,6 +39,7 @@ table {
   tfoot th, tfoot td {
     border-width: 2px 0 0;
     color: #8b8b8b;
+    padding: 8px 8px;
   }
 }
 
@@ -64,3 +65,4 @@ table {
     color: #303030;
   }
 }
+
