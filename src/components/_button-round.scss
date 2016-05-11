@@ -1,10 +1,58 @@
-.btn.is-round {
+.btn.is-round, .btn.is-circle, .btn.is-square {
   line-height: 1em;
-  /*font-size: 1rem;*/
   padding: 0.75em;
-  border-radius: 1000px; /*border-radius: 50%;*/
+}
 
-  &.is-sm, &.is-md, &.is-lg {
-    border-radius: 1000px; /*border-radius: 50%;*/
+.btn.is-circle, .btn.is-square {
+  text-align: center;
+  padding: 0;
+
+  height: 40px;
+  width: 40px;
+
+  &.is-xs {
+    height: 25px;
+    width: 25px;
   }
+  &.is-sm {
+    height: 32px;
+    width: 32px;
+  }
+  &.is-md {
+    height: 45px;
+    width:45px;
+  }
+  &.is-lg {
+    height:58px;
+    width:58px;
+  }
+  &.is-big {
+    height:90px;
+    width:90px;
+  }
+  &.is-2x {
+    height:6em;
+    width:6em;
+  }
+  &.is-3x {
+    height:8em;
+    width:8em;
+  }
+  &.is-4x {
+    height:10em;
+    width:10em;
+  }
+  &.is-5x {
+    height:12em;
+    width:12em;
+  }
+
+}
+
+.btn.is-round {
+  border-radius: 1000px;
+}
+
+.btn.is-circle {
+  border-radius: 50%;
 }

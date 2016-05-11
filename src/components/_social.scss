@@ -22,5 +22,15 @@
     border-color: #dc4a38;
     &:hover {
       background-color: #f04f3d;
-    }  }
+    }
+  }
+
+  &.rss {
+    color: #ffffff;
+    background-color: #f26522;
+    border-color: #f26522;
+    &:hover {
+      background-color: #ff671f;
+    }
+  }
 }

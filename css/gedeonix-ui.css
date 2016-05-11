@@ -315,14 +315,59 @@ a:hover{
   border-color: #e0e0e0;
   cursor: not-allowed;
 }
-.btn.is-round {
+.btn.is-round, .btn.is-circle, .btn.is-square {
   line-height: 1em;
-  /*font-size: 1rem;*/
   padding: 0.75em;
-  border-radius: 1000px /*border-radius: 50%;*/
 }
-.btn.is-round.is-sm, .btn.is-round.is-md, .btn.is-round.is-lg{
-  border-radius: 1000px; /*border-radius: 50%;*/
+.btn.is-circle, .btn.is-square {
+  text-align: center;
+  padding: 0;
+
+  height: 40px;
+  width: 40px
+
+}
+.btn.is-circle.is-xs, .btn.is-square.is-xs{
+  height: 25px;
+  width: 25px;
+}
+.btn.is-circle.is-sm, .btn.is-square.is-sm{
+  height: 32px;
+  width: 32px;
+}
+.btn.is-circle.is-md, .btn.is-square.is-md{
+  height: 45px;
+  width: 45px;
+}
+.btn.is-circle.is-lg, .btn.is-square.is-lg{
+  height: 58px;
+  width: 58px;
+}
+.btn.is-circle.is-big, .btn.is-square.is-big{
+  height: 90px;
+  width: 90px;
+}
+.btn.is-circle.is-2x, .btn.is-square.is-2x{
+  height: 6em;
+  width: 6em;
+}
+.btn.is-circle.is-3x, .btn.is-square.is-3x{
+  height: 8em;
+  width: 8em;
+}
+.btn.is-circle.is-4x, .btn.is-square.is-4x{
+  height: 10em;
+  width: 10em;
+}
+.btn.is-circle.is-5x, .btn.is-square.is-5x{
+  height: 12em;
+  width: 12em;
+}
+.btn.is-round {
+  border-radius: 1000px;
+}
+.btn.is-circle {
+  border-radius: 50%;
 }
 .btn {
 }
@@ -349,6 +394,14 @@ a:hover{
 }
 .btn.google-plus:hover{
   background-color: #f04f3d;
+}
+.btn.rss{
+  color: #ffffff;
+  background-color: #f26522;
+  border-color: #f26522;
+}
+.btn.rss:hover{
+  background-color: #ff671f;
 }
 input[type=checkbox] {
   /*display: none;*/
