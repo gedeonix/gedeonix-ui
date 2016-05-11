@@ -24,7 +24,14 @@
       background-color: #f04f3d;
     }
   }
-
+  &.github {
+    color: #ffffff;
+    background-color: #404040;
+    border-color: #505050;
+    &:hover {
+      background-color: #606060;
+    }
+  }
   &.rss {
     color: #ffffff;
     background-color: #f26522;

@@ -395,6 +395,14 @@ a:hover{
 .btn.google-plus:hover{
   background-color: #f04f3d;
 }
+.btn.github{
+  color: #ffffff;
+  background-color: #404040;
+  border-color: #505050;
+}
+.btn.github:hover{
+  background-color: #606060;
+}
 .btn.rss{
   color: #ffffff;
   background-color: #f26522;
