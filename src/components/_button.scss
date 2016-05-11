@@ -29,206 +29,301 @@
     outline: none;
   }
   &.is-outline {
-    color: $text-color;
     background-color: transparent;
+    color: $text-color;
     &:hover {
-      color: #ffffff;
       background-color: $btn-default-hover;
+      color: #ffffff;
     }
   }
   &.is-flat {
-    color: $text-color;
     border-color: transparent;
+    color: $text-color;
     text-decoration: underline;
     &:hover {
-      color: #ffffff;
       background-color: $btn-default-hover;
+      color: #ffffff;
+    }
+  }
+  &.is-clear {
+    background-color: transparent;
+    border-color: transparent;
+    color: $text-color;
+    &:hover {
+      color: $btn-default-hover;
     }
   }
 }
 
 .btn.is-primary {
-  color: #ffffff;
-  border-color: $btn-primary-border;
   background-color: $btn-primary-background;
+  border-color: $btn-primary-border;
+  color: #ffffff;
   &:hover {
-    border-color: $btn-primary-hover;
     background-color: $btn-primary-hover;
+    border-color: $btn-primary-hover;
   }
   &:focus, &.active {
     border-color: #808080;
     outline: none;
   }
   &.is-outline {
-    color: $btn-primary-background;
     background-color: transparent;
+    color: $btn-primary-background;
     &:hover {
-      color: #ffffff;
       background-color: $btn-primary-hover;
+      color: #ffffff;
     }
   }
   &.is-flat {
-    color: $btn-primary-background;
     background-color: transparent;
     border: transparent;
+    color: $btn-primary-background;
     &:hover {
-      color: #ffffff;
       background-color: $btn-primary-hover;
+      color: #ffffff;
+    }
+  }
+  &.is-clear {
+    background-color: transparent;
+    border: transparent;
+    color: $btn-primary-background;
+    &:hover {
+      color: $btn-primary-hover;
     }
   }
 }
 
 .btn.is-success {
-  color: #ffffff;
-  border-color: $btn-success-border;
   background-color: $btn-success-background;
+  border-color: $btn-success-border;
+  color: #ffffff;
   &:hover {
-    border-color: $btn-success-hover;
     background-color: $btn-success-hover;
+    border-color: $btn-success-hover;
   }
   &:focus, &.active {
     border-color: #808080;
     outline: none;
   }
   &.is-outline {
-    color: $btn-success-background;
     background-color: transparent;
+    color: $btn-success-background;
     &:hover {
-      color: #ffffff;
       background-color: $btn-success-hover;
+      color: #ffffff;
     }
   }
   &.is-flat {
-    color: $btn-success-background;
     background-color: transparent;
     border: transparent;
+    color: $btn-success-background;
     &:hover {
-      color: #ffffff;
       background-color: $btn-success-hover;
+      color: #ffffff;
+    }
+  }
+  &.is-clear {
+    background-color: transparent;
+    border: transparent;
+    color: $btn-success-background;
+    &:hover {
+      color: $btn-success-hover;
     }
   }
 }
 
 .btn.is-info {
-  color: #ffffff;
-  border-color: $btn-info-border;
   background-color: $btn-info-background;
+  border-color: $btn-info-border;
+  color: #ffffff;
   &:hover {
-    border-color: $btn-info-hover;
     background-color: $btn-info-hover;
+    border-color: $btn-info-hover;
   }
   &:focus, &.active {
     border-color: #808080;
     outline: none;
   }
   &.is-outline {
-    color: $btn-info-background;
     background-color: transparent;
+    color: $btn-info-background;
     &:hover {
-      color: #ffffff;
       background-color: $btn-info-hover;
+      color: #ffffff;
     }
   }
   &.is-flat {
-    color: $btn-info-background;
     background-color: transparent;
     border: transparent;
+    color: $btn-info-background;
     &:hover {
-      color: #ffffff;
       background-color: $btn-info-hover;
+      color: #ffffff;
+    }
+  }
+  &.is-clear {
+    background-color: transparent;
+    border: transparent;
+    color: $btn-info-background;
+    &:hover {
+      color: $btn-info-hover;
     }
   }
 }
 
 .btn.is-warning {
-  color: #ffffff;
-  border-color: $btn-warning-border;
   background-color: $btn-warning-background;
+  border-color: $btn-warning-border;
+  color: #ffffff;
   &:hover {
-    border-color: $btn-warning-hover;
     background-color: $btn-warning-hover;
+    border-color: $btn-warning-hover;
   }
   &:focus, &.active {
     border-color: #808080;
     outline: none;
   }
   &.is-outline {
-    color: $btn-warning-background;
     background-color: transparent;
+    color: $btn-warning-background;
     &:hover {
-      color: #ffffff;
       background-color: $btn-warning-hover;
+      color: #ffffff;
     }
   }
   &.is-flat {
-    color: $btn-warning-background;
     background-color: transparent;
     border: transparent;
+    color: $btn-warning-background;
     &:hover {
-      color: #ffffff;
       background-color: $btn-warning-hover;
+      color: #ffffff;
+    }
+  }
+  &.is-clear {
+    background-color: transparent;
+    border: transparent;
+    color: $btn-warning-background;
+    &:hover {
+      color: $btn-warning-hover;
     }
   }
 }
 
 .btn.is-danger {
-  color: #ffffff;
-  border-color: $btn-danger-border;
   background-color: $btn-danger-background;
+  border-color: $btn-danger-border;
+  color: #ffffff;
   &:hover {
-    border-color: $btn-danger-hover;
     background-color: $btn-danger-hover;
+    border-color: $btn-danger-hover;
   }
   &:focus, &.active {
     border-color: #808080;
     outline: none;
   }
   &.is-outline {
-    color: $btn-danger-background;
     background-color: transparent;
+    color: $btn-danger-background;
     &:hover {
-      color: #ffffff;
       background-color: $btn-danger-hover;
+      color: #ffffff;
     }
   }
   &.is-flat {
-    color: $btn-danger-background;
     background-color: transparent;
     border: transparent;
+    color: $btn-danger-background;
     &:hover {
-      color: #ffffff;
       background-color: $btn-danger-hover;
+      color: #ffffff;
+    }
+  }
+  &.is-clear {
+    background-color: transparent;
+    border: transparent;
+    color: $btn-danger-background;
+    &:hover {
+      color: $btn-danger-hover;
+    }
+  }
+}
+
+.btn.is-light {
+  background-color: $btn-light-background;
+  border-color: $btn-light-border;
+  color: $btn-light-color;
+  &:hover {
+    background-color: $btn-light-hover;
+    border-color: $btn-light-hover;
+  }
+  &:focus, &.active {
+    border-color: #808080;
+    outline: none;
+  }
+  &.is-outline {
+    background-color: transparent;
+    color: $btn-light-color;
+    &:hover {
+      background-color: $btn-light-hover;
+      color: $btn-light-color;
+    }
+  }
+  &.is-flat {
+    background-color: transparent;
+    border: transparent;
+    color: $btn-light-color;
+    &:hover {
+      background-color: $btn-light-hover;
+      color: #ffffff;
+    }
+  }
+  &.is-clear {
+    background-color: transparent;
+    border: transparent;
+    color: $btn-light-color;
+    &:hover {
+      color: $btn-light-hover;
     }
   }
 }
 
 .btn.is-dark {
-  color: #ffffff;
-  border-color: $btn-dark-border;
   background-color: $btn-dark-background;
+  border-color: $btn-dark-border;
+  color: #ffffff;
   &:hover {
-    border-color: $btn-dark-hover;
     background-color: $btn-dark-hover;
+    border-color: $btn-dark-hover;
   }
   &:focus, &.active {
     border-color: #808080;
     outline: none;
   }
   &.is-outline {
-    color: $btn-dark-background;
     background-color: transparent;
+    color: $btn-dark-background;
     &:hover {
-      color: #ffffff;
       background-color: $btn-dark-hover;
+      color: #ffffff;
     }
   }
   &.is-flat {
-    color: $btn-dark-background;
     background-color: transparent;
     border: transparent;
+    color: $btn-dark-background;
     &:hover {
-      color: #ffffff;
       background-color: $btn-dark-hover;
+      color: #ffffff;
+    }
+  }
+  &.is-clear {
+    background-color: transparent;
+    border: transparent;
+    color: $btn-dark-background;
+    &:hover {
+      color: $btn-dark-hover;
     }
   }
 }
@@ -263,6 +358,13 @@
 .btn[disabled], .btn[disabled]:hover {
   background-color: #e0e0e0;
   border-color: #e0e0e0;
+  color: #808080 !important;
   cursor: not-allowed;
+  &.is-outline {
+    background-color: transparent;
+  }
+  &.is-flat, &.is-clear {
+    border: none;
+    background-color: transparent;
+  }
 }
-
