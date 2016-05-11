@@ -1,20 +1,5 @@
 .nav, .sidebar, .breadcrumbs {
 
-  &.is-gray {
-    a {
-      color: $btn-gray-color;
-      background-color: $btn-gray-background;
-      border-color: $btn-gray-background;
-      &:hover {
-        background-color: $btn-gray-hover;
-      }
-    }
-    .active a {
-      color: $btn-gray-color;
-      background-color: $btn-gray-active;
-    }
-  }
-
   &.is-primary {
     a {
       color: $btn-primary-color;
@@ -87,6 +72,21 @@
     .active a {
       color: $btn-danger-color;
       background-color: $btn-danger-active;
+    }
+  }
+
+  &.is-light {
+    a {
+      color: $btn-light-color;
+      background-color: $btn-light-background;
+      border-color: $btn-light-background;
+      &:hover {
+        background-color: $btn-light-hover;
+      }
+    }
+    .active a {
+      color: $btn-light-color;
+      background-color: $btn-light-active;
     }
   }
 

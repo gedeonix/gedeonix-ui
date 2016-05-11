@@ -21,7 +21,13 @@ table {
   background-color: $background-color;
   margin-bottom: 10px;
 
-  th, td {
+  th {
+    border: 1px solid #d0d0d0;
+    border-width: 0 0 1px;
+    padding: 10px 8px;
+  }
+
+  td {
     border: 1px solid #d0d0d0;
     border-width: 0 0 1px;
     padding: 4px 8px;
