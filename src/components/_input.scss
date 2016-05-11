@@ -60,6 +60,12 @@ input, select, textarea {
   &.is-round {
     border-radius: 100px;
   }
+  &.is-thick {
+    border: 2px solid;
+  }
+  &.is-transparent {
+    background-color: transparent;
+  }
 }
 
 select, textarea, select, fieldset {
@@ -114,4 +120,39 @@ input.success {
   &.is-lg {
     padding-left: 1.5em;
   }
+}
+
+input.is-primary {
+  border-color: $primary-color;
+  background-color: $input-background;
+}
+
+input.is-success {
+  border-color: $success-color;
+  background-color: $input-background;
+}
+
+input.is-info {
+  border-color: $info-color;
+  background-color: $input-background;
+}
+
+input.is-warning {
+  border-color: $warning-color;
+  background-color: $input-background;
+}
+
+input.is-danger {
+  border-color: $danger-color;
+  background-color: $input-background;
+}
+
+input.is-light {
+  border-color: $light-color;
+  background-color: $input-background;
+}
+
+input.is-dark {
+  border-color: $dark-color;
+  background-color: $input-background;
 }

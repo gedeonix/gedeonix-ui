@@ -310,6 +310,9 @@ a:hover{
   font-size: 1.6rem;
   padding: 0.4em 1em;
 }
+.btn.is-thick {
+  border: 2px solid;
+}
 .btn[disabled], .btn[disabled]:hover {
   background-color: #e0e0e0;
   border-color: #e0e0e0;
@@ -545,6 +548,12 @@ input, select, textarea {
 input.is-round, select.is-round, textarea.is-round{
   border-radius: 100px;
 }
+input.is-thick, select.is-thick, textarea.is-thick{
+  border: 2px solid;
+}
+input.is-transparent, select.is-transparent, textarea.is-transparent{
+  background-color: transparent;
+}
 select, textarea, select, fieldset {
   /*margin-bottom: 0.5rem;*/
 }
@@ -584,6 +593,34 @@ input.success {
 }
 .icon-addon input.is-lg{
   padding-left: 1.5em;
+}
+input.is-primary {
+  border-color: #55acee;
+  background-color: #ffffff;
+}
+input.is-success {
+  border-color: #94cd5a;
+  background-color: #ffffff;
+}
+input.is-info {
+  border-color: #6ad1dd;
+  background-color: #ffffff;
+}
+input.is-warning {
+  border-color: #ffb812;
+  background-color: #ffffff;
+}
+input.is-danger {
+  border-color: #fc6e51;
+  background-color: #ffffff;
+}
+input.is-light {
+  border-color: #fafafa;
+  background-color: #ffffff;
+}
+input.is-dark {
+  border-color: #4e4f51;
+  background-color: #ffffff;
 }
 .group {
   display: inline-flex;

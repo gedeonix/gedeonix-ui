@@ -256,6 +256,10 @@
   }
 }
 
+.btn.is-thick {
+  border: 2px solid;
+}
+
 .btn[disabled], .btn[disabled]:hover {
   background-color: #e0e0e0;
   border-color: #e0e0e0;
