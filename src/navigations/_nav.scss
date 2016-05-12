@@ -13,7 +13,7 @@
   padding: 0;
 
   a {
-    color: $btn-default-color;
+    color: currentColor;
     cursor: pointer;
     display: block;
     padding: 1em;
@@ -34,7 +34,7 @@
   }
 
   li.active a {
-    color: $text-color;
+    color: currentColor;
     background-color: $btn-default-active;
   }
 }
