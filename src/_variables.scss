@@ -25,35 +25,23 @@ $btn-default-border:            #d4d4d4 !default;
 $btn-default-hover:             #f0f0f0 !default;
 $btn-default-active:            #ffffff !default;
 
-$btn-light-color:                #a0a0a0 !default;
-$btn-light-background:           #fafafa !default;
-$btn-light-border:               #a0a0a0 !default;
-$btn-light-hover:                #d0d0d0 !default;
-$btn-light-active:               #808080 !default;
-
-$btn-dark-color:                #ffffff !default;
-$btn-dark-background:           #4e4f51 !default;
-$btn-dark-border:               #4e4f51 !default;
-$btn-dark-hover:                #8a8b8f !default;
-$btn-dark-active:               #8a8b8f !default;
-
 $btn-primary-color:             #ffffff !default;
 $btn-primary-background:        #65bcfe !default;
 $btn-primary-border:            #65bcfe !default;
 $btn-primary-hover:             #459cde !default;
-$btn-primary-active:            #4f9fdf !default;
+$btn-primary-active:            #488fc8 !default;
 
 $btn-success-color:             #ffffff !default;
 $btn-success-background:        #5acd59 !default;
 $btn-success-border:            #94cd5a !default;
 $btn-success-hover:             #32c07f !default;
-$btn-success-active:            #32c07f !default;
+$btn-success-active:            #2ba369 !default;
 
 $btn-info-color:                #ffffff !default;
 $btn-info-background:           #6ad1dd !default;
 $btn-info-border:               #4cdadd !default;
-$btn-info-hover:                #33e9ec !default;
-$btn-info-active:               #33e9ec !default;
+$btn-info-hover:                #41c2e2 !default;
+$btn-info-active:               #40bbdd !default;
 
 $btn-warning-color:             #ffffff !default;
 $btn-warning-background:        #ffa924 !default;
@@ -65,7 +53,19 @@ $btn-danger-color:              #ffffff !default;
 $btn-danger-background:         #fc573f !default;
 $btn-danger-border:             #fc573f !default;
 $btn-danger-hover:              #fc4016 !default;
-$btn-danger-active:             #fc4016 !default;
+$btn-danger-active:             #dc3816 !default;
+
+$btn-light-color:                #a0a0a0 !default;
+$btn-light-background:           #fafafa !default;
+$btn-light-border:               #a0a0a0 !default;
+$btn-light-hover:                #909090 !default;
+$btn-light-active:               #d0d0d0 !default;
+
+$btn-dark-color:                #ffffff !default;
+$btn-dark-background:           #4e4f51 !default;
+$btn-dark-border:               #4e4f51 !default;
+$btn-dark-hover:                #b0b1b6 !default;
+$btn-dark-active:               #8a8b8f !default;
 
 $palette-name: (default,gray,primary,success,info,warning,danger,dark);
 $palette-color: (transparent,#a0a0a0,#65bcfe,#5acd59,#6ad1dd, #ffa924,#fc573f,#4e4f51);

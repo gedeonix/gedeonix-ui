@@ -1,5 +1,9 @@
 .nav.is-flat {
-  border-bottom: 1px solid $btn-default-color;
+  /*border-bottom: 1px solid $btn-default-color;*/
+  a {
+    border-bottom: 4px solid transparent;
+  }
+
   a:hover {
     border-bottom: 4px solid $btn-default-color;
     color: $btn-default-color;
