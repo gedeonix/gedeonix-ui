@@ -193,3 +193,13 @@
 .is-bottom-border {
   border-bottom: 1px solid currentColor;
 }
+
+.reset-left-radius {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.reset-right-radius {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
