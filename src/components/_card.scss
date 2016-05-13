@@ -1,0 +1,45 @@
+.card {
+  border: 1px solid $card-border;
+  border-radius: $card-radius;
+
+  padding: 0;
+  margin: 5px 0;
+  background-color: transparent;
+  width: 100%;
+  overflow: hidden;
+
+  .card-content {
+    padding: 10px;
+    position: relative;
+  }
+
+  .card-title {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .card-image {
+    position: relative;
+    img {
+      display: block;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      position: relative;
+    }
+    .card-title {
+      position: absolute;
+      left:0;
+      bottom: 0;
+      padding: 16px;
+    }
+  }
+
+  .card-action {
+    border-top: 1px solid $panel-border;
+    padding: 5px;
+  }
+}
+
