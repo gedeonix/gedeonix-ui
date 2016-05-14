@@ -29,6 +29,19 @@
       margin-bottom: -1px;
       border: 1px solid currentColor;
     }
+    .active a {
+      border-bottom-color: transparent;
+    }
+
+    &.is-thick {
+      border-bottom-width: 2px;
+      a {
+        margin-bottom: -2px;
+        border-width: 2px;
+      }
+    }
   }
 }
+
+
 

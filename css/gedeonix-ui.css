@@ -1825,6 +1825,16 @@ table td {
   margin-bottom: -1px;
   border: 1px solid currentColor;
 }
+.nav.is-tab.is-border .active a{
+  border-bottom-color: transparent;
+}
+.nav.is-tab.is-border.is-thick{
+  border-bottom-width: 2px;
+}
+.nav.is-tab.is-border.is-thick a{
+  margin-bottom: -2px;
+  border-width: 2px;
+}
 .sidebar {
   align-items: stretch;
   background: transparent;
