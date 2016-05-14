@@ -1,0 +1,24 @@
+.popup {
+  background-color: $dark-color;
+  border-radius: 4px;
+  color: $gray-color;
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  position: relative;
+}
+
+.popup::after {
+  border-bottom: 8px solid $dark-color;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  content: "";
+
+  display: block;
+  position: absolute;
+
+  height: 0;
+  width: 0;
+
+  bottom: 100%;
+  left: 0.5em;
+}

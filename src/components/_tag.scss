@@ -1,0 +1,92 @@
+.tag {
+  background-color: $default-color;
+  border-top-left-radius: 0.2em;
+  border-bottom-left-radius: 0.2em;
+  color: $white-color;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 0.25em 0.5em;
+  position: relative;
+  margin-right: 1em;
+}
+
+.tag:after {
+  border-style: solid;
+  border-width: 0.64rem;
+  border-color: transparent;
+  border-left-color: $default-color;
+  content: "";
+  display: inline-block;
+  position: absolute;
+
+  right: 0;
+  top: 0;
+  left: 100%;
+  bottom: 0;
+}
+
+.tag.is-primary:after {
+  border-left-color: $primary-color;
+}
+.tag.is-success:after {
+  border-left-color: $success-color;
+}
+.tag.is-info:after {
+  border-left-color: $info-color;
+}
+.tag.is-warning:after {
+  border-left-color: $warning-color;
+}
+.tag.is-danger:after {
+  border-left-color: $danger-color;
+}
+.tag.is-light:after {
+  border-left-color: $light-color;
+}
+.tag.is-dark:after {
+  border-left-color: $dark-color;
+}
+
+/*
+.triangle {
+  border-left: 16px solid red;
+  border-right: 16px solid blue;
+  border-top: 16px solid green;
+  border-bottom: 16px solid yellow;
+  height: 0;
+  width: 0;
+}
+
+.triangle-up {
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-bottom: 16px solid $text-color;
+  height: 0;
+  width: 0;
+}
+
+.triangle-down {
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 16px solid $text-color;
+  height: 0;
+  width: 0;
+}
+
+.triangle-left {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid $text-color;
+  height: 0;
+  width: 0;
+}
+
+.triangle-right {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid $text-color;
+  border-right: none;
+  height: 0;
+  width: 0;
+}
+*/

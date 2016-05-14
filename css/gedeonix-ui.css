@@ -907,6 +907,118 @@ label span.error {
   font-weight: 800;
   padding: 0.25em 0.5em;
 }
+.tag {
+  background-color: #fafafa;
+  border-top-left-radius: 0.2em;
+  border-bottom-left-radius: 0.2em;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 0.25em 0.5em;
+  position: relative;
+  margin-right: 1em;
+}
+.tag:after {
+  border-style: solid;
+  border-width: 0.64rem;
+  border-color: transparent;
+  border-left-color: #fafafa;
+  content: "";
+  display: inline-block;
+  position: absolute;
+
+  right: 0;
+  top: 0;
+  left: 100%;
+  bottom: 0;
+}
+.tag.is-primary:after {
+  border-left-color: #55acee;
+}
+.tag.is-success:after {
+  border-left-color: #94cd5a;
+}
+.tag.is-info:after {
+  border-left-color: #6ad1dd;
+}
+.tag.is-warning:after {
+  border-left-color: #ffb812;
+}
+.tag.is-danger:after {
+  border-left-color: #fc6e51;
+}
+.tag.is-light:after {
+  border-left-color: #fafafa;
+}
+.tag.is-dark:after {
+  border-left-color: #4e4f51;
+}
+/*
+.triangle {
+  border-left: 16px solid red;
+  border-right: 16px solid blue;
+  border-top: 16px solid green;
+  border-bottom: 16px solid yellow;
+  height: 0;
+  width: 0;
+}
+
+.triangle-up {
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-bottom: 16px solid $text-color;
+  height: 0;
+  width: 0;
+}
+
+.triangle-down {
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 16px solid $text-color;
+  height: 0;
+  width: 0;
+}
+
+.triangle-left {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid $text-color;
+  height: 0;
+  width: 0;
+}
+
+.triangle-right {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid $text-color;
+  border-right: none;
+  height: 0;
+  width: 0;
+}
+*/
+.popup {
+  background-color: #4e4f51;
+  border-radius: 4px;
+  color: #fafafa;
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  position: relative;
+}
+.popup::after {
+  border-bottom: 8px solid #4e4f51;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  content: "";
+
+  display: block;
+  position: absolute;
+
+  height: 0;
+  width: 0;
+
+  bottom: 100%;
+  left: 0.5em;
+}
 .badge {
   background-color: #ffffff;
   border-radius: 100rem;
