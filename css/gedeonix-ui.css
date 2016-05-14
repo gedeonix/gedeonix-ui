@@ -21,6 +21,10 @@ a {
 .fixed-space {
   margin-bottom: 48px;
 }
+input:focus, textarea:focus {
+  outline: none;
+  box-shadow: 0px 0px 2px #0067c5;
+}
 h1 {
   font-size: 3rem;
 }
@@ -55,11 +59,11 @@ pre {
   background-color: #f5f5f5;
 }
 a {
-  color: #459cde;
+  color: #0067c5;
   padding: 2px;
 }
 a:hover{
-  color: #65bcfe;
+  color: #1A81DF;
 }
 .btn {
   background-color: #ffffff;
