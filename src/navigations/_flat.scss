@@ -7,11 +7,9 @@ $nav-flat-bottom-width: 4px;
   }
   a:hover {
     border-bottom: $nav-flat-bottom-width solid currentColor;
-    /*color: currentColor;*/
   }
   .active a {
     background-color: transparent;
     border-bottom: $nav-flat-bottom-width solid currentColor;
-    /*color: currentColor;*/
   }
 }

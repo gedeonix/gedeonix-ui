@@ -20,16 +20,15 @@
   .active a {
     background-color: $btn-default-active;
     border-bottom-color: transparent;
-    color: currentColor;
   }
 
-  &.is-border {
+  &.is-active-border, &.is-border {
     border-bottom: 1px solid currentColor;
     a {
       margin-bottom: -1px;
-      border: 1px solid currentColor;
     }
     .active a {
+      border: 1px solid currentColor;
       border-bottom-color: transparent;
     }
 
@@ -39,6 +38,12 @@
         margin-bottom: -2px;
         border-width: 2px;
       }
+    }
+  }
+
+  &.is-border {
+    a {
+      border: 1px solid currentColor;
     }
   }
 }

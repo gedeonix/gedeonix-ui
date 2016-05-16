@@ -1902,11 +1902,11 @@ table td {
   color: currentColor;
 }
 .nav.is-flat a:hover {
-  border-bottom: 4px solid currentColor; /*color: currentColor;*/
+  border-bottom: 4px solid currentColor;
 }
 .nav.is-flat .active a {
   background-color: transparent;
-  border-bottom: 4px solid currentColor; /*color: currentColor;*/
+  border-bottom: 4px solid currentColor;
 }
 .nav.is-tab li + li {
   margin-left: 0.25em;
@@ -1928,7 +1928,6 @@ table td {
 .nav.is-tab .active a {
   background-color: #ffffff;
   border-bottom-color: transparent;
-  color: currentColor;
 }
 .nav.is-tab.is-border{
   border-bottom: 1px solid currentColor;
@@ -1944,6 +1943,23 @@ table td {
   border-bottom-width: 2px;
 }
 .nav.is-tab.is-border.is-thick a{
+  margin-bottom: -2px;
+  border-width: 2px;
+}
+.nav.is-tab.is-active-border{
+  border-bottom: 1px solid currentColor;
+}
+.nav.is-tab.is-active-border a{
+  margin-bottom: -1px;
+}
+.nav.is-tab.is-active-border .active a{
+  border: 1px solid currentColor;
+  border-bottom-color: transparent;
+}
+.nav.is-tab.is-active-border.is-thick{
+  border-bottom-width: 2px;
+}
+.nav.is-tab.is-active-border.is-thick a{
   margin-bottom: -2px;
   border-width: 2px;
 }
