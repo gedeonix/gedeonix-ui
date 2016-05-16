@@ -2040,8 +2040,9 @@ table td {
   font-size: 16px;
 }
 .breadcrumbs li {
-  display: inline;
+  display: inline-block;
   list-style: none;
+  position: relative;
 }
 .breadcrumbs li:after {
   color: currentColor;
@@ -2164,16 +2165,52 @@ table td {
   border-color: #ffffff;
   color: #ffffff;
 }
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  min-height: 50px;
+  width: 40px;
+}
+.hamburger span {
+  display: block;
+  background-color: currentColor;
+  align-items: center;
+  height: 5px;
+  margin: 3px;
+}
+.hamburger.active{
+  opacity: 0;
+}
+.hero {
+  display: table;
+  height: 90vh;
+  min-width: 100%;
+  text-align: center;
+}
+.hero h1 {
+  display: table-cell;
+  vertical-align: middle;
+  color: #ffffff;
+}
 .header {
   background-color: #d4d4d4;
   color: #808080;
+  min-height: 50px
+  /*width: 100%;*/
 }
-.brand {
+.header.is-sticky{
+  position: fixed;
+  top: 0;
+}
+.brand, a.brand {
   color: #808080;
-  font-weight: bold;
   font-size: 2.5em;
-  padding: 0;
+  font-weight: bold;
   white-space: nowrap;
+  padding: 0;
 }
 .fixed-space {
   margin-bottom: 48px;
@@ -2409,6 +2446,46 @@ table td {
 .reset-right-radius {
   border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
+}
+@media screen and (min-width: $breakpoint-xs) {
+  .is-hidden-min-xs {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 40em) {
+  .is-hidden-min-sm {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 64em) {
+  .is-hidden-min-md {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 90em) {
+  .is-hidden-min-lg {
+    display: none !important;
+  }
+}
+@media screen and (max-width: $breakpoint-xs) {
+  .is-hidden-max-xs {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 40em) {
+  .is-hidden-max-sm {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 64em) {
+  .is-hidden-max-md {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 90em) {
+  .is-hidden-max-lg {
+    display: none !important;
+  }
 }
 
 

@@ -5,8 +5,9 @@
   font-weight: bold;
   font-size: $font-size;
   li {
-    display: inline;
+    display: inline-block;
     list-style: none;
+    position: relative;
   }
   li:after {
     color: currentColor;

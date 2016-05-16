@@ -1,0 +1,21 @@
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  min-height: 50px;
+  width: 40px;
+
+  span {
+    display: block;
+    background-color: currentColor;
+    align-items: center;
+    height: 5px;
+    margin: 3px;
+  }
+
+  &.active {
+    opacity: 0;
+  }
+}

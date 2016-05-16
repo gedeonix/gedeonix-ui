@@ -1,0 +1,12 @@
+.hero {
+  display: table;
+  height: 90vh;
+  min-width: 100%;
+  text-align: center;
+
+  h1 {
+    display: table-cell;
+    vertical-align: middle;
+    color: #ffffff;
+  }
+}
