@@ -86,7 +86,9 @@ a:hover{
   vertical-align: middle;
   white-space: nowrap;
   /*width: auto;*/
-  -webkit-appearance: none
+  -webkit-appearance: none;
+
+  transition: all .2s ease-in-out;
 }
 .btn:hover{
   color: #606060;
@@ -1918,8 +1920,7 @@ table td {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   margin: 0.75em 0 0 0;
-  padding: 0.75em 1em;
-  border-bottom-color: transparent;
+  padding: 0.75em 1em; /*border-bottom-color: transparent;*/
   border: none
 }
 .nav.is-tab a:hover{
@@ -1927,17 +1928,38 @@ table td {
 }
 .nav.is-tab .active a {
   background-color: #ffffff;
-  border-bottom-color: transparent;
+  border-bottom: none !important;
+}
+.nav.is-tab.is-active-border{
+  border-bottom: 1px solid currentColor;
+}
+.nav.is-tab.is-active-border a{
+  border-bottom-width: 1px;
+}
+.nav.is-tab.is-active-border .active a{
+  margin-bottom: -1px;
+  border: 1px solid currentColor;
+}
+.nav.is-tab.is-active-border.is-thick{
+  border-bottom-width: 2px;
+}
+.nav.is-tab.is-active-border.is-thick a{
+  margin-bottom: 0px;
+  border-width: 2px;
+}
+.nav.is-tab.is-active-border.is-thick .active a{
+  margin-bottom: -2px;
 }
 .nav.is-tab.is-border{
   border-bottom: 1px solid currentColor;
 }
 .nav.is-tab.is-border a{
-  margin-bottom: -1px;
   border: 1px solid currentColor;
+  margin-bottom: -1px;
+  border-bottom: none;
 }
 .nav.is-tab.is-border .active a{
-  border-bottom-color: transparent;
+  margin-bottom: -1px;
 }
 .nav.is-tab.is-border.is-thick{
   border-bottom-width: 2px;
@@ -1946,22 +1968,11 @@ table td {
   margin-bottom: -2px;
   border-width: 2px;
 }
-.nav.is-tab.is-active-border{
-  border-bottom: 1px solid currentColor;
-}
-.nav.is-tab.is-active-border a{
-  margin-bottom: -1px;
-}
-.nav.is-tab.is-active-border .active a{
-  border: 1px solid currentColor;
-  border-bottom-color: transparent;
-}
-.nav.is-tab.is-active-border.is-thick{
-  border-bottom-width: 2px;
-}
-.nav.is-tab.is-active-border.is-thick a{
+.nav.is-tab.is-border.is-thick .active a{
   margin-bottom: -2px;
-  border-width: 2px;
+}
+.nav.is-tab.reset-radius a{
+  border-radius: 0 !important;
 }
 .sidebar {
   align-items: stretch;
@@ -2462,6 +2473,9 @@ table td {
 .reset-right-radius {
   border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
+}
+.reset-radius {
+  border-radius: 0 !important;
 }
 @media screen and (min-width: $breakpoint-xs) {
   .is-hidden-min-xs {

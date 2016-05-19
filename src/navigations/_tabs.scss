@@ -10,7 +10,7 @@
     border-top-right-radius: 5px;
     margin: 0.75em 0 0 0;
     padding: 0.75em 1em;
-    border-bottom-color: transparent;
+    /*border-bottom-color: transparent;*/
     border: none;
     &:hover {
       background-color: $btn-default-hover;
@@ -19,17 +19,40 @@
 
   .active a {
     background-color: $btn-default-active;
-    border-bottom-color: transparent;
+    border-bottom: none !important;
   }
 
-  &.is-active-border, &.is-border {
+  &.is-active-border {
     border-bottom: 1px solid currentColor;
     a {
-      margin-bottom: -1px;
+      border-bottom-width: 1px;
     }
     .active a {
+      margin-bottom: -1px;
       border: 1px solid currentColor;
-      border-bottom-color: transparent;
+    }
+
+    &.is-thick {
+      border-bottom-width: 2px;
+      a {
+        margin-bottom: 0px;
+        border-width: 2px;
+      }
+      .active a {
+        margin-bottom: -2px;
+      }
+    }
+  }
+
+  &.is-border {
+    border-bottom: 1px solid currentColor;
+    a {
+      border: 1px solid currentColor;
+      margin-bottom: -1px;
+      border-bottom: none;
+    }
+    .active a {
+      margin-bottom: -1px;
     }
 
     &.is-thick {
@@ -38,14 +61,16 @@
         margin-bottom: -2px;
         border-width: 2px;
       }
+      .active a {
+        margin-bottom: -2px;
+      }
     }
   }
 
-  &.is-border {
-    a {
-      border: 1px solid currentColor;
-    }
+  &.reset-radius a {
+    border-radius: 0 !important;
   }
+
 }
 
 

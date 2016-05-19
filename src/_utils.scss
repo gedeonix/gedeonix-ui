@@ -204,6 +204,10 @@
   border-bottom-right-radius: 0 !important;
 }
 
+.reset-radius {
+  border-radius: 0 !important;
+}
+
 
 @media screen and (min-width: $breakpoint-xs) {
   .is-hidden-min-xs {
