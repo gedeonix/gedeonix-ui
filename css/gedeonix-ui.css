@@ -783,16 +783,24 @@ input.is-dark {
   width: 100%;
   overflow: hidden;
 }
-.panel .panel-header {
-  font-weight: bold;
-  border-bottom: 1px solid #d4d4d4;
+.panel .panel-title {
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 0.25em;
 }
-.panel > * {
+.panel .panel-header {
+  font-weight: 500;
+  padding-left: 0.25em;
+  border-bottom: 1px solid #d4d4d4;
+  padding: 10px;
+}
+.panel .panel-content {
   padding: 10px;
 }
 .panel .panel-footer {
   font-weight: bold;
   border-top: 1px solid #d4d4d4;
+  padding: 10px;
 }
 .panel.is-xs{
   border-radius: 2px;
