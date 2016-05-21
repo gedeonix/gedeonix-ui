@@ -44,14 +44,14 @@
     <main class="main container">
 
         <h1>Modal</h1>
-        <button id="modal-button" class="btn">Open modal</button>
+        <button id="modal-button" class="btn">Open simple modal</button>
 
         <div id="modal" class="modal">
             <div class="modal-background"></div>
-            <div class="modal-container">
+            <div class="modal-container is-shadow">
                 <div class="modal-content">
-                    <div class="modal-header is-info">Info</h3><div id="close1" class="close is-circle"></div></div>
-                    <div class="modal-body">
+                    <div class="modal-header is-info"><i class="fa fa-info"></i>  Info<div id="close1" class="close is-circle"></div></div>
+                    <div class="modal-body is-text-center">
                         Simple example
                     </div>
                     <div class="modal-footer">
@@ -61,15 +61,66 @@
             </div>
         </div>
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <h2>Info</h2>
+        <div class="modal-content is-shadow">
+            <div class="modal-header is-info"><i class="fa fa-info"></i> Info<div class="close is-circle"></div></div>
+            <div class="modal-body is-text-center">
+                Simple example
+            </div>
+            <div class="modal-footer">
+                <button class="btn is-info">Ok</button>
+            </div>
+        </div>
+
+        <h2>Warning</h2>
+        <div class="modal-content is-shadow">
+            <div class="modal-header is-warning"><i class="fa fa-warning"></i> Warning<div class="close is-circle"></div></div>
+            <div class="modal-body is-text-center">
+                Simple example
+            </div>
+            <div class="modal-footer">
+                <button class="btn is-warning">Yes</button>
+                <button class="btn is-clear is-warning">No</button>
+            </div>
+        </div>
+
+        <h2>Danger</h2>
+        <div class="modal-content is-shadow">
+            <div class="modal-header is-danger"><i class="fa fa-wrench"></i> Danger<div class="close is-circle"></div></div>
+            <div class="modal-body is-text-center">
+                Simple example
+            </div>
+            <div class="modal-footer">
+                <button class="btn is-danger">Ok</button>
+            </div>
+        </div>
+
+        <h2>Form</h2>
+        <div class="modal-content is-shadow">
+            <form>
+                <div class="modal-header is-dark"><i class="fa fa-cog"></i> Form<div class="close is-circle"></div></div>
+                <div class="modal-body">
+
+                    <div class="control">
+                        <label>Email:</label>
+                        <input type="email">
+                    </div>
+                    <div class="control">
+                        <label>Password:</label>
+                        <input type="password">
+                    </div>
+
+                    <div class="control checkbox">
+                        <input id="check1" type="checkbox">
+                        <label for="check1"> Terms</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn is-success">Save</button>
+                    <button class="btn is-outline">Cancel</button>
+                </div>
+            </form>
+        </div>
 
     </main>
 
@@ -87,7 +138,7 @@
     <script>
         $(document).ready(function(){
 
-            $(".modal").hide();
+            $("#modal").hide();
 
             $("#modal-button").click(function(){
                 $("#modal").fadeIn();

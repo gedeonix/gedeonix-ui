@@ -1460,7 +1460,7 @@ label span.error {
   float: right;
 }
 .modal-body {
-  text-align: center;
+  /*text-align: center;*/
   padding: 30px 5px;
 }
 .modal-footer {
