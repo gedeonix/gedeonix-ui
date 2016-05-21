@@ -2004,7 +2004,7 @@ table td {
   list-style: none;
 }
 .sidebar li.title {
-  color: #606060;
+  color: currentColor;
   font-weight: bold;
   font-size: 2em;
   padding: 0.5em;
@@ -2018,6 +2018,7 @@ table td {
   text-decoration: none;
   text-align: left;
   white-space: nowrap;
+  user-select: none;
 }
 .sidebar > li:hover > ul {
   display: block;
@@ -2029,7 +2030,28 @@ table td {
   color: #606060;
   background-color: #ffffff;
 }
-.sidebar ul.submenu {
+.sidebar li.submenu > a {
+  background-color: rgba(0,0,0,0.001)
+}
+.sidebar li.submenu > a:after{
+  border-color: transparent;
+  border-style: solid; /*
+    border-width: 8px 0 8px 8px;
+    border-left-color: currentColor;
+    margin-top: 0px;
+    margin-right: -5px;
+    */
+  border-width: 8px 8px 0 8px;
+  border-top-color: currentColor;
+  margin-top: 8px;
+  margin-right: -8px;
+  display: block;
+  float: right;
+  width: 0;
+  height: 0;
+  content: " ";
+}
+.sidebar li.submenu > ul {
   list-style: none;
   display: none;
   padding: 0;
@@ -2037,25 +2059,19 @@ table td {
   color: #606060;
   background-color: #c0c0c0;
 }
-.sidebar ul.submenu > li {
+.sidebar li.submenu > ul > li {
   display: block;
 }
-.sidebar ul.submenu > li a:hover {
+.sidebar li.submenu > ul > li a:hover {
   background-color: #4e4f51;
   color: #fafafa;
 }
-.sidebar ul.submenu.open{
+.sidebar li.submenu > ul.open{
   display: block;
 }
-/*
-.sidebar .submenu-link > a:after {
+.sidebar li:hover > ul {
   display: block;
-  position: absolute;
-  content: "\f054";
-  font-family: 'FontAwesome';
-  vertical-align: middle;
 }
-*/
 .nav {
 }
 .nav.is-xs{
