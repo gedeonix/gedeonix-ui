@@ -72,38 +72,6 @@
   box-shadow: 0px 4px 4px rgba(0,0,0,0.4);
 }
 
-.is-white {
-  background-color: #ffffff;
-}
-
-.is-light {
-  background-color: $light-color;
-}
-
-.is-dark {
-  background-color: $dark-color;
-}
-
-.is-primary {
-  background-color: $primary-color;
-}
-
-.is-success {
-  background-color: $success-color;
-}
-
-.is-info {
-  background-color: $info-color;
-}
-
-.is-warning {
-  background-color: $warning-color;
-}
-
-.is-danger {
-  background-color: $danger-color;
-}
-
 .is-pull-right, .on-right {
   float: right;
 }
@@ -255,4 +223,37 @@
   .is-hidden-max-lg {
     display: none !important;
   }
+}
+
+
+.is-white {
+  background-color: #ffffff;
+}
+
+.is-light {
+  background-color: $light-color;
+}
+
+.is-dark {
+  background-color: $dark-color;
+}
+
+.is-primary {
+  background-color: $primary-color;
+}
+
+.is-success {
+  background-color: $success-color;
+}
+
+.is-info {
+  background-color: $info-color;
+}
+
+.is-warning {
+  background-color: $warning-color;
+}
+
+.is-danger {
+  background-color: $danger-color;
 }
