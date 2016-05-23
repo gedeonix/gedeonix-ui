@@ -2114,7 +2114,7 @@ table td {
   display: flex;
   flex-flow: row nowrap;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: normal;
   justify-content: flex-start;
   line-height: 1.5rem;
@@ -2129,6 +2129,14 @@ table td {
   padding: 1em;
   text-decoration: none;
   text-align: left;
+  user-select: none;
+  white-space: nowrap;
+}
+.nav li.title {
+  color: currentColor;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 0.5em;
   white-space: nowrap;
 }
 .nav > li {
@@ -2138,7 +2146,7 @@ table td {
 .nav > li:hover{
   background-color: #f0f0f0;
 }
-.nav > li:hover > ul{
+.nav > li:hover > ul {
   display: block;
 }
 .nav li.active a {
@@ -2153,6 +2161,8 @@ table td {
 }
 /* submenu */
 .nav > li > ul {
+
+  /*
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -2160,18 +2170,70 @@ table td {
 
   display: none;
   position: absolute;
-  color: #606060;
+  color: $text-color;
   background-color: #c0c0c0;
   border: 1px solid #222;
   border-top: 0;
+
+  > li {
+    display: block;
+    a:hover {
+      background-color: $dark-color;
+      color: $gray-color;
+    }
+  }
+  */
 }
-/*margin-left: -5px;*/
-.nav > li > ul > li {
+.nav.is-vertical {
+  width: 100%;
+
+}
+.nav.is-vertical > li {
+  display: block;
+  width: 100%;
+}
+.nav.is-vertical li.submenu > a {
+  background-color: rgba(0, 0, 0, 0.001)
+}
+.nav.is-vertical li.submenu > a:after{
+  border-color: transparent;
+  border-style: solid;
+  /*
+      border-width: 8px 0 8px 8px;
+      border-left-color: currentColor;
+      margin-top: 0px;
+      margin-right: -5px;
+      */
+  border-width: 8px 8px 0 8px;
+  border-top-color: currentColor;
+  margin-top: 8px;
+  margin-right: -8px;
+  display: block;
+  float: right;
+  width: 0;
+  height: 0;
+  content: " ";
+}
+.nav.is-vertical li.submenu > ul {
+  list-style: none;
+  display: none;
+  padding: 0;
+  margin: 0;
+  color: #606060;
+  background-color: #c0c0c0;
+}
+.nav.is-vertical li.submenu > ul > li {
   display: block;
 }
-.nav > li > ul > li a:hover {
+.nav.is-vertical li.submenu > ul > li a:hover {
   background-color: #4e4f51;
   color: #fafafa;
+}
+.nav.is-vertical li.submenu > ul.open{
+  display: block;
+}
+.nav.is-vertical li:hover > ul {
+  display: block;
 }
 .nav.is-box {
   /*
@@ -2286,92 +2348,9 @@ table td {
   display: flex;
 }
 .sidebar {
-  align-items: stretch;
-  background: transparent;
-  display: flex;
-  flex-flow: column nowrap;
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: normal;
-  justify-content: flex-start;
-  margin: 0;
-  padding: 0;
-  width: 100%;
 
-}
-.sidebar li {
-  display: inline-block;
-  list-style: none;
-}
-.sidebar li.title {
-  color: currentColor;
-  font-weight: bold;
-  font-size: 2em;
-  padding: 0.5em;
-  white-space: nowrap;
-}
-.sidebar a {
-  color: #606060;
-  cursor: pointer;
-  display: block;
-  padding: 1em;
-  text-decoration: none;
-  text-align: left;
-  white-space: nowrap;
-  user-select: none;
-}
-.sidebar > li:hover > ul {
-  display: block;
-}
-.sidebar a:hover {
-  background-color: #f0f0f0;
-}
-.sidebar li.active a {
-  color: #606060;
-  background-color: #ffffff;
-}
-.sidebar li.submenu > a {
-  background-color: rgba(0,0,0,0.001)
-}
-.sidebar li.submenu > a:after{
-  border-color: transparent;
-  border-style: solid;
-  /*
-    border-width: 8px 0 8px 8px;
-    border-left-color: currentColor;
-    margin-top: 0px;
-    margin-right: -5px;
-    */
-  border-width: 8px 8px 0 8px;
-  border-top-color: currentColor;
-  margin-top: 8px;
-  margin-right: -8px;
-  display: block;
-  float: right;
-  width: 0;
-  height: 0;
-  content: " ";
-}
-.sidebar li.submenu > ul {
-  list-style: none;
-  display: none;
-  padding: 0;
-  margin: 0;
-  color: #606060;
-  background-color: #c0c0c0;
-}
-.sidebar li.submenu > ul > li {
-  display: block;
-}
-.sidebar li.submenu > ul > li a:hover {
-  background-color: #4e4f51;
-  color: #fafafa;
-}
-.sidebar li.submenu > ul.open{
-  display: block;
-}
-.sidebar li:hover > ul {
-  display: block;
+
+
 }
 .nav {
 }
@@ -2553,7 +2532,8 @@ table td {
 .header {
   background-color: #d4d4d4;
   color: #808080;
-  min-height: 50px
+  min-height: 50px;
+  position: relative
   /*width: 100%;*/
 }
 .header.is-sticky{
@@ -2564,8 +2544,9 @@ table td {
   color: #808080;
   font-size: 2.5em;
   font-weight: bold;
-  white-space: nowrap;
   padding: 0;
+  text-decoration: none;
+  white-space: nowrap;
 }
 .fixed-space {
   margin-bottom: 48px;

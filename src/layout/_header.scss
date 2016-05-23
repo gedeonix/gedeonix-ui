@@ -2,6 +2,7 @@
   background-color: $header-background-color;
   color: $header-text-color;
   min-height: 50px;
+  position: relative;
   /*width: 100%;*/
 
   &.is-sticky {
@@ -14,8 +15,9 @@
   color: $header-text-color;
   font-size: 2.5em;
   font-weight: bold;
-  white-space: nowrap;
   padding: 0;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .fixed-space {
