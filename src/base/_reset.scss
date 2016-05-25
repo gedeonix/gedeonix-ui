@@ -27,3 +27,11 @@ input:focus, select:focus, textarea:focus {
   outline: none;
   box-shadow: 0px 0px 2px $outline-color;
 }
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}

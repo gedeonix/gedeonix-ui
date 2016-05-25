@@ -999,20 +999,48 @@
             <li><a href="">Right</a></li>
         </ul>
 
-        <h2>Vertical nav (is-vertical)</h2>
+        <h3>Submenu</h3>
 
-        <ul class="nav">
-            <li class="title">Title</li>
-            <li><a href="#">Option 1</a></li>
-            <li><a href="#">Option 2</a></li>
-            <li class="active"><a href="#">Active</a></li>
-            <li class="disabled"><a href="" class="disabled">Disabled</a></li>
-            <li><a href="#"><i class="fa fa-home"></i> Icon</a></li>
-            <li class="is-space"></li>
-            <li><a href="">Option 3</a></li>
+        <ul class="nav is-success">
+            <li class="title">Gedeonix UI</li>
+            <li><a>Option 1</a></li>
+            <li><a>Option 2</a></li>
+            <li><a>Option 3</a>
+                <ul>
+                    <li><a href="#">Option 5</a></li>
+                    <li><a href="#">Option 6</a></li>
+                    <li><a>Option 7</a>
+                        <ul>
+                            <li><a href="#">Option 8</a></li>
+                            <li><a href="#">Option 9</a></li>
+                            <li><a>Option 10</a>
+                                <ul>
+                                    <li><a href="#">Option 11</a></li>
+                                    <li><a href="#">Option 12</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a>Option 4</a></li>
         </ul>
 
         <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h2>Vertical nav (is-vertical)</h2>
 
         <div class="row xs-1 sm-2 md-6">
             <div class="col">
@@ -1077,72 +1105,8 @@
             </div>
         </div>
 
-        <br>
-
-        <div class="row xs-1 sm-2 md-6">
-            <div class="col">
-                <ul class="nav is-vertical">
-                    <li class="title">Title</li>
-                    <li><a href="#">Option 1</a></li>
-                    <li><a href="#">Option 2</a></li>
-                    <li class="active"><a href="#">Active</a></li>
-                    <li class="disabled"><a href="" class="disabled">Disabled</a></li>
-                    <li><a href="#"><i class="fa fa-home"></i> Icon</a></li>
-                    <li class="is-space"></li>
-                    <li><a href="">Option 3</a></li>
-                </ul>
-            </div>
-            <div class="col">
-                <ul class="nav is-box is-vertical">
-                    <li class="title">Title</li>
-                    <li><a href="#">Option 1</a></li>
-                    <li><a href="#">Option 2</a></li>
-                    <li class="active"><a href="#">Active</a></li>
-                    <li class="disabled"><a href="" class="disabled">Disabled</a></li>
-                    <li><a href="#"><i class="fa fa-home"></i> Icon</a></li>
-                    <li class="is-space"></li>
-                    <li><a href="">Option 3</a></li>
-                </ul>
-            </div>
-            <div class="col">
-                <ul class="nav is-tab is-vertical">
-                    <li class="title">Title</li>
-                    <li><a href="#">Option 1</a></li>
-                    <li><a href="#">Option 2</a></li>
-                    <li class="active"><a href="#">Active</a></li>
-                    <li class="disabled"><a href="" class="disabled">Disabled</a></li>
-                    <li><a href="#"><i class="fa fa-home"></i> Icon</a></li>
-                    <li class="is-space"></li>
-                    <li><a href="">Option 3</a></li>
-                </ul>
-            </div>
-            <div class="col">
-                <ul class="nav is-flat is-vertical">
-                    <li class="title">Title</li>
-                    <li><a href="#">Option 1</a></li>
-                    <li><a href="#">Option 2</a></li>
-                    <li class="active"><a href="#">Active</a></li>
-                    <li class="disabled"><a href="" class="disabled">Disabled</a></li>
-                    <li><a href="#"><i class="fa fa-home"></i> Icon</a></li>
-                    <li class="is-space"></li>
-                    <li><a href="">Option 3</a></li>
-                </ul>
-            </div>
-            <div class="col">
-                <ul class="nav is-tab is-active-border reset-radius is-vertical">
-                    <li class="title">Title</li>
-                    <li><a href="#">Option 1</a></li>
-                    <li><a href="#">Option 2</a></li>
-                    <li class="active"><a href="#">Active</a></li>
-                    <li class="disabled"><a href="" class="disabled">Disabled</a></li>
-                    <li><a href="#"><i class="fa fa-home"></i> Icon</a></li>
-                    <li class="is-space"></li>
-                    <li><a href="">Option 3</a></li>
-                </ul>
-            </div>
-        </div>
-
         <h3>Submenu</h3>
+
         <div class="row">
             <div class="col-4">
                 <ul class="nav is-vertical is-light">
@@ -1155,7 +1119,7 @@
                     <li><a href="#">Option 1</a></li>
                     <li class="submenu">
                         <a>Option 2</a>
-                        <ul class="submenu2 open">
+                        <ul class="open">
                             <li><a href="#">item</a></li>
                             <li><a href="#">item</a></li>
                             <li><a href="#">item</a></li>
@@ -1253,8 +1217,8 @@
 
         <br>
 
-        <ul class="nav is-success is-gap">
-            <li class="brand is-gray">Brand</li>
+        <ul class="navbar is-success is-gap">
+            <li class="brand">Brand</li>
             <ul class="nav is-tab is-danger">
                 <li><a>1</a></li>
                 <li><a>2</a></li>
@@ -1273,7 +1237,7 @@
             <ul class="nav is-dropdown is-warning">
                 <li><a>7</a></li>
                 <li><a>8</a></li>
-                <li><a>9</a>
+                <li class="submenu"><a>9</a>
                     <ul>
                         <li><a href="#">item</a></li>
                         <li><a href="#">item</a></li>
@@ -1289,31 +1253,6 @@
                 <a class="btn is-dark is-round"><i class="fa fa-info"></i> Info</a>
             </li>
 
-        </ul>
-
-        <h3>With submenu</h3>
-        <ul class="nav is-success">
-            <li><a>Option 1</a>
-                <ul>
-                    <li><a href="#">item</a></li>
-                    <li><a href="#">item</a></li>
-                    <li><a href="#">item</a></li>
-                </ul>
-            </li>
-            <li><a>Option 2</a>
-                <ul>
-                    <li><a href="#">item</a></li>
-                    <li><a href="#">item</a></li>
-                    <li><a>submenu</a>
-                        <ul>
-                            <li><a href="#">item</a></li>
-                            <li><a href="#">item</a></li>
-                            <li><a href="#">item</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="#">Option 3</a></li>
         </ul>
 
         <h3>Is gutter</h3>
