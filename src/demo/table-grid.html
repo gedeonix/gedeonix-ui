@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gedeonix UI</title>
+    <title>Gedeonix UI (experimental)</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-    <link href="../css/gedeonix-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../dist/gedeonix-ui.css">
     <link rel="stylesheet" href="css/prism.css">
     <script src="js/prism.js"></script>
 
@@ -13,11 +13,21 @@
             margin-bottom: 48px;
         }
 
+        /* only diagnostic */
+        .demo-grid .col {
+            text-align: center;
+            background-color: #fc765d;
+            margin: 3px;
+        }
+        .demo-grid .col:nth-child(odd) {
+            background-color: #ffb812;
+        }
+
     </style>
+
 </head>
 
 <body>
-
     <header class="header is-fixed is-shadow">
         <div class="container">
             <div class="brand">Gedeonix UI</div>
@@ -26,13 +36,13 @@
 
     <div class="fixed-space"></div>
 
-    <nav class="is-primary">
+    <div class="is-primary">
         <div class="container">
             <ul class="nav is-tab">
-                <li><a href="../index.html">Main</a></li>
+                <li><a href="index.html">Main</a></li>
                 <li><a href="typography.html">Typography</a></li>
                 <li><a href="container.html">Container</a></li>
-                <li><a href="flex-grid.html">Flex Grid</a></li>
+                <li class="active"><a>Flex Grid</a></li>
                 <li><a href="controls.html">Controls</a></li>
                 <li><a href="tables.html">Tables</a></li>
                 <li><a href="navigation.html">Navigation</a></li>
@@ -40,27 +50,30 @@
                 <li><a href="modal.html">Modal</a></li>
             </ul>
         </div>
-    </nav>
+    </div>
 
     <main class="main container">
 
-        <h1>Panel</h1>
+        <h2>Table grid (todo)</h2>
 
-        <div class="panel">
-            <div class="panel-header">Header</div>
-            <div class="panel-content">
-                content...
-
+        <div class="demo-grid grid">
+            <div class="col col-2">
+                1
+                <div class="grid">
+                    <div class="col">2</div>
+                    <div class="col">3</div>
+                    <div class="col">4</div>
+                </div>
+                5
+            </div>
+            <div class="col col-9">
+                6
+            </div>
+            <div class="col col-1">
+                7
             </div>
         </div>
 
-        <div class="panel">
-            <div class="panel-header is-danger">Header</div>
-            <div class="panel-content">
-                content...
-
-            </div>
-        </div>
     </main>
 
     <footer class="footer">

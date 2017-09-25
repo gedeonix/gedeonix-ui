@@ -177,12 +177,6 @@
 }
 
 
-@media screen and (min-width: $breakpoint-xs) {
-  .is-hidden-min-xs {
-    display: none !important;
-  }
-}
-
 @media screen and (min-width: $breakpoint-sm) {
   .is-hidden-min-sm {
     display: none !important;
@@ -197,12 +191,6 @@
 
 @media screen and (min-width: $breakpoint-lg) {
   .is-hidden-min-lg {
-    display: none !important;
-  }
-}
-
-@media screen and (max-width: $breakpoint-xs) {
-  .is-hidden-max-xs {
     display: none !important;
   }
 }

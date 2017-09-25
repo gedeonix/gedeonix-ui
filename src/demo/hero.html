@@ -2,47 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gedeonix UI (experimental)</title>
+    <title>Gedeonix UI</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-    <link href="../css/gedeonix-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../dist/gedeonix-ui.css">
     <link rel="stylesheet" href="css/prism.css">
     <script src="js/prism.js"></script>
-
-    <style>
-        .fixed-space {
-            margin-bottom: 48px;
-        }
-
-        /* only diagnostic */
-        .demo-grid .col {
-            text-align: center;
-            background-color: #fc765d;
-            margin: 3px;
-        }
-        .demo-grid .col:nth-child(odd) {
-            background-color: #ffb812;
-        }
-
-    </style>
-
 </head>
 
 <body>
-    <header class="header is-fixed is-shadow">
+
+    <section class="hero is-success">
+        <h1>Hero</h1>
+    </section>
+
+    <header class="header">
         <div class="container">
             <div class="brand">Gedeonix UI</div>
         </div>
     </header>
 
-    <div class="fixed-space"></div>
+    <section class="hero is-primary">
+        <h1>Hero</h1>
 
-    <div class="is-primary">
+    </section>
+
+    <nav class="is-primary">
         <div class="container">
             <ul class="nav is-tab">
-                <li><a href="../index.html">Main</a></li>
+                <li><a href="index.html">Main</a></li>
                 <li><a href="typography.html">Typography</a></li>
                 <li><a href="container.html">Container</a></li>
-                <li class="active"><a>Flex Grid</a></li>
+                <li><a href="flex-grid.html">Flex Grid</a></li>
                 <li><a href="controls.html">Controls</a></li>
                 <li><a href="tables.html">Tables</a></li>
                 <li><a href="navigation.html">Navigation</a></li>
@@ -50,29 +40,24 @@
                 <li><a href="modal.html">Modal</a></li>
             </ul>
         </div>
-    </div>
+    </nav>
 
-    <main class="main container">
+    <main class="main">
 
-        <h2>Table grid (todo)</h2>
+        <section class="hero is-warning">
+            <h1>Hero</h1>
 
-        <div class="demo-grid grid">
-            <div class="col col-2">
-                1
-                <div class="grid">
-                    <div class="col">2</div>
-                    <div class="col">3</div>
-                    <div class="col">4</div>
-                </div>
-                5
-            </div>
-            <div class="col col-9">
-                6
-            </div>
-            <div class="col col-1">
-                7
-            </div>
-        </div>
+        </section>
+
+        <section class="hero is-danger">
+            <h1>Hero</h1>
+
+        </section>
+
+        <section class="hero is-light">
+            <h1>Hero</h1>
+
+        </section>
 
     </main>
 
