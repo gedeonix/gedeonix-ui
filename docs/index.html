@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gedeonix UI</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../dist/gedeonix-ui.css">
+
+    <style>
+        .fixed-space {
+            margin-bottom: 48px;
+        }
+
+        .demo-dashboard .row .col > h2 {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            border: 4px solid #a0a0a0;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .color-box {
+            padding: 50px 20px;
+            color: #ffffff;
+            width: 100%;
+            text-align: center;
+            border-radius: 10px;
+            vertical-align: middle;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header class="header is-fixed is-shadow">
+        <div class="container navbar">
+            <a class="brand" href="#">Gedeonix UI v2</a>
+            <div class="nav is-space is-flex-end">
+                <button class="btn">test1</button>
+            </div>
+            <div class="nav is-flex-end">
+                <button class="btn">test2</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="fixed-space"></div>
+
+    <nav class="is-warning">
+        <div class="container">
+            <ul class="nav is-tab">
+                <li class="active"><a>Main</a></li>
+                <li><a href="controls.html">Controls</a></li>
+                <li><a href="containers.html">Containers</a></li>
+                <li><a href="grids.html">Grids</a></li>
+                <li><a href="navigation.html">Navigation</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="modal.html">Modal</a></li>
+                <li><a href="typography.html">Typography</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main container">
+
+        <h1>Simple</h1>
+
+        <div class="demo-dashboard">
+
+            <div class="row xs-1 sm-3">
+                <div class="col">
+                    <a class="btn is-dark is-block">Dark</a>
+                </div>
+            </div>
+            <div class="row sm-2 md-3">
+                <div class="col">
+                    <h2>Containers</h2>
+                </div>
+                <div class="col">
+                    <h2>Controls</h2>
+                </div>
+                <div class="col">
+                    <h2>Grids</h2>
+                </div>
+                <div class="col">
+                    <h2>Navigation</h2>
+                </div>
+                <div class="col">
+                    <h2>Forms</h2>
+                </div>
+                <div class="col">
+                    <h2>Modal</h2>
+                </div>
+                <div class="col">
+                    <h2>Typography</h2>
+                </div>
+            </div>
+            <div class="row xs-1 sm-3">
+                <div class="col">
+                    <a class="btn is-danger is-outline is-block">Danger</a>
+                </div>
+                <div class="col">
+                    <a class="btn is-success is-outline is-block">Success</a>
+                </div>
+                <div class="col">
+                    <a class="btn is-primary is-outline is-block">Primary</a>
+                </div>
+            </div>
+        </div>
+
+        <h1>Templates</h1>
+        <ul>
+            <li><a href="templates/landing.html">Landing page</a></li>
+            <li><a href="templates/application.html">Application</a></li>
+            <li><a href="templates/blog.html">Blog</a></li>
+            <li><a href="templates/dashboard.html">Dashboard</a></li>
+            <li><a href="templates/invoice.html">Simple invoice</a></li>
+            <li><a href="templates/login.html">Login</a> <a href="templates/register.html">Register</a> <a href="templates/forgot-password.html">Forgot password</a></li>
+        </ul>
+
+        <h1>Colors</h1></h1>
+
+        <div class="row">
+
+            <div class="col">
+                <div class="color-box is-primary">primary</div>
+            </div>
+            <div class="col">
+                <div class="color-box is-success">success</div>
+            </div>
+            <div class="col">
+                <div class="color-box is-info">info</div>
+            </div>
+            <div class="col">
+                <div class="color-box is-warning">warning</div>
+            </div>
+            <div class="col">
+                <div class="color-box is-danger">danger</div>
+            </div>
+            <div class="col">
+                <div class="color-box is-light">light</div>
+            </div>
+            <div class="col">
+                <div class="color-box is-dark">dark</div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Copyright (c) 2016 <a href="gedeonix.pl">gedeonix.pl</a></p>
+            <p>
+                <a href="https://github.com/gedeonix/gedeonix-ui"><i class="fa fa-github-square fa-2x"></i></a>
+                <a href="https://twitter.com/gedeonix"><i class="fa fa-twitter-square fa-2x"></i></a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="bundle.js"></script>
+
+</body>
