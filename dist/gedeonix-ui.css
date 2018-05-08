@@ -1,4 +1,5 @@
-@import url(//fonts.googleapis.com/css?family=Lato:400,700,900);/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+@import url(//fonts.googleapis.com/css?family=Lato:400,700,900);
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
@@ -2261,3 +2262,4 @@ table {
 
 .is-danger {
   background-color: #fc6e51; }
+
