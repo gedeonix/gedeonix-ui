@@ -7,7 +7,7 @@ This is a very simple project in alpha state :)
 Demo
 ----
 
-View html+css Gedeonix UI [demo](http://htmlpreview.github.io/?https://raw.githubusercontent.com/gedeonix/gedeonix-ui/master/index.html).
+View html+css Gedeonix UI [demo](https://github.com/gedeonix/gedeonix-ui).
 
 Install
 -------
