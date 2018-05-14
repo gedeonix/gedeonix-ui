@@ -6,17 +6,20 @@ $background-color:              #ffffff !default;
 
 $white-color:                   #ffffff;
 $gray-color:                    #fafafa !default;
-
-$default-color:                 #fafafa !default;
-$primary-color:                 #55acee !default;
-$success-color:                 #5acd59 !default;
-$info-color:                    #6ad1dd !default;
-$warning-color:                 #ffb812 !default;
-$danger-color:                  #fc6e51 !default;
-$light-color:                   #fafafa !default;
 $dark-color:                    #4e4f51 !default;
 
 $btn-font-size:                 1rem !default;
+
+$color-default: #fafafa;
+$color-theme: (
+  primary:  #55acee,
+  success:  #5acd59,
+  info:     #6ad1dd,
+  warning:  #ffb812,
+  danger:   #fc6e51,
+  light:    #fafafa,
+  dark:     #4e4f51
+);
 
 $btn-default:  (color: #606060, background: transparent, border: #d4d4d4, hover: #f0f0f0, active: #ffffff);
 $btn-theme: (
@@ -29,15 +32,14 @@ $btn-theme: (
   dark:     (color: #ffffff, background: #4e4f51, border: #4e4f51, hover: #b0b1b6, active: #8a8b8f)
 );
 
-$btn-default-hover:             #f0f0f0 !default;
-$btn-default-active:            #ffffff !default;
-
 $btn-radius:                    4px !default;
 
 $btn-xs-radius:                 2px !default;
 $btn-sm-radius:                 3px !default;
 $btn-md-radius:                 5px !default;
 $btn-lg-radius:                 6px !default;
+
+$popup-defult: (color: #404040, background: #ffff80);
 
 $link-color:                    #0067c5 !default;
 $link-color-hover:              #1A81DF !default;
@@ -78,3 +80,4 @@ $footer-background-color:       #d4d4d4 !default;
 $tile-gutter:                   0.5rem !default;
 
 $outline-color:                 #0067c5 !default;
+

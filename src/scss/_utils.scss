@@ -196,30 +196,8 @@
   background-color: #ffffff;
 }
 
-.is-light {
-  background-color: $light-color;
-}
-
-.is-dark {
-  background-color: $dark-color;
-}
-
-.is-primary {
-  background-color: $primary-color;
-}
-
-.is-success {
-  background-color: $success-color;
-}
-
-.is-info {
-  background-color: $info-color;
-}
-
-.is-warning {
-  background-color: $warning-color;
-}
-
-.is-danger {
-  background-color: $danger-color;
+@each $name, $color in $color-theme {
+  .is-#{$name} {
+    background-color: $color;
+  }
 }

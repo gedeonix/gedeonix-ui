@@ -122,37 +122,9 @@ input.success {
   }
 }
 
-input.is-primary {
-  border-color: $primary-color;
-  background-color: $input-background;
-}
-
-input.is-success {
-  border-color: $success-color;
-  background-color: $input-background;
-}
-
-input.is-info {
-  border-color: $info-color;
-  background-color: $input-background;
-}
-
-input.is-warning {
-  border-color: $warning-color;
-  background-color: $input-background;
-}
-
-input.is-danger {
-  border-color: $danger-color;
-  background-color: $input-background;
-}
-
-input.is-light {
-  border-color: $light-color;
-  background-color: $input-background;
-}
-
-input.is-dark {
-  border-color: $dark-color;
-  background-color: $input-background;
+@each $name, $color in $color-theme {
+  input.is-#{$name} {
+    border-color: $color;
+    background-color: $input-background;
+  }
 }

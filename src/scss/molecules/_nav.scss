@@ -33,19 +33,19 @@
 
   .active a {
     color: currentColor;
-    background-color: $btn-default-active;
+    background-color: map_get($btn-default, active);
   }
 
   a:hover {
     color: currentColor;
-    background-color: $btn-default-active;
+    background-color: map_get($btn-default, active);
   }
 
   > li {
     background-color: inherit;
     display: inline-block;
     &:hover {
-      background-color: $btn-default-hover;
+      background-color: map_get($btn-default, hover);
     }
   }
 

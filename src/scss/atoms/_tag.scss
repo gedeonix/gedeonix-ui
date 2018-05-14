@@ -1,5 +1,5 @@
 .tag {
-  background-color: $default-color;
+  background-color: $color-default;
   border-top-left-radius: 0.2em;
   border-bottom-left-radius: 0.2em;
   color: $white-color;
@@ -14,7 +14,7 @@
   border-style: solid;
   border-width: 0.64rem;
   border-color: transparent;
-  border-left-color: $default-color;
+  border-left-color: $color-default;
   content: "";
   display: inline-block;
   position: absolute;
@@ -25,26 +25,10 @@
   bottom: 0;
 }
 
-.tag.is-primary:after {
-  border-left-color: $primary-color;
-}
-.tag.is-success:after {
-  border-left-color: $success-color;
-}
-.tag.is-info:after {
-  border-left-color: $info-color;
-}
-.tag.is-warning:after {
-  border-left-color: $warning-color;
-}
-.tag.is-danger:after {
-  border-left-color: $danger-color;
-}
-.tag.is-light:after {
-  border-left-color: $light-color;
-}
-.tag.is-dark:after {
-  border-left-color: $dark-color;
+@each $name, $color in $color-theme {
+  .tag.is-#{$name}:after {
+    border-left-color: $color;
+  }
 }
 
 /*

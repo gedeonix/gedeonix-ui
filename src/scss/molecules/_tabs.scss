@@ -13,12 +13,12 @@
     /*border-bottom-color: transparent;*/
     border: none;
     &:hover {
-      background-color: $btn-default-hover;
+      background-color: map_get($btn-default, hover);
     }
   }
 
   .active a {
-    background-color: $btn-default-active;
+    background-color: map_get($btn-default, active);
     border-bottom: none !important;
   }
 

@@ -1,14 +1,14 @@
 .popup {
-  background-color: $dark-color;
+  background-color: map_get($popup-defult, background);
   border-radius: 4px;
-  color: $gray-color;
+  color: map_get($popup-defult, color);
   display: inline-block;
   padding: 0.2em 0.5em;
   position: relative;
 }
 
 .popup::after {
-  border-bottom: 8px solid $dark-color;
+  border-bottom: 8px solid map_get($popup-defult, background);
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   content: "";
