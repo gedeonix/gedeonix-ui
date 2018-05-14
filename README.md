@@ -18,3 +18,8 @@ Build
 -----
 
     npm run dev
+
+Author's blog
+-------------
+
+Przemysław Sołtan - [gedeonix.pl](http://gedeonix.pl) 
