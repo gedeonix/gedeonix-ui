@@ -176,43 +176,21 @@
   border-radius: 0 !important;
 }
 
-
-@media screen and (min-width: $breakpoint-sm) {
-  .is-hidden-min-sm {
-    display: none !important;
+@each $key, $value in $breakpoints {
+  @media screen and (min-width: $value) {
+    .is-hidden-min-#{$key} {
+      display: none !important;
+    }
   }
 }
 
-@media screen and (min-width: $breakpoint-md) {
-  .is-hidden-min-md {
-    display: none !important;
+@each $key, $value in $breakpoints {
+  @media screen and (max-width: $value) {
+    .is-hidden-max-#{$key} {
+      display: none !important;
+    }
   }
 }
-
-@media screen and (min-width: $breakpoint-lg) {
-  .is-hidden-min-lg {
-    display: none !important;
-  }
-}
-
-@media screen and (max-width: $breakpoint-sm) {
-  .is-hidden-max-sm {
-    display: none !important;
-  }
-}
-
-@media screen and (max-width: $breakpoint-md) {
-  .is-hidden-max-md {
-    display: none !important;
-  }
-}
-
-@media screen and (max-width: $breakpoint-lg) {
-  .is-hidden-max-lg {
-    display: none !important;
-  }
-}
-
 
 .is-white {
   background-color: #ffffff;

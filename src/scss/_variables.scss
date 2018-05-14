@@ -99,9 +99,7 @@ $gutter-lg:                     1rem !default;
 
 $breakpoints: (sm: 40em, md: 64em, lg: 90em) !default;
 
-$breakpoint-sm:                 40em !default;
-$breakpoint-md:                 64em !default;
-$breakpoint-lg:                 90em !default;
+$breakpoint-lg:                 map-get($breakpoints, lg) !default;
 
 $header-text-color:             #808080 !default;
 $header-background-color:       #d4d4d4 !default;
