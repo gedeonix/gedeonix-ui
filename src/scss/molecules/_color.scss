@@ -1,128 +1,22 @@
 .nav, .sidebar, .breadcrumbs {
 
-  &.is-primary {
-    a {
-      background-color: $btn-primary-background;
-      border-color: $btn-primary-background;
-      color: $btn-primary-color;
-      &:hover {
-        background-color: $btn-primary-hover;
-        border-color: $btn-primary-color;
-        color: $btn-primary-color;
+  @each $name, $btn in $btn-theme {
+    .btn.is-#{$name} {
+      a {
+        background-color: map_get($btn, background);
+        border-color: map_get($btn, background);
+        color: map_get($btn, color);
+        &:hover {
+          background-color: map_get($btn, hover);
+          border-color: map_get($btn, color);
+          color: map_get($btn, color);
+        }
       }
-    }
-    .active a {
-      background-color: $btn-primary-active;
-      border-color: $btn-primary-color;
-      color: $btn-primary-color;
-    }
-  }
-
-  &.is-success {
-    a {
-      background-color: $btn-success-background;
-      border-color: $btn-success-background;
-      color: $btn-success-color;
-      &:hover {
-        background-color: $btn-success-hover;
-        border-color: $btn-success-color;
-        color: $btn-success-color;
+      .active a {
+        background-color: map_get($btn, active);
+        border-color: map_get($btn, color);
+        color: map_get($btn, color);
       }
-    }
-    .active a {
-      background-color: $btn-success-active;
-      border-color: $btn-success-color;
-      color: $btn-success-color;
-    }
-  }
-
-  &.is-info {
-    a {
-      background-color: $btn-info-background;
-      border-color: $btn-info-background;
-      color: $btn-info-color;
-      &:hover {
-        background-color: $btn-info-hover;
-        border-color: $btn-info-color;
-        color: $btn-info-color;
-      }
-    }
-    .active a {
-      background-color: $btn-info-active;
-      border-color: $btn-info-color;
-      color: $btn-info-color;
-    }
-  }
-
-  &.is-warning {
-    a {
-      background-color: $btn-warning-background;
-      border-color: $btn-warning-background;
-      color: $btn-warning-color;
-      &:hover {
-        background-color: $btn-warning-hover;
-        border-color: $btn-warning-color;
-        color: $btn-warning-color;
-      }
-    }
-    .active a {
-      background-color: $btn-warning-active;
-      border-color: $btn-warning-color;
-      color: $btn-warning-color;
-    }
-  }
-
-  &.is-danger {
-    a {
-      background-color: $btn-danger-background;
-      border-color: $btn-danger-background;
-      color: $btn-danger-color;
-      &:hover {
-        background-color: $btn-danger-hover;
-        border-color: $btn-danger-color;
-        color: $btn-danger-color;
-      }
-    }
-    .active a {
-      background-color: $btn-danger-active;
-      border-color: $btn-danger-color;
-      color: $btn-danger-color;
-    }
-  }
-
-  &.is-light {
-    a {
-      background-color: $btn-light-background;
-      border-color: $btn-light-background;
-      color: $btn-light-color;
-      &:hover {
-        background-color: $btn-light-hover;
-        border-color: $btn-light-color;
-        color: $btn-light-color;
-      }
-    }
-    .active a {
-      background-color: $btn-light-active;
-      border-color: $btn-light-color;
-      color: $btn-light-color;
-    }
-  }
-
-  &.is-dark {
-    a {
-      background-color: $btn-dark-background;
-      border-color: $btn-dark-background;
-      color: $btn-dark-color;
-      &:hover {
-        background-color: $btn-dark-hover;
-        border-color: $btn-dark-color;
-        color: $btn-dark-color;
-      }
-    }
-    .active a {
-      background-color: $btn-dark-active;
-      border-color: $btn-dark-color;
-      color: $btn-dark-color;
     }
   }
 }

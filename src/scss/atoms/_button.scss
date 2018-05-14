@@ -1,6 +1,6 @@
 .btn {
   background-color: $background-color;
-  border: 1px solid $btn-default-border;
+  border: 1px solid map-get($btn-default,border);
   border-radius: $btn-radius; /*2em;*/
   color: $text-color;
   cursor: pointer;
@@ -21,7 +21,7 @@
   /*width: auto;*/
   -webkit-appearance: none;
   &:hover {
-    color: $btn-default-color;
+    color: map-get($btn-default,color);
     border-color: #a0a0a0;
   }
   &:focus, &.active {
@@ -32,7 +32,7 @@
     background-color: transparent;
     color: $text-color;
     &:hover {
-      background-color: $btn-default-hover;
+      background-color: map-get($btn-default,hover);
       color: #ffffff;
     }
   }
@@ -41,7 +41,7 @@
     color: $text-color;
     text-decoration: underline;
     &:hover {
-      background-color: $btn-default-hover;
+      background-color: map-get($btn-default,hover);
       color: #ffffff;
     }
   }
@@ -50,282 +50,51 @@
     border-color: transparent;
     color: $text-color;
     &:hover {
-      color: $btn-default-hover;
+      color: map-get($btn-default,hover);
     }
   }
 
   transition: all .2s ease-in-out;
 }
 
-.btn.is-primary {
-  background-color: $btn-primary-background;
-  border-color: $btn-primary-border;
-  color: #ffffff;
-  &:hover {
-    background-color: $btn-primary-hover;
-    border-color: $btn-primary-hover;
-  }
-  &:focus, &.active {
-    border-color: #808080;
-    outline: none;
-  }
-  &.is-outline {
-    background-color: transparent;
-    color: $btn-primary-background;
-    &:hover {
-      background-color: $btn-primary-hover;
-      color: #ffffff;
-    }
-  }
-  &.is-flat {
-    background-color: transparent;
-    border: transparent;
-    color: $btn-primary-background;
-    &:hover {
-      background-color: $btn-primary-hover;
-      color: #ffffff;
-    }
-  }
-  &.is-clear {
-    background-color: transparent;
-    border: transparent;
-    color: $btn-primary-background;
-    &:hover {
-      color: $btn-primary-hover;
-    }
-  }
-}
+@each $name, $btn in $btn-theme {
 
-.btn.is-success {
-  background-color: $btn-success-background;
-  border-color: $btn-success-border;
-  color: #ffffff;
-  &:hover {
-    background-color: $btn-success-hover;
-    border-color: $btn-success-hover;
-  }
-  &:focus, &.active {
-    border-color: #808080;
-    outline: none;
-  }
-  &.is-outline {
-    background-color: transparent;
-    color: $btn-success-background;
+  .btn.is-#{$name} {
+    background-color: map_get($btn, background);
+    border-color: map_get($btn, border);
+    color: map_get($btn, color);
     &:hover {
-      background-color: $btn-success-hover;
-      color: #ffffff;
+      background-color: map_get($btn, hover);
+      border-color: map_get($btn, hover);
     }
-  }
-  &.is-flat {
-    background-color: transparent;
-    border: transparent;
-    color: $btn-success-background;
-    &:hover {
-      background-color: $btn-success-hover;
-      color: #ffffff;
+    &:focus, &.active {
+      border-color: #808080;
+      outline: none;
     }
-  }
-  &.is-clear {
-    background-color: transparent;
-    border: transparent;
-    color: $btn-success-background;
-    &:hover {
-      color: $btn-success-hover;
+    &.is-outline {
+      background-color: transparent;
+      color: map_get($btn, background);
+      &:hover {
+        background-color: map_get($btn, hover);
+        color: #ffffff;
+      }
     }
-  }
-}
-
-.btn.is-info {
-  background-color: $btn-info-background;
-  border-color: $btn-info-border;
-  color: #ffffff;
-  &:hover {
-    background-color: $btn-info-hover;
-    border-color: $btn-info-hover;
-  }
-  &:focus, &.active {
-    border-color: #808080;
-    outline: none;
-  }
-  &.is-outline {
-    background-color: transparent;
-    color: $btn-info-background;
-    &:hover {
-      background-color: $btn-info-hover;
-      color: #ffffff;
+    &.is-flat {
+      background-color: transparent;
+      border: transparent;
+      color: map_get($btn, background);
+      &:hover {
+        background-color: map_get($btn, hover);
+        color: #ffffff;
+      }
     }
-  }
-  &.is-flat {
-    background-color: transparent;
-    border: transparent;
-    color: $btn-info-background;
-    &:hover {
-      background-color: $btn-info-hover;
-      color: #ffffff;
-    }
-  }
-  &.is-clear {
-    background-color: transparent;
-    border: transparent;
-    color: $btn-info-background;
-    &:hover {
-      color: $btn-info-hover;
-    }
-  }
-}
-
-.btn.is-warning {
-  background-color: $btn-warning-background;
-  border-color: $btn-warning-border;
-  color: #ffffff;
-  &:hover {
-    background-color: $btn-warning-hover;
-    border-color: $btn-warning-hover;
-  }
-  &:focus, &.active {
-    border-color: #808080;
-    outline: none;
-  }
-  &.is-outline {
-    background-color: transparent;
-    color: $btn-warning-background;
-    &:hover {
-      background-color: $btn-warning-hover;
-      color: #ffffff;
-    }
-  }
-  &.is-flat {
-    background-color: transparent;
-    border: transparent;
-    color: $btn-warning-background;
-    &:hover {
-      background-color: $btn-warning-hover;
-      color: #ffffff;
-    }
-  }
-  &.is-clear {
-    background-color: transparent;
-    border: transparent;
-    color: $btn-warning-background;
-    &:hover {
-      color: $btn-warning-hover;
-    }
-  }
-}
-
-.btn.is-danger {
-  background-color: $btn-danger-background;
-  border-color: $btn-danger-border;
-  color: #ffffff;
-  &:hover {
-    background-color: $btn-danger-hover;
-    border-color: $btn-danger-hover;
-  }
-  &:focus, &.active {
-    border-color: #808080;
-    outline: none;
-  }
-  &.is-outline {
-    background-color: transparent;
-    color: $btn-danger-background;
-    &:hover {
-      background-color: $btn-danger-hover;
-      color: #ffffff;
-    }
-  }
-  &.is-flat {
-    background-color: transparent;
-    border: transparent;
-    color: $btn-danger-background;
-    &:hover {
-      background-color: $btn-danger-hover;
-      color: #ffffff;
-    }
-  }
-  &.is-clear {
-    background-color: transparent;
-    border: transparent;
-    color: $btn-danger-background;
-    &:hover {
-      color: $btn-danger-hover;
-    }
-  }
-}
-
-.btn.is-light {
-  background-color: $btn-light-background;
-  border-color: $btn-light-border;
-  color: $btn-light-color;
-  &:hover {
-    background-color: $btn-light-hover;
-    border-color: $btn-light-hover;
-  }
-  &:focus, &.active {
-    border-color: #808080;
-    outline: none;
-  }
-  &.is-outline {
-    background-color: transparent;
-    color: $btn-light-color;
-    &:hover {
-      background-color: $btn-light-hover;
-      color: $btn-light-color;
-    }
-  }
-  &.is-flat {
-    background-color: transparent;
-    border: transparent;
-    color: $btn-light-color;
-    &:hover {
-      background-color: $btn-light-hover;
-      color: #ffffff;
-    }
-  }
-  &.is-clear {
-    background-color: transparent;
-    border: transparent;
-    color: $btn-light-color;
-    &:hover {
-      color: $btn-light-hover;
-    }
-  }
-}
-
-.btn.is-dark {
-  background-color: $btn-dark-background;
-  border-color: $btn-dark-border;
-  color: #ffffff;
-  &:hover {
-    background-color: $btn-dark-hover;
-    border-color: $btn-dark-hover;
-  }
-  &:focus, &.active {
-    border-color: #808080;
-    outline: none;
-  }
-  &.is-outline {
-    background-color: transparent;
-    color: $btn-dark-background;
-    &:hover {
-      background-color: $btn-dark-hover;
-      color: #ffffff;
-    }
-  }
-  &.is-flat {
-    background-color: transparent;
-    border: transparent;
-    color: $btn-dark-background;
-    &:hover {
-      background-color: $btn-dark-hover;
-      color: #ffffff;
-    }
-  }
-  &.is-clear {
-    background-color: transparent;
-    border: transparent;
-    color: $btn-dark-background;
-    &:hover {
-      color: $btn-dark-hover;
+    &.is-clear {
+      background-color: transparent;
+      border: transparent;
+      color: map_get($btn, background);
+      &:hover {
+        color: map_get($btn, hover);
+      }
     }
   }
 }
