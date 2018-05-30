@@ -7,14 +7,12 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
-    /*
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'index.js',
         publicPath: '/dist'
     },
-    */
     module: {
         rules: [
             {
@@ -52,6 +50,11 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: "gedeonix-ui.css"
         })
-    ]
+    ],
+    devServer: {
+        contentBase: path.join(__dirname, "docs"),
+        compress: true,
+        port: 9000
+    }
 };
 
