@@ -1,177 +1,195 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Gedeonix UI</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato' type='text/css'>
-    <link rel="stylesheet" href="../../dist/gedeonix-ui.css">
-
-    <style>
-        .fixed-space {
-            margin-bottom: 48px;
-        }
-    </style>
+    <link rel="stylesheet" href="../gedeonix-ui.css">
 </head>
 
 <body>
 
-    <header class="header is-fixed is-shadow">
-        <div class="container">
-            <div class="brand">Gedeonix UI</div>
+<ul class="nav">
+    <li class="title">Gedeonix UI</li>
+    <li><a>Atoms</a>
+        <ul>
+            <li><a href="../atoms/colors.html">Colors</a></li>
+            <li><a href="../atoms/controls.html">Controls</a></li>
+            <li><a href="../atoms/typography.html">Typography</a></li>
+        </ul>
+    </li>
+    <li><a>Molecules</a>
+        <ul>
+            <li><a href="../molecules/...">...</a></li>
+        </ul>
+    </li>
+
+    <li><a>Organisms</a>
+        <ul>
+            <li><a href="../organisms/containers.html">Containers</a></li>
+            <li><a href="../organisms/forms.html">Forms</a></li>
+            <li><a href="../organisms/hero.html">Hero</a></li>
+            <li><a href="../organisms/modal.html">Modal</a></li>
+            <li><a href="../organisms/navigation.html">Navigation</a></li>
+            <li><a href="../organisms/panel.html">Panel</a></li>
+            <li><a href="../organisms/grids.html">Grids</a></li>
+            <li><a href="../organisms/table-grid.html">Table grid</a></li>
+        </ul>
+    </li>
+
+    <li><a>Templates</a>
+        <ul>
+            <li><a href="../templates/landing.html">Landing</a></li>
+            <li><a href="../templates/application.html">Application</a></li>
+            <li><a href="../templates/blog.html">Blog</a></li>
+            <li><a href="../templates/dashboard.html">Dashboard</a></li>
+            <li><a href="../templates/invoice.html">Invoice</a></li>
+            <li><a href="../templates/login.html">Login</a></li>
+            <li><a href="../templates/register.html">Register</a></li>
+            <li><a href="../templates/forgot-password.html">Forgot password</a></li>
+        </ul>
+    </li>
+
+    <li><a>Pages</a>
+
+    </li>
+</ul>
+
+<main class="main container">
+    <h1>Form</h1>
+
+    <h2>Simple</h2>
+    <form class="section">
+        <div class="control">
+            <label>Email:</label>
+            <input type="email">
         </div>
-    </header>
-
-    <div class="fixed-space"></div>
-
-    <nav class="is-yellow">
-        <div class="container">
-            <ul class="nav is-tab">
-                <li><a href="index.html">Main</a></li>
-                <li><a href="controls.html">Controls</a></li>
-                <li><a href="containers.html">Containers</a></li>
-                <li><a href="grids.html">Grids</a></li>
-                <li><a href="navigation.html">Navigation</a></li>
-                <li class="active"><a>Forms</a></li>
-                <li><a href="modal.html">Modal</a></li>
-                <li><a href="typography.html">Typography</a></li>
-            </ul>
+        <div class="control">
+            <label>Password:</label>
+            <input type="password">
         </div>
-    </nav>
 
-    <main class="main container">
-        <h1>Form</h1>
-
-        <h2>Simple</h2>
-        <form class="section">
-            <div class="control">
-                <label>Email:</label>
-                <input type="email">
-            </div>
-            <div class="control">
-                <label>Password:</label>
-                <input type="password">
-            </div>
-
-            <div class="control checkbox">
-                <input id="check1" type="checkbox">
-                <label for="check1"> Terms</label>
-            </div>
-
-            <div class="control checkbox">
-                <input id="check2" type="checkbox" checked="checked">
-                <label for="check2"> Terms checked</label>
-            </div>
-
-            <div class="control checkbox">
-                <input id="check3" type="checkbox" disabled>
-                <label for="check3"> Terms disabled</label>
-            </div>
-
-            <div class="control checkbox">
-                <input id="check4" type="checkbox" checked="checked" disabled>
-                <label for="check4"> Terms checked & disabled</label>
-            </div>
-
-            <div class="control">
-                <button class="btn is-primary" type="submit">Login</button>
-            </div>
-        </form>
-
-        <h2>Responsive</h2>
-        <form class="row">
-            <div class="col-6">
-                <label>User:</label>
-                <input type="text">
-            </div>
-            <div class="col-6">
-                <label>Type:</label>
-                <select>
-                    <option value="user">User</option>
-                    <option value="admin">Admin</option>
-                    <option value="superuser">Super User</option>
-                </select>
-            </div>
-            <div class="col-12">
-                <label for="description">Description</label>
-                <textarea id="description" class="is-box" placeholder="description..."></textarea>
-            </div>
-            <div class="col-12">
-                <div class="checkbox">
-                    <input id="check5" type="checkbox">
-                    <label for="check5"> Term</label>
-                </div>
-            </div>
-            <div class="col-12">
-                <button class="btn is-primary" type="submit">Submit</button>
-            </div>
-        </form>
-
-        <!--
-        <h2>Example 1</h2>
-        <form class="row max-2">
-            <label class="col">Text:</label>
-            <input type="text" placeholder="text">
-            <label class="col">Password:</label>
-            <input type="password" placeholder="password">
-            <label class="col">Number:</label>
-            <input type="number" placeholder="number">
-            <label class="col">Search:</label>
-            <input type="search" placeholder="search">
-            <button class="btn is-success">Save</button>
-        </form>
-
-        <h2>Example 2</h2>
-        <form action="#" method="post">
-            <div>
-                <label for="name">Text Input:</label>
-                <input type="text" name="name" id="name" value="" tabindex="1" />
-            </div>
-
-            <div>
-                <h4>Radio Button Choice</h4>
-
-                <label for="radio-choice-1">Choice 1</label>
-                <input type="radio" name="radio-choice-1" id="radio-choice-1" tabindex="2" value="choice-1" />
-
-                <label for="radio-choice-2">Choice 2</label>
-                <input type="radio" name="radio-choice-2" id="radio-choice-2" tabindex="3" value="choice-2" />
-            </div>
-
-            <div>
-                <label for="select-choice">Select Dropdown Choice:</label>
-                <select name="select-choice" id="select-choice">
-                    <option value="Choice 1">Choice 1</option>
-                    <option value="Choice 2">Choice 2</option>
-                    <option value="Choice 3">Choice 3</option>
-                </select>
-            </div>
-
-            <div>
-                <label for="textarea">Textarea:</label>
-                <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
-            </div>
-
-            <div>
-                <label for="checkbox">Checkbox:</label>
-                <input type="checkbox" name="checkbox" id="checkbox" />
-            </div>
-
-            <div>
-                <input type="submit" value="Submit" />
-            </div>
-        </form>
-        -->
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>Copyright (c) 2016-2018 <a href="http://gedeonix.pl">gedeonix.pl</a></p>
-            <p>
-                <a href="https://github.com/gedeonix/gedeonix-ui"><i class="fab fa-github-square fa-2x"></i></a>
-                <a href="https://twitter.com/gedeonix"><i class="fab fa-twitter-square fa-2x"></i></a>
-            </p>
+        <div class="control checkbox">
+            <input id="check1" type="checkbox">
+            <label for="check1"> Terms</label>
         </div>
-    </footer>
+
+        <div class="control checkbox">
+            <input id="check2" type="checkbox" checked="checked">
+            <label for="check2"> Terms checked</label>
+        </div>
+
+        <div class="control checkbox">
+            <input id="check3" type="checkbox" disabled>
+            <label for="check3"> Terms disabled</label>
+        </div>
+
+        <div class="control checkbox">
+            <input id="check4" type="checkbox" checked="checked" disabled>
+            <label for="check4"> Terms checked & disabled</label>
+        </div>
+
+        <div class="control">
+            <button class="btn is-primary" type="submit">Login</button>
+        </div>
+    </form>
+
+    <h2>Responsive</h2>
+    <form class="row">
+        <div class="col-6">
+            <label>User:</label>
+            <input type="text">
+        </div>
+        <div class="col-6">
+            <label>Type:</label>
+            <select>
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+                <option value="superuser">Super User</option>
+            </select>
+        </div>
+        <div class="col-12">
+            <label for="description">Description</label>
+            <textarea id="description" class="is-box" placeholder="description..."></textarea>
+        </div>
+        <div class="col-12">
+            <div class="checkbox">
+                <input id="check5" type="checkbox">
+                <label for="check5"> Term</label>
+            </div>
+        </div>
+        <div class="col-12">
+            <button class="btn is-primary" type="submit">Submit</button>
+        </div>
+    </form>
+
+    <!--
+    <h2>Example 1</h2>
+    <form class="row max-2">
+        <label class="col">Text:</label>
+        <input type="text" placeholder="text">
+        <label class="col">Password:</label>
+        <input type="password" placeholder="password">
+        <label class="col">Number:</label>
+        <input type="number" placeholder="number">
+        <label class="col">Search:</label>
+        <input type="search" placeholder="search">
+        <button class="btn is-success">Save</button>
+    </form>
+
+    <h2>Example 2</h2>
+    <form action="#" method="post">
+        <div>
+            <label for="name">Text Input:</label>
+            <input type="text" name="name" id="name" value="" tabindex="1" />
+        </div>
+
+        <div>
+            <h4>Radio Button Choice</h4>
+
+            <label for="radio-choice-1">Choice 1</label>
+            <input type="radio" name="radio-choice-1" id="radio-choice-1" tabindex="2" value="choice-1" />
+
+            <label for="radio-choice-2">Choice 2</label>
+            <input type="radio" name="radio-choice-2" id="radio-choice-2" tabindex="3" value="choice-2" />
+        </div>
+
+        <div>
+            <label for="select-choice">Select Dropdown Choice:</label>
+            <select name="select-choice" id="select-choice">
+                <option value="Choice 1">Choice 1</option>
+                <option value="Choice 2">Choice 2</option>
+                <option value="Choice 3">Choice 3</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="textarea">Textarea:</label>
+            <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+        </div>
+
+        <div>
+            <label for="checkbox">Checkbox:</label>
+            <input type="checkbox" name="checkbox" id="checkbox" />
+        </div>
+
+        <div>
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+    -->
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>Copyright (c) 2016-2018 <a href="http://gedeonix.pl">gedeonix.pl</a></p>
+        <p>
+            <a href="https://github.com/gedeonix/gedeonix-ui"><i class="fab fa-github-square fa-2x"></i></a>
+            <a href="https://twitter.com/gedeonix"><i class="fab fa-twitter-square fa-2x"></i></a>
+        </p>
+    </div>
+</footer>
 
 </body>

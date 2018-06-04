@@ -1,153 +1,180 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Gedeonix UI</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato' type='text/css'>
-    <link rel="stylesheet" href="../../dist/gedeonix-ui.css">
-
-    <style>
-        .fixed-space {
-            margin-bottom: 48px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="../gedeonix-ui.css">
 </head>
 
 <body>
 
-    <header class="header is-fixed is-shadow">
-        <div class="container">
-            <div class="brand">Gedeonix UI</div>
-        </div>
-    </header>
+<ul class="nav">
+    <li class="title">Gedeonix UI</li>
+    <li><a>Atoms</a>
+        <ul>
+            <li><a href="../atoms/colors.html">Colors</a></li>
+            <li><a href="../atoms/controls.html">Controls</a></li>
+            <li><a href="../atoms/typography.html">Typography</a></li>
+        </ul>
+    </li>
+    <li><a>Molecules</a>
+        <ul>
+            <li><a href="../molecules/...">...</a></li>
+        </ul>
+    </li>
 
-    <div class="fixed-space"></div>
+    <li><a>Organisms</a>
+        <ul>
+            <li><a href="../organisms/containers.html">Containers</a></li>
+            <li><a href="../organisms/forms.html">Forms</a></li>
+            <li><a href="../organisms/hero.html">Hero</a></li>
+            <li><a href="../organisms/modal.html">Modal</a></li>
+            <li><a href="../organisms/navigation.html">Navigation</a></li>
+            <li><a href="../organisms/panel.html">Panel</a></li>
+            <li><a href="../organisms/grids.html">Grids</a></li>
+            <li><a href="../organisms/table-grid.html">Table grid</a></li>
+        </ul>
+    </li>
 
-    <nav class="is-teal">
-        <div class="container">
-            <ul class="nav is-tab">
-                <li><a href="index.html">Main</a></li>
-                <li><a href="controls.html">Controls</a></li>
-                <li><a href="container.html">Containers</a></li>
-                <li><a href="grids.html">Grids</a></li>
-                <li><a href="navigation.html">Navigation</a></li>
-                <li><a href="forms.html">Forms</a></li>
-                <li class="active"><a>Modal</a></li>
-                <li><a href="typography.html">Typography</a></li>
-            </ul>
-        </div>
-    </nav>
+    <li><a>Templates</a>
+        <ul>
+            <li><a href="../templates/landing.html">Landing</a></li>
+            <li><a href="../templates/application.html">Application</a></li>
+            <li><a href="../templates/blog.html">Blog</a></li>
+            <li><a href="../templates/dashboard.html">Dashboard</a></li>
+            <li><a href="../templates/invoice.html">Invoice</a></li>
+            <li><a href="../templates/login.html">Login</a></li>
+            <li><a href="../templates/register.html">Register</a></li>
+            <li><a href="../templates/forgot-password.html">Forgot password</a></li>
+        </ul>
+    </li>
 
-    <main class="main container">
+    <li><a>Pages</a>
 
-        <h1>Modal</h1>
-        <button id="modal-button" class="btn">Open simple modal</button>
+    </li>
+</ul>
 
-        <div id="modal" class="modal">
-            <div class="modal-background"></div>
-            <div class="modal-container is-shadow">
-                <div class="modal-content">
-                    <div class="modal-header is-info"><i class="fab fa-info"></i>  Info<div id="close1" class="close is-circle"></div></div>
-                    <div class="modal-body is-text-center">
-                        Simple example
-                    </div>
-                    <div class="modal-footer">
-                        <button id="close2" class="btn is-info">Ok</button>
-                    </div>
+<main class="main container">
+
+    <h1>Modal</h1>
+    <button id="modal-button" class="btn">Open simple modal</button>
+
+    <div id="modal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-container is-shadow">
+            <div class="modal-content">
+                <div class="modal-header is-info"><i class="fab fa-info"></i> Info
+                    <div id="close1" class="close is-circle"></div>
                 </div>
-            </div>
-        </div>
-
-        <h2>Info</h2>
-        <div class="modal-content is-shadow">
-            <div class="modal-header is-info"><i class="fab fa-info"></i> Info<div class="close is-circle"></div></div>
-            <div class="modal-body is-text-center">
-                Simple example
-            </div>
-            <div class="modal-footer">
-                <button class="btn is-info">Ok</button>
-            </div>
-        </div>
-
-        <h2>Warning</h2>
-        <div class="modal-content is-shadow">
-            <div class="modal-header is-warning"><i class="fab fa-warning"></i> Warning<div class="close is-circle"></div></div>
-            <div class="modal-body is-text-center">
-                Simple example
-            </div>
-            <div class="modal-footer">
-                <button class="btn is-warning">Yes</button>
-                <button class="btn is-clear is-warning">No</button>
-            </div>
-        </div>
-
-        <h2>Danger</h2>
-        <div class="modal-content is-shadow">
-            <div class="modal-header is-danger"><i class="fab fa-wrench"></i> Danger<div class="close is-circle"></div></div>
-            <div class="modal-body is-text-center">
-                Simple example
-            </div>
-            <div class="modal-footer">
-                <button class="btn is-danger">Ok</button>
-            </div>
-        </div>
-
-        <h2>Form</h2>
-        <div class="modal-content is-shadow">
-            <form>
-                <div class="modal-header is-dark"><i class="fab fa-cog"></i> Form<div class="close is-circle"></div></div>
-                <div class="modal-body">
-
-                    <div class="control">
-                        <label>Email:</label>
-                        <input type="email">
-                    </div>
-                    <div class="control">
-                        <label>Password:</label>
-                        <input type="password">
-                    </div>
-
-                    <div class="control checkbox">
-                        <input id="check1" type="checkbox">
-                        <label for="check1"> Terms</label>
-                    </div>
+                <div class="modal-body is-text-center">
+                    Simple example
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn is-success">Save</button>
-                    <button class="btn is-outline">Cancel</button>
+                    <button id="close2" class="btn is-info">Ok</button>
                 </div>
-            </form>
+            </div>
         </div>
+    </div>
 
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>Copyright (c) 2016-2018 <a href="http://gedeonix.pl">gedeonix.pl</a></p>
-            <p>
-                <a href="https://github.com/gedeonix/gedeonix-ui"><i class="fab fa-github-square fa-2x"></i></a>
-                <a href="https://twitter.com/gedeonix"><i class="fab fa-twitter-square fa-2x"></i></a>
-            </p>
+    <h2>Info</h2>
+    <div class="modal-content is-shadow">
+        <div class="modal-header is-info"><i class="fab fa-info"></i> Info
+            <div class="close is-circle"></div>
         </div>
-    </footer>
+        <div class="modal-body is-text-center">
+            Simple example
+        </div>
+        <div class="modal-footer">
+            <button class="btn is-info">Ok</button>
+        </div>
+    </div>
 
-    <script src="https://code.jquery.com/jquery-2.2.2.js"></script>
-    <script>
-        $(document).ready(function(){
+    <h2>Warning</h2>
+    <div class="modal-content is-shadow">
+        <div class="modal-header is-warning"><i class="fab fa-warning"></i> Warning
+            <div class="close is-circle"></div>
+        </div>
+        <div class="modal-body is-text-center">
+            Simple example
+        </div>
+        <div class="modal-footer">
+            <button class="btn is-warning">Yes</button>
+            <button class="btn is-clear is-warning">No</button>
+        </div>
+    </div>
 
-            $("#modal").hide();
+    <h2>Danger</h2>
+    <div class="modal-content is-shadow">
+        <div class="modal-header is-danger"><i class="fab fa-wrench"></i> Danger
+            <div class="close is-circle"></div>
+        </div>
+        <div class="modal-body is-text-center">
+            Simple example
+        </div>
+        <div class="modal-footer">
+            <button class="btn is-danger">Ok</button>
+        </div>
+    </div>
 
-            $("#modal-button").click(function(){
-                $("#modal").fadeIn();
-            });
+    <h2>Form</h2>
+    <div class="modal-content is-shadow">
+        <form>
+            <div class="modal-header is-dark"><i class="fab fa-cog"></i> Form
+                <div class="close is-circle"></div>
+            </div>
+            <div class="modal-body">
 
-            $("#close1, #close2").click(function(){
-                $("#modal").fadeOut();
-            });
+                <div class="control">
+                    <label>Email:</label>
+                    <input type="email">
+                </div>
+                <div class="control">
+                    <label>Password:</label>
+                    <input type="password">
+                </div>
+
+                <div class="control checkbox">
+                    <input id="check1" type="checkbox">
+                    <label for="check1"> Terms</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn is-success">Save</button>
+                <button class="btn is-outline">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>Copyright (c) 2016-2018 <a href="http://gedeonix.pl">gedeonix.pl</a></p>
+        <p>
+            <a href="https://github.com/gedeonix/gedeonix-ui"><i class="fab fa-github-square fa-2x"></i></a>
+            <a href="https://twitter.com/gedeonix"><i class="fab fa-twitter-square fa-2x"></i></a>
+        </p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.2.2.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $("#modal").hide();
+
+        $("#modal-button").click(function () {
+            $("#modal").fadeIn();
         });
 
-    </script>
+        $("#close1, #close2").click(function () {
+            $("#modal").fadeOut();
+        });
+    });
+
+</script>
 
 </body>
