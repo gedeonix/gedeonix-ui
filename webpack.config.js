@@ -10,8 +10,9 @@ const HtmlWebpackExcludeAssetsPlugin = require('html-webpack-exclude-assets-plug
 const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
-    mode: 'development',
-    entry: './src/index.scss',
+    // mode: 'development',
+    devtool: 'source-map',
+    entry: './src/ui.scss',
     /*
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -19,15 +20,21 @@ module.exports = {
         publicPath: '/dist'
     },
     */
+    cache: false,
     module: {
         rules: [
             {
                 test: /\.scss$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    'css-loader',
-                    'sass-loader'
-                ]
+                use: [MiniCssExtractPlugin.loader,
+                    {
+                        loader: "css-loader", options: {
+                            sourceMap: true
+                        }
+                    }, {
+                        loader: "sass-loader", options: {
+                            sourceMap: true
+                        }
+                    }]
             }
         ]
     },
@@ -39,16 +46,21 @@ module.exports = {
                 sourceMap: true // set to true if you want JS source maps
             }),
             new OptimizeCSSAssetsPlugin({
-            /*
-                assetNameRegExp: /\.optimize\.css$/g,
-                cssProcessor: require('cssnano'),
                 cssProcessorOptions: {
-                    discardComments: {
-                        removeAll: true
+                    map: {
+                        inline: false
                     }
-                },
-                canPrint: true
-            */
+                }
+                /*
+                    assetNameRegExp: /\.optimize\.css$/g,
+                    cssProcessor: require('cssnano'),
+                    cssProcessorOptions: {
+                        discardComments: {
+                            removeAll: true
+                        }
+                    },
+                    canPrint: true
+                */
             })
             /*
             ,
