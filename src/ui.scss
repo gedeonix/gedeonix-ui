@@ -1,61 +1,57 @@
 @charset "UTF-8";
 
-@import '_variables.scss';
+@import 'variables';
+@import 'mixin';
 
-@import 'base/_normalize.scss';
-@import 'base/_reset.scss';
-@import 'base/_typography.scss';
+@import 'base/normalize';
+@import 'base/reset';
+@import 'base/typography';
 
-@import "atoms/_box.scss";
-@import "atoms/_button.scss";
-@import "atoms/_button-round.scss";
-@import "atoms/_social.scss";
-@import "atoms/_checkbox.scss";
-@import "atoms/_radio.scss";
-@import "atoms/_input.scss";
-@import "atoms/_group.scss";
-@import "atoms/_pagination.scss";
+@import "atoms/box";
+@import "atoms/button";
+@import "atoms/button-round";
+@import "atoms/social";
+@import "atoms/checkbox";
+@import "atoms/radio";
+@import "atoms/input";
+@import "atoms/group";
+@import "atoms/pagination";
+@import "atoms/panel";
+@import "atoms/card";
+@import "atoms/control";
+@import "atoms/section";
+@import "atoms/form";
+@import "atoms/label";
+@import "atoms/tag";
+@import "atoms/popup";
+@import "atoms/badge";
+@import "atoms/close";
+@import "atoms/alert";
+@import "atoms/modal";
+@import "atoms/table";
+@import "atoms/container";
+@import "atoms/tile";
 
-@import "atoms/_panel.scss";
-@import "atoms/_card.scss";
-@import "atoms/_control.scss";
-@import "atoms/_section.scss";
-@import "atoms/_form.scss";
+@import "grid/flex-grid";
+@import "grid/table-grid";
 
-@import "atoms/_label.scss";
-@import "atoms/_tag.scss";
-@import "atoms/_popup.scss";
-@import "atoms/_badge.scss";
-@import "atoms/_close.scss";
-@import "atoms/_alert.scss";
-@import "atoms/_modal.scss";
+@import "molecules/nav";
+@import "molecules/box";
+@import "molecules/flat";
+@import "molecules/tabs";
+@import "molecules/navbar";
+@import "molecules/sidebar";
+@import "molecules/size";
+@import "molecules/breadcrumbs";
+@import "molecules/color";
+@import "molecules/hamburger";
 
-@import "atoms/_table.scss";
-@import "atoms/_container.scss";
-@import "atoms/_tile.scss";
+@import "layout/hero";
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
 
-@import "grid/_flex-grid.scss";
-@import "grid/_table-grid.scss";
+@import 'base/color';
 
-@import "molecules/_nav.scss";
-@import "molecules/_box.scss";
-@import "molecules/_flat.scss";
-@import "molecules/_tabs.scss";
-
-@import "molecules/_navbar.scss";
-@import "molecules/_sidebar.scss";
-
-@import "molecules/_size.scss";
-@import "molecules/_breadcrumbs.scss";
-@import "molecules/_color.scss";
-@import "molecules/_hamburger.scss";
-
-@import "layout/_hero.scss";
-@import "layout/_header.scss";
-@import "layout/_main.scss";
-@import "layout/_footer.scss";
-
-@import 'base/_color.scss';
-
-@import "_utils.scss";
+@import "utils";
 

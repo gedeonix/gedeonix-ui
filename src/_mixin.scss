@@ -1,0 +1,21 @@
+@mixin font-icon() {
+  font-family: $font-icon;
+  font-style: normal;
+  //font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin content-icon($size, $content) {
+  content: $content;
+  line-height: $size;
+  height: $size;
+  width: $size;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}

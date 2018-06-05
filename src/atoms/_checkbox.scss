@@ -6,24 +6,23 @@
   position: relative;
 
   label {
+
     &:before {
       display: inline-block;
-      font-family: "Font Awesome\ 5 Free";
-      font-size: 0.9rem;
-      font-style: normal;
-      font-weight: normal;
-      line-height: 1;
 
+      @include font-icon();
+      @include content-icon(1rem, ' ');
+      font-size: .8rem;
+
+      background: transparent;
+
+      border: 1px solid $checkbox-border-color;
+      border-radius: $checkbox-border-radius;
+    }
+
+    &:after {
       width: 1rem;
       height: 1rem;
-
-      border: 1px solid #d1d1d1;
-      background: transparent;
-      border-radius: 2px;
-
-      content: ' ';
-      vertical-align: -2px;
-      letter-spacing: 1px;
     }
   }
 
