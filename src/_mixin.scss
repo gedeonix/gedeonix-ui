@@ -10,7 +10,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@mixin content-icon($size, $content) {
+@mixin atom-block() {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  clear: none;
+  float: none;
+  background: none;
+}
+
+@mixin atom-icon($size, $content) {
   content: $content;
   line-height: $size;
   height: $size;

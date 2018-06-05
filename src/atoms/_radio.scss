@@ -1,9 +1,7 @@
 .radio {
+
+  @include atom-block();
   background-color: #ffffd0;
-  cursor: pointer;
-  display: block;
-  margin-bottom: 0.5rem;
-  position: relative;
 
   input[type=radio] {
     position: relative;
@@ -24,7 +22,6 @@
       transition: transform 0.2s cubic-bezier(0.3, 1, 0.5, 0.75);
       transform: scale(0, 0);
     }
-
 
     &:checked:before {
       transform: scale(1, 1);

@@ -1,48 +1,140 @@
-.checkbox {
-  background-color: #ffffd0;
-  cursor: pointer;
-  display: block;
-  margin-bottom: 0.5rem;
+@mixin atom-icon-check() {
+  @include font-icon();
+  @include atom-icon(1rem, '\f00c');
+  font-size: .7rem;
+}
+
+@mixin atom-label($size, $offset) {
+  display: inline-block;
   position: relative;
+  padding-left: $size + $offset;
+  height: 100%;
+  min-height: $size;
+  line-height: $size;
+}
+
+.checkbox {
+  @include atom-block();
 
   label {
+    @include atom-label(1rem, .5rem);
 
     &:before {
+      content: "";
       display: inline-block;
-
-      @include font-icon();
-      @include content-icon(1rem, ' ');
-      font-size: .8rem;
-
-      background: transparent;
-
+      position: absolute;
+      width: 1rem;
+      height: 1rem;
+      left: 0;
       border: 1px solid $checkbox-border-color;
       border-radius: $checkbox-border-radius;
+      background-color: #fff;
     }
 
     &:after {
-      width: 1rem;
-      height: 1rem;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: .75rem;
+      height: .75rem;
+      padding-left: .4rem;
+      padding-top: 0;
+      font-size: 1.6rem;
     }
   }
 
   input[type=checkbox] {
+    margin: 0;
+    padding: 0;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
     position: absolute;
-    left: -9999px;
+    opacity: 0;
 
-    &:checked + label:before {
-
-      content: "\f00c";
-      vertical-align: 1px;
-      letter-spacing: 5px;
+    &:focus:not(:disabled) + label:before,
+    &:hover:not(:disabled) + label:before {
+      border-color: $checkbox-color-active;
     }
 
-    &:disabled {
-      + label, + label:disabled {
-        color: #b8b8b8;
+    &:checked + label:after {
+      @include atom-icon-check();
+    }
+
+    &:disabled + label {
+      color: $checkbox-color-disabled;
+      &:before {
+        cursor: not-allowed
+      }
+      &:after {
+        color: $checkbox-color-disabled;
       }
     }
   }
 
 }
 
+.checkbox2 {
+  @include atom-block();
+
+  label {
+    @include atom-label(1rem, .5rem);
+    margin-bottom: 0;
+  }
+
+  input[type=checkbox] {
+    margin: 0;
+    padding: 0;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    position: absolute;
+    opacity: 0;
+
+    & + span:before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 1rem;
+      height: 1rem;
+      left: 0;
+      border-radius: $checkbox-border-radius;
+      border: 1px solid $checkbox-border-color;
+      background-color: #fff;
+    }
+
+    & + span:after {
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: .75rem;
+      height: .75rem;
+      padding-left: .4rem;
+      padding-top: 0;
+      font-size: 1.6rem;
+      color: $checkbox-color-active;
+    }
+
+    &:focus:not(:disabled) + span:before,
+    &:hover:not(:disabled) + span:before {
+      border-color: $checkbox-color-active;
+    }
+
+    &:checked + span:after {
+      @include atom-icon-check();
+    }
+
+    &:disabled + span {
+      color: $checkbox-color-disabled;
+      &:before {
+        cursor: not-allowed
+      }
+      &:after {
+        color: $checkbox-color-disabled;
+      }
+    }
+  }
+
+}
