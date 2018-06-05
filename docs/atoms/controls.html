@@ -777,59 +777,85 @@
 
     <h2>Checkbox</h2>
 
-    <div class="control">
+    <h3>(label + input)</h3>
+    <div class="checkbox">
         <input id="box1" type="checkbox"/>
-        <label for="box1"> Checkbox 1 (normal)</label>
+        <label for="box1">Checkbox</label>
     </div>
-    <div class="control">
-        <input id="box2" type="checkbox" checked="checked"/>
-        <label for="box2"> Checkbox 2 (checked)</label>
+    <div class="checkbox">
+        <input id="box2" type="checkbox" checked/>
+        <label for="box2">Checkbox (checked)</label>
     </div>
-    <div class="control">
+    <div class="checkbox">
         <input id="box3" type="checkbox" disabled/>
-        <label for="box3"> Checkbox 3 (disabled)</label>
+        <label for="box3">Checkbox (disabled)</label>
     </div>
-    <div class="control">
-        <input id="box4" type="checkbox" checked="checked" disabled/>
-        <label for="box4"> Checkbox 4 (checked & disabled)</label>
+    <div class="checkbox">
+        <input id="box4" type="checkbox" checked disabled/>
+        <label for="box4">Checkbox (checked & disabled)</label>
     </div>
 
+    <h3>(label > input & span)</h3>
+    <div class="checkbox2">
+        <label>
+            <input type="checkbox"/>
+            <span>Checkbox</span>
+        </label>
+    </div>
+    <div class="checkbox2">
+        <label>
+            <input type="checkbox" checked/>
+            <span>Checkbox (checked)</span>
+        </label>
+    </div>
+    <div class="checkbox2">
+        <label>
+            <input type="checkbox" disabled/>
+            <span>Checkbox (disabled)</span>
+        </label>
+    </div>
+    <div class="checkbox2">
+        <label>
+            <input type="checkbox" checked disabled/>
+            <span>Checkbox (checked & disabled)</span>
+        </label>
+    </div>
 
     <h2>Radio</h2>
 
-    <div class="control">
-        <input id="box5" class="radio" type="radio" name="radios"/>
+    <div class="radio">
+        <input id="box5" type="radio" name="radios"/>
         <label for="box5"> Radio</label>
     </div>
-    <div class="control">
-        <input id="box6" class="radio" type="radio" name="radios"/>
+    <div class="radio">
+        <input id="box6" type="radio" name="radios"/>
         <label for="box6"> Radio</label>
     </div>
 
     <br>
 
-    <div class="control">
-        <input id="box7" class="radio" type="radio" name="radios2" disabled/>
+    <div class="radio">
+        <input id="box7" type="radio" name="radios2" disabled/>
         <label for="box7"> Radio (disabled)</label>
     </div>
-    <div class="control">
-        <input id="box8" class="radio" type="radio" name="radios2" checked="checked" disabled/>
+    <div class="radio">
+        <input id="box8" type="radio" name="radios2" checked="checked" disabled/>
         <label for="box8"> Radio (checked & disabled)</label>
     </div>
 
     <br>
 
-    <div class="control">
-        <label><input type="radio" class="radio" checked name="box9"> Item 1</label>
+    <div class="radio">
+        <label><input type="radio" checked name="box9"> Item 1</label>
     </div>
-    <div class="control">
-        <label><input type="radio" class="radio" name="box9"> Item 2</label>
+    <div class="radio">
+        <label><input type="radio" name="box9"> Item 2</label>
     </div>
-    <div class="control">
-        <label><input type="radio" class="radio" name="box9"> Item 3</label>
+    <div class="radio">
+        <label><input type="radio" name="box9"> Item 3</label>
     </div>
-    <div class="control">
-        <label><input type="radio" class="radio" name="box9"> Item 4</label>
+    <div class="radio">
+        <label><input type="radio" name="box9"> Item 4</label>
     </div>
 
     <h2>Select</h2>
