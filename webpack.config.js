@@ -1,40 +1,22 @@
 const path = require('path');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const HtmlWebpackExcludeAssetsPlugin = require('html-webpack-exclude-assets-plugin');
-
-const devMode = process.env.NODE_ENV !== 'production';
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-    // mode: 'development',
-    devtool: 'source-map',
     entry: './src/ui.scss',
-    /*
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'index.js',
-        publicPath: '/dist'
-    },
-    */
     cache: false,
     module: {
         rules: [
             {
                 test: /\.scss$/,
-                use: [MiniCssExtractPlugin.loader,
-                    {
-                        loader: "css-loader", options: {
-                            sourceMap: true
-                        }
-                    }, {
-                        loader: "sass-loader", options: {
-                            sourceMap: true
-                        }
-                    }]
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    "css-loader",
+                    "sass-loader"
+                ]
             }
         ]
     },
@@ -51,38 +33,34 @@ module.exports = {
                         inline: false
                     }
                 }
-                /*
-                    assetNameRegExp: /\.optimize\.css$/g,
-                    cssProcessor: require('cssnano'),
-                    cssProcessorOptions: {
-                        discardComments: {
-                            removeAll: true
-                        }
-                    },
-                    canPrint: true
-                */
             })
-            /*
-            ,
-            new HtmlWebpackPlugin({
-                template: './src/index.html',
-                filename: './index.html'
-                //excludeAssets: [/index.js/]
-            }),
-            new HtmlWebpackExcludeAssetsPlugin()
-            */
         ]
     },
     plugins: [
+        new CleanWebpackPlugin(['dist'], { verbose: true }),
         new MiniCssExtractPlugin({
             filename: 'gedeonix-ui.css'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/index.html',
+            filename: './index.html',
+            /*
+            minify: {
+                "collapseWhitespace": true,
+                "minifyCSS": true,
+                "removeComments": true
+            }
+            */
         })
     ],
     devServer: {
-        //contentBase: path.join(__dirname, 'docs'),
-        //compress: true,
-        watchContentBase: true,
-        port: 9000
-    }
+        contentBase: path.join(__dirname, 'src'),
+        compress: true,
+        hot: false,
+        historyApiFallback: true,
+        progress: true,
+        watchContentBase: true
+    },
+    devtool: '#source-map'
 };
 
