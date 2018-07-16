@@ -49,8 +49,10 @@
 }
 
 .btn {
-  background-color: $background-color;
-  border: 1px solid map-get($btn-default,border);
+  //background-color: $background-color;
+  border-width: 1px;
+  border-style: solid;
+  //border: 1px solid map-get($btn-default,border);
   border-radius: $btn-radius; /*2em;*/
   color: $text-color;
   cursor: pointer;
@@ -70,39 +72,39 @@
   white-space: nowrap;
   /*width: auto;*/
   -webkit-appearance: none;
-  &:hover {
-    color: map-get($btn-default,color);
-    border-color: #a0a0a0;
-  }
-  &:focus, &.active {
-    /*border-color: #808080;*/
-    outline: none;
-  }
-  &.is-outline {
-    background-color: transparent;
-    color: $text-color;
-    &:hover {
-      background-color: map-get($btn-default,hover);
-      color: #ffffff;
-    }
-  }
+  //&:hover {
+  //  color: map-get($btn-default,color);
+  //  border-color: #a0a0a0;
+  //}
+  //&:focus, &.active {
+  //  /*border-color: #808080;*/
+  //  outline: none;
+  //}
+  //&.is-outline {
+  //  background-color: transparent;
+  //  color: $text-color;
+  //  &:hover {
+  //    background-color: map-get($btn-default,hover);
+  //    color: #ffffff;
+  //  }
+  //}
   &.is-flat {
-    border-color: transparent;
-    color: $text-color;
+  //  border-color: transparent;
+  //  color: $text-color;
     text-decoration: underline;
-    &:hover {
-      background-color: map-get($btn-default,hover);
-      color: #ffffff;
-    }
+  //  &:hover {
+  //    background-color: map-get($btn-default,hover);
+  //    color: #ffffff;
+  //  }
   }
-  &.is-clear {
-    background-color: transparent;
-    border-color: transparent;
-    color: $text-color;
-    &:hover {
-      color: map-get($btn-default,hover);
-    }
-  }
+  //&.is-clear {
+  //  background-color: transparent;
+  //  border-color: transparent;
+  //  color: $text-color;
+  //  &:hover {
+  //    color: map-get($btn-default,hover);
+  //  }
+  //}
 
   transition: all .2s ease-in-out;
 }
