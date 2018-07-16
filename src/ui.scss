@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
+@import '../node_modules/normalize.css/normalize.css';
+
 @import 'variables';
 @import 'mixin';
 
-@import 'base/normalize';
 @import 'base/reset';
 @import 'base/typography';
 
