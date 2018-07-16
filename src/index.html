@@ -10,15 +10,1062 @@
     <link rel="stylesheet" href="dist/gedeonix-ui.css">
 </head>
 <body>
-<h1>Test</h1>
-<button class="btn is-danger">Cancel</button>
-<button class="btn is-primary">Ok</button>
 
-<div class="row">
-    <div class="col">1</div>
-    <div class="col">2</div>
-    <div class="col">3</div>
-</div>
+<main class="main container">
+    <h1>Controls</h1>
+
+    <h2>Button</h2>
+    <button class="btn">&lt;button&gt;</button>
+    <input type="button" class="btn" value="&lt;input&gt;"/>
+    <a class="btn">&lt;a&gt;</a>
+    <div class="btn">&lt;div&gt;</div>
+    <span class="btn">&lt;span&gt;</span>
+    <label class="btn">&lt;label&gt;</label>
+
+    <h3>Block</h3>
+    <button class="btn is-block">&lt;button&gt;</button>
+    <input type="button" class="btn is-block" value="&lt;input&gt;"/>
+    <a class="btn is-block">&lt;a&gt;</a>
+    <div class="btn is-block">&lt;div&gt;</div>
+    <span class="btn is-block">&lt;span&gt;</span>
+    <label class="btn is-block">&lt;label&gt;</label>
+
+    <h3>Colors</h3>
+    <button class="btn">Default</button>
+    <button class="btn btn-default">Default</button>
+    <button class="btn btn-primary">Primary</button>
+    <button class="btn btn-success">Success</button>
+    <button class="btn btn-info">Info</button>
+    <button class="btn btn-warning">Warning</button>
+    <button class="btn btn-danger">Danger</button>
+    <button class="btn btn-light">Light</button>
+    <button class="btn btn-dark">Dark</button>
+
+    <hr>
+    <button class="btn">Default</button>
+    <button class="btn is-default">Default</button>
+    <button class="btn is-primary">Primary</button>
+    <button class="btn is-success">Success</button>
+    <button class="btn is-info">Info</button>
+    <button class="btn is-warning">Warning</button>
+    <button class="btn is-danger">Danger</button>
+    <button class="btn is-light">Light</button>
+    <button class="btn is-dark">Dark</button>
+
+    <h3>Theme</h3>
+    <h4>only (theme-simple)</h4>
+    <button class="btn btn-default">Default</button>
+    <button class="btn btn-secondary">Secondary</button>
+
+    <h3>Round</h3>
+    <button class="btn is-round">Default</button>
+    <button class="btn is-primary is-round">Primary</button>
+    <button class="btn is-success is-round">Success</button>
+    <button class="btn is-info is-round">Info</button>
+    <button class="btn is-warning is-round">Warning</button>
+    <button class="btn is-danger is-round">Danger</button>
+    <button class="btn is-light is-round">Light</button>
+    <button class="btn is-dark is-round">Dark</button>
+
+    <h3>Outline</h3>
+    <button class="btn is-outline">Default</button>
+    <button class="btn is-primary is-outline">Primary</button>
+    <button class="btn is-success is-outline">Success</button>
+    <button class="btn is-info is-outline">Info</button>
+    <button class="btn is-warning is-outline">Warning</button>
+    <button class="btn is-danger is-outline">Danger</button>
+    <button class="btn is-light is-outline">Light</button>
+    <button class="btn is-dark is-outline">Dark</button>
+
+    <h3>Outline & is-thick</h3>
+    <button class="btn is-outline is-thick">Default</button>
+    <button class="btn is-primary is-outline is-thick">Primary</button>
+    <button class="btn is-success is-outline is-thick">Success</button>
+    <button class="btn is-info is-outline is-thick">Info</button>
+    <button class="btn is-warning is-outline is-thick">Warning</button>
+    <button class="btn is-danger is-outline is-thick">Danger</button>
+    <button class="btn is-light is-outline is-thick">Light</button>
+    <button class="btn is-dark is-outline is-thick">Dark</button>
+
+    <h3>Outline, round & is-thick</h3>
+    <button class="btn is-outline is-round is-thick">Default</button>
+    <button class="btn is-primary is-outline is-round is-thick">Primary</button>
+    <button class="btn is-success is-outline is-round is-thick">Success</button>
+    <button class="btn is-info is-outline is-round is-thick">Info</button>
+    <button class="btn is-warning is-outline is-round is-thick">Warning</button>
+    <button class="btn is-danger is-outline is-round is-thick">Danger</button>
+    <button class="btn is-light is-outline is-round is-thick">Light</button>
+    <button class="btn is-dark is-outline is-round is-thick">Dark</button>
+
+    <h3>Flat</h3>
+    <button class="btn is-flat">Default</button>
+    <button class="btn is-flat is-primary">Primary</button>
+    <button class="btn is-flat is-success">Success</button>
+    <button class="btn is-flat is-info">Info</button>
+    <button class="btn is-flat is-warning">Warning</button>
+    <button class="btn is-flat is-danger">Danger</button>
+    <button class="btn is-flat is-light">Light</button>
+    <button class="btn is-flat is-dark">Dark</button>
+
+    <h3>Clear</h3>
+    <button class="btn is-clear">Default</button>
+    <button class="btn is-clear is-primary">Primary</button>
+    <button class="btn is-clear is-success">Success</button>
+    <button class="btn is-clear is-info">Info</button>
+    <button class="btn is-clear is-warning">Warning</button>
+    <button class="btn is-clear is-danger">Danger</button>
+    <button class="btn is-clear is-light">Light</button>
+    <button class="btn is-clear is-dark">Dark</button>
+
+    <h3>Reset radius (reset-radius, reset-left-radius, reset-right-radius)</h3>
+    <button class="btn reset-radius">Default</button>
+    <button class="btn is-primary reset-radius">Primary</button>
+    <button class="btn is-success reset-radius">Success</button>
+    <button class="btn is-info reset-radius">Info</button>
+    <button class="btn is-warning reset-radius">Warning</button>
+    <button class="btn is-danger reset-radius">Danger</button>
+    <button class="btn is-light reset-radius">Light</button>
+    <button class="btn is-dark reset-radius">Dark</button>
+
+    <h3>Active (on focus)</h3>
+    <button class="btn active">Default</button>
+    <button class="btn is-primary active">Primary</button>
+    <button class="btn is-success active">Success</button>
+    <button class="btn is-info active">Info</button>
+    <button class="btn is-warning active">Warning</button>
+    <button class="btn is-danger active">Danger</button>
+    <button class="btn is-light active">Light</button>
+    <button class="btn is-dark active">Dark</button>
+
+    <h3>Size</h3>
+    <button class="btn btn-xs">Extra small</button>
+    <button class="btn btn-sm">Small</button>
+    <button class="btn">Normal</button>
+    <button class="btn btn-md">Middle</button>
+    <button class="btn btn-lg">Large</button>
+
+    <h3>Width</h3>
+    <button class="btn width-1">1</button>
+    <br><br>
+    <button class="btn width-2">2</button>
+    <br><br>
+    <button class="btn width-3">3</button>
+    <br><br>
+    <button class="btn width-4">4</button>
+    <br><br>
+    <button class="btn width-5">5</button>
+    <br><br>
+    <button class="btn width-6">6</button>
+    <br><br>
+    <button class="btn width-7">7</button>
+    <br><br>
+    <button class="btn width-8">8</button>
+    <br><br>
+    <button class="btn width-9">9</button>
+    <br><br>
+    <button class="btn width-10">10</button>
+    <br><br>
+    <button class="btn width-11">11</button>
+    <br><br>
+    <button class="btn width-12">12</button>
+    <br><br>
+
+    <h3>Icon & text</h3>
+    <button class="btn"><i class="fas fa-check"></i> Default</button>
+    <button class="btn is-primary"><i class="fas fa-check"></i> Primary</button>
+    <button class="btn is-success"><i class="fas fa-check"></i> Success</button>
+    <button class="btn is-info"><i class="fas fa-check"></i> Info</button>
+    <button class="btn is-warning"><i class="fas fa-check"></i> Warning</button>
+    <button class="btn is-danger"><i class="fas fa-check"></i> Danger</button>
+    <button class="btn is-light"><i class="fas fa-check"></i> Light</button>
+    <button class="btn is-dark"><i class="fas fa-check"></i> Dark</button>
+    <br>
+    <br>
+    <button class="btn btn-sm is-primary">Add <i class="fas fa-plus"></i></button>
+    <button class="btn btn-sm is-success">Save <i class="fas fa-save"></i></button>
+    <button class="btn btn-sm is-danger">Remove <i class="fas fa-minus"></i></button>
+    <button class="btn btn-sm is-info">Options <i class="fas fa-chevron-down"></i></button>
+    <button class="btn btn-sm is-warning is-outline is-thick">Print <i class="fas fa-print"></i></button>
+    <button class="btn btn-sm is-dark is-outline is-round">Download <i class="fas fa-download"></i></button>
+
+
+    <h3>Icon spin & pulse</h3>
+    <button class="btn"><i class="fas fa-spin fa-circle-o-notch"></i> Circle</button>
+    <button class="btn"><i class="fas fa-spin fa-cog"></i> Cog</button>
+    <button class="btn"><i class="fas fa-spin fa-sync"></i> Refresh</button>
+    <button class="btn"><i class="fas fa-spin fa-spinner"></i> Spinner</button>
+    <br>
+    <br>
+    <button class="btn"><i class="fas fa-pulse fa-circle-o-notch"></i> Circle</button>
+    <button class="btn"><i class="fas fa-pulse fa-cog"></i> Cog</button>
+    <button class="btn"><i class="fas fa-pulse fa-sync"></i> Refresh</button>
+    <button class="btn"><i class="fas fa-pulse fa-spinner"></i> Spinner</button>
+
+    <h3>Only icon</h3>
+    <button class="btn"><i class="fas fa-check"></i></button>
+    <button class="btn is-primary"><i class="fas fa-check"></i></button>
+    <button class="btn is-success"><i class="fas fa-check"></i></button>
+    <button class="btn is-info"><i class="fas fa-check"></i></button>
+    <button class="btn is-warning"><i class="fas fa-check"></i></button>
+    <button class="btn is-danger"><i class="fas fa-check"></i></button>
+    <button class="btn is-danger"><i class="fas fa-check"></i></button>
+    <button class="btn is-dark"><i class="fas fa-check"></i></button>
+
+    <h3>Square</h3>
+    <button class="btn is-square"><i class="fas fa-check"></i></button>
+    <button class="btn is-square is-primary"><i class="fas fa-check"></i></button>
+    <button class="btn is-square is-success"><i class="fas fa-check"></i></button>
+    <button class="btn is-square is-info"><i class="fas fa-check"></i></button>
+    <button class="btn is-square is-warning"><i class="fas fa-check"></i></button>
+    <button class="btn is-square is-danger"><i class="fas fa-check"></i></button>
+    <button class="btn is-square is-dark"><i class="fas fa-check"></i></button>
+    <br>
+    <br>
+    <button class="btn is-square is-xs"><i class="fas fa-check"></i></button>
+    <button class="btn is-square is-sm"><i class="fas fa-check"></i></button>
+    <button class="btn is-square"><i class="fas fa-check"></i></button>
+    <button class="btn is-square is-md"><i class="fas fa-check"></i></button>
+    <button class="btn is-square is-lg"><i class="fas fa-check"></i></button>
+
+    <h3>Circle</h3>
+    <button class="btn is-circle"><i class="fas fa-check"></i></button>
+    <button class="btn is-circle is-primary"><i class="fas fa-check"></i></button>
+    <button class="btn is-circle is-success"><i class="fas fa-check"></i></button>
+    <button class="btn is-circle is-info"><i class="fas fa-check"></i></button>
+    <button class="btn is-circle is-warning"><i class="fas fa-check"></i></button>
+    <button class="btn is-circle is-danger"><i class="fas fa-check"></i></button>
+    <button class="btn is-circle is-dark"><i class="fas fa-check"></i></button>
+    <br>
+    <br>
+    <button class="btn is-circle is-xs"><i class="fas fa-check"></i></button>
+    <button class="btn is-circle is-sm"><i class="fas fa-check"></i></button>
+    <button class="btn is-circle"><i class="fas fa-check"></i></button>
+    <button class="btn is-circle is-md"><i class="fas fa-check"></i></button>
+    <button class="btn is-circle is-lg"><i class="fas fa-check"></i></button>
+    <br><br>
+    <button class="btn is-circle is-info"><i class="far fa-thumbs-up"></i></button>
+    <button class="btn is-circle is-info"><i class="far fa-thumbs-down"></i></button>
+
+    <h3>Misc</h3>
+    <button class="btn"><i class="fas fa-angle-down"></i></button>
+
+    <h3>Social</h3>
+    <button class="btn twitter"><i class="fab fa-twitter"></i> Twitter</button>
+    <button class="btn facebook"><i class="fab fa-facebook"></i> Facebook</button>
+    <button class="btn google-plus"><i class="fab fa-google-plus"></i> Google Plus</button>
+    <button class="btn github"><i class="fab fa-github"></i> Github</button>
+    <button class="btn rss"><i class="fas fa-rss"></i> RSS</button>
+    <br>
+    <br>
+    <button class="btn twitter is-round"><i class="fab fa-twitter"></i> Twitter</button>
+    <button class="btn facebook is-round"><i class="fab fa-facebook"></i> Facebook</button>
+    <button class="btn google-plus is-round"><i class="fab fa-google-plus"></i> Google Plus</button>
+    <button class="btn github is-round"><i class="fab fa-github"></i> Github</button>
+    <button class="btn rss is-round"><i class="fas fa-rss"></i> RSS</button>
+    <br>
+    <br>
+    <button class="btn twitter is-circle"><i class="fab fa-twitter"></i></button>
+    <button class="btn facebook is-circle"><i class="fab fa-facebook"></i></button>
+    <button class="btn google-plus is-circle"><i class="fab fa-google-plus"></i></button>
+    <button class="btn github is-circle"><i class="fab fa-github"></i></button>
+    <button class="btn rss is-circle"><i class="fas fa-rss"></i></button>
+    <br>
+    <br>
+    <button class="btn twitter is-square"><i class="fab fa-twitter"></i></button>
+    <button class="btn facebook is-square"><i class="fab fa-facebook"></i></button>
+    <button class="btn google-plus is-square"><i class="fab fa-google-plus"></i></button>
+    <button class="btn github is-square"><i class="fab fa-github"></i></button>
+    <button class="btn rss is-square"><i class="fas fa-rss"></i></button>
+
+    <h3>Button & is-big</h3>
+    <button class="btn is-square is-big"><i class="fas fa-tachometer-alt fa-3x"></i><br>Dashboard</button>
+    <button class="btn is-square is-big"><i class="fas fa-users fa-3x"></i><br>Users</button>
+    <button class="btn is-square is-big"><i class="fas fa-calendar fa-3x"></i><br>CRM</button>
+    <button class="btn is-square is-big"><i class="fas fa-archive fa-3x"></i><br>Archive</button>
+    <button class="btn is-square is-big"><i class="fas fa-chart-bar fa-3x"></i><br>Reports</button>
+    <button class="btn is-square is-big"><i class="fas fa-cog fa-3x"></i><br>Settings</button>
+    <br>
+    <br>
+    <button class="btn is-square is-primary is-big"><i class="fas fa-tachometer-alt fa-3x"></i><br>Dashboard</button>
+    <button class="btn is-square is-success is-big"><i class="fas fa-users fa-3x"></i><br>Users</button>
+    <button class="btn is-square is-info is-big"><i class="fas fa-calendar fa-3x"></i><br>CRM</button>
+    <button class="btn is-square is-warning is-big"><i class="fas fa-archive fa-3x"></i><br>Archive</button>
+    <button class="btn is-square is-danger is-big"><i class="fas fa-chart-bar fa-3x"></i><br>Reports</button>
+    <button class="btn is-square is-dark is-big"><i class="fas fa-cog fa-3x"></i><br>Settings</button>
+
+    <h3>Button & is-2x, is-3x, is-4x, is-5x</h3>
+    <button class="btn is-square is-2x"><i class="fas fa-users fa-2x"></i><br>Users</button>
+    <button class="btn is-square is-3x"><i class="fas fa-calendar fa-3x"></i><br>CRM</button>
+    <button class="btn is-square is-4x"><i class="fas fa-archive fa-4x"></i><br>Archive</button>
+    <button class="btn is-square is-5x"><i class="fas fa-chart-bar fa-5x"></i><br>Reports</button>
+
+    <h3>Disabled (disabled, is-outline, is-flat, is-clear)</h3>
+    <button class="btn" disabled>Default</button>
+    <button class="btn is-primary" disabled>Primary</button>
+    <button class="btn is-success" disabled>Success</button>
+    <button class="btn is-info" disabled>Info</button>
+    <button class="btn is-warning" disabled>Warning</button>
+    <button class="btn is-danger" disabled>Danger</button>
+    <button class="btn is-light" disabled>Light</button>
+    <button class="btn is-dark" disabled>Dark</button>
+    <br>
+    <br>
+    <button class="btn is-outline" disabled>Default</button>
+    <button class="btn is-primary is-outline" disabled>Primary</button>
+    <button class="btn is-success is-outline" disabled>Success</button>
+    <button class="btn is-info is-outline" disabled>Info</button>
+    <button class="btn is-warning is-outline" disabled>Warning</button>
+    <button class="btn is-danger is-outline" disabled>Danger</button>
+    <button class="btn is-light is-outline" disabled>Light</button>
+    <button class="btn is-dark is-outline" disabled>Dark</button>
+    <br>
+    <br>
+    <button class="btn is-flat" disabled>Default</button>
+    <button class="btn is-primary is-flat" disabled>Primary</button>
+    <button class="btn is-success is-flat" disabled>Success</button>
+    <button class="btn is-info is-flat" disabled>Info</button>
+    <button class="btn is-warning is-flat" disabled>Warning</button>
+    <button class="btn is-danger is-flat" disabled>Danger</button>
+    <button class="btn is-light is-flat" disabled>Light</button>
+    <button class="btn is-dark is-flat" disabled>Dark</button>
+    <br>
+    <br>
+    <button class="btn is-clear" disabled>Default</button>
+    <button class="btn is-primary is-clear" disabled>Primary</button>
+    <button class="btn is-success is-clear" disabled>Success</button>
+    <button class="btn is-info is-clear" disabled>Info</button>
+    <button class="btn is-warning is-clear" disabled>Warning</button>
+    <button class="btn is-danger is-clear" disabled>Danger</button>
+    <button class="btn is-light is-clear" disabled>Light</button>
+    <button class="btn is-dark is-clear" disabled>Dark</button>
+
+    <h3>Mix style with is-shadow</h3>
+
+    <button class="btn is-shadow">Button</button>
+    <button class="btn is-flat is-shadow">Button</button>
+    <button class="btn is-outline is-shadow">Button</button>
+    <button class="btn is-shadow" disabled>Button</button>
+    <button class="btn is-thick is-shadow">Button</button>
+    <button class="btn is-clear is-shadow">Button</button>
+    <button class="btn is-round is-shadow">Button</button>
+    <button class="btn is-circle is-shadow">A</button>
+    <button class="btn is-square is-shadow">A</button>
+    <br>
+    <br>
+    <button class="btn is-shadow-2x">Button</button>
+    <button class="btn is-flat is-shadow-2x">Button</button>
+    <button class="btn is-outline is-shadow-2x">Button</button>
+    <button class="btn is-shadow-2x" disabled>Button</button>
+    <button class="btn is-thick is-shadow-2x">Button</button>
+    <button class="btn is-clear is-shadow-2x">Button</button>
+    <button class="btn is-round is-shadow-2x">Button</button>
+    <button class="btn is-circle is-shadow-2x">A</button>
+    <button class="btn is-square is-shadow-2x">A</button>
+    <br>
+    <br>
+    <button class="btn is-shadow-4x">Button</button>
+    <button class="btn is-flat is-shadow-4x">Button</button>
+    <button class="btn is-outline is-shadow-4x">Button</button>
+    <button class="btn is-shadow-4x" disabled>Button</button>
+    <button class="btn is-thick is-shadow-4x">Button</button>
+    <button class="btn is-clear is-shadow-4x">Button</button>
+    <button class="btn is-round is-shadow-4x">Button</button>
+    <button class="btn is-circle is-shadow-4x">A</button>
+    <button class="btn is-square is-shadow-4x">A</button>
+
+    <h2>Input</h2>
+
+    <input type="text" placeholder="input...">
+
+    <h3>Size</h3>
+    <input type="text" class="is-sm" value="sm">
+    <br>
+    <br>
+    <input type="text" value="normal">
+    <br>
+    <br>
+    <input type="text" class="is-md" value="md">
+    <br>
+    <br>
+    <input type="text" class="is-lg" value="lg">
+
+    <h3>Width</h3>
+    <input class="width-1" type="text" placeholder="width-1"><br><br>
+    <input class="width-2" type="text" placeholder="width-2"><br><br>
+    <input class="width-3" type="text" placeholder="width-3"><br><br>
+    <input class="width-4" type="text" placeholder="width-4"><br><br>
+    <input class="width-5" type="text" placeholder="width-5"><br><br>
+    <input class="width-6" type="text" placeholder="width-6"><br><br>
+    <input class="width-7" type="text" placeholder="width-7"><br><br>
+    <input class="width-8" type="text" placeholder="width-8"><br><br>
+    <input class="width-9" type="text" placeholder="width-9"><br><br>
+    <input class="width-10" type="text" placeholder="width-10"><br><br>
+    <input class="width-11" type="text" placeholder="width-11"><br><br>
+    <input class="width-12" type="text" placeholder="width-12">
+
+    <h3>Background is-transparent</h3>
+    <input class="is-transparent" type="text" placeholder="input...">
+
+    <h3>Border color</h3>
+    <input type="text" placeholder="default">
+    <br>
+    <br>
+    <input class="is-primary" type="text" placeholder="primary">
+    <br>
+    <br>
+    <input class="is-success" type="text" placeholder="success">
+    <br>
+    <br>
+    <input class="is-info" type="text" placeholder="info">
+    <br>
+    <br>
+    <input class="is-warning" type="text" placeholder="warning">
+    <br>
+    <br>
+    <input class="is-danger" type="text" placeholder="danger">
+    <br>
+    <br>
+    <input class="is-light" type="text" placeholder="light">
+    <br>
+    <br>
+    <input class="is-dark" type="text" placeholder="dark">
+
+    <h3>Border is-thick</h3>
+    <input class="is-thick" type="text" placeholder="input...">
+    <br>
+    <br>
+    <input class="is-primary is-thick" type="text" placeholder="input...">
+    <br>
+    <br>
+    <input class="is-success is-thick" type="text" placeholder="input...">
+    <br>
+    <br>
+    <input class="is-info is-thick" type="text" placeholder="input...">
+    <br>
+    <br>
+    <input class="is-warning is-thick" type="text" placeholder="input...">
+    <br>
+    <br>
+    <input class="is-danger is-thick" type="text" placeholder="input...">
+    <br>
+    <br>
+    <input class="is-light is-thick" type="text" placeholder="input...">
+    <br>
+    <br>
+    <input class="is-dark is-thick" type="text" placeholder="input...">
+
+    <h3>Type</h3>
+    <input type="text" placeholder="text...">
+    <br>
+    <br>
+    <input type="email" placeholder="email...">
+    <br>
+    <br>
+    <input type="search" placeholder="search...">
+
+    <h3>Label & Input</h3>
+    <label>Text:
+        <input type="text" value="text...">
+    </label>
+    <br>
+    <br>
+
+    <label>Text: <span class="required">*</span>
+        <input type="text" value="text...">
+    </label>
+    <br>
+    <br>
+
+    <label>Text:
+        <input type="text" value="text...">
+        <span class="description">Description...</span>
+    </label>
+    <br>
+    <br>
+
+    <label>Text: <span class="success">success</span>
+        <input class="success" type="text" value="text...">
+    </label>
+    <br>
+    <br>
+
+    <label>Text: <span class="error">error</span>
+        <input class="error" type="text" value="text...">
+    </label>
+
+    <h3>Icon addon</h3>
+
+
+    <div class="icon-addon">
+        <i class="fas fa-search is-xs"></i>
+        <input class="is-xs" type="search" placeholder="search...">
+    </div>
+    <br>
+    <div class="icon-addon">
+        <i class="fas fa-search is-sm"></i>
+        <input class="is-sm" type="search" placeholder="search...">
+    </div>
+    <br>
+    <div class="icon-addon">
+        <i class="fas fa-search"></i>
+        <input class="search" type="search" placeholder="search...">
+    </div>
+    <br>
+    <div class="icon-addon">
+        <i class="fas fa-search is-md"></i>
+        <input class="is-md" type="search" placeholder="search...">
+    </div>
+    <br>
+    <div class="icon-addon">
+        <i class="fas fa-search is-lg"></i>
+        <input class="is-lg" type="search" placeholder="search...">
+    </div>
+    <br>
+
+    <div class="icon-addon">
+        <i class="fas fa-search is-xs"></i>
+        <input class="is-round is-xs" type="search" placeholder="search...">
+    </div>
+    <br>
+    <div class="icon-addon">
+        <i class="fas fa-search is-sm"></i>
+        <input class="is-round is-sm" type="search" placeholder="search...">
+    </div>
+    <br>
+    <div class="icon-addon">
+        <i class="fas fa-search"></i>
+        <input class="is-round search" type="search" placeholder="search...">
+    </div>
+    <br>
+    <div class="icon-addon">
+        <i class="fas fa-search is-md"></i>
+        <input class="is-round is-md" type="search" placeholder="search...">
+    </div>
+    <br>
+    <div class="icon-addon">
+        <i class="fas fa-search is-lg"></i>
+        <input class="is-round is-lg" type="search" placeholder="search...">
+    </div>
+    <br>
+
+    <!--
+    <div class="icon-addon">
+        <i class="fas fa-cog"></i>
+        <select>
+            <option value="">Select</option>
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+            <option value="superuser">Super User</option>
+        </select>
+    </div>
+    -->
+
+    <h2>Link</h2>
+    <a href="http://gedeonix.pl">link</a>
+
+    <h2>Group</h2>
+
+    <h3>Button group</h3>
+    <div class="group">
+        <button class="btn"><i class="fas fa-file"></i></button>
+        <button class="btn"><i class="fas fa-save"></i></button>
+        <button class="btn"><i class="fas fa-print"></i></button>
+    </div>
+
+    <div class="group">
+        <button class="btn"><i class="fas fa-cut"></i></button>
+        <button class="btn"><i class="fas fa-copy"></i></button>
+        <button class="btn"><i class="fas fa-paste"></i></button>
+    </div>
+
+    <div class="group">
+        <button class="btn"><i class="fas fa-cog"></i></button>
+        <button class="btn"><i class="fas fa-calendar"></i></button>
+        <button class="btn"><i class="fas fa-archive"></i></button>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="group is-center">
+        <button class="btn is-primary">A</button>
+        <button class="btn is-success">B</button>
+        <button class="btn is-danger">C</button>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="group">
+        <button class="btn is-primary">A</button>
+        <button class="btn is-success">B</button>
+        <button class="btn is-danger">C</button>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="group is-block">
+        <button class="btn is-primary">A</button>
+        <button class="btn is-success">B</button>
+        <button class="btn is-danger is-block">C</button>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="group is-block">
+        <button class="btn is-primary is-block">A</button>
+        <button class="btn is-success is-block">B</button>
+        <button class="btn is-danger is-block">C</button>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="group">
+        <button class="btn">Save</button>
+        <button class="btn"><i class="fas fa-angle-down"></i></button>
+    </div>
+
+    <h3>Label group</h3>
+
+    <div class="group">
+        <span class="group-label">Label1</span>
+        <span class="group-label">Label2</span>
+        <span class="group-label">Label3</span>
+    </div>
+
+    <h3>Input group</h3>
+
+    <div class="group width-4">
+        <span class="group-label">http://</span>
+        <input type="text" placeholder="Input">
+        <button class="btn is-success">Go!</button>
+    </div>
+    <br>
+    <br>
+
+    <div class="group width-4">
+        <input type="text" placeholder="Newsletter">
+        <button class="btn is-primary">Subscription</button>
+    </div>
+    <br>
+    <br>
+
+    <div class="group is-block">
+        <input type="text" placeholder="Newsletter">
+        <button class="btn is-primary">Subscription</button>
+    </div>
+    <br>
+    <br>
+
+    <div class="group is-block">
+        <input type="text" placeholder="Search...">
+        <button class="btn"><i class="fas fa-search"></i></button>
+    </div>
+    <br>
+    <br>
+
+    <div class="group">
+        <button class="btn"><i class="fas fa-chevron-left"></i></button>
+        <input type="text" placeholder="...">
+        <button class="btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <br>
+    <br>
+
+    <div class="group">
+        <input type="date" placeholder="">
+        <button class="btn"><i class="fas fa-calendar"></i></button>
+    </div>
+    <br>
+    <br>
+
+    <div class="group">
+        <span class="group-label">Info:</span>
+        <textarea></textarea>
+    </div>
+    <br>
+    <br>
+
+    <h3>Reset radius (reset-right-radius & reset-left-radius)</h3>
+
+    <input class="is-round reset-right-radius" value="Input"></input>
+    <button class="btn is-round reset-left-radius">Button</button>
+
+    <h3>Reset radius and group</h3>
+    <input class="is-round reset-right-radius" value="Input"/>
+    <button class="btn is-dark is-round reset-left-radius"><i class="fas fa-search"></i></button>
+    <br>
+    <br>
+    <div class="group">
+        <input class="is-round reset-right-radius" value="Input"/>
+        <button class="btn is-dark is-round reset-left-radius"><i class="fas fa-search"></i></button>
+    </div>
+
+    <h3>Vertical</h3>
+    <div class="group vertical">
+        <button class="btn active">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+    </div>
+
+    <h3>Vertical & block</h3>
+
+    <div class="group vertical is-block">
+        <button class="btn">A</button>
+        <button class="btn">B</button>
+        <button class="btn">C</button>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="group vertical is-block">
+        <button class="btn is-primary">A</button>
+        <button class="btn is-success">B</button>
+        <button class="btn is-danger is-block">C</button>
+    </div>
+
+    <h3>Group in grid</h3>
+    <div class="row">
+        <div class="col-3">
+            <div class="group vertical is-block">
+                <button class="btn active">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+            </div>
+        </div>
+        <div class="col">
+            <div class="group vertical is-block">
+                <button class="btn active">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+            </div>
+        </div>
+    </div>
+
+    <h2>Checkbox</h2>
+
+    <h3>(label + input)</h3>
+    <div class="checkbox">
+        <input id="box1" type="checkbox"/>
+        <label for="box1">Checkbox</label>
+    </div>
+    <div class="checkbox">
+        <input id="box2" type="checkbox" checked/>
+        <label for="box2">Checkbox (checked)</label>
+    </div>
+    <div class="checkbox">
+        <input id="box3" type="checkbox" disabled/>
+        <label for="box3">Checkbox (disabled)</label>
+    </div>
+    <div class="checkbox">
+        <input id="box4" type="checkbox" checked disabled/>
+        <label for="box4">Checkbox (checked & disabled)</label>
+    </div>
+
+    <h3>(label > input & span)</h3>
+    <div class="checkbox2">
+        <label>
+            <input type="checkbox"/>
+            <span>Checkbox</span>
+        </label>
+    </div>
+    <div class="checkbox2">
+        <label>
+            <input type="checkbox" checked/>
+            <span>Checkbox (checked)</span>
+        </label>
+    </div>
+    <div class="checkbox2">
+        <label>
+            <input type="checkbox" disabled/>
+            <span>Checkbox (disabled)</span>
+        </label>
+    </div>
+    <div class="checkbox2">
+        <label>
+            <input type="checkbox" checked disabled/>
+            <span>Checkbox (checked & disabled)</span>
+        </label>
+    </div>
+
+    <h2>Radio</h2>
+
+    <div class="radio">
+        <input id="box5" type="radio" name="radios"/>
+        <label for="box5"> Radio</label>
+    </div>
+    <div class="radio">
+        <input id="box6" type="radio" name="radios"/>
+        <label for="box6"> Radio</label>
+    </div>
+
+    <br>
+
+    <div class="radio">
+        <input id="box7" type="radio" name="radios2" disabled/>
+        <label for="box7"> Radio (disabled)</label>
+    </div>
+    <div class="radio">
+        <input id="box8" type="radio" name="radios2" checked="checked" disabled/>
+        <label for="box8"> Radio (checked & disabled)</label>
+    </div>
+
+    <br>
+
+    <div class="radio">
+        <label><input type="radio" checked name="box9"> Item 1</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="box9"> Item 2</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="box9"> Item 3</label>
+    </div>
+    <div class="radio">
+        <label><input type="radio" name="box9"> Item 4</label>
+    </div>
+
+    <h2>Select</h2>
+    <select>
+        <option value="user">User</option>
+        <option value="admin">Admin</option>
+        <option value="superuser">Super User</option>
+    </select>
+
+    <h2>Textarea</h2>
+    <textarea id="description" placeholder="description..."></textarea>
+
+    <h2>Close button</h2>
+
+    <div>
+        <span class="close is-xs"></span>
+        <span class="close is-sm"></span>
+        <span class="close"></span>
+        <span class="close is-md"></span>
+        <span class="close is-lg"></span>
+    </div>
+    <br>
+
+    <div>
+        <span class="close is-square is-xs"></span>
+        <span class="close is-square  is-sm"></span>
+        <span class="close is-square"></span>
+        <span class="close is-square is-md"></span>
+        <span class="close is-square is-lg"></span>
+    </div>
+    <br>
+
+    <div>
+        <span class="close is-circle is-xs"></span>
+        <span class="close is-circle is-sm"></span>
+        <span class="close is-circle"></span>
+        <span class="close is-circle is-md"></span>
+        <span class="close is-circle is-lg"></span>
+    </div>
+
+    <br>
+    <div>
+        <span class="close is-success"></span>
+        <span class="close is-primary"></span>
+        <span class="close is-info"></span>
+        <span class="close is-warning"></span>
+        <span class="close is-danger"></span>
+        <span class="close is-dark"></span>
+    </div>
+
+    <br>
+
+    <div class="is-success is-text-right">
+        <span class="close"/></div>
+    </div>
+    <br>
+
+    <div class="is-warning is-text-right">
+        <span class="close is-square"/></div>
+    </div>
+    <br>
+
+    <div class="is-danger is-text-right">
+        <span class="close is-circle"/></div>
+    </div>
+
+    <h2>Label</h2>
+    <span class="label">Default</span>
+    <span class="label is-primary">Primary</span>
+    <span class="label is-success">Success</span>
+    <span class="label is-info">Info</span>
+    <span class="label is-warning">Warning</span>
+    <span class="label is-danger">Danger</span>
+    <span class="label is-light">Light</span>
+    <span class="label is-dark">Dark</span>
+
+    <!--
+    <h2>Triangle (TODO)</h2>
+    <div class="triangle"></div>
+    <br>
+    <div class="triangle-up"></div>
+    <br>
+    <div class="triangle-down"></div>
+    <br>
+    <div class="triangle-left"></div>
+    <br>
+    <div class="triangle-right"></div>
+    -->
+
+    <h2>Tag</h2>
+    <span class="tag">Default</span>
+    <span class="tag is-primary">Primary</span>
+    <span class="tag is-success">Success</span>
+    <span class="tag is-info">Info</span>
+    <span class="tag is-warning">Warning</span>
+    <span class="tag is-danger">Danger</span>
+    <span class="tag is-light">Light</span>
+    <span class="tag is-dark">Dark</span>
+
+    <h2>Badge</h2>
+    <div>
+        <span class="badge">Default</span>
+        <span class="badge is-primary">Primary</span>
+        <span class="badge is-success">Success</span>
+        <span class="badge is-info">Info</span>
+        <span class="badge is-warning">Warning</span>
+        <span class="badge is-danger">Danger</span>
+        <span class="badge is-light">Light</span>
+        <span class="badge is-dark">Dark</span>
+    </div>
+    <br>
+
+    <div>
+        <button class="btn">Default <span class="badge">100+</span></button>
+        <button class="btn is-primary">Primary <span class="badge">100+</span></button>
+        <button class="btn is-success">Success <span class="badge">100+</span></button>
+        <button class="btn is-info">Info <span class="badge">100+</span></button>
+        <button class="btn is-warning">Warning <span class="badge">100+</span></button>
+        <button class="btn is-danger">Danger <span class="badge">100+</span></button>
+        <button class="btn is-light">Light <span class="badge">100+</span></button>
+        <button class="btn is-dark">Dark <span class="badge">100+</span></button>
+    </div>
+    <br>
+
+    <div>
+        <button class="btn">Default <span class="badge">100+</span></button>
+        <button class="btn">Primary <span class="badge is-primary">100+</span></button>
+        <button class="btn">Success <span class="badge is-success">100+</span></button>
+        <button class="btn">Info <span class="badge is-info">100+</span></button>
+        <button class="btn">Warning <span class="badge is-warning">100+</span></button>
+        <button class="btn">Danger <span class="badge is-danger">100+</span></button>
+        <button class="btn">Light <span class="badge is-light">100+</span></button>
+        <button class="btn">Dark <span class="badge is-dark">100+</span></button>
+    </div>
+    <br>
+
+    <div>
+        <button class="btn is-danger is-xs">Extra small <span class="badge">100+</span></button>
+        <button class="btn is-danger is-sm">Small <span class="badge">100+</span></button>
+        <button class="btn is-danger">Normal <span class="badge">100+</span></button>
+        <button class="btn is-danger is-md">Middle <span class="badge">100+</span></button>
+        <button class="btn is-danger is-lg">Large <span class="badge">100+</span></button>
+    </div>
+
+    <h2>Popup</h2>
+    <div class="popup">Popup</div>
+
+    <h2>Alert</h2>
+    <div class="alert">
+        <strong>Default:</strong> Description...
+    </div>
+
+    <div class="alert is-primary">
+        <i class="fas fa-tag"></i> <strong>Primary:</strong> Description...
+    </div>
+
+    <div class="alert is-success">
+        <i class="fas fa-check"></i> <strong>Success:</strong> Description...
+    </div>
+
+    <div class="alert is-info">
+        <i class="fas fa-info-circle"></i> <strong>Info:</strong> Description...
+    </div>
+
+    <div class="alert is-warning">
+        <i class="fas fa-warning"></i> <strong>Warning:</strong> Description...
+    </div>
+
+    <div class="alert is-danger">
+        <i class="fas fa-wrench"></i> <strong>Danger:</strong> Description...
+    </div>
+
+    <div class="alert is-light">
+        <i class="fas fa-tag"></i> <strong>Light:</strong> Description...
+    </div>
+
+    <div class="alert is-dark">
+        <i class="fas fa-cog"></i> <strong>Dark:</strong> Description...
+    </div>
+
+    <h3>Alert with buttons</h3>
+    <div class="alert is-light">
+        <div class="close is-circle"></div>
+        <i class="fas fa-tag"></i>
+        <strong>Lorem:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aspernatur atque enim
+        iure magni nostrum nulla qui sed. Cum doloremque doloribus esse in natus praesentium, quia quo saepe velit
+        voluptates <a href="#">Link</a>
+        <p>
+            <button class="btn btn-sm is-dark">Send info <i class="fas fa-send"></i></button>
+        </p>
+    </div>
+
+
+    <h1>Colors</h1>
+
+    <div class="row">
+
+        <div class="col">
+            <div class="box is-primary">primary</div>
+        </div>
+        <div class="col">
+            <div class="box is-success">success</div>
+        </div>
+        <div class="col">
+            <div class="box is-info">info</div>
+        </div>
+        <div class="col">
+            <div class="box is-warning">warning</div>
+        </div>
+        <div class="col">
+            <div class="box is-danger">danger</div>
+        </div>
+        <div class="col">
+            <div class="box is-light">light</div>
+        </div>
+        <div class="col">
+            <div class="box is-dark">dark</div>
+        </div>
+    </div>
+
+    <h1>Panel</h1>
+
+    <div class="panel">
+        <div class="panel-header">Header</div>
+        <div class="panel-content">
+            content...
+
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="panel-header is-danger">Header</div>
+        <div class="panel-content">
+            content...
+
+        </div>
+    </div>
+
+</main>
 
 </body>
 </html>
