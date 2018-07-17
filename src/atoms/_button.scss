@@ -6,44 +6,42 @@
   @return nth($list, length($list));
 }
 
-@mixin create-btn($prefix, $name, $btn) {
+@mixin create-btn($btn) {
 
-  #{$prefix}#{$name} {
-    background-color: map_get($btn, background);
-    border-color: map_get($btn, border);
-    color: map_get($btn, color);
+  background-color: map_get($btn, background);
+  border-color: map_get($btn, border);
+  color: map_get($btn, color);
+  &:hover {
+    background-color: map_get($btn, hover);
+    border-color: map_get($btn, hover);
+  }
+  &:focus, &.active {
+    border-color: #808080;
+    outline: none;
+  }
+  &.is-outline {
+    background-color: transparent;
+    color: map_get($btn, background);
     &:hover {
       background-color: map_get($btn, hover);
-      border-color: map_get($btn, hover);
+      color: #ffffff;
     }
-    &:focus, &.active {
-      border-color: #808080;
-      outline: none;
+  }
+  &.is-flat {
+    background-color: transparent;
+    border: transparent;
+    color: map_get($btn, background);
+    &:hover {
+      background-color: map_get($btn, hover);
+      color: #ffffff;
     }
-    &.is-outline {
-      background-color: transparent;
-      color: map_get($btn, background);
-      &:hover {
-        background-color: map_get($btn, hover);
-        color: #ffffff;
-      }
-    }
-    &.is-flat {
-      background-color: transparent;
-      border: transparent;
-      color: map_get($btn, background);
-      &:hover {
-        background-color: map_get($btn, hover);
-        color: #ffffff;
-      }
-    }
-    &.is-clear {
-      background-color: transparent;
-      border: transparent;
-      color: map_get($btn, background);
-      &:hover {
-        color: map_get($btn, hover);
-      }
+  }
+  &.is-clear {
+    background-color: transparent;
+    border: transparent;
+    color: map_get($btn, background);
+    &:hover {
+      color: map_get($btn, hover);
     }
   }
 }
@@ -107,12 +105,14 @@
   //}
 
   transition: all .2s ease-in-out;
+
+  @include create-btn(map-get($btn-theme, first(map_keys($btn-theme)))) //default
 }
 
-@include create-btn('.btn','', map-get($btn-theme, first(map_keys($btn-theme)))) //default
-
 @each $name, $btn in $btn-theme {
-  @include create-btn('.btn-',$name, $btn)
+  .btn-#{$name} {
+    @include create-btn($btn)
+  }
 }
 
 @each $name, $btn in $btn-size {
