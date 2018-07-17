@@ -1,58 +1,47 @@
-.btn.is-round, .btn.is-circle, .btn.is-square {
-  line-height: 1em;
-  padding: 0.75em;
+.btn {
+  &.btn-round, &.btn-circle, &.btn-square {
+    line-height: 1em;
+    padding: 0.75em;
+  }
+
+  $btn-size: (
+    default: (height: 40px, width: 40px),
+    xs: (height: 25px, width: 25px),
+    sm: (height: 32px, width: 32px),
+    md: (height: 45px, width: 45px),
+    lg: (height: 58px, width: 58px),
+    big: (height: 90px, width: 90px),
+    '2x': (height: 6em, width: 6em),
+    '3x': (height: 8em, width: 8em),
+    '4x': (height: 10em, width: 10em),
+    '5x': (height: 12em, width: 12em)
+  );
+
+  $btn-size-default-name: nth(map_keys($btn-size), 1);
+
+  &.btn-circle, &.btn-square {
+    text-align: center;
+    padding: 0;
+
+    height: 40px;
+    width: 40px;
+
+    @each $name, $btn in map_remove($btn-size, $btn-size-default-name) {
+      &.btn-#{$name} {
+        height: map_get($btn, height);
+        width: map_get($btn, width);
+      }
+    }
+  }
+
+  &.btn-round {
+    border-radius: 1000px;
+  }
+
+  &.btn-circle {
+    border-radius: 50%;
+  }
 }
 
-.btn.is-circle, .btn.is-square {
-  text-align: center;
-  padding: 0;
 
-  height: 40px;
-  width: 40px;
 
-  &.is-xs {
-    height: 25px;
-    width: 25px;
-  }
-  &.is-sm {
-    height: 32px;
-    width: 32px;
-  }
-  &.is-md {
-    height: 45px;
-    width:45px;
-  }
-  &.is-lg {
-    height:58px;
-    width:58px;
-  }
-  &.is-big {
-    height:90px;
-    width:90px;
-  }
-  &.is-2x {
-    height:6em;
-    width:6em;
-  }
-  &.is-3x {
-    height:8em;
-    width:8em;
-  }
-  &.is-4x {
-    height:10em;
-    width:10em;
-  }
-  &.is-5x {
-    height:12em;
-    width:12em;
-  }
-
-}
-
-.btn.is-round {
-  border-radius: 1000px;
-}
-
-.btn.is-circle {
-  border-radius: 50%;
-}

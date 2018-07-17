@@ -6,12 +6,61 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gedeonix-UI</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato' type='text/css'>
     <link rel="stylesheet" href="dist/gedeonix-ui.css">
+
+    <style>
+
+       .demo .col > div, [class*=col-] > div:not([class*=row]) {
+            text-align: center;
+            outline: 1px dashed #ff795a;
+        }
+
+        @media all {
+            .main {
+                background-color: #ffffff; /*xs*/
+            }
+        }
+
+        @media all and (min-width: 40em) {
+            .main {
+                background-color: #ffffe0; /*sm*/
+            }
+        }
+
+        @media all and (min-width: 64em) {
+            .main {
+                background-color: #e0ffff; /*md*/
+            }
+        }
+
+        @media all and (min-width: 90em) {
+            .main {
+                background-color: #fafafa; /*lg*/
+            }
+        }
+
+        .demo .col > div:not([class*=row]) {
+            width: 100%;
+            background-color: #e0e0e0;
+            text-align: center;
+        }
+
+       .demo [class*=col-] > div:not([class*=row]) {
+            width: 100%;
+            background-color: #d0d0d0;
+            text-align: center;
+        }
+
+    </style>
+
 </head>
 <body>
 
 <main class="main container">
+
     <h1>Controls</h1>
 
     <h2>Button</h2>
@@ -23,12 +72,12 @@
     <label class="btn">&lt;label&gt;</label>
 
     <h3>Block</h3>
-    <button class="btn is-block">&lt;button&gt;</button>
-    <input type="button" class="btn is-block" value="&lt;input&gt;"/>
-    <a class="btn is-block">&lt;a&gt;</a>
-    <div class="btn is-block">&lt;div&gt;</div>
-    <span class="btn is-block">&lt;span&gt;</span>
-    <label class="btn is-block">&lt;label&gt;</label>
+    <button class="btn btn-block">&lt;button&gt;</button>
+    <input type="button" class="btn btn-block" value="&lt;input&gt;"/>
+    <a class="btn btn-block">&lt;a&gt;</a>
+    <div class="btn btn-block">&lt;div&gt;</div>
+    <span class="btn btn-block">&lt;span&gt;</span>
+    <label class="btn btn-block">&lt;label&gt;</label>
 
     <h3>Colors</h3>
     <button class="btn">Default</button>
@@ -40,90 +89,85 @@
     <button class="btn btn-light">Light</button>
     <button class="btn btn-dark">Dark</button>
 
-    <h3>Theme</h3>
-    <h4>only (theme-simple)</h4>
-    <button class="btn btn-default">Default</button>
-    <button class="btn btn-secondary">Secondary</button>
-
     <h3>Round</h3>
-    <button class="btn is-round">Default</button>
-    <button class="btn is-primary is-round">Primary</button>
-    <button class="btn is-success is-round">Success</button>
-    <button class="btn is-info is-round">Info</button>
-    <button class="btn is-warning is-round">Warning</button>
-    <button class="btn is-danger is-round">Danger</button>
-    <button class="btn is-light is-round">Light</button>
-    <button class="btn is-dark is-round">Dark</button>
+    <button class="btn btn-round">Default</button>
+    <button class="btn btn-primary btn-round">Primary</button>
+    <button class="btn btn-success btn-round">Success</button>
+    <button class="btn btn-info btn-round">Info</button>
+    <button class="btn btn-warning btn-round">Warning</button>
+    <button class="btn btn-danger btn-round">Danger</button>
+    <button class="btn btn-light btn-round">Light</button>
+    <button class="btn btn-dark btn-round">Dark</button>
 
     <h3>Outline</h3>
-    <button class="btn is-outline">Default</button>
-    <button class="btn is-primary is-outline">Primary</button>
-    <button class="btn is-success is-outline">Success</button>
-    <button class="btn is-info is-outline">Info</button>
-    <button class="btn is-warning is-outline">Warning</button>
-    <button class="btn is-danger is-outline">Danger</button>
-    <button class="btn is-light is-outline">Light</button>
-    <button class="btn is-dark is-outline">Dark</button>
+    <button class="btn btn-outline">Default</button>
+    <button class="btn btn-primary btn-outline">Primary</button>
+    <button class="btn btn-success btn-outline">Success</button>
+    <button class="btn btn-info btn-outline">Info</button>
+    <button class="btn btn-warning btn-outline">Warning</button>
+    <button class="btn btn-danger btn-outline">Danger</button>
+    <button class="btn btn-light btn-outline">Light</button>
+    <button class="btn btn-dark btn-outline">Dark</button>
 
-    <h3>Outline & is-thick</h3>
-    <button class="btn is-outline is-thick">Default</button>
-    <button class="btn is-primary is-outline is-thick">Primary</button>
-    <button class="btn is-success is-outline is-thick">Success</button>
-    <button class="btn is-info is-outline is-thick">Info</button>
-    <button class="btn is-warning is-outline is-thick">Warning</button>
-    <button class="btn is-danger is-outline is-thick">Danger</button>
-    <button class="btn is-light is-outline is-thick">Light</button>
-    <button class="btn is-dark is-outline is-thick">Dark</button>
+    <h3>Outline & btn-thick</h3>
+    <button class="btn btn-outline btn-thick">Default</button>
+    <button class="btn btn-primary btn-outline btn-thick">Primary</button>
+    <button class="btn btn-success btn-outline btn-thick">Success</button>
+    <button class="btn btn-info btn-outline btn-thick">Info</button>
+    <button class="btn btn-warning btn-outline btn-thick">Warning</button>
+    <button class="btn btn-danger btn-outline btn-thick">Danger</button>
+    <button class="btn btn-light btn-outline btn-thick">Light</button>
+    <button class="btn btn-dark btn-outline btn-thick">Dark</button>
 
-    <h3>Outline, round & is-thick</h3>
-    <button class="btn is-outline is-round is-thick">Default</button>
-    <button class="btn is-primary is-outline is-round is-thick">Primary</button>
-    <button class="btn is-success is-outline is-round is-thick">Success</button>
-    <button class="btn is-info is-outline is-round is-thick">Info</button>
-    <button class="btn is-warning is-outline is-round is-thick">Warning</button>
-    <button class="btn is-danger is-outline is-round is-thick">Danger</button>
-    <button class="btn is-light is-outline is-round is-thick">Light</button>
-    <button class="btn is-dark is-outline is-round is-thick">Dark</button>
+    <h3>Outline, round & btn-thick</h3>
+    <button class="btn btn-outline btn-round btn-thick">Default</button>
+    <button class="btn btn-primary btn-outline btn-round btn-thick">Primary</button>
+    <button class="btn btn-success btn-outline btn-round btn-thick">Success</button>
+    <button class="btn btn-info btn-outline btn-round btn-thick">Info</button>
+    <button class="btn btn-warning btn-outline btn-round btn-thick">Warning</button>
+    <button class="btn btn-danger btn-outline btn-round btn-thick">Danger</button>
+    <button class="btn btn-light btn-outline btn-round btn-thick">Light</button>
+    <button class="btn btn-dark btn-outline btn-round btn-thick">Dark</button>
 
     <h3>Flat</h3>
-    <button class="btn is-flat">Default</button>
-    <button class="btn is-flat is-primary">Primary</button>
-    <button class="btn is-flat is-success">Success</button>
-    <button class="btn is-flat is-info">Info</button>
-    <button class="btn is-flat is-warning">Warning</button>
-    <button class="btn is-flat is-danger">Danger</button>
-    <button class="btn is-flat is-light">Light</button>
-    <button class="btn is-flat is-dark">Dark</button>
+    <button class="btn btn-flat">Default</button>
+    <button class="btn btn-flat btn-primary">Primary</button>
+    <button class="btn btn-flat btn-success">Success</button>
+    <button class="btn btn-flat btn-info">Info</button>
+    <button class="btn btn-flat btn-warning">Warning</button>
+    <button class="btn btn-flat btn-danger">Danger</button>
+    <button class="btn btn-flat btn-light">Light</button>
+    <button class="btn btn-flat btn-dark">Dark</button>
 
     <h3>Clear</h3>
-    <button class="btn is-clear">Default</button>
-    <button class="btn is-clear is-primary">Primary</button>
-    <button class="btn is-clear is-success">Success</button>
-    <button class="btn is-clear is-info">Info</button>
-    <button class="btn is-clear is-warning">Warning</button>
-    <button class="btn is-clear is-danger">Danger</button>
-    <button class="btn is-clear is-light">Light</button>
-    <button class="btn is-clear is-dark">Dark</button>
+    <button class="btn btn-clear">Default</button>
+    <button class="btn btn-clear btn-primary">Primary</button>
+    <button class="btn btn-clear btn-success">Success</button>
+    <button class="btn btn-clear btn-info">Info</button>
+    <button class="btn btn-clear btn-warning">Warning</button>
+    <button class="btn btn-clear btn-danger">Danger</button>
+    <button class="btn btn-clear btn-light">Light</button>
+    <button class="btn btn-clear btn-dark">Dark</button>
 
     <h3>Reset radius (reset-radius, reset-left-radius, reset-right-radius)</h3>
     <button class="btn reset-radius">Default</button>
-    <button class="btn is-primary reset-radius">Primary</button>
-    <button class="btn is-success reset-radius">Success</button>
-    <button class="btn is-info reset-radius">Info</button>
-    <button class="btn is-warning reset-radius">Warning</button>
-    <button class="btn is-danger reset-radius">Danger</button>
-    <button class="btn is-light reset-radius">Light</button>
-    <button class="btn is-dark reset-radius">Dark</button>
+    <button class="btn btn-primary reset-radius">Primary</button>
+    <button class="btn btn-success reset-radius">Success</button>
+    <button class="btn btn-info reset-radius">Info</button>
+    <button class="btn btn-warning reset-radius">Warning</button>
+    <button class="btn btn-danger reset-radius">Danger</button>
+    <button class="btn btn-light reset-radius">Light</button>
+    <button class="btn btn-dark reset-radius">Dark</button>
 
     <h3>Active (on focus)</h3>
     <button class="btn active">Default</button>
-    <button class="btn is-primary active">Primary</button>
-    <button class="btn is-success active">Success</button>
-    <button class="btn is-info active">Info</button>
-    <button class="btn is-warning active">Warning</button>
-    <button class="btn is-danger active">Danger</button>
-    <button class="btn is-light active">Light</button>
-    <button class="btn is-dark active">Dark</button>
+    <button class="btn btn-primary active">Primary</button>
+    <button class="btn btn-success active">Success</button>
+    <button class="btn btn-info active">Info</button>
+    <button class="btn btn-warning active">Warning</button>
+    <button class="btn btn-danger active">Danger</button>
+    <button class="btn btn-light active">Light</button>
+    <button class="btn btn-dark active">Dark</button>
 
     <h3>Size</h3>
     <button class="btn btn-xs">Extra small</button>
@@ -160,21 +204,21 @@
 
     <h3>Icon & text</h3>
     <button class="btn"><i class="fas fa-check"></i> Default</button>
-    <button class="btn is-primary"><i class="fas fa-check"></i> Primary</button>
-    <button class="btn is-success"><i class="fas fa-check"></i> Success</button>
-    <button class="btn is-info"><i class="fas fa-check"></i> Info</button>
-    <button class="btn is-warning"><i class="fas fa-check"></i> Warning</button>
-    <button class="btn is-danger"><i class="fas fa-check"></i> Danger</button>
-    <button class="btn is-light"><i class="fas fa-check"></i> Light</button>
-    <button class="btn is-dark"><i class="fas fa-check"></i> Dark</button>
+    <button class="btn btn-primary"><i class="fas fa-check"></i> Primary</button>
+    <button class="btn btn-success"><i class="fas fa-check"></i> Success</button>
+    <button class="btn btn-info"><i class="fas fa-check"></i> Info</button>
+    <button class="btn btn-warning"><i class="fas fa-check"></i> Warning</button>
+    <button class="btn btn-danger"><i class="fas fa-check"></i> Danger</button>
+    <button class="btn btn-light"><i class="fas fa-check"></i> Light</button>
+    <button class="btn btn-dark"><i class="fas fa-check"></i> Dark</button>
     <br>
     <br>
-    <button class="btn btn-sm is-primary">Add <i class="fas fa-plus"></i></button>
-    <button class="btn btn-sm is-success">Save <i class="fas fa-save"></i></button>
-    <button class="btn btn-sm is-danger">Remove <i class="fas fa-minus"></i></button>
-    <button class="btn btn-sm is-info">Options <i class="fas fa-chevron-down"></i></button>
-    <button class="btn btn-sm is-warning is-outline is-thick">Print <i class="fas fa-print"></i></button>
-    <button class="btn btn-sm is-dark is-outline is-round">Download <i class="fas fa-download"></i></button>
+    <button class="btn btn-sm btn-primary">Add <i class="fas fa-plus"></i></button>
+    <button class="btn btn-sm btn-success">Save <i class="fas fa-save"></i></button>
+    <button class="btn btn-sm btn-danger">Remove <i class="fas fa-minus"></i></button>
+    <button class="btn btn-sm btn-info">Options <i class="fas fa-chevron-down"></i></button>
+    <button class="btn btn-sm btn-warning btn-outline btn-thick">Print <i class="fas fa-print"></i></button>
+    <button class="btn btn-sm btn-dark btn-outline btn-round">Download <i class="fas fa-download"></i></button>
 
 
     <h3>Icon spin & pulse</h3>
@@ -191,48 +235,48 @@
 
     <h3>Only icon</h3>
     <button class="btn"><i class="fas fa-check"></i></button>
-    <button class="btn is-primary"><i class="fas fa-check"></i></button>
-    <button class="btn is-success"><i class="fas fa-check"></i></button>
-    <button class="btn is-info"><i class="fas fa-check"></i></button>
-    <button class="btn is-warning"><i class="fas fa-check"></i></button>
-    <button class="btn is-danger"><i class="fas fa-check"></i></button>
-    <button class="btn is-danger"><i class="fas fa-check"></i></button>
-    <button class="btn is-dark"><i class="fas fa-check"></i></button>
+    <button class="btn btn-primary"><i class="fas fa-check"></i></button>
+    <button class="btn btn-success"><i class="fas fa-check"></i></button>
+    <button class="btn btn-info"><i class="fas fa-check"></i></button>
+    <button class="btn btn-warning"><i class="fas fa-check"></i></button>
+    <button class="btn btn-danger"><i class="fas fa-check"></i></button>
+    <button class="btn btn-danger"><i class="fas fa-check"></i></button>
+    <button class="btn btn-dark"><i class="fas fa-check"></i></button>
 
     <h3>Square</h3>
-    <button class="btn is-square"><i class="fas fa-check"></i></button>
-    <button class="btn is-square is-primary"><i class="fas fa-check"></i></button>
-    <button class="btn is-square is-success"><i class="fas fa-check"></i></button>
-    <button class="btn is-square is-info"><i class="fas fa-check"></i></button>
-    <button class="btn is-square is-warning"><i class="fas fa-check"></i></button>
-    <button class="btn is-square is-danger"><i class="fas fa-check"></i></button>
-    <button class="btn is-square is-dark"><i class="fas fa-check"></i></button>
+    <button class="btn btn-square"><i class="fas fa-check"></i></button>
+    <button class="btn btn-square btn-primary"><i class="fas fa-check"></i></button>
+    <button class="btn btn-square btn-success"><i class="fas fa-check"></i></button>
+    <button class="btn btn-square btn-info"><i class="fas fa-check"></i></button>
+    <button class="btn btn-square btn-warning"><i class="fas fa-check"></i></button>
+    <button class="btn btn-square btn-danger"><i class="fas fa-check"></i></button>
+    <button class="btn btn-square btn-dark"><i class="fas fa-check"></i></button>
     <br>
     <br>
-    <button class="btn is-square is-xs"><i class="fas fa-check"></i></button>
-    <button class="btn is-square is-sm"><i class="fas fa-check"></i></button>
-    <button class="btn is-square"><i class="fas fa-check"></i></button>
-    <button class="btn is-square is-md"><i class="fas fa-check"></i></button>
-    <button class="btn is-square is-lg"><i class="fas fa-check"></i></button>
+    <button class="btn btn-square btn-xs"><i class="fas fa-check"></i></button>
+    <button class="btn btn-square btn-sm"><i class="fas fa-check"></i></button>
+    <button class="btn btn-square"><i class="fas fa-check"></i></button>
+    <button class="btn btn-square btn-md"><i class="fas fa-check"></i></button>
+    <button class="btn btn-square btn-lg"><i class="fas fa-check"></i></button>
 
     <h3>Circle</h3>
-    <button class="btn is-circle"><i class="fas fa-check"></i></button>
-    <button class="btn is-circle is-primary"><i class="fas fa-check"></i></button>
-    <button class="btn is-circle is-success"><i class="fas fa-check"></i></button>
-    <button class="btn is-circle is-info"><i class="fas fa-check"></i></button>
-    <button class="btn is-circle is-warning"><i class="fas fa-check"></i></button>
-    <button class="btn is-circle is-danger"><i class="fas fa-check"></i></button>
-    <button class="btn is-circle is-dark"><i class="fas fa-check"></i></button>
+    <button class="btn btn-circle"><i class="fas fa-check"></i></button>
+    <button class="btn btn-circle btn-primary"><i class="fas fa-check"></i></button>
+    <button class="btn btn-circle btn-success"><i class="fas fa-check"></i></button>
+    <button class="btn btn-circle btn-info"><i class="fas fa-check"></i></button>
+    <button class="btn btn-circle btn-warning"><i class="fas fa-check"></i></button>
+    <button class="btn btn-circle btn-danger"><i class="fas fa-check"></i></button>
+    <button class="btn btn-circle btn-dark"><i class="fas fa-check"></i></button>
     <br>
     <br>
-    <button class="btn is-circle is-xs"><i class="fas fa-check"></i></button>
-    <button class="btn is-circle is-sm"><i class="fas fa-check"></i></button>
-    <button class="btn is-circle"><i class="fas fa-check"></i></button>
-    <button class="btn is-circle is-md"><i class="fas fa-check"></i></button>
-    <button class="btn is-circle is-lg"><i class="fas fa-check"></i></button>
+    <button class="btn btn-circle btn-xs"><i class="fas fa-check"></i></button>
+    <button class="btn btn-circle btn-sm"><i class="fas fa-check"></i></button>
+    <button class="btn btn-circle"><i class="fas fa-check"></i></button>
+    <button class="btn btn-circle btn-md"><i class="fas fa-check"></i></button>
+    <button class="btn btn-circle btn-lg"><i class="fas fa-check"></i></button>
     <br><br>
-    <button class="btn is-circle is-info"><i class="far fa-thumbs-up"></i></button>
-    <button class="btn is-circle is-info"><i class="far fa-thumbs-down"></i></button>
+    <button class="btn btn-circle btn-info"><i class="far fa-thumbs-up"></i></button>
+    <button class="btn btn-circle btn-info"><i class="far fa-thumbs-down"></i></button>
 
     <h3>Misc</h3>
     <button class="btn"><i class="fas fa-angle-down"></i></button>
@@ -245,121 +289,121 @@
     <button class="btn rss"><i class="fas fa-rss"></i> RSS</button>
     <br>
     <br>
-    <button class="btn twitter is-round"><i class="fab fa-twitter"></i> Twitter</button>
-    <button class="btn facebook is-round"><i class="fab fa-facebook"></i> Facebook</button>
-    <button class="btn google-plus is-round"><i class="fab fa-google-plus"></i> Google Plus</button>
-    <button class="btn github is-round"><i class="fab fa-github"></i> Github</button>
-    <button class="btn rss is-round"><i class="fas fa-rss"></i> RSS</button>
+    <button class="btn twitter btn-round"><i class="fab fa-twitter"></i> Twitter</button>
+    <button class="btn facebook btn-round"><i class="fab fa-facebook"></i> Facebook</button>
+    <button class="btn google-plus btn-round"><i class="fab fa-google-plus"></i> Google Plus</button>
+    <button class="btn github btn-round"><i class="fab fa-github"></i> Github</button>
+    <button class="btn rss btn-round"><i class="fas fa-rss"></i> RSS</button>
     <br>
     <br>
-    <button class="btn twitter is-circle"><i class="fab fa-twitter"></i></button>
-    <button class="btn facebook is-circle"><i class="fab fa-facebook"></i></button>
-    <button class="btn google-plus is-circle"><i class="fab fa-google-plus"></i></button>
-    <button class="btn github is-circle"><i class="fab fa-github"></i></button>
-    <button class="btn rss is-circle"><i class="fas fa-rss"></i></button>
+    <button class="btn twitter btn-circle"><i class="fab fa-twitter"></i></button>
+    <button class="btn facebook btn-circle"><i class="fab fa-facebook"></i></button>
+    <button class="btn google-plus btn-circle"><i class="fab fa-google-plus"></i></button>
+    <button class="btn github btn-circle"><i class="fab fa-github"></i></button>
+    <button class="btn rss btn-circle"><i class="fas fa-rss"></i></button>
     <br>
     <br>
-    <button class="btn twitter is-square"><i class="fab fa-twitter"></i></button>
-    <button class="btn facebook is-square"><i class="fab fa-facebook"></i></button>
-    <button class="btn google-plus is-square"><i class="fab fa-google-plus"></i></button>
-    <button class="btn github is-square"><i class="fab fa-github"></i></button>
-    <button class="btn rss is-square"><i class="fas fa-rss"></i></button>
+    <button class="btn twitter btn-square"><i class="fab fa-twitter"></i></button>
+    <button class="btn facebook btn-square"><i class="fab fa-facebook"></i></button>
+    <button class="btn google-plus btn-square"><i class="fab fa-google-plus"></i></button>
+    <button class="btn github btn-square"><i class="fab fa-github"></i></button>
+    <button class="btn rss btn-square"><i class="fas fa-rss"></i></button>
 
-    <h3>Button & is-big</h3>
-    <button class="btn is-square is-big"><i class="fas fa-tachometer-alt fa-3x"></i><br>Dashboard</button>
-    <button class="btn is-square is-big"><i class="fas fa-users fa-3x"></i><br>Users</button>
-    <button class="btn is-square is-big"><i class="fas fa-calendar fa-3x"></i><br>CRM</button>
-    <button class="btn is-square is-big"><i class="fas fa-archive fa-3x"></i><br>Archive</button>
-    <button class="btn is-square is-big"><i class="fas fa-chart-bar fa-3x"></i><br>Reports</button>
-    <button class="btn is-square is-big"><i class="fas fa-cog fa-3x"></i><br>Settings</button>
+    <h3>Button & btn-big</h3>
+    <button class="btn btn-square btn-big"><i class="fas fa-tachometer-alt fa-3x"></i><br>Dashboard</button>
+    <button class="btn btn-square btn-big"><i class="fas fa-users fa-3x"></i><br>Users</button>
+    <button class="btn btn-square btn-big"><i class="fas fa-calendar fa-3x"></i><br>CRM</button>
+    <button class="btn btn-square btn-big"><i class="fas fa-archive fa-3x"></i><br>Archive</button>
+    <button class="btn btn-square btn-big"><i class="fas fa-chart-bar fa-3x"></i><br>Reports</button>
+    <button class="btn btn-square btn-big"><i class="fas fa-cog fa-3x"></i><br>Settings</button>
     <br>
     <br>
-    <button class="btn is-square is-primary is-big"><i class="fas fa-tachometer-alt fa-3x"></i><br>Dashboard</button>
-    <button class="btn is-square is-success is-big"><i class="fas fa-users fa-3x"></i><br>Users</button>
-    <button class="btn is-square is-info is-big"><i class="fas fa-calendar fa-3x"></i><br>CRM</button>
-    <button class="btn is-square is-warning is-big"><i class="fas fa-archive fa-3x"></i><br>Archive</button>
-    <button class="btn is-square is-danger is-big"><i class="fas fa-chart-bar fa-3x"></i><br>Reports</button>
-    <button class="btn is-square is-dark is-big"><i class="fas fa-cog fa-3x"></i><br>Settings</button>
+    <button class="btn btn-square btn-primary btn-big"><i class="fas fa-tachometer-alt fa-3x"></i><br>Dashboard</button>
+    <button class="btn btn-square btn-success btn-big"><i class="fas fa-users fa-3x"></i><br>Users</button>
+    <button class="btn btn-square btn-info btn-big"><i class="fas fa-calendar fa-3x"></i><br>CRM</button>
+    <button class="btn btn-square btn-warning btn-big"><i class="fas fa-archive fa-3x"></i><br>Archive</button>
+    <button class="btn btn-square btn-danger btn-big"><i class="fas fa-chart-bar fa-3x"></i><br>Reports</button>
+    <button class="btn btn-square btn-dark btn-big"><i class="fas fa-cog fa-3x"></i><br>Settings</button>
 
-    <h3>Button & is-2x, is-3x, is-4x, is-5x</h3>
-    <button class="btn is-square is-2x"><i class="fas fa-users fa-2x"></i><br>Users</button>
-    <button class="btn is-square is-3x"><i class="fas fa-calendar fa-3x"></i><br>CRM</button>
-    <button class="btn is-square is-4x"><i class="fas fa-archive fa-4x"></i><br>Archive</button>
-    <button class="btn is-square is-5x"><i class="fas fa-chart-bar fa-5x"></i><br>Reports</button>
+    <h3>Button & btn-2x, btn-3x, btn-4x, btn-5x</h3>
+    <button class="btn btn-square btn-2x"><i class="fas fa-users fa-2x"></i><br>Users</button>
+    <button class="btn btn-square btn-3x"><i class="fas fa-calendar fa-3x"></i><br>CRM</button>
+    <button class="btn btn-square btn-4x"><i class="fas fa-archive fa-4x"></i><br>Archive</button>
+    <button class="btn btn-square btn-5x"><i class="fas fa-chart-bar fa-5x"></i><br>Reports</button>
 
-    <h3>Disabled (disabled, is-outline, is-flat, is-clear)</h3>
+    <h3>Disabled (disabled, btn-outline, btn-flat, btn-clear)</h3>
     <button class="btn" disabled>Default</button>
-    <button class="btn is-primary" disabled>Primary</button>
-    <button class="btn is-success" disabled>Success</button>
-    <button class="btn is-info" disabled>Info</button>
-    <button class="btn is-warning" disabled>Warning</button>
-    <button class="btn is-danger" disabled>Danger</button>
-    <button class="btn is-light" disabled>Light</button>
-    <button class="btn is-dark" disabled>Dark</button>
+    <button class="btn btn-primary" disabled>Primary</button>
+    <button class="btn btn-success" disabled>Success</button>
+    <button class="btn btn-info" disabled>Info</button>
+    <button class="btn btn-warning" disabled>Warning</button>
+    <button class="btn btn-danger" disabled>Danger</button>
+    <button class="btn btn-light" disabled>Light</button>
+    <button class="btn btn-dark" disabled>Dark</button>
     <br>
     <br>
-    <button class="btn is-outline" disabled>Default</button>
-    <button class="btn is-primary is-outline" disabled>Primary</button>
-    <button class="btn is-success is-outline" disabled>Success</button>
-    <button class="btn is-info is-outline" disabled>Info</button>
-    <button class="btn is-warning is-outline" disabled>Warning</button>
-    <button class="btn is-danger is-outline" disabled>Danger</button>
-    <button class="btn is-light is-outline" disabled>Light</button>
-    <button class="btn is-dark is-outline" disabled>Dark</button>
+    <button class="btn btn-outline" disabled>Default</button>
+    <button class="btn btn-primary btn-outline" disabled>Primary</button>
+    <button class="btn btn-success btn-outline" disabled>Success</button>
+    <button class="btn btn-info btn-outline" disabled>Info</button>
+    <button class="btn btn-warning btn-outline" disabled>Warning</button>
+    <button class="btn btn-danger btn-outline" disabled>Danger</button>
+    <button class="btn btn-light btn-outline" disabled>Light</button>
+    <button class="btn btn-dark btn-outline" disabled>Dark</button>
     <br>
     <br>
-    <button class="btn is-flat" disabled>Default</button>
-    <button class="btn is-primary is-flat" disabled>Primary</button>
-    <button class="btn is-success is-flat" disabled>Success</button>
-    <button class="btn is-info is-flat" disabled>Info</button>
-    <button class="btn is-warning is-flat" disabled>Warning</button>
-    <button class="btn is-danger is-flat" disabled>Danger</button>
-    <button class="btn is-light is-flat" disabled>Light</button>
-    <button class="btn is-dark is-flat" disabled>Dark</button>
+    <button class="btn btn-flat" disabled>Default</button>
+    <button class="btn btn-primary btn-flat" disabled>Primary</button>
+    <button class="btn btn-success btn-flat" disabled>Success</button>
+    <button class="btn btn-info btn-flat" disabled>Info</button>
+    <button class="btn btn-warning btn-flat" disabled>Warning</button>
+    <button class="btn btn-danger btn-flat" disabled>Danger</button>
+    <button class="btn btn-light btn-flat" disabled>Light</button>
+    <button class="btn btn-dark btn-flat" disabled>Dark</button>
     <br>
     <br>
-    <button class="btn is-clear" disabled>Default</button>
-    <button class="btn is-primary is-clear" disabled>Primary</button>
-    <button class="btn is-success is-clear" disabled>Success</button>
-    <button class="btn is-info is-clear" disabled>Info</button>
-    <button class="btn is-warning is-clear" disabled>Warning</button>
-    <button class="btn is-danger is-clear" disabled>Danger</button>
-    <button class="btn is-light is-clear" disabled>Light</button>
-    <button class="btn is-dark is-clear" disabled>Dark</button>
+    <button class="btn btn-clear" disabled>Default</button>
+    <button class="btn btn-primary btn-clear" disabled>Primary</button>
+    <button class="btn btn-success btn-clear" disabled>Success</button>
+    <button class="btn btn-info btn-clear" disabled>Info</button>
+    <button class="btn btn-warning btn-clear" disabled>Warning</button>
+    <button class="btn btn-danger btn-clear" disabled>Danger</button>
+    <button class="btn btn-light btn-clear" disabled>Light</button>
+    <button class="btn btn-dark btn-clear" disabled>Dark</button>
 
-    <h3>Mix style with is-shadow</h3>
+    <h3>Mix style with btn-shadow</h3>
 
-    <button class="btn is-shadow">Button</button>
-    <button class="btn is-flat is-shadow">Button</button>
-    <button class="btn is-outline is-shadow">Button</button>
-    <button class="btn is-shadow" disabled>Button</button>
-    <button class="btn is-thick is-shadow">Button</button>
-    <button class="btn is-clear is-shadow">Button</button>
-    <button class="btn is-round is-shadow">Button</button>
-    <button class="btn is-circle is-shadow">A</button>
-    <button class="btn is-square is-shadow">A</button>
+    <button class="btn btn-shadow">Button</button>
+    <button class="btn btn-flat btn-shadow">Button</button>
+    <button class="btn btn-outline btn-shadow">Button</button>
+    <button class="btn btn-shadow" disabled>Button</button>
+    <button class="btn btn-thick btn-shadow">Button</button>
+    <button class="btn btn-clear btn-shadow">Button</button>
+    <button class="btn btn-round btn-shadow">Button</button>
+    <button class="btn btn-circle btn-shadow">A</button>
+    <button class="btn btn-square btn-shadow">A</button>
     <br>
     <br>
-    <button class="btn is-shadow-2x">Button</button>
-    <button class="btn is-flat is-shadow-2x">Button</button>
-    <button class="btn is-outline is-shadow-2x">Button</button>
-    <button class="btn is-shadow-2x" disabled>Button</button>
-    <button class="btn is-thick is-shadow-2x">Button</button>
-    <button class="btn is-clear is-shadow-2x">Button</button>
-    <button class="btn is-round is-shadow-2x">Button</button>
-    <button class="btn is-circle is-shadow-2x">A</button>
-    <button class="btn is-square is-shadow-2x">A</button>
+    <button class="btn btn-shadow-2x">Button</button>
+    <button class="btn btn-flat btn-shadow-2x">Button</button>
+    <button class="btn btn-outline btn-shadow-2x">Button</button>
+    <button class="btn btn-shadow-2x" disabled>Button</button>
+    <button class="btn btn-thick btn-shadow-2x">Button</button>
+    <button class="btn btn-clear btn-shadow-2x">Button</button>
+    <button class="btn btn-round btn-shadow-2x">Button</button>
+    <button class="btn btn-circle btn-shadow-2x">A</button>
+    <button class="btn btn-square btn-shadow-2x">A</button>
     <br>
     <br>
-    <button class="btn is-shadow-4x">Button</button>
-    <button class="btn is-flat is-shadow-4x">Button</button>
-    <button class="btn is-outline is-shadow-4x">Button</button>
-    <button class="btn is-shadow-4x" disabled>Button</button>
-    <button class="btn is-thick is-shadow-4x">Button</button>
-    <button class="btn is-clear is-shadow-4x">Button</button>
-    <button class="btn is-round is-shadow-4x">Button</button>
-    <button class="btn is-circle is-shadow-4x">A</button>
-    <button class="btn is-square is-shadow-4x">A</button>
+    <button class="btn btn-shadow-4x">Button</button>
+    <button class="btn btn-flat btn-shadow-4x">Button</button>
+    <button class="btn btn-outline btn-shadow-4x">Button</button>
+    <button class="btn btn-shadow-4x" disabled>Button</button>
+    <button class="btn btn-thick btn-shadow-4x">Button</button>
+    <button class="btn btn-clear btn-shadow-4x">Button</button>
+    <button class="btn btn-round btn-shadow-4x">Button</button>
+    <button class="btn btn-circle btn-shadow-4x">A</button>
+    <button class="btn btn-square btn-shadow-4x">A</button>
 
     <h2>Input</h2>
 
@@ -576,36 +620,36 @@
     <br>
 
     <div class="group is-center">
-        <button class="btn is-primary">A</button>
+        <button class="btn btn-primary">A</button>
         <button class="btn is-success">B</button>
-        <button class="btn is-danger">C</button>
+        <button class="btn btn-danger">C</button>
     </div>
 
     <br>
     <br>
 
     <div class="group">
-        <button class="btn is-primary">A</button>
+        <button class="btn btn-primary">A</button>
         <button class="btn is-success">B</button>
-        <button class="btn is-danger">C</button>
+        <button class="btn btn-danger">C</button>
     </div>
 
     <br>
     <br>
 
     <div class="group is-block">
-        <button class="btn is-primary">A</button>
+        <button class="btn btn-primary">A</button>
         <button class="btn is-success">B</button>
-        <button class="btn is-danger is-block">C</button>
+        <button class="btn btn-danger is-block">C</button>
     </div>
 
     <br>
     <br>
 
     <div class="group is-block">
-        <button class="btn is-primary is-block">A</button>
+        <button class="btn btn-primary is-block">A</button>
         <button class="btn is-success is-block">B</button>
-        <button class="btn is-danger is-block">C</button>
+        <button class="btn btn-danger is-block">C</button>
     </div>
 
     <br>
@@ -636,14 +680,14 @@
 
     <div class="group width-4">
         <input type="text" placeholder="Newsletter">
-        <button class="btn is-primary">Subscription</button>
+        <button class="btn btn-primary">Subscription</button>
     </div>
     <br>
     <br>
 
     <div class="group is-block">
         <input type="text" placeholder="Newsletter">
-        <button class="btn is-primary">Subscription</button>
+        <button class="btn btn-primary">Subscription</button>
     </div>
     <br>
     <br>
@@ -711,9 +755,9 @@
     <br>
 
     <div class="group vertical is-block">
-        <button class="btn is-primary">A</button>
+        <button class="btn btn-primary">A</button>
         <button class="btn is-success">B</button>
-        <button class="btn is-danger is-block">C</button>
+        <button class="btn btn-danger is-block">C</button>
     </div>
 
     <h3>Group in grid</h3>
@@ -929,11 +973,11 @@
 
     <div>
         <button class="btn">Default <span class="badge">100+</span></button>
-        <button class="btn is-primary">Primary <span class="badge">100+</span></button>
+        <button class="btn btn-primary">Primary <span class="badge">100+</span></button>
         <button class="btn is-success">Success <span class="badge">100+</span></button>
         <button class="btn is-info">Info <span class="badge">100+</span></button>
         <button class="btn is-warning">Warning <span class="badge">100+</span></button>
-        <button class="btn is-danger">Danger <span class="badge">100+</span></button>
+        <button class="btn btn-danger">Danger <span class="badge">100+</span></button>
         <button class="btn is-light">Light <span class="badge">100+</span></button>
         <button class="btn is-dark">Dark <span class="badge">100+</span></button>
     </div>
@@ -952,11 +996,11 @@
     <br>
 
     <div>
-        <button class="btn is-danger is-xs">Extra small <span class="badge">100+</span></button>
-        <button class="btn is-danger is-sm">Small <span class="badge">100+</span></button>
-        <button class="btn is-danger">Normal <span class="badge">100+</span></button>
-        <button class="btn is-danger is-md">Middle <span class="badge">100+</span></button>
-        <button class="btn is-danger is-lg">Large <span class="badge">100+</span></button>
+        <button class="btn btn-danger is-xs">Extra small <span class="badge">100+</span></button>
+        <button class="btn btn-danger is-sm">Small <span class="badge">100+</span></button>
+        <button class="btn btn-danger">Normal <span class="badge">100+</span></button>
+        <button class="btn btn-danger is-md">Middle <span class="badge">100+</span></button>
+        <button class="btn btn-danger is-lg">Large <span class="badge">100+</span></button>
     </div>
 
     <h2>Popup</h2>
@@ -1053,7 +1097,3553 @@
         </div>
     </div>
 
+    <h2>Tables</h2>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3>Hover</h3>
+    <table class="table is-hover">
+        <thead>
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3>Border</h3>
+    <table class="table is-border">
+        <thead>
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3>Striped</h3>
+    <table class="table is-striped">
+        <thead>
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3>All</h3>
+    <table class="table is-border is-hover is-striped">
+        <thead>
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3>Colors</h3>
+    <table class="table is-border">
+        <thead>
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="is-primary">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr class="is-success">
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr class="is-info">
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr class="is-warning">
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr class="is-danger">
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h3>Complex tables</h3>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>User</th>
+            <th>E-mail</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Options</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>John Doe</td>
+            <td>john@example.com</td>
+            <td>Description...</td>
+            <td><span class="label is-info">info</span></td>
+            <td class="is-pack is-text-center">
+                <button class="btn is-circle"><i class="fab fa-ellipsis-v"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>john@example.com</td>
+            <td>Description...</td>
+            <td><span class="label is-warning">warning</span></td>
+            <td class="is-pack is-text-center">
+                <button class="btn is-circle"><i class="fab fa-ellipsis-v"></i></button>
+            </td>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>john@example.com</td>
+            <td>Description...</td>
+            <td><span class="label is-danger">danger</span></td>
+            <td class="is-pack is-text-center">
+                <button class="btn is-circle"><i class="fab fa-ellipsis-v"></i></button>
+            </td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="4">
+                Table footer....
+            </td>
+            <td class="is-pack is-text-center">
+                <button class="btn is-circle"><i class="fab fa-plus"></i></button>
+            </td>
+        </tr>
+        </tfoot>
+    </table>
+
+    <br>
+    <br>
+
+    <table class="table is-border">
+        <thead>
+        <tr>
+            <th>User</th>
+            <th>E-mail</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Options</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>John Doe</td>
+            <td>john@example.com</td>
+            <td>Description...</td>
+            <td>
+                <span class="label is-primary">primary</span>
+                <span class="label is-success">success</span>
+            </td>
+            <td class="is-pack is-text-center">
+                <button class="btn btn-primary">Options <i class="fab fa-chevron-down"></i></button>
+            </td>
+        </tr>
+        </tbody>
+
+    </table>
+
+    <h3>Table with panel</h3>
+    <div class="panel">
+        <div class="panel-header">Header</div>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="panel-footer">Footer</div>
+    </div>
+
+    <h2>Tiles (experimental - todo)</h2>
+
+    <h3>Tree DOM structure</h3>
+    <div class="tile-grid">
+        <div class="tile-container width-8">
+            <div class="tile-container is-vertical">
+                <div class="tile-container">
+                    <div class="tile-container width-8 is-vertical">
+                        <div class="tile is-primary">A</div>
+                        <div class="tile is-success">B</div>
+                    </div>
+                    <div class="tile is-warning">C</div>
+                </div>
+                <div class="tile is-danger">D</div>
+            </div>
+        </div>
+        <div class="tile is-dark">E</div>
+    </div>
+
+    <h3>Flat DOM structure</h3>
+    <div class="tile-grid">
+        <div class="tile-container width-4">
+            <div class="tile is-orange">A</div>
+        </div>
+        <div class="tile-container is-vertical width-4">
+            <div class="tile is-purple">B</div>
+            <div class="tile is-red">C</div>
+        </div>
+        <div class="tile-container width-4">
+            <div class="tile is-blue">D</div>
+            <div class="tile is-olive">E</div>
+            <div class="tile is-yellow">F</div>
+        </div>
+        <div class="tile-container is-vertical width-4">
+            <div class="tile is-brown">G</div>
+            <div class="tile is-gray">H</div>
+            <div class="tile is-cyan">I</div>
+        </div>
+        <div class="tile-container width-4">
+            <div class="tile is-coral">J</div>
+            <div class="tile is-green">K</div>
+        </div>
+        <div class="tile-container width-4">
+            <div class="tile is-dark">L</div>
+        </div>
+    </div>
+
+    <h2>Cards</h2>
+    <div class="row">
+
+        <div class="col-4">
+            <div class="card is-shadow">
+                <div class="card-content">
+                    <span class="card-title">Title</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, est in iste nobis odio
+                        possimus ratione rerum sit. Blanditiis dicta dignissimos distinctio nam non omnis quaerat
+                        quam quibusdam unde voluptate.</p>
+                </div>
+                <div class="card-action">
+                    <a class="btn is-clear" href="#">Link</a>
+                    <a class="btn is-clear" href="#">Link</a>
+                    <a class="btn is-clear" href="#">Link</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card is-shadow">
+                <div class="card-image">
+                    <img src="http://placehold.it/800x300">
+                    <span class="card-title">Title</span>
+                </div>
+                <div class="card-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet animi asperiores aut
+                        blanditiis commodi cum earum eveniet fugit impedit, ipsa ipsum itaque laborum maiores nihil,
+                        nisi odio similique. Blanditiis?</p>
+                </div>
+                <div class="card-action">
+                    <a class="btn is-clear" href="#">Link</a>
+                    <a class="btn is-clear" href="#">Link</a>
+                    <a class="btn is-clear" href="#">Link</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card is-shadow">
+                <div class="card-content is-primary">
+                    <span class="card-title">Title</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, est in iste nobis odio
+                        possimus ratione rerum sit. Blanditiis dicta dignissimos distinctio nam non omnis quaerat
+                        quam quibusdam unde voluptate.</p>
+                </div>
+                <div class="card-content is-success">
+                    <span class="card-title">Title</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, est in iste nobis odio
+                        possimus ratione rerum sit. Blanditiis dicta dignissimos distinctio nam non omnis quaerat
+                        quam quibusdam unde voluptate.</p>
+                </div>
+                <div class="card-content is-warning">
+                    <span class="card-title">Title</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, est in iste nobis odio
+                        possimus ratione rerum sit. Blanditiis dicta dignissimos distinctio nam non omnis quaerat
+                        quam quibusdam unde voluptate.</p>
+                </div>
+                <div class="card-action">
+                    <a class="btn is-clear" href="#">Link</a>
+                    <a class="btn is-clear" href="#">Link</a>
+                    <a class="btn is-clear" href="#">Link</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <h2>Panel</h2>
+
+    <div class="panel">
+        <div>only content</div>
+    </div>
+
+    <h3>Header</h3>
+    <div class="panel">
+        <div class="panel-header">Header</div>
+        <div class="panel-content">
+            content...
+        </div>
+    </div>
+
+    <h3>Color</h3>
+    <div class="panel">
+        <div class="panel-header is-primary">Header</div>
+        <div class="panel-content">
+            content...
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="panel-header is-success">Header</div>
+        <div class="panel-content">
+            content...
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="panel-header is-info">Header</div>
+        <div class="panel-content">
+            content...
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="panel-header is-warning">Header</div>
+        <div class="panel-content">
+            content...
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="panel-header is-danger">Header</div>
+        <div class="panel-content">
+            content...
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="panel-header is-light">Header</div>
+        <div class="panel-content">
+            content...
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="panel-header is-dark">Header</div>
+        <div class="panel-content">
+            content...
+        </div>
+    </div>
+
+    <h3>Size</h3>
+    <div class="panel is-xs">
+        <div class="panel-header">Header</div>
+        <div class="panel-content">
+            content...
+        </div>
+    </div>
+
+    <div class="panel is-sm">
+        <div class="panel-header">Header</div>
+        <div class="panel-content">
+            content...
+        </div>
+    </div>
+
+    <div class="panel is-xs">
+        <div class="panel-header">Header</div>
+        <div class="panel-content">
+            content...
+        </div>
+    </div>
+
+    <div class="panel is-md">
+        <div class="panel-header">Header</div>
+        <div class="panel-content">
+            content...
+        </div>
+    </div>
+
+    <div class="panel is-lg">
+        <div class="panel-header">Header</div>
+        <div class="panel-content">
+            content...
+        </div>
+    </div>
+
+    <h3>With icons</h3>
+
+    <div class="panel">
+        <div class="panel-header is-info"><i class="fab fa-info"></i> Info</div>
+        <div class="panel-content">
+            content...
+        </div>
+    </div>
+
+    <h3>Header & footer</h3>
+    <div class="panel">
+        <div class="panel-header is-lg">Header</div>
+        <div class="panel-content">
+            content...
+        </div>
+        <div class="panel-footer is-xs">Footer</div>
+    </div>
+
+    <h3>Grid & responsive</h3>
+    <div class="row xs-1 sm-2 lg-3">
+        <div class="col">
+            <div class="panel">
+                <div class="panel-header is-primary">Header</div>
+                <div class="panel-content">
+                    content...
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="panel">
+                <div class="panel-header is-success">Header</div>
+                <div class="panel-content">
+                    content...
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="panel">
+                <div class="panel-header is-warning">Header</div>
+                <div class="panel-content">
+                    content...
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="panel">
+                <div class="panel-header is-danger">Header</div>
+                <div class="panel-content">
+                    content...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3>Panel with nav</h3>
+    <div class="panel">
+        <div class="panel-nav is-light">
+            <span class="panel-title">Title</span>
+            <ul class="nav is-tab is-active-border is-gutter">
+                <li><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li class="active"><a href="#">Active</a></li>
+                <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+                <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+                <li class="is-space"></li>
+                <li><a href="">Right</a></li>
+            </ul>
+        </div>
+        <div class="panel-content">
+            content...
+        </div>
+        <div class="panel-footer is-light">
+            <ul class="nav is-box is-flex-center">
+                <li><a href="#">Option 3</a></li>
+                <li><a href="#">Option 4</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <h1>Form</h1>
+
+    <h2>Simple</h2>
+    <form class="section">
+        <div class="control">
+            <label>Email:</label>
+            <input type="email">
+        </div>
+        <div class="control">
+            <label>Password:</label>
+            <input type="password">
+        </div>
+
+        <div class="control checkbox">
+            <input id="check1" type="checkbox">
+            <label for="check1"> Terms</label>
+        </div>
+
+        <div class="control checkbox">
+            <input id="check2" type="checkbox" checked="checked">
+            <label for="check2"> Terms checked</label>
+        </div>
+
+        <div class="control checkbox">
+            <input id="check3" type="checkbox" disabled>
+            <label for="check3"> Terms disabled</label>
+        </div>
+
+        <div class="control checkbox">
+            <input id="check4" type="checkbox" checked="checked" disabled>
+            <label for="check4"> Terms checked & disabled</label>
+        </div>
+
+        <div class="control">
+            <button class="btn btn-primary" type="submit">Login</button>
+        </div>
+    </form>
+
+    <h2>Responsive</h2>
+    <form class="row">
+        <div class="col-6">
+            <label>User:</label>
+            <input type="text">
+        </div>
+        <div class="col-6">
+            <label>Type:</label>
+            <select>
+                <option value="user">User</option>
+                <option value="admin">Admin</option>
+                <option value="superuser">Super User</option>
+            </select>
+        </div>
+        <div class="col-12">
+            <label for="description">Description</label>
+            <textarea id="description" class="is-box" placeholder="description..."></textarea>
+        </div>
+        <div class="col-12">
+            <div class="checkbox">
+                <input id="check5" type="checkbox">
+                <label for="check5"> Term</label>
+            </div>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+    </form>
+
+    <!--
+    <h2>Example 1</h2>
+    <form class="row max-2">
+        <label class="col">Text:</label>
+        <input type="text" placeholder="text">
+        <label class="col">Password:</label>
+        <input type="password" placeholder="password">
+        <label class="col">Number:</label>
+        <input type="number" placeholder="number">
+        <label class="col">Search:</label>
+        <input type="search" placeholder="search">
+        <button class="btn is-success">Save</button>
+    </form>
+
+    <h2>Example 2</h2>
+    <form action="#" method="post">
+        <div>
+            <label for="name">Text Input:</label>
+            <input type="text" name="name" id="name" value="" tabindex="1" />
+        </div>
+
+        <div>
+            <h4>Radio Button Choice</h4>
+
+            <label for="radio-choice-1">Choice 1</label>
+            <input type="radio" name="radio-choice-1" id="radio-choice-1" tabindex="2" value="choice-1" />
+
+            <label for="radio-choice-2">Choice 2</label>
+            <input type="radio" name="radio-choice-2" id="radio-choice-2" tabindex="3" value="choice-2" />
+        </div>
+
+        <div>
+            <label for="select-choice">Select Dropdown Choice:</label>
+            <select name="select-choice" id="select-choice">
+                <option value="Choice 1">Choice 1</option>
+                <option value="Choice 2">Choice 2</option>
+                <option value="Choice 3">Choice 3</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="textarea">Textarea:</label>
+            <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+        </div>
+
+        <div>
+            <label for="checkbox">Checkbox:</label>
+            <input type="checkbox" name="checkbox" id="checkbox" />
+        </div>
+
+        <div>
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+    -->
+
+    <h1>Navigation</h1>
+
+    <h2>Simple row and gutter</h2>
+    <div class="row is-gutter">
+        <div class="is-info">Option1</div>
+        <div class="is-primary">Option2</div>
+        <div class="is-warning">Option3</div>
+        <div class="is-space"></div>
+        <div class="is-danger">Right</div>
+    </div>
+
+    <h2>Nav (default)</h2>
+    <ul class="nav">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-primary">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-success">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-info">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-warning">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-danger">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-light">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-dark">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <h3>My colors</h3>
+    <ul class="nav my-color">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <h3>Size</h3>
+    <ul class="nav is-light is-xs">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-light is-sm">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-light">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-light is-md">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-light is-lg">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <h3>Justify content</h3>
+    <ul class="nav is-light is-flex-start">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li><a href="#">Option 3</a></li>
+    </ul>
+
+    <ul class="nav is-light is-flex-end">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li><a href="#">Option 3</a></li>
+    </ul>
+
+    <ul class="nav is-light is-flex-center">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li><a href="#">Option 3</a></li>
+    </ul>
+
+    <ul class="nav is-light is-space-around">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li><a href="#">Option 3</a></li>
+    </ul>
+
+    <ul class="nav is-light is-space-between">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li><a href="#">Option 3</a></li>
+    </ul>
+
+    <ul class="nav is-light">
+        <li class="is-flex-auto"><a href="#">Option 1</a></li>
+        <li class="is-flex-auto"><a href="#">Option 2</a></li>
+        <li class="is-flex-auto"><a href="#">Option 3</a></li>
+    </ul>
+
+    <h3>With controls, group & is-gap</h3>
+    <ul class="nav is-light">
+        <li><a href="#">Option 1</a></li>
+        <li>
+            <button class="btn is-success">Button</button>
+        </li>
+        <li>
+            <div class="group">
+                <button class="btn">Group</button>
+                <button class="btn is-dark"><i class="fab fa-angle-down"></i></button>
+            </div>
+        </li>
+        <li>
+            <div class="group">
+                <span class="group-label">Label</span>
+                <input type="text" placeholder="Input">
+                <button class="btn btn-danger">Button</button>
+            </div>
+        </li>
+        <li><input type="text" value="Input"></li>
+        <li class="is-space"></li>
+        <li>
+            <div class="group">
+                <input type="text" placeholder="Search...">
+                <button class="btn btn-primary"><i class="fab fa-search"></i></button>
+            </div>
+        </li>
+    </ul>
+
+    <ul class="nav is-light is-gap">
+        <li><a href="#">Option 1</a></li>
+        <li>
+            <button class="btn is-success">Button</button>
+        </li>
+        <li>
+            <div class="group">
+                <button class="btn">Group</button>
+                <button class="btn is-dark"><i class="fab fa-angle-down"></i></button>
+            </div>
+        </li>
+        <li>
+            <div class="group">
+                <span class="group-label">Label</span>
+                <input type="text" placeholder="Input">
+                <button class="btn btn-danger">Button</button>
+            </div>
+        </li>
+        <li><input type="text" value="Input"></li>
+        <li class="is-space"></li>
+        <li>
+            <div class="group">
+                <input type="text" placeholder="Search...">
+                <button class="btn btn-primary"><i class="fab fa-search"></i></button>
+            </div>
+        </li>
+    </ul>
+
+    <h2>Box (nav, is-box)</h2>
+    <ul class="nav is-box">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-box is-primary">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-box is-success">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-box is-info">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-box is-warning">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-box is-danger">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-box is-light">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-box is-dark">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <h3>My colors</h3>
+    <ul class="nav is-box my-color">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <h3>Size</h3>
+    <ul class="nav is-box is-light is-xs">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-box is-light is-sm">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-box is-light">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-box is-light is-md">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-box is-light is-lg">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <h2>Flat (nav, is-flat)</h2>
+    <ul class="nav is-flat">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-flat is-primary">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-flat is-success">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-flat is-info">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-flat is-warning">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-flat is-danger">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-flat is-light">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-flat is-dark">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <h3>With is-bottom-border</h3>
+    <ul class="nav is-flat is-bottom-border">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <h3>My colors</h3>
+    <ul class="nav is-flat is-bottom-border my-color">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <h3>Size</h3>
+    <ul class="nav is-flat is-light is-xs">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-flat is-light is-sm">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-flat is-light">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-flat is-light is-md">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-flat is-light is-lg">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <h2>Tabs (nav, is-tab)</h2>
+
+    <ul class="nav is-tab">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-primary">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-success">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-info">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-warning">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-danger">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-light">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-dark">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <h3>My colors</h3>
+    <ul class="nav is-tab my-color">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <h3>Active Border</h3>
+    <ul class="nav is-tab is-active-border">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-primary is-active-border">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-success is-active-border">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-info is-active-border">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-warning is-active-border">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-danger is-active-border">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-light is-active-border">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-dark is-active-border">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <h3>My colors with border</h3>
+    <ul class="nav is-tab is-active-border my-color">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <h3>Border</h3>
+    <ul class="nav is-tab is-border">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-primary is-border">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-success is-border">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-info is-border">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-warning is-border">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-danger is-border">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-light is-border">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-dark is-border">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <h3>My colors with border</h3>
+    <ul class="nav is-tab my-color">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <h3>Border and thick</h3>
+
+    <ul class="nav is-tab is-active-border">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-active-border is-thick">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-border">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-border is-thick">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <h3>Size</h3>
+    <ul class="nav is-tab is-light is-xs">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-light is-sm">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-light">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-light is-md">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab is-light is-lg">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <h3>Reset radius</h3>
+
+    <ul class="nav is-tab is-active-border reset-radius">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <ul class="nav is-tab reset-radius">
+        <li><a href="#">Option 1</a></li>
+        <li><a href="#">Option 2</a></li>
+        <li class="active"><a href="#">Active</a></li>
+        <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+        <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Right</a></li>
+    </ul>
+
+    <h3>Submenu</h3>
+
+    <ul class="nav is-success">
+        <li class="title">Gedeonix UI</li>
+        <li><a>Option 1</a></li>
+        <li><a>Option 2</a></li>
+        <li><a>Option 3</a>
+            <ul>
+                <li><a href="#">Option 5</a></li>
+                <li><a href="#">Option 6</a></li>
+                <li><a>Option 7</a>
+                    <ul>
+                        <li><a href="#">Option 8</a></li>
+                        <li><a href="#">Option 9</a></li>
+                        <li><a>Option 10</a>
+                            <ul>
+                                <li><a href="#">Option 11</a></li>
+                                <li><a href="#">Option 12</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a>Option 4</a></li>
+    </ul>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2>Vertical nav (is-vertical)</h2>
+
+    <div class="row xs-1 sm-2 md-6">
+        <div class="col">
+            <ul class="nav is-vertical">
+                <li class="title">Title</li>
+                <li><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li class="active"><a href="#">Active</a></li>
+                <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+                <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+                <li class="is-space"></li>
+                <li><a href="">Option 3</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul class="nav is-vertical is-primary">
+                <li class="title">Title</li>
+                <li><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li class="active"><a href="#">Active</a></li>
+                <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+                <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+                <li class="is-space"></li>
+                <li><a href="">Option 3</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul class="nav is-vertical is-success">
+                <li class="title">Title</li>
+                <li><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li class="active"><a href="#">Active</a></li>
+                <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+                <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+                <li class="is-space"></li>
+                <li><a href="">Option 3</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul class="nav is-vertical is-danger">
+                <li class="title">Title</li>
+                <li><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li class="active"><a href="#">Active</a></li>
+                <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+                <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+                <li class="is-space"></li>
+                <li><a href="">Option 3</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul class="nav is-vertical is-dark">
+                <li class="title">Title</li>
+                <li><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li class="active"><a href="#">Active</a></li>
+                <li class="disabled"><a href="" class="disabled">Disabled</a></li>
+                <li><a href="#"><i class="fab fa-home"></i> Icon</a></li>
+                <li class="is-space"></li>
+                <li><a href="">Option 3</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <h3>Submenu</h3>
+
+    <div class="row">
+        <div class="col-4">
+            <ul class="nav is-vertical is-light">
+                <li class="title">Title</li>
+                <li><label>Search:</label></li>
+                <li class="icon-addon">
+                    <i class="fab fa-search"></i>
+                    <input type="search">
+                </li>
+                <li><a href="#">Option 1</a></li>
+                <li class="submenu">
+                    <a>Option 2</a>
+                    <ul class="open">
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Option 3</a></li>
+                <li><a class="btn btn-danger" href="">Button</a></li>
+            </ul>
+        </div>
+        <div class="col-4">
+            <ul class="nav is-vertical is-warning">
+                <li class="title">Title</li>
+                <li><a href="#">Option 1</a></li>
+                <li class="submenu">
+                    <a>Option 2</a>
+                    <ul class="open">
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Option 3</a></li>
+                <li class="submenu">
+                    <a>Option 4</a>
+                    <ul>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Option 5</a></li>
+            </ul>
+        </div>
+        <div class="col-4">
+            <ul class="nav is-vertical is-info">
+                <li class="title">Title</li>
+                <li><a href="#">Option 1</a></li>
+                <li class="submenu">
+                    <a>Option 2</a>
+                    <ul>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Option 3</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <h1>Navbar (flexbox container)</h1>
+    <div class="navbar is-warning">
+        <div class="brand is-light">Gedeonix UI</div>
+        <div class="is-space"></div>
+        <ul class="nav is-primary">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+        </ul>
+        <ul class="nav is-success">
+            <li><a href="#">Option 4</a></li>
+            <li><a href="#">Option 5</a></li>
+            <li><a href="#">Option 6</a></li>
+        </ul>
+    </div>
+
+    <h2>Complex</h2>
+    <ul class="nav is-dark is-gap">
+        <li>
+            <div class="brand">Gedeonix UI</div>
+        </li>
+        <li><a href="#">A</a></li>
+        <li>
+            <button class="btn is-success is-round">Button</button>
+        </li>
+        <li><a class="btn is-success"><i class="fab fa-user"></i> B</a></li>
+        <li>
+            <div class="group">
+                <button class="btn">Group</button>
+                <button class="btn is-light"><i class="fab fa-angle-down"></i></button>
+            </div>
+        </li>
+        <li>
+            <div class="group">
+                <span class="group-label">Label</span>
+                <input type="text" placeholder="Input">
+                <button class="btn btn-danger">Button</button>
+            </div>
+        </li>
+        <li><input type="text" value="Input"></li>
+        <li class="is-space"></li>
+        <li>
+            <div class="group">
+                <input type="text" placeholder="Search...">
+                <button class="btn btn-primary"><i class="fab fa-search"></i></button>
+            </div>
+        </li>
+    </ul>
+
+    <br>
+
+    <ul class="navbar is-success is-gap">
+        <li class="brand">Brand</li>
+        <ul class="nav is-tab is-danger">
+            <li><a>1</a></li>
+            <li><a>2</a></li>
+            <li class="active"><a>3</a></li>
+        </ul>
+        <ul class="nav is-box is-info">
+            <li><a>4</a></li>
+            <li><a>5</a></li>
+            <li class="active"><a>6</a></li>
+        </ul>
+        <ul class="nav is-flat is-dark">
+            <li><a>4</a></li>
+            <li><a>5</a></li>
+            <li class="active"><a>6</a></li>
+        </ul>
+        <ul class="nav is-dropdown is-warning">
+            <li><a>7</a></li>
+            <li><a>8</a></li>
+            <li class="submenu"><a>9</a>
+                <ul>
+                    <li><a href="#">item</a></li>
+                    <li><a href="#">item</a></li>
+                    <li><a href="#">item</a></li>
+                </ul>
+            </li>
+        </ul>
+        <li class="is-space"></li>
+        <li>
+            <a class="btn">Simple</a>
+        </li>
+        <li>
+            <a class="btn is-dark is-round"><i class="fab fa-info"></i> Info</a>
+        </li>
+
+    </ul>
+
+    <h3>Is gutter</h3>
+    <ul class="nav is-tab is-success is-gutter">
+        <li><a href="">Tab1</a></li>
+        <li class="active"><a href="">Tab2</a></li>
+        <li><a href="">Tab3</a></li>
+        <li><a href="">Tab4</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Tab5</a></li>
+    </ul>
+
+    <h3>No gutter</h3>
+    <ul class="nav is-tab is-success no-gutter">
+        <li><a href="">Tab1</a></li>
+        <li class="active"><a href="">Tab2</a></li>
+        <li><a href="">Tab3</a></li>
+        <li><a href="">Tab4</a></li>
+        <li class="is-space"></li>
+        <li><a href="">Tab5</a></li>
+    </ul>
+
+    <h1>Pagination</h1>
+
+    <div class="pagination">
+        <button class="btn"><i class="fab fa-angle-left"></i></button>
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn"><i class="fab fa-angle-right"></i></button>
+    </div>
+    <br>
+
+    <div class="pagination">
+        <button class="btn is-circle"><i class="fab fa-angle-left"></i></button>
+        <button class="btn is-circle">1</button>
+        <button class="btn is-circle">2</button>
+        <button class="btn is-circle">3</button>
+        <button class="btn is-circle">4</button>
+        <button class="btn is-circle">5</button>
+        <button class="btn is-circle"><i class="fab fa-angle-right"></i></button>
+    </div>
+    <br>
+
+    <div class="pagination">
+        <button class="btn is-flat"><i class="fab fa-angle-left"></i></button>
+        <button class="btn is-flat">1</button>
+        <button class="btn is-flat">2</button>
+        <button class="btn is-flat">3</button>
+        <button class="btn is-flat">4</button>
+        <button class="btn is-flat">5</button>
+        <button class="btn is-flat"><i class="fab fa-angle-right"></i></button>
+    </div>
+    <br>
+
+    <div class="pagination">
+        <button class="btn btn-md"><i class="fab fa-angle-left"></i></button>
+        <button class="btn btn-md">2</button>
+        <button class="btn btn-md">2</button>
+        <button class="btn btn-md">3</button>
+        <button class="btn btn-md">4</button>
+        <button class="btn btn-md">5</button>
+        <button class="btn btn-md"><i class="fab fa-angle-right"></i></button>
+    </div>
+
+    <h3>With group</h3>
+
+    <div class="pagination group">
+        <button class="btn"><i class="fab fa-angle-left"></i></button>
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn"><i class="fab fa-angle-right"></i></button>
+    </div>
+    <br>
+    <br>
+
+    <div class="pagination group">
+        <button class="btn is-round"><i class="fab fa-angle-left"></i></button>
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn is-round"><i class="fab fa-angle-right"></i></button>
+    </div>
+    <br>
+    <br>
+
+    <div class="pagination group">
+        <button class="btn is-warning"><i class="fab fa-angle-left"></i></button>
+        <button class="btn is-warning">1</button>
+        <button class="btn is-warning">2</button>
+        <button class="btn is-warning">3</button>
+        <button class="btn is-warning">4</button>
+        <button class="btn is-warning">5</button>
+        <button class="btn is-warning"><i class="fab fa-angle-right"></i></button>
+    </div>
+    <br>
+    <br>
+
+    <div class="pagination group">
+        <button class="btn btn-primary"><i class="fab fa-angle-left"></i></button>
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn btn-primary"><i class="fab fa-angle-right"></i></button>
+    </div>
+    <br>
+    <br>
+
+    <div class="pagination group">
+        <button class="btn is-dark"><i class="fab fa-angle-left"></i></button>
+        <button class="btn is-dark">1</button>
+        <button class="btn is-dark">2</button>
+        <button class="btn is-dark">3</button>
+        <button class="btn is-dark">4</button>
+        <button class="btn is-dark">5</button>
+        <button class="btn is-dark"><i class="fab fa-angle-right"></i></button>
+    </div>
+
+    <h1>Breadcrumbs</h1>
+    <ul class="breadcrumbs">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Company</a></li>
+        <li class="active"><a href="#">Address</a></li>
+    </ul>
+    <br>
+
+    <ul class="breadcrumbs is-primary">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Company</a></li>
+        <li class="active"><a href="#">Address</a></li>
+    </ul>
+    <br>
+
+    <ul class="breadcrumbs is-success">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Company</a></li>
+        <li class="active"><a href="#">Address</a></li>
+    </ul>
+    <br>
+
+    <ul class="breadcrumbs is-warning">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Company</a></li>
+        <li class="active"><a href="#">Address</a></li>
+    </ul>
+    <br>
+
+    <ul class="breadcrumbs is-danger">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Company</a></li>
+        <li class="active"><a href="#">Address</a></li>
+    </ul>
+    <br>
+    <ul class="breadcrumbs is-dark">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Company</a></li>
+        <li class="active"><a href="#">Address</a></li>
+    </ul>
+
+    <section class="hero is-warning">
+        <h1>Hero</h1>
+
+    </section>
+
+    <section class="hero is-danger">
+        <h1>Hero</h1>
+
+    </section>
+
+    <section class="hero is-light">
+        <h1>Hero</h1>
+
+    </section>
+
+    <h1>Modal</h1>
+    <button id="modal-button" class="btn">Open simple modal</button>
+
+    <div id="modal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-container is-shadow">
+            <div class="modal-content">
+                <div class="modal-header is-info"><i class="fab fa-info"></i> Info
+                    <div id="close1" class="close is-circle"></div>
+                </div>
+                <div class="modal-body is-text-center">
+                    Simple example
+                </div>
+                <div class="modal-footer">
+                    <button id="close2" class="btn is-info">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Info</h2>
+    <div class="modal-content is-shadow">
+        <div class="modal-header is-info"><i class="fab fa-info"></i> Info
+            <div class="close is-circle"></div>
+        </div>
+        <div class="modal-body is-text-center">
+            Simple example
+        </div>
+        <div class="modal-footer">
+            <button class="btn is-info">Ok</button>
+        </div>
+    </div>
+
+    <h2>Warning</h2>
+    <div class="modal-content is-shadow">
+        <div class="modal-header is-warning"><i class="fab fa-warning"></i> Warning
+            <div class="close is-circle"></div>
+        </div>
+        <div class="modal-body is-text-center">
+            Simple example
+        </div>
+        <div class="modal-footer">
+            <button class="btn is-warning">Yes</button>
+            <button class="btn is-clear is-warning">No</button>
+        </div>
+    </div>
+
+    <h2>Danger</h2>
+    <div class="modal-content is-shadow">
+        <div class="modal-header is-danger"><i class="fab fa-wrench"></i> Danger
+            <div class="close is-circle"></div>
+        </div>
+        <div class="modal-body is-text-center">
+            Simple example
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-danger">Ok</button>
+        </div>
+    </div>
+
+    <h2>Form</h2>
+    <div class="modal-content is-shadow">
+        <form>
+            <div class="modal-header is-dark"><i class="fab fa-cog"></i> Form
+                <div class="close is-circle"></div>
+            </div>
+            <div class="modal-body">
+
+                <div class="control">
+                    <label>Email:</label>
+                    <input type="email">
+                </div>
+                <div class="control">
+                    <label>Password:</label>
+                    <input type="password">
+                </div>
+
+                <div class="control checkbox">
+                    <input id="check1" type="checkbox">
+                    <label for="check1"> Terms</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn is-success">Save</button>
+                <button class="btn is-outline">Cancel</button>
+            </div>
+        </form>
+    </div>
+
 </main>
+
+<hr>
+
+<div class="container">
+    <h1>Containers</h1>
+</div>
+
+<div class="container container1 is-gutter">
+    <div class="content1">
+        <h2>Default with gutter</h2>
+        content container...
+    </div>
+</div>
+
+<div class="container container1 no-gutter">
+    <div class="content1">
+        <h2>Container without gutter</h2>
+        content container...
+    </div>
+</div>
+
+<h1 class="container">Fluid container</h1>
+<div class="container-fluid container1 is-gutter">
+    <div class="content1">
+        <h2>Default with gutter</h2>
+        content container...
+    </div>
+</div>
+
+<div class="container-fluid container1 no-gutter">
+    <div class="content1">
+        <h2>Container without gutter</h2>
+        content container...
+    </div>
+</div>
+
+<main class="demo main container">
+
+    <h1>Flex grid</h1>
+    <h2>Simple</h2>
+
+    <h3>Simple (row, no-gutter, col)</h3>
+
+    <div class="row no-gutter">
+        <div class="col">
+            <div>1</div>
+        </div>
+    </div>
+    <div class="row no-gutter">
+        <div class="col">
+            <div>2</div>
+        </div>
+        <div class="col">
+            <div>2</div>
+        </div>
+    </div>
+    <div class="row no-gutter">
+        <div class="col">
+            <div>3</div>
+        </div>
+        <div class="col">
+            <div>3</div>
+        </div>
+        <div class="col">
+            <div>3</div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col">
+            <div>1</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div>2</div>
+        </div>
+        <div class="col">
+            <div>2</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div>3</div>
+        </div>
+        <div class="col">
+            <div>3</div>
+        </div>
+        <div class="col">
+            <div>3</div>
+        </div>
+    </div>
+
+    <h3>Max limit (row-x)</h3>
+
+    <div class="row-3 no-gutter">
+        <div class="col">
+            <div>1</div>
+        </div>
+        <div class="col">
+            <div>1</div>
+        </div>
+        <div class="col">
+            <div>1</div>
+        </div>
+        <div class="col">
+            <div>1</div>
+        </div>
+        <div class="col">
+            <div>1</div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row-3">
+        <div class="col">
+            <div>1</div>
+        </div>
+        <div class="col">
+            <div>1</div>
+        </div>
+        <div class="col">
+            <div>1</div>
+        </div>
+        <div class="col">
+            <div>1</div>
+        </div>
+        <div class="col">
+            <div>1</div>
+        </div>
+    </div>
+
+    <h3>Offsets (offset-x)</h3>
+    <div class="row no-gutter">
+        <div class="col offset-1">
+            <div>1</div>
+        </div>
+        <div class="offset-1"></div>
+    </div>
+    <div class="row no-gutter">
+        <div class="col offset-2">
+            <div>1</div>
+        </div>
+        <div class="offset-2"></div>
+    </div>
+    <div class="row no-gutter">
+        <div class="col offset-3">
+            <div>1</div>
+        </div>
+        <div class="offset-3"></div>
+    </div>
+    <div class="row no-gutter">
+        <div class="col offset-4">
+            <div>1</div>
+        </div>
+        <div class="offset-4"></div>
+    </div>
+    <div class="row no-gutter">
+        <div class="col offset-5">
+            <div>1</div>
+        </div>
+        <div class="offset-5"></div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col offset-1">
+            <div>1</div>
+        </div>
+        <div class="offset-1"></div>
+    </div>
+    <div class="row">
+        <div class="col offset-2">
+            <div>1</div>
+        </div>
+        <div class="offset-2"></div>
+    </div>
+    <div class="row">
+        <div class="col offset-3">
+            <div>1</div>
+        </div>
+        <div class="offset-3"></div>
+    </div>
+    <div class="row">
+        <div class="col offset-4">
+            <div>1</div>
+        </div>
+        <div class="offset-4"></div>
+    </div>
+    <div class="row">
+        <div class="col offset-5">
+            <div>1</div>
+        </div>
+        <div class="offset-5"></div>
+    </div>
+
+    <h3>Columns (col-x)</h3>
+    <div class="row no-gutter">
+        <div class="col-1">
+            <div>1</div>
+        </div>
+        <div class="col-1">
+            <div>1</div>
+        </div>
+        <div class="col-1">
+            <div>1</div>
+        </div>
+        <div class="col-1">
+            <div>1</div>
+        </div>
+        <div class="col-1">
+            <div>1</div>
+        </div>
+        <div class="col-1">
+            <div>1</div>
+        </div>
+        <div class="col-1">
+            <div>1</div>
+        </div>
+        <div class="col-1">
+            <div>1</div>
+        </div>
+        <div class="col-1">
+            <div>1</div>
+        </div>
+        <div class="col-1">
+            <div>1</div>
+        </div>
+        <div class="col-1">
+            <div>1</div>
+        </div>
+        <div class="col-1">
+            <div>1</div>
+        </div>
+    </div>
+
+    <div class="row no-gutter">
+        <div class="col-2">
+            <div>2</div>
+        </div>
+        <div class="col-2">
+            <div>2</div>
+        </div>
+        <div class="col-2">
+            <div>2</div>
+        </div>
+        <div class="col-2">
+            <div>2</div>
+        </div>
+        <div class="col-2">
+            <div>2</div>
+        </div>
+        <div class="col-2">
+            <div>2</div>
+        </div>
+    </div>
+
+    <div class="row no-gutter">
+        <div class="col-3">
+            <div>3</div>
+        </div>
+        <div class="col-3">
+            <div>3</div>
+        </div>
+        <div class="col-3">
+            <div>3</div>
+        </div>
+        <div class="col-3">
+            <div>3</div>
+        </div>
+    </div>
+
+    <div class="row no-gutter">
+        <div class="col-4">
+            <div>4</div>
+        </div>
+        <div class="col-4">
+            <div>4</div>
+        </div>
+        <div class="col-4">
+            <div>4</div>
+        </div>
+    </div>
+
+    <div class="row no-gutter">
+        <div class="col-6">
+            <div>6</div>
+        </div>
+        <div class="col-6">
+            <div>6</div>
+        </div>
+    </div>
+
+    <div class="row no-gutter">
+        <div class="col-12">
+            <div>12</div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col-1">
+            <div>1</div>
+        </div>
+        <div class="col-1">
+            <div>1</div>
+        </div>
+        <div class="col-1">
+            <div>1</div>
+        </div>
+        <div class="col-1">
+            <div>1</div>
+        </div>
+        <div class="col-1">
+            <div>1</div>
+        </div>
+        <div class="col-1">
+            <div>1</div>
+        </div>
+        <div class="col-1">
+            <div>1</div>
+        </div>
+        <div class="col-1">
+            <div>1</div>
+        </div>
+        <div class="col-1">
+            <div>1</div>
+        </div>
+        <div class="col-1">
+            <div>1</div>
+        </div>
+        <div class="col-1">
+            <div>1</div>
+        </div>
+        <div class="col-1">
+            <div>1</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-2">
+            <div>2</div>
+        </div>
+        <div class="col-2">
+            <div>2</div>
+        </div>
+        <div class="col-2">
+            <div>2</div>
+        </div>
+        <div class="col-2">
+            <div>2</div>
+        </div>
+        <div class="col-2">
+            <div>2</div>
+        </div>
+        <div class="col-2">
+            <div>2</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-3">
+            <div>3</div>
+        </div>
+        <div class="col-3">
+            <div>3</div>
+        </div>
+        <div class="col-3">
+            <div>3</div>
+        </div>
+        <div class="col-3">
+            <div>3</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <div>4</div>
+        </div>
+        <div class="col-4">
+            <div>4</div>
+        </div>
+        <div class="col-4">
+            <div>4</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <div>6</div>
+        </div>
+        <div class="col-6">
+            <div>6</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div>12</div>
+        </div>
+    </div>
+
+    <h3>Auto width</h3>
+
+    <div class="row no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+    </div>
+    <div class="row no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col-1">
+            <div>1</div>
+        </div>
+    </div>
+    <div class="row no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col-2">
+            <div>2</div>
+        </div>
+    </div>
+    <div class="row no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col-3">
+            <div>3</div>
+        </div>
+    </div>
+    <div class="row no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col-4">
+            <div>4</div>
+        </div>
+    </div>
+    <div class="row no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col-5">
+            <div>5</div>
+        </div>
+    </div>
+    <div class="row no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col-6">
+            <div>6</div>
+        </div>
+    </div>
+    <div class="row no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col-7">
+            <div>7</div>
+        </div>
+    </div>
+    <div class="row no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col-8">
+            <div>8</div>
+        </div>
+    </div>
+    <div class="row no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col-9">
+            <div>9</div>
+        </div>
+    </div>
+    <div class="row no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col-10">
+            <div>10</div>
+        </div>
+    </div>
+    <div class="row no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col-11">
+            <div>11</div>
+        </div>
+    </div>
+    <div class="row no-gutter">
+        <div class="col-12">
+            <div>12</div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col">
+            <div>auto</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col-1">
+            <div>1</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col-2">
+            <div>2</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col-3">
+            <div>3</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col-4">
+            <div>4</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col-5">
+            <div>5</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col-6">
+            <div>6</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col-7">
+            <div>7</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col-8">
+            <div>8</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col-9">
+            <div>9</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col-10">
+            <div>10</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col-11">
+            <div>11</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div>12</div>
+        </div>
+    </div>
+
+    <h3>Mix column (row-x & col-x)</h3>
+    <div class="row-6 no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col-8">
+            <div>8</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col-1">
+            <div>1</div>
+        </div>
+        <div class="col-2">
+            <div>2</div>
+        </div>
+        <div class="col-5">
+            <div>5</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row-6">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col-8">
+            <div>8</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col-1">
+            <div>1</div>
+        </div>
+        <div class="col-2">
+            <div>2</div>
+        </div>
+        <div class="col-5">
+            <div>5</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+    </div>
+
+    <h3>Justify content (row, is-left, is-center, is-right)</h3>
+
+    <div class="row">
+        <div class="col">
+            <div>auto</div>
+        </div>
+    </div>
+    <div class="row is-left">
+        <div class="col-1">
+            <div>A</div>
+        </div>
+        <div class="col-1">
+            <div>B</div>
+        </div>
+        <div class="col-1">
+            <div>C</div>
+        </div>
+    </div>
+    <div class="row is-center">
+        <div class="col-1">
+            <div>A</div>
+        </div>
+        <div class="col-1">
+            <div>B</div>
+        </div>
+        <div class="col-1">
+            <div>C</div>
+        </div>
+    </div>
+    <div class="row is-right">
+        <div class="col-1">
+            <div>A</div>
+        </div>
+        <div class="col-1">
+            <div>B</div>
+        </div>
+        <div class="col-1">
+            <div>C</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div>auto</div>
+        </div>
+    </div>
+
+
+    <h3>Nested (row > col > row > col)</h3>
+
+    <div class="row no-gutter">
+        <div class="col">
+            <div>1</div>
+        </div>
+        <div class="col">
+            <div>1</div>
+        </div>
+    </div>
+    <div class="row no-gutter">
+        <div class="col">
+            <div>1</div>
+        </div>
+        <div class="col">
+            <div class="row no-gutter">
+                <div class="col">
+                    <div>A</div>
+                </div>
+            </div>
+            <div class="row no-gutter">
+                <div class="col">
+                    <div>B</div>
+                </div>
+                <div class="col">
+                    <div>C</div>
+                </div>
+                <div class="col">
+                    <div class="row no-gutter">
+                        <div class="col">
+                            <div>X</div>
+                        </div>
+                    </div>
+                    <div class="row no-gutter">
+                        <div class="col">
+                            <div>Y</div>
+                        </div>
+                        <div class="col">
+                            <div>Z</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col">
+            <div>1</div>
+        </div>
+        <div class="col">
+            <div>1</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div>1</div>
+        </div>
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                    <div>A</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div>B</div>
+                </div>
+                <div class="col">
+                    <div>C</div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <div>X</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div>Y</div>
+                        </div>
+                        <div class="col">
+                            <div>Z</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Responsive </h2>
+    <h3>Responsive in rows (xs sm md lg)</h3>
+
+    <table class="table is-border">
+        <thead>
+        <tr>
+            <th></th>
+            <th>xs &lt;=40em</th>
+            <th>40em &lt;= sm &lt; 64em</th>
+            <th>64em &lt;= md &lt; 90em</th>
+            <th>90em &lt;= lg</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <th>prefix</th>
+            <td>col-xs-</td>
+            <td>col-sm-</td>
+            <td>col-md-</td>
+            <td>col-lg-</td>
+        </tr>
+        <tr>
+            <th>gutter with</th>
+            <td>0.25rem</td>
+            <td>0.50rem</td>
+            <td>0.75rem</td>
+            <td>1rem</td>
+        </tr>
+        </tbody>
+
+    </table>
+
+    <h4>Columns in row xs (row xs-x)</h4>
+    <div class="row xs-1 no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+    </div>
+    <div class="row xs-2 no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+    </div>
+    <div class="row xs-3 no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+    </div>
+
+    <h4>Columns in row sm (row sm-x)</h4>
+    <div class="row sm-1 no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+    </div>
+    <div class="row sm-2 no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+    </div>
+    <div class="row sm-3 no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+    </div>
+
+    <h4>Columns in row md (row md-x)</h4>
+    <div class="row md-1 no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+    </div>
+    <div class="row md-2 no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+    </div>
+    <div class="row md-3 no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+    </div>
+
+    <h4>Columns in row lg (row lg-x)</h4>
+    <div class="row lg-1 no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+    </div>
+    <div class="row lg-2 no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+    </div>
+    <div class="row lg-3 no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+    </div>
+
+    <h4>Mix (row & xs-1 sm-2 md-3 lg-4) & (row & xs-4 sm-3 md-2 lg-1)</h4>
+    <div class="row xs-1 sm-2 md-3 lg-4 no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+    </div>
+    <div class="row xs-4 sm-3 md-2 lg-1 no-gutter">
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+        <div class="col">
+            <div>auto</div>
+        </div>
+    </div>
+
+    <h3>Responsive in cols (xs sm md lg)</h3>
+    <h4>Columns (col xs-3 sm-3 md-3 lg-3)</h4>
+    <div class="row no-gutter">
+        <div class="col xs-3">
+            <div>xs-3</div>
+        </div>
+        <div class="col xs-3">
+            <div>xs-3</div>
+        </div>
+        <div class="col xs-3">
+            <div>xs-3</div>
+        </div>
+        <div class="col xs-3">
+            <div>xs-3</div>
+        </div>
+    </div>
+    <div class="row no-gutter">
+        <div class="col sm-3">
+            <div>sm-3</div>
+        </div>
+        <div class="col sm-3">
+            <div>sm-3</div>
+        </div>
+        <div class="col sm-3">
+            <div>sm-3</div>
+        </div>
+        <div class="col sm-3">
+            <div>sm-3</div>
+        </div>
+    </div>
+    <div class="row no-gutter">
+        <div class="col md-3">
+            <div>md-3</div>
+        </div>
+        <div class="col md-3">
+            <div>md-3</div>
+        </div>
+        <div class="col md-3">
+            <div>md-3</div>
+        </div>
+        <div class="col md-3">
+            <div>md-3</div>
+        </div>
+    </div>
+    <div class="row no-gutter">
+        <div class="col lg-3">
+            <div>lg-3</div>
+        </div>
+        <div class="col lg-3">
+            <div>lg-3</div>
+        </div>
+        <div class="col lg-3">
+            <div>lg-3</div>
+        </div>
+        <div class="col lg-3">
+            <div>lg-3</div>
+        </div>
+    </div>
+
+    <h4>Columns (col xs-4 sm-4 md-4 lg-4)</h4>
+    <div class="row no-gutter">
+        <div class="col xs-4">
+            <div>xs-4</div>
+        </div>
+        <div class="col xs-4">
+            <div>xs-4</div>
+        </div>
+        <div class="col xs-4">
+            <div>xs-4</div>
+        </div>
+    </div>
+    <div class="row no-gutter">
+        <div class="col sm-4">
+            <div>sm-4</div>
+        </div>
+        <div class="col sm-4">
+            <div>sm-4</div>
+        </div>
+        <div class="col sm-4">
+            <div>sm-4</div>
+        </div>
+    </div>
+    <div class="row no-gutter">
+        <div class="col md-4">
+            <div>md-4</div>
+        </div>
+        <div class="col md-4">
+            <div>md-4</div>
+        </div>
+        <div class="col md-4">
+            <div>md-4</div>
+        </div>
+    </div>
+    <div class="row no-gutter">
+        <div class="col lg-4">
+            <div>lg-4</div>
+        </div>
+        <div class="col lg-4">
+            <div>lg-4</div>
+        </div>
+        <div class="col lg-4">
+            <div>lg-4</div>
+        </div>
+    </div>
+
+    <h4>Mix columns (col xs-1 sm-2 md3 lg-4)</h4>
+    <div class="row no-gutter">
+        <div class="col xs-12 sm-6 md-4 lg-3">
+            <div>col</div>
+        </div>
+        <div class="col xs-12 sm-6 md-4 lg-3">
+            <div>col</div>
+        </div>
+        <div class="col xs-12 sm-6 md-4 lg-3">
+            <div>col</div>
+        </div>
+        <div class="col xs-12 sm-6 md-4 lg-3">
+            <div>col</div>
+        </div>
+        <div class="col xs-12 sm-6 md-4 lg-3">
+            <div>col</div>
+        </div>
+        <div class="col xs-12 sm-6 md-4 lg-3">
+            <div>col</div>
+        </div>
+        <div class="col xs-12 sm-6 md-4 lg-3">
+            <div>col</div>
+        </div>
+        <div class="col xs-12 sm-6 md-4 lg-3">
+            <div>col</div>
+        </div>
+        <div class="col xs-12 sm-6 md-4 lg-3">
+            <div>col</div>
+        </div>
+        <div class="col xs-12 sm-6 md-4 lg-3">
+            <div>col</div>
+        </div>
+        <div class="col xs-12 sm-6 md-4 lg-3">
+            <div>col</div>
+        </div>
+        <div class="col xs-12 sm-6 md-4 lg-3">
+            <div>col</div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>Copyright (c) 2016-2018 <a href="http://gedeonix.pl">gedeonix.pl</a></p>
+        <p>
+            <a href="https://github.com/gedeonix/gedeonix-ui"><i class="fab fa-github-square fa-2x"></i></a>
+            <a href="https://twitter.com/gedeonix"><i class="fab fa-twitter-square fa-2x"></i></a>
+        </p>
+    </div>
+</footer>
 
 </body>
 </html>

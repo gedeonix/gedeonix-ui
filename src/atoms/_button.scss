@@ -10,27 +10,27 @@
     border-color: #808080;
     outline: none;
   }
-  &.is-outline {
+  &.btn-outline {
     background-color: transparent;
-    color: map_get($btn, background);
+    color: map_get($btn, border);
     &:hover {
       background-color: map_get($btn, hover);
       color: #ffffff;
     }
   }
-  &.is-flat {
+  &.btn-flat {
     background-color: transparent;
     border: transparent;
-    color: map_get($btn, background);
+    color: map_get($btn, border);
     &:hover {
       background-color: map_get($btn, hover);
       color: #ffffff;
     }
   }
-  &.is-clear {
+  &.btn-clear {
     background-color: transparent;
     border: transparent;
-    color: map_get($btn, background);
+    color: map_get($btn, border);
     &:hover {
       color: map_get($btn, hover);
     }
@@ -50,8 +50,6 @@ $btn-size-default-name: nth(map_keys($btn-size), 1);
   //background-color: $background-color;
   border: 1px solid;
   //border: 1px solid map-get($btn-default,border);
-  border-radius: $btn-radius; /*2em;*/
-  color: $text-color;
   cursor: pointer;
   display: inline-block;
   font-family: inherit;
@@ -60,7 +58,6 @@ $btn-size-default-name: nth(map_keys($btn-size), 1);
   line-height: 1.4em;
   /*letter-spacing: .1em;*/
   margin: 0;
-  padding: 0.5em 0.5em;
   text-align: center;
   text-decoration: none;
   /*text-transform: uppercase;*/
@@ -69,13 +66,16 @@ $btn-size-default-name: nth(map_keys($btn-size), 1);
   white-space: nowrap;
   /*width: auto;*/
   -webkit-appearance: none;
-  &.is-flat {
+  &.btn-flat {
     text-decoration: underline;
   }
-  transition: all .2s ease-in-out;
-
   @include create-btn-theme(map-get($btn-theme, $btn-theme-default-name)); //default
   @include create-btn-size(map-get($btn-size, $btn-size-default-name)); //default
+
+  &.btn-block {
+    width: 100%;
+  }
+  transition: all .2s ease-in-out;
 }
 
 @each $name, $btn in map_remove($btn-theme, $btn-theme-default-name) {
@@ -90,7 +90,7 @@ $btn-size-default-name: nth(map_keys($btn-size), 1);
   }
 }
 
-.btn.is-thick {
+.btn.btn-thick {
   border: 2px solid;
 }
 
@@ -99,10 +99,10 @@ $btn-size-default-name: nth(map_keys($btn-size), 1);
   border-color: #e0e0e0;
   color: #808080 !important;
   cursor: not-allowed;
-  &.is-outline {
+  &.btn-outline {
     background-color: transparent;
   }
-  &.is-flat, &.is-clear {
+  &.btn-flat, &.btn-clear {
     border: none;
     background-color: transparent;
   }

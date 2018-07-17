@@ -42,7 +42,7 @@ $btn-font-size:                 1rem !default;
 $btn-default:  (color: #606060, background: transparent, border: #d4d4d4, hover: #f0f0f0, active: #ffffff) !default;
 
 $btn-theme: (
-  default:  (color: #606060, background: transparent, border: #d4d4d4, hover: #f0f0f0, active: #ffffff),
+  default:  (color: $text-color, background: transparent, border: #d4d4d4, hover: #f0f0f0, active: #ffffff),
   primary:  (color: #ffffff, background: #65bcfe, border: #65bcfe, hover: #459cde, active: #2ba369),
   success:  (color: #ffffff, background: #5acd59, border: #94cd5a, hover: #32c07f, active: #2ba369),
   info:     (color: #ffffff, background: #6ad1dd, border: #4cdadd, hover: #41c2e2, active: #40bbdd),
