@@ -1,3 +1,5 @@
+$offset: .5rem;
+
 .row, .navbar, [class*=row-], .col, [class*=col-] {
   display: flex;
   flex-wrap: wrap;
@@ -16,8 +18,8 @@
 
 .row, [class*=row-] {
   align-items: flex-start;
-  margin: 0 0 0 -0.5rem;
-  width: calc(0.5rem + 100% + 0.5rem);
+  margin: 0 0 0 #{-$offset};
+  width: calc(#{$offset*2} + 100%);
   &.no-gutter {
     margin: 0;
     width: 100%;
@@ -32,7 +34,7 @@
   flex-shrink: 1;
   flex-grow: 1;
   flex-basis: 0%;
-  padding: 0 0.5rem 0.5rem;
+  padding: 0 $offset $offset;
 }
 
 /*
@@ -102,12 +104,6 @@
 @media all and (min-width: $breakpoint-lg) {
   @for $i from 1 to $columns {
     .col.lg-$i { min-width: calc($i*100/$columns)% }
-  }
-}
-
-@for $i from 1 to $columns {
-  .width-$i {
-    width: calc($i*100/$columns)%;
   }
 }
 */
