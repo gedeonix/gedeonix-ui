@@ -1,4 +1,4 @@
-@mixin create-btn($btn) {
+@mixin create-btn-theme($btn) {
   background-color: map_get($btn, background);
   border-color: map_get($btn, border);
   color: map_get($btn, color);
@@ -37,6 +37,15 @@
   }
 }
 
+@mixin create-btn-size($btn) {
+  border-radius: map_get($btn, radius);
+  font-size: map_get($btn, font-size);
+  padding: map_get($btn, padding);
+}
+
+$btn-theme-default-name: nth(map_keys($btn-theme), 1);
+$btn-size-default-name: nth(map_keys($btn-size), 1);
+
 .btn {
   //background-color: $background-color;
   border: 1px solid;
@@ -60,56 +69,24 @@
   white-space: nowrap;
   /*width: auto;*/
   -webkit-appearance: none;
-  //&:hover {
-  //  color: map-get($btn-default,color);
-  //  border-color: #a0a0a0;
-  //}
-  //&:focus, &.active {
-  //  /*border-color: #808080;*/
-  //  outline: none;
-  //}
-  //&.is-outline {
-  //  background-color: transparent;
-  //  color: $text-color;
-  //  &:hover {
-  //    background-color: map-get($btn-default,hover);
-  //    color: #ffffff;
-  //  }
-  //}
   &.is-flat {
-  //  border-color: transparent;
-  //  color: $text-color;
     text-decoration: underline;
-  //  &:hover {
-  //    background-color: map-get($btn-default,hover);
-  //    color: #ffffff;
-  //  }
   }
-  //&.is-clear {
-  //  background-color: transparent;
-  //  border-color: transparent;
-  //  color: $text-color;
-  //  &:hover {
-  //    color: map-get($btn-default,hover);
-  //  }
-  //}
-
   transition: all .2s ease-in-out;
 
-  @include create-btn(map-get($btn-theme, nth(map_keys($btn-theme), 1))) //default
+  @include create-btn-theme(map-get($btn-theme, $btn-theme-default-name)); //default
+  @include create-btn-size(map-get($btn-size, $btn-size-default-name)); //default
 }
 
-@each $name, $btn in $btn-theme {
+@each $name, $btn in map_remove($btn-theme, $btn-theme-default-name) {
   .btn-#{$name} {
-    @include create-btn($btn)
+    @include create-btn-theme($btn)
   }
 }
 
-@each $name, $btn in $btn-size {
+@each $name, $btn in map_remove($btn-size, $btn-size-default-name) {
   .btn-#{$name} {
-    border-radius: map_get($btn, radius);
-    font-size: map_get($btn, font-size);
-    padding: map_get($btn, padding);
+    @include create-btn-size($btn)
   }
 }
 
