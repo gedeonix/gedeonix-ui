@@ -1,13 +1,4 @@
-@function first($list) {
-  @return nth($list, 1);
-}
-
-@function last($list) {
-  @return nth($list, length($list));
-}
-
 @mixin create-btn($btn) {
-
   background-color: map_get($btn, background);
   border-color: map_get($btn, border);
   color: map_get($btn, color);
@@ -48,8 +39,7 @@
 
 .btn {
   //background-color: $background-color;
-  border-width: 1px;
-  border-style: solid;
+  border: 1px solid;
   //border: 1px solid map-get($btn-default,border);
   border-radius: $btn-radius; /*2em;*/
   color: $text-color;
@@ -106,7 +96,7 @@
 
   transition: all .2s ease-in-out;
 
-  @include create-btn(map-get($btn-theme, first(map_keys($btn-theme)))) //default
+  @include create-btn(map-get($btn-theme, nth(map_keys($btn-theme), 1))) //default
 }
 
 @each $name, $btn in $btn-theme {
