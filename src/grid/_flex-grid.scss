@@ -68,31 +68,12 @@
   }
 }
 
-
-/*
-.col[class*=sm-], .col[class*=md-], .col[class*=lg-]{
-  min-width: 100%;
-}
-
-@for $i from 1 to $columns {
-  .col.xs-$i { min-width: calc($i*100/$columns)% }
-}
-
-@media all and (min-width: $breakpoint-sm) {
-  @for $i from 1 to $columns {
-    .col.sm-$i { min-width: calc($i*100/$columns)% }
+@each $key, $value in $breakpoints {
+  @media all and (min-width: $value) {
+    @for $i from 1 to $grid-columns {
+      .col.#{$key}-#{$i} {
+        min-width: #{$i*100/$grid-columns+'%' }
+      }
+    }
   }
 }
-
-@media all and (min-width: $breakpoint-md) {
-  @for $i from 1 to $columns {
-    .col.md-$i { min-width: calc($i*100/$columns)% }
-  }
-}
-
-@media all and (min-width: $breakpoint-lg) {
-  @for $i from 1 to $columns {
-    .col.lg-$i { min-width: calc($i*100/$columns)% }
-  }
-}
-*/
