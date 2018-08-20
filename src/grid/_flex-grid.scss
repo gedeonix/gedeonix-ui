@@ -51,23 +51,25 @@ $offset: .5rem;
   min-width: 100%;
 }
 
-@for $i from 1 to $columns {
-  .row.mobile-#{$i} > .col { min-width: #{100/$i+'%'}};
+@media all and (min-width: map-get($breakpoints, mobile)) {
+  @for $i from 1 to $columns {
+    .row.mobile-#{$i} > .col { min-width: #{100/$i+'%'}};
+  }
 }
 
-@media all and (min-width: map-get($breakpoints, sm)) {
+@media all and (min-width: map-get($breakpoints, tablet)) {
   @for $i from 1 to $columns {
     .row.tablet-#{$i} > .col { min-width: #{100/$i+'%'}};
   }
 }
 
-@media all and (min-width: map-get($breakpoints, md)) {
+@media all and (min-width: map-get($breakpoints, desktop)) {
   @for $i from 1 to $columns {
     .row.desktop-#{$i} > .col { min-width: #{100/$i+'%'}};
   }
 }
 
-@media all and (min-width: map-get($breakpoints, lg)) {
+@media all and (min-width: map-get($breakpoints, widescreen)) {
   @for $i from 1 to $columns {
     .row.widescreen-#{$i} > .col { min-width: #{100/$i+'%'}};
   }

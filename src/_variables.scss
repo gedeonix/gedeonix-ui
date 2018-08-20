@@ -33,8 +33,8 @@ $gutter-md:                     0.75rem !default;
 $gutter-lg:                     1rem !default;
 
 // RESPONSIVE
-$breakpoints: (sm: 40em, md: 64em, lg: 90em) !default;
-$breakpoint-lg:                 map-get($breakpoints, lg) !default;
+$breakpoints: (mobile: 0, tablet: 40em, desktop: 64em, widescreen: 90em) !default;
+$breakpoint-lg:                 map-get($breakpoints, widescreen) !default;
 
 // BUTTON
 $btn-font-size:                 1rem !default;
