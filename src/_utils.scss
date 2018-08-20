@@ -176,22 +176,6 @@
   border-radius: 0 !important;
 }
 
-@each $key, $value in $breakpoints {
-  @media screen and (min-width: $value) {
-    .is-hidden-min-#{$key} {
-      display: none !important;
-    }
-  }
-}
-
-@each $key, $value in $breakpoints {
-  @media screen and (max-width: $value) {
-    .is-hidden-max-#{$key} {
-      display: none !important;
-    }
-  }
-}
-
 .is-white {
   background-color: #ffffff;
 }

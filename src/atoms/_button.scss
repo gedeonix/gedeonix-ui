@@ -108,4 +108,24 @@ $btn-size-default-name: nth(map_keys($btn-size), 1);
   }
 }
 
+@each $name, $btn in $btn-theme {
+  .btn.is-#{$name} {
+    a {
+      background-color: map_get($btn, background);
+      border-color: map_get($btn, background);
+      color: map_get($btn, color);
+      &:hover {
+        background-color: map_get($btn, hover);
+        border-color: map_get($btn, color);
+        color: map_get($btn, color);
+      }
+    }
+    .active a {
+      background-color: map_get($btn, active);
+      border-color: map_get($btn, color);
+      color: map_get($btn, color);
+    }
+  }
+}
+
 @include grid-component-width('btn-width');

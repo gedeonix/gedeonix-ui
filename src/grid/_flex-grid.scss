@@ -1,4 +1,6 @@
-@mixin flex {
+$breakpoints: (mobile: 0, tablet: 40em, desktop: 64em, widescreen: 90em) !default;
+
+@mixin grid-flex {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -22,12 +24,8 @@
   }
 }
 
-.row, [class*=row-] {
-  @include flex;
-};
-
-.col, [class*=col-] {
-  @include flex;
+.row, [class*=row-], .col, [class*=col-] {
+  @include grid-flex;
 };
 
 .row, [class*=row-] {
@@ -102,6 +100,15 @@
       .col.#{$key}-#{$i} {
         min-width: #{$i*100/$grid-columns+'%' }
       }
+    }
+  }
+}
+
+
+@each $key, $value in $breakpoints {
+  @media screen and (min-width: $value) {
+    .is-hidden-min-#{$key} {
+      display: none !important;
     }
   }
 }
