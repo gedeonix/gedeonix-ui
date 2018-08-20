@@ -12,8 +12,8 @@
   */
 }
 
-@media screen and (min-width: $breakpoint-lg) {
+@media screen and (min-width: $container-max-width) {
   .container {
-    max-width: $breakpoint-lg;
+    max-width: $container-max-width;
   }
 }
