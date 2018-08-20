@@ -43,10 +43,14 @@
 }
 
 // RESPONSIVE ROWS
-.row[class*=tablet-] > .col,
-.row[class*=desktop-] > .col,
-.row[class*=widescreen-] > .col {
-  min-width: 100%;
+@each $key, $value in $breakpoints {
+  @media all and (min-width: $value) {
+    @for $i from 1 to $grid-columns {
+      .row[class*=#{$key}-]  > .col {
+        min-width: 100%;
+      }
+    }
+  }
 }
 
 @each $key, $value in $breakpoints {
