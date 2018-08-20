@@ -26,10 +26,12 @@ $outline-color:                 #0067c5 !default;
 
 // GRID
 $grid-columns:                  12 !default;
+$grid-padding-x:                .25rem !default;
+$grid-padding-y:                .8rem !default;
 
-$gutter-xs:                     0.25rem !default;
-$gutter-sm:                     0.5rem !default;
-$gutter-md:                     0.75rem !default;
+$gutter-xs:                     .25rem !default;
+$gutter-sm:                     .5rem !default;
+$gutter-md:                     .75rem !default;
 $gutter-lg:                     1rem !default;
 
 // RESPONSIVE
