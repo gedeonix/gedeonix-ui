@@ -1,19 +1,11 @@
 $offset: .5rem;
 
-.row, .navbar, [class*=row-], .col, [class*=col-] {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-start;
-  &.is-left {
-    justify-content: flex-start;
-  }
-  &.is-right {
-    justify-content: flex-end;
-  }
-  &.is-center {
-    justify-content: center;
-  }
+.row, [class*=row-] {
+  @include flex;
+};
+
+.col, [class*=col-] {
+  @include flex;
 };
 
 .row, [class*=row-] {

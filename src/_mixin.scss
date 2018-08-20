@@ -31,3 +31,19 @@
   padding: 0;
   margin: 0;
 }
+
+@mixin flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  &.is-left {
+    justify-content: flex-start;
+  }
+  &.is-right {
+    justify-content: flex-end;
+  }
+  &.is-center {
+    justify-content: center;
+  }
+}
