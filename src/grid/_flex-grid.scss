@@ -1,4 +1,5 @@
-$offset: .5rem;
+$grid-padding-x: .25rem;
+$grid-padding-y: .8rem;
 
 .row, [class*=row-] {
   @include flex;
@@ -10,8 +11,8 @@ $offset: .5rem;
 
 .row, [class*=row-] {
   align-items: flex-start;
-  margin: 0 0 0 #{-$offset};
-  width: calc(#{$offset*2} + 100%);
+  margin: 0 0 0 #{-$grid-padding-x};
+  width: calc(#{$grid-padding-x*2} + 100%);
   &.no-gutter {
     margin: 0;
     width: 100%;
@@ -26,22 +27,22 @@ $offset: .5rem;
   flex-shrink: 1;
   flex-grow: 1;
   flex-basis: 0%;
-  padding: 0 $offset $offset;
+  padding: 0 $grid-padding-x $grid-padding-y;
 }
 
-@for $i from 1 to $columns {
+@for $i from 1 to $grid-columns {
   .col-#{$i} {
-    flex-basis: #{$i*100/$columns+'%' };
-    max-width: #{$i*100/$columns+'%' };
+    flex-basis: #{$i*100/$grid-columns+'%' };
+    max-width: #{$i*100/$grid-columns+'%' };
   }
 }
 
-@for $i from 1 to $columns {
+@for $i from 1 to $grid-columns {
   .row-#{$i} > .col { min-width: #{100/$i+'%'}};
 }
 
-@for $i from 1 to $columns {
-  .offset-#{$i} { margin-left: #{$i*100/$columns+'%' }}
+@for $i from 1 to $grid-columns {
+  .offset-#{$i} { margin-left: #{$i*100/$grid-columns+'%' }}
 }
 
 // RESPONSIVE ROWS
@@ -53,7 +54,7 @@ $offset: .5rem;
 
 @each $key, $value in $breakpoints {
   @media all and (min-width: $value) {
-    @for $i from 1 to $columns {
+    @for $i from 1 to $grid-columns {
       .row.#{$key}-#{$i} > .col { min-width: #{100/$i+'%'}};
     }
   }

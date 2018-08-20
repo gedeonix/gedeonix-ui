@@ -108,8 +108,8 @@ $btn-size-default-name: nth(map_keys($btn-size), 1);
   }
 }
 
-@for $i from 1 to $columns + 1 {
+@for $i from 1 to $grid-columns + 1 {
   .btn-width-#{$i} {
-    width: calc(#{$i*100/$columns+'%'});
+    width: calc(#{$i*100/$grid-columns+'%'});
   }
 }
