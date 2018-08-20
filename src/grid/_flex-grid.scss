@@ -57,8 +57,19 @@
   }
 }
 
-/*
 // RESPONSIVE COLS
+@each $key, $value in $breakpoints {
+  @media all and (min-width: $value) {
+    @for $i from 1 to $grid-columns {
+      .col[class*=#{$key}-] {
+        min-width: 100%;
+      }
+    }
+  }
+}
+
+
+/*
 .col[class*=sm-], .col[class*=md-], .col[class*=lg-]{
   min-width: 100%;
 }
