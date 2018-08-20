@@ -36,15 +36,17 @@ $offset: .5rem;
     max-width: calc($i*100/$columns)%;
   }
 }
+*/
 
 @for $i from 1 to $columns {
-  .row-$i > .col { min-width: calc(100/$i)% }
+  .row-#{$i} > .col { min-width: #{100/$i+'%'}};
 }
 
 @for $i from 1 to $columns {
-  .offset-$i { margin-left: calc($i*100/$columns)% }
+  .offset-#{$i} { margin-left: #{$i*100/$columns+'%' }}
 }
 
+/*
 // RESPONSIVE ROWS
 .row[class*=sm-] > .col, .row[class*=md-] > .col, .row[class*=lg-] > .col {
   min-width: 100%;
