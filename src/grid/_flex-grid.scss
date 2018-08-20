@@ -29,14 +29,12 @@ $offset: .5rem;
   padding: 0 $offset $offset;
 }
 
-/*
 @for $i from 1 to $columns {
-  .col-$i {
-    flex-basis: calc($i*100/$columns)%;
-    max-width: calc($i*100/$columns)%;
+  .col-#{$i} {
+    flex-basis: #{$i*100/$columns+'%' };
+    max-width: #{$i*100/$columns+'%' };
   }
 }
-*/
 
 @for $i from 1 to $columns {
   .row-#{$i} > .col { min-width: #{100/$i+'%'}};
@@ -46,34 +44,36 @@ $offset: .5rem;
   .offset-#{$i} { margin-left: #{$i*100/$columns+'%' }}
 }
 
-/*
 // RESPONSIVE ROWS
-.row[class*=sm-] > .col, .row[class*=md-] > .col, .row[class*=lg-] > .col {
+.row[class*=tablet-] > .col,
+.row[class*=desktop-] > .col,
+.row[class*=widescreen-] > .col {
   min-width: 100%;
 }
 
 @for $i from 1 to $columns {
-  .row.xs-$i > .col { min-width: calc(100/$i)% }
+  .row.mobile-#{$i} > .col { min-width: #{100/$i+'%'}};
 }
 
-@media all and (min-width: $breakpoint-sm) {
+@media all and (min-width: map-get($breakpoints, sm)) {
   @for $i from 1 to $columns {
-    .row.sm-$i > .col { min-width: calc(100/$i)% }
+    .row.tablet-#{$i} > .col { min-width: #{100/$i+'%'}};
   }
 }
 
-@media all and (min-width: $breakpoint-md) {
+@media all and (min-width: map-get($breakpoints, md)) {
   @for $i from 1 to $columns {
-    .row.md-$i > .col { min-width: calc(100/$i)% }
+    .row.desktop-#{$i} > .col { min-width: #{100/$i+'%'}};
   }
 }
 
-@media all and (min-width: $breakpoint-lg) {
+@media all and (min-width: map-get($breakpoints, lg)) {
   @for $i from 1 to $columns {
-    .row.lg-$i > .col { min-width: calc(100/$i)% }
+    .row.widescreen-#{$i} > .col { min-width: #{100/$i+'%'}};
   }
 }
 
+/*
 // RESPONSIVE COLS
 .col[class*=sm-], .col[class*=md-], .col[class*=lg-]{
   min-width: 100%;
