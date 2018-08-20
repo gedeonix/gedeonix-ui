@@ -1,3 +1,27 @@
+@mixin flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  &.is-left {
+    justify-content: flex-start;
+  }
+  &.is-right {
+    justify-content: flex-end;
+  }
+  &.is-center {
+    justify-content: center;
+  }
+}
+
+@mixin grid-component-width($name) {
+  @for $i from 1 to $grid-columns + 1 {
+    .#{$name}-#{$i} {
+      width: #{$i*100/$grid-columns+'%'};
+    }
+  }
+}
+
 .row, [class*=row-] {
   @include flex;
 };

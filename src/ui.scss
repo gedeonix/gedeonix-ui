@@ -6,6 +6,9 @@
 @import 'base/reset';
 @import 'base/typography';
 
+@import "grid/flex-grid";
+@import "grid/table-grid";
+
 @import "atoms/box";
 @import "atoms/button";
 @import "atoms/button-round";
@@ -30,9 +33,6 @@
 @import "atoms/table";
 @import "atoms/container";
 @import "atoms/tile";
-
-@import "grid/flex-grid";
-@import "grid/table-grid";
 
 @import "molecules/nav";
 @import "molecules/box";
