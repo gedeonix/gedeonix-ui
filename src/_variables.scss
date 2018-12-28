@@ -83,6 +83,8 @@ $card-border:                   #d4d4d4 !default;
 
 // LABEL
 $label-color:                   #606060 !default;
+$label-background-color:        transparent !default;
+
 $group-label-color:             #a0a0a0 !default;
 $group-label-background:        #fafafa !default;
 
@@ -99,6 +101,9 @@ $input-background:              $background-color !default;
 // POPUP
 $popup-default: (color: #404040, background: #ffff80);
 
+// TILE
+$tile-gutter:                   0.5rem !default;
+
 // HEADER
 $header-text-color:             #808080 !default;
 $header-background-color:       #d4d4d4 !default;
@@ -108,7 +113,3 @@ $footer-text-color:             #ffffff !default;
 $footer-link-color:             #ffffff !default;
 $footer-link-color-hover:       #808080 !default;
 $footer-background-color:       #d4d4d4 !default;
-
-// TILE
-$tile-gutter:                   0.5rem !default;
-
