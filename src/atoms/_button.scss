@@ -100,16 +100,16 @@
     color: #808080 !important;
     cursor: not-allowed;
 
-    @include element('outline') {
+    &.btn-outline {
       background-color: transparent;
     }
 
-    @include element('flat') {
+    &.btn-flat {
       border: none;
       background-color: transparent;
     }
 
-    @include element('clear') {
+    &.btn-clear {
       border: none;
       background-color: transparent;
     }
