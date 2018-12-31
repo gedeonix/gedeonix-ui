@@ -16,14 +16,6 @@ $breakpoints: (mobile: 0, tablet: 40em, desktop: 64em, widescreen: 90em) !defaul
   }
 }
 
-@mixin grid-component-width($name) {
-  @for $i from 1 to $grid-columns + 1 {
-    .#{$name}-#{$i} {
-      width: #{$i*100/$grid-columns+'%'};
-    }
-  }
-}
-
 .row, [class*=row-], .col, [class*=col-] {
   @include grid-flex;
 };

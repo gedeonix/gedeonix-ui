@@ -1,5 +1,5 @@
 .input {
-  background-color: $input-background;
+  background-color: $input-background-color;
   border: 1px solid $input-border-color;
   border-radius: 3px;
   font-size: 1rem;
@@ -11,47 +11,31 @@
   &:focus {
     z-index: 2;
   }
-}
 
-.input-xs {
-  border-radius: $btn-xs-radius;
-  font-size: 0.7rem;
-  padding: 0.7em 0.5em;
-}
-.input-sm {
-  border-radius:  $btn-sm-radius;
-  font-size: 0.8rem;
-  padding: 0.7em 0.5em;
-}
-.input-md {
-  border-radius:  $btn-md-radius;
-  font-size: 1.2rem;
-  padding: 0.7em 0.5em;
-}
-.input-lg {
-  border-radius:  $btn-lg-radius;
-  font-size: 1.6rem;
-  padding: 0.7em 0.5em;
-}
+  @each $name, $control in $input-size {
+    @include element($name) {
+      @include create-control-size($control)
+    }
+  }
 
-.input-round {
-  border-radius: 100px;
-}
-.input-thick {
-  border: 2px solid;
-}
-.input-transparent {
-  background-color: transparent;
-}
+  @include element('round') {
+    border-radius: 100px;
+  }
 
-.input-error {
-  background-color: #ffd2cc;
-  border-color: #ff5f3a;
-}
+  @include element('thick') {
+    border: 2px solid;
+  }
 
-.input-success {
-  background-color: #d2ffcc;
-  border-color: #5bd042;
+  @include element('transparent') {
+    background-color: transparent;
+  }
+
+  @each $name, $control in $input-theme {
+    @include element($name) {
+      background-color: map_get($control, background);
+      border-color: map_get($control, border);
+    }
+  }
 }
 
 .icon-addon {
@@ -86,8 +70,8 @@
 @each $name, $color in $color-theme {
   .input.is-#{$name} {
     border-color: $color;
-    background-color: $input-background;
+    background-color: $input-background-color;
   }
 }
 
-@include grid-component-width('input-width');
+@include control-width($grid-columns, 'input');

@@ -1,0 +1,15 @@
+.accordion {
+
+  @include element('item') {
+
+  }
+
+  @include element('title') {
+
+  }
+
+  @include element('content') {
+
+  }
+
+}

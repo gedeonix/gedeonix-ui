@@ -1,50 +1,45 @@
-@mixin create-btn-theme($btn) {
-  background-color: map_get($btn, background);
-  border-color: map_get($btn, border);
-  color: map_get($btn, color);
+@mixin create-control-theme($control) {
+  background-color: map_get($control, background);
+  border-color: map_get($control, border);
+  color: map_get($control, color);
+
   &:hover {
-    background-color: map_get($btn, hover);
-    border-color: map_get($btn, hover);
+    background-color: map_get($control, hover);
+    border-color: map_get($control, hover);
   }
+
   &:focus, &.active {
     border-color: #808080;
     outline: none;
   }
+
   &.btn-outline {
     background-color: transparent;
-    color: map_get($btn, border);
+    color: map_get($control, border);
     &:hover {
-      background-color: map_get($btn, hover);
+      background-color: map_get($control, hover);
       color: #ffffff;
     }
   }
+
   &.btn-flat {
     background-color: transparent;
     border: transparent;
-    color: map_get($btn, border);
+    color: map_get($control, border);
     &:hover {
-      background-color: map_get($btn, hover);
+      background-color: map_get($control, hover);
       color: #ffffff;
     }
   }
   &.btn-clear {
     background-color: transparent;
     border: transparent;
-    color: map_get($btn, border);
+    color: map_get($control, border);
     &:hover {
-      color: map_get($btn, hover);
+      color: map_get($control, hover);
     }
   }
 }
-
-@mixin create-btn-size($btn) {
-  border-radius: map_get($btn, radius);
-  font-size: map_get($btn, font-size);
-  padding: map_get($btn, padding);
-}
-
-$btn-theme-default-name: nth(map_keys($btn-theme), 1);
-$btn-size-default-name: nth(map_keys($btn-size), 1);
 
 .btn {
   //background-color: $background-color;
@@ -66,66 +61,128 @@ $btn-size-default-name: nth(map_keys($btn-size), 1);
   white-space: nowrap;
   /*width: auto;*/
   -webkit-appearance: none;
-  &.btn-flat {
+
+  transition: all .2s ease-in-out;
+
+  $btn-theme-default-name: nth(map_keys($btn-theme), 1);
+  $btn-size-default-name: nth(map_keys($btn-size), 1);
+
+  @include create-control-theme(map-get($btn-theme, $btn-theme-default-name)); //default
+  @include create-control-size(map-get($btn-size, $btn-size-default-name)); //default
+
+  @each $name, $btn in map_remove($btn-theme, $btn-theme-default-name) {
+    @include element($name) {
+      @include create-control-theme($btn)
+    }
+  }
+
+  @each $name, $btn in map_remove($btn-size, $btn-size-default-name) {
+    @include element($name) {
+      @include create-control-size($btn)
+    }
+  }
+
+  @include element('flat') {
     text-decoration: underline;
   }
-  @include create-btn-theme(map-get($btn-theme, $btn-theme-default-name)); //default
-  @include create-btn-size(map-get($btn-size, $btn-size-default-name)); //default
 
-  &.btn-block {
+  @include element('block') {
     width: 100%;
   }
-  transition: all .2s ease-in-out;
-}
 
-@each $name, $btn in map_remove($btn-theme, $btn-theme-default-name) {
-  .btn-#{$name} {
-    @include create-btn-theme($btn)
+  @include element('thick') {
+    border: 2px solid;
   }
-}
 
-@each $name, $btn in map_remove($btn-size, $btn-size-default-name) {
-  .btn-#{$name} {
-    @include create-btn-size($btn)
+  &[disabled], &[disabled]:hover {
+    background-color: #e0e0e0;
+    border-color: #e0e0e0;
+    color: #808080 !important;
+    cursor: not-allowed;
+
+    @include element('outline') {
+      background-color: transparent;
+    }
+
+    @include element('flat') {
+      border: none;
+      background-color: transparent;
+    }
+
+    @include element('clear') {
+      border: none;
+      background-color: transparent;
+    }
   }
-}
 
-.btn.btn-thick {
-  border: 2px solid;
-}
 
-.btn[disabled], .btn[disabled]:hover {
-  background-color: #e0e0e0;
-  border-color: #e0e0e0;
-  color: #808080 !important;
-  cursor: not-allowed;
-  &.btn-outline {
-    background-color: transparent;
-  }
-  &.btn-flat, &.btn-clear {
-    border: none;
-    background-color: transparent;
-  }
-}
-
-@each $name, $btn in $btn-theme {
-  .btn.is-#{$name} {
-    a {
-      background-color: map_get($btn, background);
-      border-color: map_get($btn, background);
-      color: map_get($btn, color);
-      &:hover {
-        background-color: map_get($btn, hover);
+  @each $name, $btn in $btn-theme {
+    &.is-#{$name} {
+      a {
+        background-color: map_get($btn, background);
+        border-color: map_get($btn, background);
+        color: map_get($btn, color);
+        &:hover {
+          background-color: map_get($btn, hover);
+          border-color: map_get($btn, color);
+          color: map_get($btn, color);
+        }
+      }
+      .active a {
+        background-color: map_get($btn, active);
         border-color: map_get($btn, color);
         color: map_get($btn, color);
       }
     }
-    .active a {
-      background-color: map_get($btn, active);
-      border-color: map_get($btn, color);
-      color: map_get($btn, color);
+  }
+
+}
+
+@include control-width($grid-columns, 'btn');
+
+.btn {
+  &.btn-round, &.btn-circle, &.btn-square {
+    line-height: 1em;
+    padding: 0.75em;
+  }
+
+  $btn-size: (
+          default: (height: 40px, width: 40px),
+          xs: (height: 25px, width: 25px),
+          sm: (height: 32px, width: 32px),
+          md: (height: 45px, width: 45px),
+          lg: (height: 58px, width: 58px),
+          big: (height: 90px, width: 90px),
+          '2x': (height: 6em, width: 6em),
+          '3x': (height: 8em, width: 8em),
+          '4x': (height: 10em, width: 10em),
+          '5x': (height: 12em, width: 12em)
+  );
+
+  $btn-size-default-name: nth(map_keys($btn-size), 1);
+
+  &.btn-circle, &.btn-square {
+    text-align: center;
+    padding: 0;
+
+    height: 40px;
+    width: 40px;
+
+    @each $name, $btn in map_remove($btn-size, $btn-size-default-name) {
+      &.btn-#{$name} {
+        height: map_get($btn, height);
+        width: map_get($btn, width);
+      }
     }
+  }
+
+  &.btn-round {
+    border-radius: 1000px;
+  }
+
+  &.btn-circle {
+    border-radius: 50%;
   }
 }
 
-@include grid-component-width('btn-width');
+

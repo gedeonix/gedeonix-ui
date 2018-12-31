@@ -1,15 +1,3 @@
-@mixin font-icon() {
-  font-family: $font-icon;
-  font-style: normal;
-  //font-weight: normal;
-  font-variant: normal;
-  line-height: 1;
-  speak: none;
-  text-transform: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 @mixin atom-block() {
   display: block;
   position: relative;

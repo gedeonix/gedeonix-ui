@@ -1,0 +1,13 @@
+@mixin create-control-size($control) {
+  border-radius: map_get($control, radius);
+  font-size: map_get($control, font-size);
+  padding: map_get($control, padding);
+}
+
+@mixin control-width($grid-columns, $block) {
+  @for $i from 1 to $grid-columns + 1 {
+    .#{$block}-width-#{$i} {
+      width: #{$i*100/$grid-columns+'%'};
+    }
+  }
+}
