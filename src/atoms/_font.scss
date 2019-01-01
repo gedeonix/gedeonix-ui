@@ -1,8 +1,13 @@
 .font {
 
+  // TODO - add responsive
+
   @each $name, $font in $font-theme {
     @include element($name) {
-      @include create-font($font)
+      @include create-font($font);
+
+      margin-top: 0;
+      margin-bottom: .5rem; //TODO - parametrize
     }
   }
 

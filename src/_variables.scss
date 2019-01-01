@@ -1,48 +1,48 @@
 // COLOR
-$text-color:                    #606060 !default;
-$background-color:              #ffffff !default;
+$text-color: #606060 !default;
+$background-color: #ffffff !default;
 
-$white-color:                   #ffffff;
-$gray-color:                    #fafafa !default;
-$dark-color:                    #4e4f51 !default;
+$white-color: #ffffff;
+$gray-color: #fafafa !default;
+$dark-color: #4e4f51 !default;
 
 $color-default: #fafafa;
 $color-theme: (
-        primary:  #55acee,
-        success:  #5acd59,
-        info:     #6ad1dd,
-        warning:  #ffb812,
-        danger:   #fc6e51,
-        light:    #fafafa,
-        dark:     #4e4f51
+        primary: #55acee,
+        success: #5acd59,
+        info: #6ad1dd,
+        warning: #ffb812,
+        danger: #fc6e51,
+        light: #fafafa,
+        dark: #4e4f51
 ) !default;
 
-$outline-color:                 #0067c5 !default;
+$outline-color: #0067c5 !default;
 
 // FONT
-$font-family:                   Arial, Helvetica, sans-serif !default;
-$font-size:                     16px  !default;
-$font-icon:                     'Font Awesome\ 5 Free' !default;
+$font-family: Arial, Helvetica, sans-serif !default;
+$font-size: 16px !default;
+$font-icon: 'Font Awesome\ 5 Free' !default;
 
 $font-theme: (
-        big:      (color: #606060, background: transparent, font: $font-family, size: 2.5rem, height: 1.2),
-        header:   (color: #606060, background: transparent, font: $font-family, size: 1.2rem, height: 1.2),
-        body:     (color: #606060, background: transparent, font: $font-family, size: 1rem, height: 1.2),
-        caption:  (color: #606060, background: transparent, font: $font-family, size: .8rem, height: 1.2)
+        big: (color: #606060, background: transparent, font: $font-family, size: 2.5rem, height: 1.2, weight: 800),
+        header: (color: #606060, background: transparent, font: $font-family, size: 1.2rem, height: 1.2, weight: 700),
+        body: (color: #606060, background: transparent, font: $font-family, size: 1rem, height: 1.2, weight: normal),
+        caption: (color: #606060, background: transparent, font: $font-family, size: .8rem, height: 1.2, weight: normal)
 ) !default;
 
 // GRID
-$grid-columns:                  12 !default;
-$grid-padding-x:                .25rem !default;
-$grid-padding-y:                .8rem !default;
+$grid-columns: 12 !default;
+$grid-padding-x: .25rem !default;
+$grid-padding-y: .8rem !default;
 
-$gutter-xs:                     .25rem !default;
-$gutter-sm:                     .5rem !default;
-$gutter-md:                     .75rem !default;
-$gutter-lg:                     1rem !default;
+$gutter-xs: .25rem !default;
+$gutter-sm: .5rem !default;
+$gutter-md: .75rem !default;
+$gutter-lg: 1rem !default;
 
 // BUTTON
-$btn-font-size:                 1rem !default;
+$btn-font-size: 1rem !default;
 
 $btn-size: (
         default: (radius: 4px, font-size: 1rem, padding: 0.5em 0.5em),
@@ -52,36 +52,35 @@ $btn-size: (
         lg: (radius: 6px, font-size: 1.6rem, padding: 0.4em 1em)
 ) !default;
 
-$btn-default:  (color: #606060, background: transparent, border: #d4d4d4, hover: #f0f0f0, active: #ffffff) !default;
+$btn-default: (color: #606060, background: transparent, border: #d4d4d4, hover: #f0f0f0, active: #ffffff) !default;
 
 $btn-theme: (
-  default:  $btn-default,
-  primary:      (color: #ffffff, background: #65bcfe, border: #65bcfe, hover: #459cde, active: #2ba369),
-  success:      (color: #ffffff, background: #5acd59, border: #94cd5a, hover: #32c07f, active: #2ba369),
-  info:         (color: #ffffff, background: #6ad1dd, border: #4cdadd, hover: #41c2e2, active: #40bbdd),
-  warning:      (color: #ffffff, background: #ffa924, border: #ffa924, hover: #ffd11e, active: #ffd11e),
-  danger:       (color: #ffffff, background: #fc573f, border: #fc573f, hover: #fc4016, active: #dc3816),
-  light:        (color: #a0a0a0, background: #fafafa, border: #a0a0a0, hover: #909090, active: #d0d0d0),
-  dark:         (color: #ffffff, background: #4e4f51, border: #4e4f51, hover: #b0b1b6, active: #8a8b8f),
+        default: $btn-default,
+        primary: (color: #ffffff, background: #65bcfe, border: #65bcfe, hover: #459cde, active: #2ba369),
+        success: (color: #ffffff, background: #5acd59, border: #94cd5a, hover: #32c07f, active: #2ba369),
+        info: (color: #ffffff, background: #6ad1dd, border: #4cdadd, hover: #41c2e2, active: #40bbdd),
+        warning: (color: #ffffff, background: #ffa924, border: #ffa924, hover: #ffd11e, active: #ffd11e),
+        danger: (color: #ffffff, background: #fc573f, border: #fc573f, hover: #fc4016, active: #dc3816),
+        light: (color: #a0a0a0, background: #fafafa, border: #a0a0a0, hover: #909090, active: #d0d0d0),
+        dark: (color: #ffffff, background: #4e4f51, border: #4e4f51, hover: #b0b1b6, active: #8a8b8f),
   // social
-  twitter:      (color: #ffffff, background: #0084b4, border: #0084b4, hover: #008fc2, active: #ffffff),
-  facebook:     (color: #ffffff, background: #3b5998, border: #3b5998, hover: #446db5, active: #ffffff),
-  google-plus:  (color: #ffffff, background: #dc4a38, border: #dc4a38, hover: #f04f3d, active: #ffffff),
-  github:       (color: #ffffff, background: #404040, border: #505050, hover: #606060, active: #ffffff),
-  rss:          (color: #ffffff, background: #f26522, border: #f26522, hover: #ff671f, active: #ffffff)
-
+        twitter: (color: #ffffff, background: #0084b4, border: #0084b4, hover: #008fc2, active: #ffffff),
+        facebook: (color: #ffffff, background: #3b5998, border: #3b5998, hover: #446db5, active: #ffffff),
+        google-plus: (color: #ffffff, background: #dc4a38, border: #dc4a38, hover: #f04f3d, active: #ffffff),
+        github: (color: #ffffff, background: #404040, border: #505050, hover: #606060, active: #ffffff),
+        rss: (color: #ffffff, background: #f26522, border: #f26522, hover: #ff671f, active: #ffffff)
 ) !default;
 
-$btn-radius:                    4px !default;
+$btn-radius: 4px !default;
 
-$btn-xs-radius:                 2px !default;
-$btn-sm-radius:                 3px !default;
-$btn-md-radius:                 5px !default;
-$btn-lg-radius:                 6px !default;
+$btn-xs-radius: 2px !default;
+$btn-sm-radius: 3px !default;
+$btn-md-radius: 5px !default;
+$btn-lg-radius: 6px !default;
 
 // INPUT
-$input-border-color:            #d4d4d4 !default;
-$input-background-color:        $background-color !default;
+$input-border-color: #d4d4d4 !default;
+$input-background-color: $background-color !default;
 
 $input-size: (
         xs: (radius: 2px, font-size: 0.6rem, padding: 0.5em 1em),
@@ -91,49 +90,49 @@ $input-size: (
 ) !default;
 
 $input-theme: (
-        default:  (background: transparent, border: #d4d4d4),
-        success:  (background: #d2ffcc, border: #5bd042),
-        error:   (background: #ffd2cc, border: #ff5f3a)
+        default: (background: transparent, border: #d4d4d4),
+        success: (background: #d2ffcc, border: #5bd042),
+        error: (background: #ffd2cc, border: #ff5f3a)
 ) !default;
 
 
 // LINK
-$link-color:                    #0067c5 !default;
-$link-color-hover:              #1A81DF !default;
+$link-color: #0067c5 !default;
+$link-color-hover: #1A81DF !default;
 
 // PANEL
-$panel-radius:                  4px !default;
-$panel-border:                  #d4d4d4 !default;
+$panel-radius: 4px !default;
+$panel-border: #d4d4d4 !default;
 
 // CARD
-$card-radius:                   4px !default;
-$card-border:                   #d4d4d4 !default;
+$card-radius: 4px !default;
+$card-border: #d4d4d4 !default;
 
 // LABEL
-$label-color:                   #606060 !default;
-$label-background-color:        transparent !default;
+$label-color: #606060 !default;
+$label-background-color: transparent !default;
 
-$group-label-color:             #a0a0a0 !default;
-$group-label-background:        #fafafa !default;
+$group-label-color: #a0a0a0 !default;
+$group-label-background: #fafafa !default;
 
 // CHECKBOX
-$checkbox-border-color:         #d4d4d4 !default;
-$checkbox-color-active:         #606060 !default;
-$checkbox-color-disabled:       #f0f0f0 !default;
-$checkbox-border-radius:        2px !default;
+$checkbox-border-color: #d4d4d4 !default;
+$checkbox-color-active: #606060 !default;
+$checkbox-color-disabled: #f0f0f0 !default;
+$checkbox-border-radius: 2px !default;
 
 // POPUP
 $popup-default: (color: #404040, background: #ffff80);
 
 // TILE
-$tile-gutter:                   0.5rem !default;
+$tile-gutter: 0.5rem !default;
 
 // HEADER
-$header-text-color:             #808080 !default;
-$header-background-color:       #d4d4d4 !default;
+$header-text-color: #808080 !default;
+$header-background-color: #d4d4d4 !default;
 
 // FOOTER
-$footer-text-color:             #ffffff !default;
-$footer-link-color:             #ffffff !default;
-$footer-link-color-hover:       #808080 !default;
-$footer-background-color:       #d4d4d4 !default;
+$footer-text-color: #ffffff !default;
+$footer-link-color: #ffffff !default;
+$footer-link-color-hover: #808080 !default;
+$footer-background-color: #d4d4d4 !default;

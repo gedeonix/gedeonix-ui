@@ -1,0 +1,8 @@
+.debug {
+  overflow: auto;
+  outline: 1px dashed #ffc0c0;
+  background-color: rgba(255, 220, 120, .6);
+  & > * {
+    background-color: rgba(200, 240, 255, .6);
+  }
+}

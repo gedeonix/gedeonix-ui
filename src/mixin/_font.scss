@@ -1,8 +1,12 @@
 @mixin font-icon() {
-  font-family: $font-icon;
-  font-style: normal;
-  //font-weight: normal;
-  font-variant: normal;
+
+  font: {
+    family: $font-icon;
+    style: normal;
+    //weight: normal;
+    variant: normal;
+  }
+
   line-height: 1;
   speak: none;
   text-transform: none;
@@ -12,11 +16,16 @@
 
 @mixin create-font($font) {
 
-  @debug $font;
+  // @debug $font;
 
   color: map_get($font, color);
   background-color: map_get($font, background);
-  font-family: map_get($font, font);
-  font-size: map_get($font, size);
+
+  font: {
+    family: map_get($font, font);
+    size: map_get($font, size);
+    weight: map_get($font, weight);
+  }
+
   line-height: map_get($font, height);
 }
