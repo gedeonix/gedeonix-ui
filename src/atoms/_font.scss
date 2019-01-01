@@ -1,0 +1,9 @@
+.font {
+
+  @each $name, $font in $font-theme {
+    @include element($name) {
+      @include create-font($font)
+    }
+  }
+
+}
