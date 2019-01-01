@@ -69,7 +69,7 @@
 
 @each $name, $color in $color-theme {
   .input.is-#{$name} {
-    border-color: $color;
+    border-color: map_get($color, color);
     background-color: $input-background-color;
   }
 }

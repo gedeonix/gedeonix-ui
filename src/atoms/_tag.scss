@@ -27,7 +27,7 @@
 
 @each $name, $color in $color-theme {
   .tag.is-#{$name}:after {
-    border-left-color: $color;
+    border-left-color: map_get($color, color)
   }
 }
 

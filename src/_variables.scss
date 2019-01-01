@@ -7,14 +7,15 @@ $gray-color: #fafafa !default;
 $dark-color: #4e4f51 !default;
 
 $color-default: #fafafa;
+
 $color-theme: (
-        primary: #55acee,
-        success: #5acd59,
-        info: #6ad1dd,
-        warning: #ffb812,
-        danger: #fc6e51,
-        light: #fafafa,
-        dark: #4e4f51
+        primary:  (color: #55acee),
+        success:  (color: #5acd59),
+        info:     (color: #6ad1dd),
+        warning:  (color: #ffb812),
+        danger:   (color: #fc6e51),
+        light:    (color: #fafafa),
+        dark:     (color: #4e4f51)
 ) !default;
 
 $outline-color: #0067c5 !default;

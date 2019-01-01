@@ -30,7 +30,6 @@
 @import "atoms/tag";
 
 @import "molecules/accordion";
-@import "molecules/box";
 @import "molecules/breadcrumbs";
 @import "molecules/card";
 @import "molecules/container";
@@ -40,16 +39,18 @@
 @import "molecules/modal";
 
 @import "molecules/nav/hamburger";
+@import "molecules/nav/box";
 @import "molecules/nav/flat";
 @import "molecules/nav/nav";
 @import "molecules/nav/navbar";
+@import "molecules/nav/sidebar";
 @import "molecules/nav/size";
+@import "molecules/nav/tabs";
 
 @import "molecules/pagination";
 @import "molecules/panel";
-@import "molecules/sidebar";
+
 @import "molecules/table";
-@import "molecules/tabs";
 @import "molecules/tile";
 
 @import "layout/footer";

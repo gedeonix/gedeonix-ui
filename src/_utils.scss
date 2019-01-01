@@ -182,6 +182,6 @@
 
 @each $name, $color in $color-theme {
   .is-#{$name} {
-    background-color: $color;
+    background-color: map_get($color, color);
   }
 }
