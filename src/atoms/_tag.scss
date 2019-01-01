@@ -1,35 +1,46 @@
 .tag {
-  background-color: $color-default;
+  background-color: $text-color;
   border-top-left-radius: 0.2em;
   border-bottom-left-radius: 0.2em;
   color: $white-color;
-  font-size: 0.75rem;
+
+  font-size: .75rem;
   font-weight: 800;
+
   padding: 0.25em 0.5em;
   position: relative;
   margin-right: 1em;
-}
 
-.tag:after {
-  border-style: solid;
-  border-width: 0.64rem;
-  border-color: transparent;
-  border-left-color: $color-default;
-  content: "";
-  display: inline-block;
-  position: absolute;
+  &:after {
+    border: {
+      style: solid;
+      width: .64rem;
+      color: transparent;
+      left-color: $text-color;
+    }
+    content: "";
+    display: inline-block;
+    position: absolute;
 
-  right: 0;
-  top: 0;
-  left: 100%;
-  bottom: 0;
-}
+    right: 0;
+    top: 0;
+    left: 100%;
+    bottom: 0;
+  }
 
-@each $name, $color in $color-theme {
-  .tag.is-#{$name}:after {
-    border-left-color: map_get($color, color)
+  @each $name, $color in $color-theme {
+    @include element($name) {
+      color: map_get($color, color);
+      background-color: map_get($color, background);
+      &:after {
+        border-left-color: map_get($color, background);
+      }
+    }
   }
 }
+
+
+
 
 /*
 .triangle {

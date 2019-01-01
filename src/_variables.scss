@@ -6,16 +6,15 @@ $white-color: #ffffff;
 $gray-color: #fafafa !default;
 $dark-color: #4e4f51 !default;
 
-$color-default: #fafafa;
-
 $color-theme: (
-        primary:  (color: #55acee),
-        success:  (color: #5acd59),
-        info:     (color: #6ad1dd),
-        warning:  (color: #ffb812),
-        danger:   (color: #fc6e51),
-        light:    (color: #fafafa),
-        dark:     (color: #4e4f51)
+        default:  (color: #606060, background: #fafafa),
+        primary:  (color: #ffffff, background: #55acee),
+        success:  (color: #ffffff, background: #5acd59),
+        info:     (color: #ffffff, background: #6ad1dd),
+        warning:  (color: #ffffff, background: #ffb812),
+        danger:   (color: #ffffff, background: #fc6e51),
+        light:    (color: #606060, background: #fafafa),
+        dark:     (color: #ffffff, background: #4e4f51)
 ) !default;
 
 $outline-color: #0067c5 !default;
