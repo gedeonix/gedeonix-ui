@@ -49,13 +49,20 @@ $btn-default:  (color: #606060, background: transparent, border: #d4d4d4, hover:
 
 $btn-theme: (
   default:  $btn-default,
-  primary:  (color: #ffffff, background: #65bcfe, border: #65bcfe, hover: #459cde, active: #2ba369),
-  success:  (color: #ffffff, background: #5acd59, border: #94cd5a, hover: #32c07f, active: #2ba369),
-  info:     (color: #ffffff, background: #6ad1dd, border: #4cdadd, hover: #41c2e2, active: #40bbdd),
-  warning:  (color: #ffffff, background: #ffa924, border: #ffa924, hover: #ffd11e, active: #ffd11e),
-  danger:   (color: #ffffff, background: #fc573f, border: #fc573f, hover: #fc4016, active: #dc3816),
-  light:    (color: #a0a0a0, background: #fafafa, border: #a0a0a0, hover: #909090, active: #d0d0d0),
-  dark:     (color: #ffffff, background: #4e4f51, border: #4e4f51, hover: #b0b1b6, active: #8a8b8f)
+  primary:      (color: #ffffff, background: #65bcfe, border: #65bcfe, hover: #459cde, active: #2ba369),
+  success:      (color: #ffffff, background: #5acd59, border: #94cd5a, hover: #32c07f, active: #2ba369),
+  info:         (color: #ffffff, background: #6ad1dd, border: #4cdadd, hover: #41c2e2, active: #40bbdd),
+  warning:      (color: #ffffff, background: #ffa924, border: #ffa924, hover: #ffd11e, active: #ffd11e),
+  danger:       (color: #ffffff, background: #fc573f, border: #fc573f, hover: #fc4016, active: #dc3816),
+  light:        (color: #a0a0a0, background: #fafafa, border: #a0a0a0, hover: #909090, active: #d0d0d0),
+  dark:         (color: #ffffff, background: #4e4f51, border: #4e4f51, hover: #b0b1b6, active: #8a8b8f),
+  // social
+  twitter:      (color: #ffffff, background: #0084b4, border: #0084b4, hover: #008fc2, active: #ffffff),
+  facebook:     (color: #ffffff, background: #3b5998, border: #3b5998, hover: #446db5, active: #ffffff),
+  google-plus:  (color: #ffffff, background: #dc4a38, border: #dc4a38, hover: #f04f3d, active: #ffffff),
+  github:       (color: #ffffff, background: #404040, border: #505050, hover: #606060, active: #ffffff),
+  rss:          (color: #ffffff, background: #f26522, border: #f26522, hover: #ff671f, active: #ffffff)
+
 ) !default;
 
 $btn-radius:                    4px !default;
