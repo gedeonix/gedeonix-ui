@@ -549,32 +549,32 @@
     <input class="input" type="tel" placeholder="tel...">
 
     <h3>Label & Input</h3>
-    <label>Text:
+    <label class="label">Text:
         <input class="input" type="text" value="text...">
     </label>
     <br>
     <br>
 
-    <label>Text: <span class="required">*</span>
+    <label class="label">Text: <span class="required">*</span>
         <input class="input" type="text" value="text...">
     </label>
     <br>
     <br>
 
-    <label>Text:
+    <label class="label">Text:
         <input class="input" type="text" value="text...">
         <span class="description">Description...</span>
     </label>
     <br>
     <br>
 
-    <label>Text: <span class="success">success</span>
+    <label class="label">Text: <span class="success">success</span>
         <input class="input input-success" type="text" value="text...">
     </label>
     <br>
     <br>
 
-    <label>Text: <span class="error">error</span>
+    <label class="label">Text: <span class="error">error</span>
         <input class="input input-error" type="text" value="text...">
     </label>
 
@@ -835,42 +835,42 @@
     <h3>(label + input)</h3>
     <div class="checkbox">
         <input id="box1" type="checkbox"/>
-        <label for="box1">Checkbox</label>
+        <label class="label" for="box1">Checkbox</label>
     </div>
     <div class="checkbox">
         <input id="box2" type="checkbox" checked/>
-        <label for="box2">Checkbox (checked)</label>
+        <label class="label" for="box2">Checkbox (checked)</label>
     </div>
     <div class="checkbox">
         <input id="box3" type="checkbox" disabled/>
-        <label for="box3">Checkbox (disabled)</label>
+        <label class="label" for="box3">Checkbox (disabled)</label>
     </div>
     <div class="checkbox">
         <input id="box4" type="checkbox" checked disabled/>
-        <label for="box4">Checkbox (checked & disabled)</label>
+        <label class="label" for="box4">Checkbox (checked & disabled)</label>
     </div>
 
     <h3>(label > input & span)</h3>
     <div class="checkbox2">
-        <label>
+        <label class="label">
             <input type="checkbox"/>
             <span>Checkbox</span>
         </label>
     </div>
     <div class="checkbox2">
-        <label>
+        <label class="label">
             <input type="checkbox" checked/>
             <span>Checkbox (checked)</span>
         </label>
     </div>
     <div class="checkbox2">
-        <label>
+        <label class="label">
             <input type="checkbox" disabled/>
             <span>Checkbox (disabled)</span>
         </label>
     </div>
     <div class="checkbox2">
-        <label>
+        <label class="label">
             <input type="checkbox" checked disabled/>
             <span>Checkbox (checked & disabled)</span>
         </label>
@@ -880,37 +880,37 @@
 
     <div class="radio">
         <input id="box5" type="radio" name="radios"/>
-        <label for="box5"> Radio</label>
+        <label class="label" for="box5"> Radio</label>
     </div>
     <div class="radio">
         <input id="box6" type="radio" name="radios"/>
-        <label for="box6"> Radio</label>
+        <label class="label" for="box6"> Radio</label>
     </div>
 
     <br>
 
     <div class="radio">
         <input id="box7" type="radio" name="radios2" disabled/>
-        <label for="box7"> Radio (disabled)</label>
+        <label class="label" for="box7"> Radio (disabled)</label>
     </div>
     <div class="radio">
         <input id="box8" type="radio" name="radios2" checked="checked" disabled/>
-        <label for="box8"> Radio (checked & disabled)</label>
+        <label class="label" for="box8"> Radio (checked & disabled)</label>
     </div>
 
     <br>
 
     <div class="radio">
-        <label><input type="radio" checked name="box9"> Item 1</label>
+        <label class="label"><input type="radio" checked name="box9"> Item 1</label>
     </div>
     <div class="radio">
-        <label><input type="radio" name="box9"> Item 2</label>
+        <label class="label"><input type="radio" name="box9"> Item 2</label>
     </div>
     <div class="radio">
-        <label><input type="radio" name="box9"> Item 3</label>
+        <label class="label"><input type="radio" name="box9"> Item 3</label>
     </div>
     <div class="radio">
-        <label><input type="radio" name="box9"> Item 4</label>
+        <label class="label"><input type="radio" name="box9"> Item 4</label>
     </div>
 
     <h2>Select</h2>
@@ -1716,32 +1716,32 @@
     <h2>Simple</h2>
     <form class="section">
         <div class="control">
-            <label>Email:</label>
+            <label class="label">Email:</label>
             <input type="email">
         </div>
         <div class="control">
-            <label>Password:</label>
+            <label class="label">Password:</label>
             <input type="password">
         </div>
 
         <div class="control checkbox">
             <input id="check1" type="checkbox">
-            <label for="check1"> Terms</label>
+            <label class="label" for="check1"> Terms</label>
         </div>
 
         <div class="control checkbox">
             <input id="check2" type="checkbox" checked="checked">
-            <label for="check2"> Terms checked</label>
+            <label class="label" for="check2"> Terms checked</label>
         </div>
 
         <div class="control checkbox">
             <input id="check3" type="checkbox" disabled>
-            <label for="check3"> Terms disabled</label>
+            <label class="label" for="check3"> Terms disabled</label>
         </div>
 
         <div class="control checkbox">
             <input id="check4" type="checkbox" checked="checked" disabled>
-            <label for="check4"> Terms checked & disabled</label>
+            <label class="label" for="check4"> Terms checked & disabled</label>
         </div>
 
         <div class="control">
@@ -1752,11 +1752,11 @@
     <h2>Responsive</h2>
     <form class="row">
         <div class="col-6">
-            <label>User:</label>
+            <label class="label">User:</label>
             <input type="text">
         </div>
         <div class="col-6">
-            <label>Type:</label>
+            <label class="label">Type:</label>
             <select>
                 <option value="user">User</option>
                 <option value="admin">Admin</option>
@@ -1764,13 +1764,13 @@
             </select>
         </div>
         <div class="col-12">
-            <label for="description">Description</label>
+            <label class="label" for="description">Description</label>
             <textarea id="description" class="is-box" placeholder="description..."></textarea>
         </div>
         <div class="col-12">
             <div class="checkbox">
                 <input id="check5" type="checkbox">
-                <label for="check5"> Term</label>
+                <label class="label" for="check5"> Term</label>
             </div>
         </div>
         <div class="col-12">
@@ -2883,7 +2883,7 @@
         <div class="col-4">
             <ul class="nav is-vertical is-light">
                 <li class="title">Title</li>
-                <li><label>Search:</label></li>
+                <li><label class="label">Search:</label></li>
                 <li class="icon-addon">
                     <i class="fab fa-search"></i>
                     <input type="search">
@@ -3287,17 +3287,17 @@
             <div class="modal-body">
 
                 <div class="control">
-                    <label>Email:</label>
+                    <label class="label">Email:</label>
                     <input type="email">
                 </div>
                 <div class="control">
-                    <label>Password:</label>
+                    <label class="label">Password:</label>
                     <input type="password">
                 </div>
 
                 <div class="control checkbox">
                     <input id="check1a" type="checkbox">
-                    <label for="check1a"> Terms</label>
+                    <label class="label" for="check1a"> Terms</label>
                 </div>
             </div>
             <div class="modal-footer">

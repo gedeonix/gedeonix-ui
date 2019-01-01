@@ -18,13 +18,11 @@
 @import "atoms/badge";
 @import "atoms/box";
 @import "atoms/button";
-@import "atoms/card";
 @import "atoms/checkbox";
 @import "atoms/close";
 @import "atoms/control";
 @import "atoms/input";
 @import "atoms/label";
-@import "atoms/modal";
 @import "atoms/popup";
 @import "atoms/radio";
 @import "atoms/section";
@@ -34,19 +32,22 @@
 @import "molecules/accordion";
 @import "molecules/box";
 @import "molecules/breadcrumbs";
+@import "molecules/card";
 @import "molecules/container";
 @import "molecules/form";
 @import "molecules/group";
+
+@import "molecules/modal";
 
 @import "molecules/nav/hamburger";
 @import "molecules/nav/flat";
 @import "molecules/nav/nav";
 @import "molecules/nav/navbar";
+@import "molecules/nav/size";
 
 @import "molecules/pagination";
 @import "molecules/panel";
 @import "molecules/sidebar";
-@import "molecules/size";
 @import "molecules/table";
 @import "molecules/tabs";
 @import "molecules/tile";

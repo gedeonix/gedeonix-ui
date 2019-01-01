@@ -1,0 +1,64 @@
+.modal {
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  position: absolute;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  @include element('background') {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+  }
+
+  @include element('container') {
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    margin: 0 auto;
+    width: 500px;
+
+    max-height: calc(100vh - 160px);
+  }
+
+  @include element('content') {
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  @include element('header') {
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ffffff;
+    .close {
+      float: right;
+    }
+  }
+
+  @include element('body') {
+    /*text-align: center;*/
+    padding: 30px 5px;
+  }
+
+  @include element('footer') {
+    text-align: center;
+    padding: 0 0 20px 0;
+  }
+}
+
