@@ -31,6 +31,13 @@
     padding: 10px;
   }
 
+  @each $name, $color in $color-theme {
+    @include element($name) {
+      color: map_get($color, color);
+      background-color: map_get($color, background);
+    }
+  }
+
   &.is-xs {
     border-radius: $btn-xs-radius;
   }
