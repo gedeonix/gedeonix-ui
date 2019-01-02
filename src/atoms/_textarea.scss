@@ -1,0 +1,10 @@
+.textarea {
+  background-color: $input-background-color;
+  border: 1px solid $input-border-color;
+  border-radius: 3px;
+  font-size: 1rem;
+  padding: 0.7rem 0.5rem;
+
+  -webkit-appearance: none;
+  width: 100%;
+}
