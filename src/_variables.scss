@@ -1,23 +1,22 @@
 // COLOR
 $text-color: #606060 !default;
 $background-color: #ffffff !default;
+$focus-color: #0067c5 !default;
 
 $white-color: #ffffff;
 $gray-color: #fafafa !default;
 $dark-color: #4e4f51 !default;
 
 $color-theme: (
-        default:  (color: #606060, background: #fafafa),
-        primary:  (color: #ffffff, background: #55acee),
-        success:  (color: #ffffff, background: #5acd59),
-        info:     (color: #ffffff, background: #6ad1dd),
-        warning:  (color: #ffffff, background: #ffb812),
-        danger:   (color: #ffffff, background: #fc6e51),
-        light:    (color: #606060, background: #fafafa),
-        dark:     (color: #ffffff, background: #4e4f51)
+        default: (color: #606060, background: #fafafa),
+        primary: (color: #ffffff, background: #55acee),
+        success: (color: #ffffff, background: #5acd59),
+        info: (color: #ffffff, background: #6ad1dd),
+        warning: (color: #ffffff, background: #ffb812),
+        danger: (color: #ffffff, background: #fc6e51),
+        light: (color: #606060, background: #fafafa),
+        dark: (color: #ffffff, background: #4e4f51)
 ) !default;
-
-$outline-color: #0067c5 !default;
 
 // FONT
 $font-family: Arial, Helvetica, sans-serif !default;
