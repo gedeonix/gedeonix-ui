@@ -8,11 +8,15 @@
 
   border: none;
   border-radius: 5px;
-  background-color: $gray-color;
+  background-color: transparent;
 
-  &.is-primary, &.is-success, &.is-info, &.is-warning, &.is-dark, &.is-danger {
-    color: $white-color;
+  @each $name, $color in $color-theme {
+    @include element($name) {
+      color: map_get($color, color);
+      background-color: map_get($color, background);
+    }
   }
+
   .close {
     float: right;
   }
