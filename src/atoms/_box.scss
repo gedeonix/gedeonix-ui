@@ -5,4 +5,12 @@
   text-align: center;
   border-radius: 10px;
   vertical-align: middle;
+
+  @each $name, $color in $color-theme {
+    @include element($name) {
+      color: map_get($color, color);
+      background-color: map_get($color, background);
+    }
+  }
 }
+
