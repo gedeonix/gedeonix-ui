@@ -20,7 +20,6 @@ $color-theme: (
 // FONT
 $font-family: Arial, Helvetica, sans-serif !default;
 $font-size: 16px !default;
-$font-icon: 'Font Awesome\ 5 Free' !default;
 
 $font-theme: (
         big: (color: #606060, background: transparent, font: $font-family, size: 2.5rem, height: 1.2, weight: 800),
@@ -40,11 +39,20 @@ $gutter-md: .75rem !default;
 $gutter-lg: 1rem !default;
 
 // ICON
-$close-size: (
-        xs: (size: 1rem),
-        sm: (size: 1.2rem),
-        md: (size: 2.25rem),
-        lg: (size: 3rem)
+$font-icon: 'Font Awesome\ 5 Free' !default;
+$font-icon-weight: 900 !default;
+
+$icon-size: (
+        xs: (size: .8rem),
+        sm: (size: 2rem),
+        md: (size: 3rem),
+        lg: (size: 6rem)
+) !default;
+
+$icon-theme: (
+  check: '\f00c',
+  edit: '\f044',
+  home: '\f015'
 ) !default;
 
 // CLOSE

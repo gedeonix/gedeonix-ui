@@ -1,3 +1,27 @@
 .icon {
 
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+
+  font-weight: 900;
+  font-family: $font-icon;
+
+  @each $name, $icon in $icon-theme {
+    @include element($name) {
+      &:before {
+        content: $icon
+      }
+    }
+  }
+
+  @each $name, $size in $icon-size {
+    @include element($name) {
+      font-size: map_get($size, size);
+    }
+  }
 }
+
