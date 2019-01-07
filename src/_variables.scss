@@ -39,6 +39,28 @@ $gutter-sm: .5rem !default;
 $gutter-md: .75rem !default;
 $gutter-lg: 1rem !default;
 
+// ICON
+$close-size: (
+        xs: (size: 1rem),
+        sm: (size: 1.2rem),
+        md: (size: 2.25rem),
+        lg: (size: 3rem)
+) !default;
+
+// CLOSE
+$close-size: (
+        xs: (size: 1rem),
+        sm: (size: 1.2rem),
+        md: (size: 2.25rem),
+        lg: (size: 3rem)
+) !default;
+
+$close-theme: (
+        square: (color: #ffffff, background: rgba(0, 0, 0, 0.1), hover: rgba(0, 0, 0, 0.3), radius: 0),
+        circle: (color: #ffffff, background: rgba(0, 0, 0, 0.1), hover: rgba(0, 0, 0, 0.3), radius: 50%),
+        rounded: (color: #ffffff, background: rgba(0, 0, 0, 0.1), hover: rgba(0, 0, 0, 0.3), radius: 33%)
+) !default;
+
 // BUTTON
 $btn-font-size: 1rem !default;
 

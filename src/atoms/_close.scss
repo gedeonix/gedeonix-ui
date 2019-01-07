@@ -28,37 +28,32 @@
     transform: rotate(-45deg);
   }
 
-  &.is-square, &.is-circle {
-    background-color: rgba(0, 0, 0, 0.1);
+  @each $name, $size in $close-size {
+    @include element($name) {
+      height: map_get($size, size);
+      width: map_get($size, size);
+    }
   }
 
-  &.is-square:hover, &.is-circle:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+  @each $name, $theme in $close-theme {
+    @include element($name) {
+      color: map_get($theme, color);
+      border-radius: map_get($theme, radius);
+      background-color: map_get($theme, background);
+      &:hover {
+        background-color:  map_get($theme, hover);
+      }
+      &:before, &:after {
+        background-color:  map_get($theme, color);
+      }
+    }
   }
 
-  &.is-circle {
-    border-radius: 50%;
+  @each $name, $color in $color-theme {
+    @include element($name) {
+      color: map_get($color, color);
+      background-color: map_get($color, background);
+    }
   }
 
-  &.is-xs {
-    height: 1rem;
-    width: 1rem;
-  }
-  &.is-sm {
-    height: 1.25rem;
-    width: 1.25rem;
-  }
-  &.is-md {
-    height: 2.25rem;
-    width: 2.25rem;
-  }
-  &.is-lg {
-    height: 3rem;
-    width: 3rem;
-  }
-}
-
-.is-square.close:before, .is-square.close:after,
-.is-circle.close:before, .is-circle.close:after {
-  background-color: $white-color;
 }
