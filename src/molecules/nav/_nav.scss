@@ -127,8 +127,8 @@
     > li {
       display: block;
       a:hover {
-        background-color: $dark-color;
-        color: $gray-color;
+        background-color: transparent;
+        color: $text-color;
       }
     }
   }

@@ -1,8 +1,8 @@
 .tag {
-  background-color: $text-color;
+  background-color: transparent;
   border-top-left-radius: 0.2em;
   border-bottom-left-radius: 0.2em;
-  color: $white-color;
+  color: $text-color;
 
   font-size: .75rem;
   font-weight: 800;
@@ -16,7 +16,7 @@
       style: solid;
       width: .64rem;
       color: transparent;
-      left-color: $text-color;
+      left-color: transparent;
     }
     content: "";
     display: inline-block;

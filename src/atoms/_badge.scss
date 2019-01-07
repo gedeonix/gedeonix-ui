@@ -1,9 +1,21 @@
 .badge {
-  background-color: $white-color;
-  border-radius: 100rem;
+  background-color: transparent;
   color: $text-color;
+
+  border-radius: 100rem;
   font-size: 0.9em;
   font-weight: 600;
   padding: 0.25em 0.5em;
+
+  @each $name, $color in $color-theme {
+    @include element($name) {
+      color: map_get($color, color);
+      background-color: map_get($color, background);
+    }
+  }
+
 }
+
+
+
 

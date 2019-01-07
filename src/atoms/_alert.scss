@@ -1,5 +1,7 @@
 .alert {
+  background-color: transparent;
   color: $text-color;
+
   display: block;
   position: relative;
   font-size: 1rem;
@@ -8,7 +10,6 @@
 
   border: none;
   border-radius: 5px;
-  background-color: transparent;
 
   @each $name, $color in $color-theme {
     @include element($name) {
