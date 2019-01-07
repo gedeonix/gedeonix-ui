@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.19.0"></a>
+# [0.19.0](https://github.com/gedeonix/gedeonix-ui/compare/v0.18.4...v0.19.0) (2019-01-07)
+
+
+### Bug Fixes
+
+* alert ([a372b87](https://github.com/gedeonix/gedeonix-ui/commit/a372b87))
+* badget ([6439646](https://github.com/gedeonix/gedeonix-ui/commit/6439646))
+* box ([783cb3e](https://github.com/gedeonix/gedeonix-ui/commit/783cb3e))
+* close ([418d05b](https://github.com/gedeonix/gedeonix-ui/commit/418d05b))
+* debug ([1e51307](https://github.com/gedeonix/gedeonix-ui/commit/1e51307))
+* focus-color ([1d0843e](https://github.com/gedeonix/gedeonix-ui/commit/1d0843e))
+* icon ([805793c](https://github.com/gedeonix/gedeonix-ui/commit/805793c))
+* icon ([68f677d](https://github.com/gedeonix/gedeonix-ui/commit/68f677d))
+* panel ([bc10229](https://github.com/gedeonix/gedeonix-ui/commit/bc10229))
+* textarea ([e85293f](https://github.com/gedeonix/gedeonix-ui/commit/e85293f))
+
+
+### Features
+
+* add text ([a6c981e](https://github.com/gedeonix/gedeonix-ui/commit/a6c981e))
+
+
+
 <a name="0.18.4"></a>
 ## [0.18.4](https://github.com/gedeonix/gedeonix-ui/compare/v0.18.3...v0.18.4) (2019-01-01)
 
