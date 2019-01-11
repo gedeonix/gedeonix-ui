@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.19.1"></a>
+## [0.19.1](https://github.com/gedeonix/gedeonix-ui/compare/v0.19.0...v0.19.1) (2019-01-11)
+
+
+### Bug Fixes
+
+* demo ([4e09297](https://github.com/gedeonix/gedeonix-ui/commit/4e09297))
+* form ([771d68e](https://github.com/gedeonix/gedeonix-ui/commit/771d68e))
+* form ([6b2b5a5](https://github.com/gedeonix/gedeonix-ui/commit/6b2b5a5))
+* navbar ([51f7ac9](https://github.com/gedeonix/gedeonix-ui/commit/51f7ac9))
+
+
+
 <a name="0.19.0"></a>
 # [0.19.0](https://github.com/gedeonix/gedeonix-ui/compare/v0.18.4...v0.19.0) (2019-01-07)
 
