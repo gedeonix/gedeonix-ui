@@ -1,4 +1,39 @@
-.control {
-  margin-bottom: 0.5em;
+.form {
+  // background-color: #ffff80;
 }
 
+.form-group {
+  display: flex;
+  flex: {
+    direction: column;
+  }
+  margin-bottom: 0.5rem;
+
+  /*
+  display: block;
+  position: relative;
+  cursor: pointer;
+  */
+}
+
+.form-label {
+  // background-color: #ffa924;
+  display: block;
+  font-weight: $label-weight;
+  flex: none;
+  width: $form-label-width;
+
+  padding: 0;
+  text-align: left;
+}
+
+@media screen and (min-width: 40em) {
+  .form-group {
+    flex-direction: row;
+  }
+
+  .form-label {
+    padding: $form-label-padding;
+    text-align: $form-label-text-align;
+  }
+}

@@ -135,9 +135,15 @@ $card-border: #d4d4d4 !default;
 // LABEL
 $label-color: #606060 !default;
 $label-background-color: transparent !default;
+$label-weight: bold !default;
 
 $group-label-color: #a0a0a0 !default;
 $group-label-background: #fafafa !default;
+
+// FORM
+$form-label-width: 120px;
+$form-label-padding: 5px 10px 5px 10px;
+$form-label-text-align: right;
 
 // CHECKBOX
 $checkbox-border-color: #d4d4d4 !default;

@@ -1803,73 +1803,99 @@
     <h1>Form</h1>
 
     <h2>Simple</h2>
-    <form class="section">
-        <div class="control">
-            <label class="label">Email:</label>
-            <input type="email">
+    <form class="form">
+        <div class="form-group">
+            <label class="form-label">Label:</label>
+            <input class="input" type="email" placeholder="...">
         </div>
-        <div class="control">
-            <label class="label">Password:</label>
-            <input type="password">
-        </div>
-
-        <div class="control checkbox">
-            <input id="check1" type="checkbox">
-            <label class="label" for="check1"> Terms</label>
+        <div class="form-group">
+            <label class="form-label">Label:</label>
+            <input class="input" type="password" placeholder="...">
         </div>
 
-        <div class="control checkbox">
-            <input id="check2" type="checkbox" checked="checked">
-            <label class="label" for="check2"> Terms checked</label>
+        <div class="form-group">
+            <label class="form-label">Label:</label>
+            <textarea class="input" rows="5">...</textarea>
         </div>
 
-        <div class="control checkbox">
-            <input id="check3" type="checkbox" disabled>
-            <label class="label" for="check3"> Terms disabled</label>
+        <div class="form-group">
+            <label class="form-label">&nbsp;</label>
+            <div class="checkbox">
+                <input id="check1" type="checkbox">
+                <label class="label" for="check1"> Terms</label>
+            </div>
         </div>
 
-        <div class="control checkbox">
-            <input id="check4" type="checkbox" checked="checked" disabled>
-            <label class="label" for="check4"> Terms checked & disabled</label>
+        <div class="form-group">
+            <label class="form-label">&nbsp;</label>
+            <div class="checkbox">
+                <input id="check2" type="checkbox" checked="checked">
+                <label class="label" for="check2"> Terms checked</label>
+            </div>
         </div>
 
-        <div class="control">
+        <div class="form-group">
+            <label class="form-label">&nbsp;</label>
+            <div class="checkbox">
+                <input id="check3" type="checkbox" disabled>
+                <label class="label" for="check3"> Terms disabled</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">&nbsp;</label>
+            <div class="checkbox">
+                <input id="check4" type="checkbox" checked="checked" disabled>
+                <label class="label" for="check4"> Terms checked & disabled</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">&nbsp;</label>
             <button class="btn btn-primary" type="submit">Login</button>
         </div>
     </form>
 
     <h2>Responsive</h2>
-    <form class="row">
+    <div class="row">
         <div class="col-6">
-            <label class="label">User:</label>
-            <input type="text">
+            <div class="form-group">
+                <label class="label">User:</label>
+                <input class="input" type="text">
+            </div>
         </div>
         <div class="col-6">
-            <label class="label">Type:</label>
-            <select>
-                <option value="user">User</option>
-                <option value="admin">Admin</option>
-                <option value="superuser">Super User</option>
-            </select>
+            <div class="form-group">
+                <label class="label">Type:</label>
+                <select class="input">
+                    <option value="user">User</option>
+                    <option value="admin">Admin</option>
+                    <option value="superuser">Super User</option>
+                </select>
+            </div>
         </div>
         <div class="col-12">
-            <label class="label">Description</label>
-            <textarea class="is-box" placeholder="description...">abc</textarea>
+            <div class="form-group">
+                <label class="label">Description</label>
+                <textarea class="is-box" placeholder="description...">abc</textarea>
+            </div>
         </div>
         <div class="col-12">
-            <div class="checkbox">
-                <input id="check5" type="checkbox">
-                <label class="label" for="check5"> Term</label>
+            <div class="form-group">
+                <div class="checkbox">
+                    <input id="check5" type="checkbox">
+                    <label class="label" for="check5"> Term</label>
+                </div>
             </div>
         </div>
         <div class="col-12">
             <button class="btn btn-primary" type="submit">Submit</button>
         </div>
-    </form>
+    </div>
 
     <!--
     <h2>Example 1</h2>
-    <form class="row max-2">
+    <div class="row max-2">
         <label class="col">Text:</label>
         <input type="text" placeholder="text">
         <label class="col">Password:</label>
@@ -1879,7 +1905,7 @@
         <label class="col">Search:</label>
         <input type="search" placeholder="search">
         <button class="btn is-success">Save</button>
-    </form>
+    </div>
 
     <h2>Example 2</h2>
     <form action="#" method="post">
@@ -3369,22 +3395,22 @@
 
     <h2>Form</h2>
     <div class="modal-content is-shadow">
-        <form>
+        <form class="form">
             <div class="modal-header is-dark"><i class="fab fa-cog"></i> Form
                 <div class="close is-circle"></div>
             </div>
             <div class="modal-body">
 
-                <div class="control">
+                <div class="form-group">
                     <label class="label">Email:</label>
                     <input type="email">
                 </div>
-                <div class="control">
+                <div class="form-group">
                     <label class="label">Password:</label>
                     <input type="password">
                 </div>
 
-                <div class="control checkbox">
+                <div class="form-group checkbox">
                     <input id="check1a" type="checkbox">
                     <label class="label" for="check1a"> Terms</label>
                 </div>
