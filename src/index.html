@@ -1078,14 +1078,14 @@
     </div>
 
     <h2>Select</h2>
-    <select>
+    <select class="input">
         <option value="user">User</option>
         <option value="admin">Admin</option>
         <option value="superuser">Super User</option>
     </select>
 
     <h2>Textarea</h2>
-    <textarea placeholder="description..."></textarea>
+    <textarea class="input" placeholder="description...">...</textarea>
 
     <!--
     <h2>Triangle (TODO)</h2>
@@ -1802,20 +1802,43 @@
 
     <h1>Form</h1>
 
-    <h2>Simple</h2>
     <form class="form">
         <div class="form-group">
-            <label class="form-label">Label:</label>
-            <input class="input" type="email" placeholder="...">
+            <label class="form-label">Text:</label>
+            <input class="input" type="text" placeholder="...">
         </div>
+
         <div class="form-group">
-            <label class="form-label">Label:</label>
+            <label class="form-label">Text:</label>
+            <input class="input" style="flex:3" type="text" placeholder="...">
+            <input class="input" style="flex:4" type="text" placeholder="...">
+            <input class="input" style="flex:1" type="text" placeholder="...">
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Text:</label>
+            <input class="input" style="flex:3" type="text" placeholder="...">
+            <label class="form-label">Text:</label>
+            <input class="input" style="flex:1" type="text" placeholder="...">
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Email:</label>
             <input class="input" type="password" placeholder="...">
         </div>
 
         <div class="form-group">
             <label class="form-label">Label:</label>
             <textarea class="input" rows="5">...</textarea>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">&nbsp;</label>
+            <div class="group">
+                <span class="group-label">http://</span>
+                <input class="input" type="text" placeholder="...">
+                <button class="btn">Go!</button>
+            </div>
         </div>
 
         <div class="form-group">
@@ -1850,9 +1873,10 @@
             </div>
         </div>
 
-        <div class="form-group">
+        <div class="form-action">
             <label class="form-label">&nbsp;</label>
-            <button class="btn btn-primary" type="submit">Login</button>
+            <button class="btn btn-primary" type="submit">Save</button>
+            <button class="btn btn-cancel">Cancel</button>
         </div>
     </form>
 

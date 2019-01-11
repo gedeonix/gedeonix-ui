@@ -8,6 +8,8 @@
   -webkit-appearance: none;
   width: 100%;
 
+  margin-bottom: $control-margin-bottom;
+
   &:focus {
     z-index: 2;
   }

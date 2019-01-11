@@ -64,6 +64,8 @@
 
   transition: all .2s ease-in-out;
 
+  margin-bottom: $control-margin-bottom;
+
   $btn-theme-default-name: nth(map_keys($btn-theme), 1);
   $btn-size-default-name: nth(map_keys($btn-size), 1);
 
