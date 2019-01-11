@@ -66,6 +66,19 @@
 </head>
 <body>
 
+<nav class="navbar container">
+    <div class="brand">Gedeonix UI</div>
+    <div class="navbar-space"></div>
+    <div class="nav">
+        <div><a href="#">Option 1</a></div>
+        <div><a href="#">Option 2</a></div>
+    </div>
+    <div class="nav">
+        <div><a href="#">Option 3</a></div>
+        <div><a href="#">Option 4</a></div>
+    </div>
+</nav>
+
 <main class="main container">
 
     <h1>Colors</h1>
@@ -166,14 +179,11 @@
 </code></pre>
 
     <h2>Text</h2>
-
     <div class="debug text-left">text left</div>
     <div class="debug text-center">text center</div>
     <div class="debug text-right">text right</div>
 
     <h2>Icon</h2>
-
-    <h3>Brand</h3>
     <i class="icon icon-check"></i>
     <i class="icon icon-edit"></i>
     <i class="icon icon-home"></i>
@@ -3082,15 +3092,15 @@
     </div>
 
     <h1>Navbar (flexbox container)</h1>
-    <div class="navbar is-warning">
-        <div class="brand is-light">Gedeonix UI</div>
-        <div class="is-space"></div>
-        <ul class="nav is-primary">
+    <div class="navbar">
+        <div class="brand">Gedeonix UI</div>
+        <div class="navbar-space"></div>
+        <ul class="nav">
             <li><a href="#">Option 1</a></li>
             <li><a href="#">Option 2</a></li>
             <li><a href="#">Option 3</a></li>
         </ul>
-        <ul class="nav is-success">
+        <ul class="nav">
             <li><a href="#">Option 4</a></li>
             <li><a href="#">Option 5</a></li>
             <li><a href="#">Option 6</a></li>
@@ -3132,7 +3142,7 @@
 
     <br>
 
-    <ul class="navbar is-success is-gap">
+    <ul class="navbar is-gap">
         <li class="brand">Brand</li>
         <ul class="nav is-tab is-danger">
             <li><a>1</a></li>
@@ -3167,7 +3177,6 @@
         <li>
             <a class="btn is-dark is-round"><i class="fab fa-info"></i> Info</a>
         </li>
-
     </ul>
 
     <h3>Is gutter</h3>
